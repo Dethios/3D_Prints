@@ -6,7 +6,7 @@ CAD sources, printable models, reference assets and validation tools for project
 
 | Folder or file | Contents |
 | --- | --- |
-| [Magnetic treasure crab ears](magnetic_treasure_crab_ears_v3/README.md) | CadQuery source, STEP solids, STL parts, adapters, fit coupons and validation tools. |
+| [Magnetic treasure crab ears v3](magnetic_treasure_crab_ears_v3/README.md) | Earlier crab design with its own receivers, CadQuery source, STEP/STL parts, fit coupons and validation tools. |
 | [Sorcerer ears](sorcerer_ears_CAD_STL_v2/READ_ME_FIRST.txt) | NX3 and TimJ mounting variants, editable source, STEP/STL exports, fit strips and previews. |
 | `polymaker-refill-spool/` | Spool STEP and STL assets. |
 | `watch-5-5-pro-6-7-ultra-charging-stand.stl` | Standalone charging-stand mesh. |
@@ -17,7 +17,7 @@ CAD sources, printable models, reference assets and validation tools for project
 - **Autodesk Fusion and Fusion MCP** support interactive CAD design, dimensions and assembly inspection. Preserve the editable design reference and export STEP and print meshes.
 - **CadQuery** supports scripted geometry, reproducible builds and parameter variants. Edit the existing generator when revising a scripted project.
 - **PrusaSlicer** is the main slicer for orientation, supports, layer inspection and G-code generation.
-- **Blender is optional** for rendered previews using the included scripts. Fusion and PrusaSlicer provide the normal design-to-print workflow. Blender is currently uninstalled.
+- **Blender is optional** for rendered previews using the included scripts. Use an assembly view or a render from generated geometry when appearance and placement need review.
 
 See [CAD and Print Workflow](PRINT_WORKFLOW.md) for detailed pathway selection and print checks.
 
@@ -37,13 +37,26 @@ Main owns integration and chooses installed roles according to the current globa
 | Installed role | Recommended operation | Expected evidence |
 | --- | --- | --- |
 | `print3d` | CAD dimensions, tolerances, materials, orientation and fit decisions | Critical measurements, assumptions, interface checks and proposed coupon |
-| `automation` | Reusable CadQuery builds, validation and local slicing helpers | Commands, exit status, report contents and output paths |
+| `automation` | Reusable builds, mesh checks and local slicing helpers | Commands, tool versions, exit status, report contents and output paths |
 | `computer_use` | Supported Fusion or PrusaSlicer UI operations | Observed target document, layer inspection and saved project path when requested |
-| `reviewer` | Independent review of consequential mounting, load or tolerance changes | Findings tied to source geometry, changes and validation evidence |
+| `reviewer` | Independent review of consequential mounting, load or tolerance changes | Findings tied to approved mating geometry, nominal assembly and export evidence |
 
 Give each worker an objective, input paths, owned files or application session, allowed actions, acceptance checks and stopping condition. Verify its actual tools before assigning Fusion or GUI work. One agent owns each live Fusion or PrusaSlicer session at a time. Keep ordinary workers as leaves and preserve others' edits.
 
-For example, ask `Use print3d with $fusion-print-design for the bracket, then use reviewer to inspect its critical dimensions and export evidence. Keep Fusion edits serialized.` Main can perform small tasks directly. Printer transfer, firmware changes and print start require authorization covering those actions.
+For example, ask `Use print3d to compare the proposed carrier against the approved NX3 interface, then use automation to verify the exported STL and scratch slices. Keep app edits serialized.` Main can keep tightly coupled CAD and preview iterations local. Printer transfer, firmware changes and print start require authorization covering those actions.
+
+## Lessons from the NX3 crab study
+
+The NX3 study reused the approved Sorcerer ear and crown receivers for 6 × 3 mm magnets. Separate keyed carriers kept the mounts behind the flat decorative faces. The nominal assembly exposed interference between the ear faces and the center mount, which was resolved by trimming the artwork at the lower inside corners. The original pocket geometry stayed at source scale.
+
+The study's seven STLs passed digital mesh checks. PrusaSlicer 2.9.7 on Windows crashed when its CLI loaded the full saved Cosmetic Parts and Functional Parts INIs. Scratch profiles using their geometry settings allowed slicing and layer review. The narrow mounts cleared the slicer's bed-adhesion warnings with a 4 mm outer brim in that check. Physical fit, bonding and retention remain unverified.
+
+### Recommended next improvements
+
+1. **Record the approved interface once.** Add a small per-family manifest for source paths and hashes, pocket counts and axes, assembly poses, expected clearance and attribution. Start with NX3. Have builders and validators read it so decorative variants share the same mounting evidence.
+2. **Automate the digital checks.** Give each scripted project a documented build and validation entry point. Reuse checks for reloaded STL solids, source-interface differences and nominal assembly collisions. Run the inexpensive geometry checks first, then render the changed views and slice the affected parts. Publish verified exports per revision when authorized.
+3. **Make slicer checks reproducible.** Add a versioned geometry-only slicer profile or a repeatable export of the effective settings. Record the nozzle, layer heights, orientation, brim, support settings and layer evidence. Keep machine-specific startup code and physical-printer configuration local.
+4. **Refine the existing skills before adding roles.** Extend `fusion-print-design` to cover preserving approved interfaces in scripted CAD and extend `voron-print-preflight` with the isolated CLI fallback. Use `print3d` for fit and source geometry, `automation` for repeatable checks, and `reviewer` when a mounting change merits independent review. Verify tool access and the coordination ledger before dispatch.
 
 ## Rebuild scripted models
 
@@ -87,7 +100,7 @@ Launch `C:\Program Files\Prusa3D\PrusaSlicer\prusa-slicer.exe`. Installed preset
 
 1. Select the `VictorCustom` printer and the appropriate print and filament presets. The saved printer profile specifies Klipper, a 0.5 mm nozzle and a 350 × 350 × 320 mm envelope. Confirm the actual nozzle and usable volume.
 2. Review the layers for thin details, continuous walls, unsupported islands, bridges and first-layer adhesion. Review imported 3MF printer settings and custom G-code.
-3. Print a fit coupon or mount strip for tolerance-critical interfaces. Use the intended material and settings and record the result.
+3. Before a physical run of a tolerance-critical part, test a fit coupon or mount strip in the intended material and settings. For digital-only work, record the physical fit check as pending.
 4. Save the configured project as 3MF and export reviewed G-code. Printer transfer and print start are separate actions.
 
 The printer's SSH endpoint is `192.168.1.37`. Use it for authorized diagnostics. Keep credentials and physical-printer secrets out of shared project files.

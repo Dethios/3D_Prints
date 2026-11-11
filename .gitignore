@@ -7,3 +7,8 @@ __pycache__/
 .env.*
 !.env.example
 .codex/coordination/
+
+# These retain their own Git history and upstreams.
+/GitHub-Mods/A4T/
+/GitHub-Mods/A4Tv2/
+/GitHub-Mods/whopping_Voron_mods/

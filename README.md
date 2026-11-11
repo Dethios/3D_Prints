@@ -7,10 +7,15 @@ CAD sources, printable models, reference assets and validation tools for project
 | Folder or file | Contents |
 | --- | --- |
 | [Magnetic treasure crab ears v3](magnetic_treasure_crab_ears_v3/README.md) | Earlier crab design with its own receivers, CadQuery source, STEP/STL parts, fit coupons and validation tools. |
-| [Sorcerer ears](sorcerer_ears_CAD_STL_v2/READ_ME_FIRST.txt) | NX3 and TimJ mounting variants, editable source, STEP/STL exports, fit strips and previews. |
-| `polymaker-refill-spool/` | Spool STEP and STL assets. |
-| `watch-5-5-pro-6-7-ultra-charging-stand.stl` | Standalone charging-stand mesh. |
-| `todolist_without_amsorcaslicer.3mf` | Existing slicer project. Check its embedded settings before using it with the Voron. |
+| [Sorcerer ears](Projects/sorcerer_ears_CAD_STL_v2/READ_ME_FIRST.txt) | NX3 and TimJ mounting variants, editable source, STEP/STL exports, fit strips and previews. |
+| [Treasure crab ears for NX3](Projects/magnetic_treasure_crab_ears_NX3/README.md) | NX3 mounting kit, print list and assembly notes. The design and print plates are in the local workspace. |
+| [Printables downloads](Printables/README.md) | Downloaded models grouped by listing, with maker notes and original filenames. |
+| [Custom projects](Projects/README.md) | Ear kits, sorcerer hat and the Chube Air UHF integration. |
+| [GitHub mods](GitHub-Mods/README.md) | Separate A4T, A4Tv2, and whopping Voron mods checkouts with their upstream history. |
+| [Printer files](Printer/README.md) | Rewiring parts, cutter mod, and calibration and test prints. |
+| [Star Wars source notes](Unverified-Downloads/README.md) | Candidate download pages, maker instructions, license evidence and local plate contents. |
+
+The local workspace includes print plates, downloaded models, GitHub checkouts and migration records. Download listings and local filenames are recorded in the linked indexes.
 
 ## Choose a design pathway
 
@@ -64,7 +69,7 @@ Use Python 3.12 and uv. From the workspace root, prepare a local environment.
 
 ```powershell
 uv venv --python 3.12 .venv
-uv pip install --python .venv/Scripts/python.exe -r sorcerer_ears_CAD_STL_v2/CAD/requirements.txt
+uv pip install --python .venv/Scripts/python.exe -r Projects/sorcerer_ears_CAD_STL_v2/CAD/requirements.txt
 .\.venv\Scripts\Activate.ps1
 ```
 
@@ -83,7 +88,7 @@ Inspect `validation_report.json`, including its `failures` array.
 
 ### Sorcerer ears
 
-From `sorcerer_ears_CAD_STL_v2/`, run the build and validator in order.
+From `Projects/sorcerer_ears_CAD_STL_v2/`, run the build and validator in order.
 
 ```powershell
 python CAD/build_reference_mounts.py
@@ -107,7 +112,7 @@ The printer's SSH endpoint is `192.168.1.37`. Use it for authorized diagnostics.
 
 ## License
 
-Original code and documentation are licensed under [MIT](LICENSES/MIT.txt). Original CAD designs, models and renders are licensed under [CC BY-NC-SA 4.0](LICENSES/CC-BY-NC-SA-4.0.txt). See [LICENSE](LICENSE) for scope, attribution and third-party exceptions. Retain asset-specific source notices when sharing models or derivatives.
+Original code and documentation are licensed under [MIT](LICENSES/MIT.txt). Original CAD designs, models and renders are licensed under [CC BY-NC-SA 4.0](LICENSES/CC-BY-NC-SA-4.0.txt). See [LICENSE](LICENSE) and the [third-party source index](LICENSES/THIRD-PARTY.md) for scope and asset-specific attribution.
 
 ## Contributions and attribution
 

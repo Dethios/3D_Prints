@@ -14,14 +14,17 @@ For Fusion-owned designs, verify the exported mesh independently. Use a project 
 
 Blender is optional and currently uninstalled. Use Fusion for CAD and assembly inspection and PrusaSlicer for layer review. Install Blender when rendered assembly images or the existing automated preview scripts are needed. The Blender commands below require that installation.
 
-Use Python 3.12 and a dedicated virtual environment. From the workspace root, `uv venv --python 3.12 .venv` and `uv pip install --python .venv/Scripts/python.exe -r sorcerer_ears_CAD_STL_v2/CAD/requirements.txt` prepare the pinned sorcerer environment. The requirements also include the crab project's documented CadQuery 2.7 and SciPy dependencies. Activate the environment or use its Python by absolute path. If the configured uv cache is inaccessible, use `uv --no-cache`.
+Use Python 3.12 and a dedicated virtual environment. From the workspace root, `uv venv --python 3.12 .venv` and `uv pip install --python .venv/Scripts/python.exe -r Projects/sorcerer_ears_CAD_STL_v2/CAD/requirements.txt` prepare the pinned sorcerer environment. The requirements also include the crab project's documented CadQuery 2.7 and SciPy dependencies. Activate the environment or use its Python by absolute path. If the configured uv cache is inaccessible, use `uv --no-cache`.
 
 Run each row from its project directory. Builds, validators and preview scripts can update files in that project. Use a scratch copy for comparisons or trial runs.
 
 | Project | Build and validate in order | Render the exported geometry |
 | --- | --- | --- |
-| Crab ears | `python cad/build_crab_v3.py`, then `python analysis/validate_v3.py` | `blender --background --python-exit-code 1 --python analysis/render_v3.py` |
-| Sorcerer ears | `python CAD/build_reference_mounts.py`, then `python CAD/check_and_position.py` | `blender --background --python-exit-code 1 --python CAD/render_reference_previews.py` |
+| Earlier crab ears (`magnetic_treasure_crab_ears_v3/`) | `python cad/build_crab_v3.py`, then `python analysis/validate_v3.py` | `blender --background --python-exit-code 1 --python analysis/render_v3.py` |
+| NX3 crab ears (`Projects/magnetic_treasure_crab_ears_NX3/`, local kit) | `python cad/build_crab_nx3.py` with the approved Sorcerer project beside it. Review `validation_report.json` and `slicer_preflight.json`. | Review the supplied previews and the assembly together. |
+| Sorcerer ears (`Projects/sorcerer_ears_CAD_STL_v2/`) | `python CAD/build_reference_mounts.py`, then `python CAD/check_and_position.py` | `blender --background --python-exit-code 1 --python CAD/render_reference_previews.py` |
+
+For printer rewiring, choose the PUG gland and mount independently for the intended location and hardware. The [rewiring index](Printer/rewiring/README.md) records the local options and maker pages.
 
 Use the full path to `blender.exe` if it is outside PATH. For a new Fusion design, import the exported print mesh in Blender when a visual review would help. Review decorative silhouettes, assembly clearances and orientation. Use the slicer for actual toolpaths.
 

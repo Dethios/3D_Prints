@@ -3,8 +3,12 @@
 ## Project Structure
 
 - `magnetic_treasure_crab_ears_v3/` contains the earlier crab design with its own receivers, generator, exports and validation scripts. Its mounts are a separate kit from the approved Sorcerer NX3 interface.
-- `sorcerer_ears_CAD_STL_v2/` contains Python generators and STEP files in `CAD/`, printable parts in `STL/`, and source meshes in `Reference_files/`. Read `READ_ME_FIRST.txt` before choosing the NX3 or TimJ mounting family.
-- `polymaker-refill-spool/` and the root-level STL and 3MF are standalone print assets.
+- `Projects/sorcerer_ears_CAD_STL_v2/` contains Python generators and STEP files in `CAD/`, printable parts in `STL/`, and source meshes in `Reference_files/`. Read `READ_ME_FIRST.txt` before choosing the NX3 or TimJ mounting family.
+- `Projects/magnetic_treasure_crab_ears_NX3/` contains the NX3 crab kit. Its generator reads the approved Sorcerer NX3 files from the sibling project directory.
+- `Printables/` groups downloaded STEP, STL and 3MF files by model, preserving their original filenames. `Printables/polymaker-refill-spool/` contains the spool assets.
+- `Projects/` contains owner-authored projects, including the sorcerer hat and Chube Hotend Integration. Preserve derivative references and keep project work separate from upstream checkouts.
+- `GitHub-Mods/` holds separate Git repositories. `Printer/` contains local printer parts and slicer work. `Unverified-Downloads/` holds models without confirmed attribution.
+- `Printer/rewiring/` groups PUG glands, PUG mounting options, cable management and other mounts. See its README for maker listings and match confidence.
 
 ## Build and Preview
 

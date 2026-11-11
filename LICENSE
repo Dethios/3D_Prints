@@ -35,11 +35,14 @@ designs, artwork, software and other assets retain their applicable licenses
 and notices. File-specific or project-specific attribution and license notices
 identify those terms. Retain those notices when sharing the affected material.
 
-In particular, consult sorcerer_ears_CAD_STL_v2/SOURCES_AND_ATTRIBUTION.txt
+In particular, consult Projects/sorcerer_ears_CAD_STL_v2/SOURCES_AND_ATTRIBUTION.txt
 for the NX3 and Tim J source families and their derivatives, and each crab-ear
 project's attribution or source notices for its mounting geometry and artwork.
 Existing CC BY 4.0 and CC BY-NC-SA 4.0 source grants remain applicable to their
 respective source material.
+
+See LICENSES/THIRD-PARTY.md for the source index for upstream printer mods,
+downloaded models, and project-specific references.
 
 Supplied reference illustrations whose rights have not been established are
 excluded from these grants. Standalone downloaded models, slicer projects and

@@ -21,6 +21,18 @@ Inspect the current PrusaSlicer printer, print and filament presets from the doc
 - Inspect the selected PrusaSlicer profile and actual layer preview for first-layer contact, missing thin features, wall continuity, unsupported islands, overhangs, bridge spans and access for support removal. Account for the nozzle and extrusion width when evaluating reliefs, stems, walls and holes. Assess orientation against load direction and visible finish.
 - Use local CLI help before constructing automated slicing commands. Work with scratch profile copies or an exported effective configuration. Preserve the user's installed presets and live plater. Check post-processing commands before executing them. A successful slice still needs layer review. If GUI access is unavailable, report the visual check as pending.
 
+## Apply Ellis's 45° layout and verify the saved 3MF
+
+For Voron plates, use +45° around Z as the starting layout after choosing the print face. Preserve 100% scale and multipart alignment. Check the part's strength direction, finish, overhangs and pocket access when choosing that face. Use [Ellis's layout guidance](../../../PRINT_WORKFLOW.md#ellis-45-voron-layout) for the rationale and source links.
+
+1. Rotate each object +45° around Z, keeping it flat on its chosen face. After arranging, verify the saved rotations, intended part quantities and bed bounds.
+2. Allow space for brims and airflow. Measure clearance between the footprints including brims. Choose brim width for each part's adhesion needs.
+3. Review seam placement on the actual toolpaths. If using rear seams, aim a suitable edge toward the back of the plate. Treat infill angle as a separate setting and inspect solid fill and bridges with the chosen combination.
+4. Save the project 3MF with the effective printer, print, filament and per-object settings. Reopen and slice that file directly to verify that its embedded settings and layout load correctly.
+5. Check the reopened project's bed size, nozzle, layer heights, filament, temperatures and startup G-code against the selected presets. Inspect first-layer contact for every part, selective brims, thin relief, wall continuity, seams and magnet-pocket bridges. Record any warnings, estimates and pending physical fit checks.
+
+The NX3 crab plate used +45° Z rotation, 0° base infill angle and 4 mm outer brims on its five mount pieces. Select infill and brim settings for the current geometry and material.
+
 ## Resolve fit and report
 
 For mounting or tolerance changes, use the matching magnet coupon or mount strip with the intended material, nozzle, orientation and print settings. Record measured fit and corrections. Apply dimensional corrections to the relevant feature, preserving the original interface scale. Choose material and wall settings for the part's loads and environment using available calibration evidence.

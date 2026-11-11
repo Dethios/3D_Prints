@@ -38,3 +38,14 @@ Open `C:\Program Files\Prusa3D\PrusaSlicer\prusa-slicer.exe`. Read the installed
 The printer's SSH endpoint is `192.168.1.37`. Use the `voron` alias when `ssh -G voron` resolves it to that address. Verify any changed host key through a trusted path. SSH is for printer diagnostics and is independent of local slicing. Keep private keys, physical-printer credentials and host settings out of design bundles.
 
 References: [PrusaSlicer 2.9 print and preview workflow](https://help.prusa3d.com/article/first-print-with-prusaslicer-2-9_1753) and [Saving projects as 3MF](https://help.prusa3d.com/article/saving-projects-as-3mf_1773).
+
+### Ellis 45° Voron layout
+
+Ellis rotates parts 45° in the bed plane mainly to make rear seam placement more predictable across a plate. A straight move at 45° on a CoreXY printer uses one motor, which can improve the finish of some straight walls. Use the angle as a starting point and judge it against the actual seam preview, part shape and available bed space. [Ellis's 45° profile notes](https://github.com/AndrewEllis93/Ellis-SuperSlicer-Profiles/blob/master/README.md#45-degree-profile-vs-standard-profile)
+
+1. Choose the print face for strength, surface finish, overhangs and magnet-pocket access. Apply +45° around Z in the slicer with the part flat on its chosen face and at 100% scale.
+2. Arrange the rotated parts with room for brims and airflow. After auto-arranging, recheck rotations, spacing and bed bounds. [Ellis's part spacing notes](https://github.com/AndrewEllis93/Ellis-SuperSlicer-Profiles/blob/master/README.md#part-spacing--plating)
+3. Check seam locations and layer paths. If using rear seams, aim a suitable edge toward the back of the plate and check where the slicer actually places the seam. Keep the tuned printer and filament settings. Treat the infill angle as a separate setting and review the resulting solid fill and bridges.
+4. Save the 3MF with the selected settings. Reopen and slice it to confirm the final layout, first-layer adhesion features and pocket bridges.
+
+The NX3 crab plate used +45° on all eight parts, 0° base infill angle, and 4 mm outer brims on the five mount pieces. Those settings were checked together in PrusaSlicer. Choose brim and infill settings for each future plate.

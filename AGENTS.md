@@ -33,6 +33,8 @@ Use `print3d` for a bounded CAD or fit assignment, `automation` for repeatable c
 
 Reload the exported STLs and check units, dimensions, watertightness, winding and expected solid counts. Inspect `validation_report.json` or `validation_results.json` after regenerating models. Review orientation, first-layer contact, thin relief, bridges, supports and multipart alignment in the slicer.
 
+When applying Ellis's Voron layout, establish the print face first, then rotate the objects +45° around Z as a starting point. Verify the final rotation and spacing after arranging, including brims. Review the seam and bridge toolpaths before saving the 3MF. See [Ellis's 45° Voron layout](PRINT_WORKFLOW.md#ellis-45-voron-layout) for the rationale and the NX3 example.
+
 When a saved print preset fails in the CLI, isolate which preset causes the failure. Preserve installed profiles. If a scratch profile allows a geometry check, record the slicer version, settings used, differences from the original preset and observed layer results. Keep geometry checks, slicer evidence and physical fit as separate results. If the user requests digital files or documentation only, record physical fit as pending. Before an eventual full print of a revised mount, test its coupon or strip with the actual mating parts.
 
 If submitting a change for review, use a short, action-oriented summary such as “Adjust crab-ear receiver clearance.” Identify the affected variant and dimensions, link any relevant issue, and include a CAD or slicer preview for visible changes.

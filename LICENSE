@@ -1,0 +1,49 @@
+Repository Licensing
+====================
+
+Copyright (c) 2026 Dethios, for original contributions.
+
+Original code and documentation
+-------------------------------
+
+Original software, build and validation scripts, Codex skills, configuration,
+and documentation contributed by Dethios are licensed under the MIT License.
+The full terms are in LICENSES/MIT.txt.
+
+Original designs and models
+--------------------------
+
+Original CAD designs, model geometry, print meshes, original artwork and
+renders contributed by Dethios are licensed under Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
+This includes original design contributions embodied in STEP, STL and 3MF
+files. The MIT grant for generator software does not extend to the separate
+model geometry or artwork it generates or incorporates.
+
+The full terms are in LICENSES/CC-BY-NC-SA-4.0.txt.
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Attribute these original contributions to Dethios, link to
+https://github.com/Dethios/3D_Prints, retain relevant notices and identify
+your modifications as required by the applicable license.
+
+Third-party material and exceptions
+----------------------------------
+
+These grants apply only to rights held by Dethios. Third-party source meshes,
+designs, artwork, software and other assets retain their applicable licenses
+and notices. File-specific or project-specific attribution and license notices
+identify those terms. Retain those notices when sharing the affected material.
+
+In particular, consult sorcerer_ears_CAD_STL_v2/SOURCES_AND_ATTRIBUTION.txt
+for the NX3 and Tim J source families and their derivatives, and each crab-ear
+project's attribution or source notices for its mounting geometry and artwork.
+Existing CC BY 4.0 and CC BY-NC-SA 4.0 source grants remain applicable to their
+respective source material.
+
+Supplied reference illustrations whose rights have not been established are
+excluded from these grants. Standalone downloaded models, slicer projects and
+bundled references with no recorded license receive no new permission from
+this file. Obtain their source terms before redistributing them.
+
+This file grants no additional trademark, patent or personality rights.

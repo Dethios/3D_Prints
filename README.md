@@ -92,6 +92,10 @@ Launch `C:\Program Files\Prusa3D\PrusaSlicer\prusa-slicer.exe`. Installed preset
 
 The printer's SSH endpoint is `192.168.1.37`. Use it for authorized diagnostics. Keep credentials and physical-printer secrets out of shared project files.
 
+## License
+
+Original code and documentation are licensed under [MIT](LICENSES/MIT.txt). Original CAD designs, models and renders are licensed under [CC BY-NC-SA 4.0](LICENSES/CC-BY-NC-SA-4.0.txt). See [LICENSE](LICENSE) for scope, attribution and third-party exceptions. Retain asset-specific source notices when sharing models or derivatives.
+
 ## Contributions and attribution
 
 Follow [Repository Guidelines](AGENTS.md). Preserve source geometry, attribution and license notices. Read each project's attribution file before redistributing its assets. Include the affected variant, critical dimensions, validation results and relevant previews when proposing a change.

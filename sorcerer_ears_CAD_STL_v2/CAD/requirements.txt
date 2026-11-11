@@ -1,0 +1,10 @@
+cadquery==2.7.0
+shapely==2.2.0
+numpy==2.3.5
+scipy==1.17.0
+matplotlib==3.10.8
+Pillow==13.0.0
+svgpathtools==1.7.2
+trimesh==5.2.0
+mapbox-earcut==2.1.0
+manifold3d==3.5.4

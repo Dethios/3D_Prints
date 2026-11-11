@@ -1,0 +1,853 @@
+{
+  "parts": {
+    "left_face": {
+      "triangles": 36376,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 11788.688653050558,
+      "bounds_mm": [
+        [
+          -49.999794006347656,
+          -44.17082977294922,
+          0.0
+        ],
+        [
+          49.999794006347656,
+          44.27399826049805,
+          2.4000000953674316
+        ]
+      ],
+      "mesh_volume_error_percent": 0.006763572550596787
+    },
+    "right_face": {
+      "triangles": 19702,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 10904.460103157338,
+      "bounds_mm": [
+        [
+          -49.999794006347656,
+          -44.17082977294922,
+          0.0
+        ],
+        [
+          49.999794006347656,
+          44.27399826049805,
+          2.4000000953674316
+        ]
+      ],
+      "mesh_volume_error_percent": 0.009836007916150255
+    },
+    "rear_magnet_carrier_print_two": {
+      "triangles": 5976,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 4434.149135409295,
+      "bounds_mm": [
+        [
+          -37.30995178222656,
+          -44.17082977294922,
+          0.0
+        ],
+        [
+          37.30995178222656,
+          -31.024442672729492,
+          10.800000190734863
+        ]
+      ],
+      "mesh_volume_error_percent": 0.052235973795539514
+    },
+    "tall_eyes": {
+      "triangles": 4644,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 5005.922606723933,
+      "bounds_mm": [
+        [
+          -34.49825668334961,
+          65.5,
+          0.0
+        ],
+        [
+          34.49825668334961,
+          119.99877166748047,
+          4.199999809265137
+        ]
+      ],
+      "mesh_volume_error_percent": 0.011985544672864315
+    },
+    "magnet_fit_coupon": {
+      "triangles": 2268,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 1824.4371237265523,
+      "bounds_mm": [
+        [
+          -15.0,
+          0.0,
+          0.0
+        ],
+        [
+          15.0,
+          7.0,
+          10.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.003026178368369767
+    },
+    "radius_fit_R55": {
+      "triangles": 324,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 236.64720918897547,
+      "bounds_mm": [
+        [
+          -34.0,
+          43.23193359375,
+          0.0
+        ],
+        [
+          34.0,
+          56.79145812988281,
+          1.7999999523162842
+        ]
+      ],
+      "mesh_volume_error_percent": 0.017356444748906467
+    },
+    "radius_fit_R65": {
+      "triangles": 288,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 231.1608956358044,
+      "bounds_mm": [
+        [
+          -34.0,
+          55.398555755615234,
+          0.0
+        ],
+        [
+          34.0,
+          66.79009246826172,
+          1.7999999523162842
+        ]
+      ],
+      "mesh_volume_error_percent": 0.009797633956234616
+    },
+    "radius_fit_R75": {
+      "triangles": 268,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 228.00735066808798,
+      "bounds_mm": [
+        [
+          -34.0,
+          66.85057830810547,
+          0.0
+        ],
+        [
+          34.0,
+          76.7889175415039,
+          1.7999999523162842
+        ]
+      ],
+      "mesh_volume_error_percent": 0.012209955068893509
+    },
+    "ear_adapter_W10_R55_print_two": {
+      "triangles": 4496,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 4480.012884569737,
+      "bounds_mm": [
+        [
+          -34.0,
+          66.35908508300781,
+          0.0
+        ],
+        [
+          34.0,
+          84.0,
+          10.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.04461364545929277
+    },
+    "eye_adapter_W10_R55": {
+      "triangles": 1504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 2132.2933074168445,
+      "bounds_mm": [
+        [
+          -13.0,
+          63.54446792602539,
+          0.0
+        ],
+        [
+          13.0,
+          73.5,
+          10.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.06726736148929627
+    },
+    "ear_adapter_W15_R55_print_two": {
+      "triangles": 4498,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 6954.1443429220135,
+      "bounds_mm": [
+        [
+          -34.0,
+          66.35908508300781,
+          0.0
+        ],
+        [
+          34.0,
+          84.0,
+          15.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.02590424268161404
+    },
+    "eye_adapter_W15_R55": {
+      "triangles": 1504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 3292.012104381088,
+      "bounds_mm": [
+        [
+          -13.0,
+          63.54446792602539,
+          0.0
+        ],
+        [
+          13.0,
+          73.5,
+          15.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.06477487598639173
+    },
+    "ear_adapter_W20_R55_print_two": {
+      "triangles": 4496,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 9429.047224567994,
+      "bounds_mm": [
+        [
+          -34.0,
+          66.35908508300781,
+          0.0
+        ],
+        [
+          34.0,
+          84.0,
+          20.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.00989410547882327
+    },
+    "eye_adapter_W20_R55": {
+      "triangles": 1504,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 4451.730930131584,
+      "bounds_mm": [
+        [
+          -13.0,
+          63.54446792602539,
+          0.0
+        ],
+        [
+          13.0,
+          73.5,
+          20.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.0635817144870294
+    },
+    "ear_adapter_W10_R65_print_two": {
+      "triangles": 4468,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 4048.3841639731886,
+      "bounds_mm": [
+        [
+          -34.0,
+          68.51585388183594,
+          0.0
+        ],
+        [
+          34.0,
+          84.0,
+          10.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.03316645788233332
+    },
+    "eye_adapter_W10_R65": {
+      "triangles": 1496,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 2111.625999439661,
+      "bounds_mm": [
+        [
+          -13.0,
+          63.78879165649414,
+          0.0
+        ],
+        [
+          13.0,
+          73.5,
+          10.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.07735142972419026
+    },
+    "ear_adapter_W15_R65_print_two": {
+      "triangles": 4470,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 6306.7012620272,
+      "bounds_mm": [
+        [
+          -34.0,
+          68.51585388183594,
+          0.0
+        ],
+        [
+          34.0,
+          84.0,
+          15.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.012921181668391568
+    },
+    "eye_adapter_W15_R65": {
+      "triangles": 1496,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 3261.011142415313,
+      "bounds_mm": [
+        [
+          -13.0,
+          63.78879165649414,
+          0.0
+        ],
+        [
+          13.0,
+          73.5,
+          15.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.07454537458288248
+    },
+    "ear_adapter_W20_R65_print_two": {
+      "triangles": 4468,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 8565.789783374907,
+      "bounds_mm": [
+        [
+          -34.0,
+          68.51585388183594,
+          0.0
+        ],
+        [
+          34.0,
+          84.0,
+          20.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.004538964835761797
+    },
+    "eye_adapter_W20_R65": {
+      "triangles": 1496,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 4410.396314177219,
+      "bounds_mm": [
+        [
+          -13.0,
+          63.78879165649414,
+          0.0
+        ],
+        [
+          13.0,
+          73.5,
+          20.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.07320258989984495
+    },
+    "ear_adapter_W10_R75_print_two": {
+      "triangles": 4448,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 3747.555808245192,
+      "bounds_mm": [
+        [
+          -34.0,
+          69.96275329589844,
+          0.0
+        ],
+        [
+          34.0,
+          84.0,
+          10.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.015424174867950153
+    },
+    "eye_adapter_W10_R75": {
+      "triangles": 1488,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 2096.7930461252427,
+      "bounds_mm": [
+        [
+          -13.0,
+          63.96627426147461,
+          0.0
+        ],
+        [
+          13.0,
+          73.5,
+          10.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.0963320105737473
+    },
+    "ear_adapter_W15_R75_print_two": {
+      "triangles": 4450,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 5855.458728435202,
+      "bounds_mm": [
+        [
+          -34.0,
+          69.96275329589844,
+          0.0
+        ],
+        [
+          34.0,
+          84.0,
+          15.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.0057049835918685805
+    },
+    "eye_adapter_W15_R75": {
+      "triangles": 1488,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 3238.761712443689,
+      "bounds_mm": [
+        [
+          -13.0,
+          63.96627426147461,
+          0.0
+        ],
+        [
+          13.0,
+          73.5,
+          15.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.09295716303200231
+    },
+    "ear_adapter_W20_R75_print_two": {
+      "triangles": 4448,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 7964.133071918904,
+      "bounds_mm": [
+        [
+          -34.0,
+          69.96275329589844,
+          0.0
+        ],
+        [
+          34.0,
+          84.0,
+          20.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.024174538773118783
+    },
+    "eye_adapter_W20_R75": {
+      "triangles": 1488,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 4380.730407548385,
+      "bounds_mm": [
+        [
+          -13.0,
+          63.96627426147461,
+          0.0
+        ],
+        [
+          13.0,
+          73.5,
+          20.0
+        ]
+      ],
+      "mesh_volume_error_percent": 0.09134256404658099
+    }
+  },
+  "assembly_intersections_mm3": {
+    "left_face / right_face": 0.0,
+    "left_face / left_carrier": 0.0,
+    "left_face / right_carrier": 0.0,
+    "left_face / left_adapter": 0.0,
+    "left_face / right_adapter": 0.0,
+    "left_face / eyes": 0.0,
+    "left_face / eye_adapter": 0.0,
+    "left_face / band_reference": 0.0,
+    "right_face / left_carrier": 0.0,
+    "right_face / right_carrier": 0.0,
+    "right_face / left_adapter": 0.0,
+    "right_face / right_adapter": 0.0,
+    "right_face / eyes": 0.0,
+    "right_face / eye_adapter": 0.0,
+    "right_face / band_reference": 0.0,
+    "left_carrier / right_carrier": 0.0,
+    "left_carrier / left_adapter": 0.0,
+    "left_carrier / right_adapter": 0.0,
+    "left_carrier / eyes": 0.0,
+    "left_carrier / eye_adapter": 0.0,
+    "left_carrier / band_reference": 0.0,
+    "right_carrier / left_adapter": 0.0,
+    "right_carrier / right_adapter": 0.0,
+    "right_carrier / eyes": 0.0,
+    "right_carrier / eye_adapter": 0.0,
+    "right_carrier / band_reference": 0.0,
+    "left_adapter / right_adapter": 0.0,
+    "left_adapter / eyes": 0.0,
+    "left_adapter / eye_adapter": 0.0,
+    "left_adapter / band_reference": 0.0,
+    "right_adapter / eyes": 0.0,
+    "right_adapter / eye_adapter": 0.0,
+    "right_adapter / band_reference": 0.0,
+    "eyes / eye_adapter": 0.0,
+    "eyes / band_reference": 0.0,
+    "eye_adapter / band_reference": 0.0
+  },
+  "failures": [],
+  "physical_tested": false,
+  "magnet_fit_interference": [],
+  "eye_total_height_mm": 54.49877166748047,
+  "stem_width_mm": 6.5,
+  "stem_backing_thickness_mm": 3.0,
+  "color_regions": {
+    "left_face_blue": {
+      "triangles": 6812,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 497.13789732829605,
+      "bounds_mm": [
+        [
+          -31.60677146911621,
+          4.56666898727417,
+          1.7999999523162842
+        ],
+        [
+          14.550615310668945,
+          34.7700309753418,
+          2.4000000953674316
+        ]
+      ]
+    },
+    "left_face_gold": {
+      "triangles": 46236,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 13,
+      "volume_mm3": 1026.5405680717872,
+      "bounds_mm": [
+        [
+          -49.9974250793457,
+          -44.010009765625,
+          1.7999999523162842
+        ],
+        [
+          33.44219970703125,
+          34.61757278442383,
+          2.4000000953674316
+        ]
+      ]
+    },
+    "left_face_purple": {
+      "triangles": 10268,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 10,
+      "volume_mm3": 9458.428754514192,
+      "bounds_mm": [
+        [
+          -49.999794006347656,
+          -44.17082977294922,
+          0.0
+        ],
+        [
+          49.999794006347656,
+          44.27399826049805,
+          2.4000000953674316
+        ]
+      ]
+    },
+    "left_face_violet": {
+      "triangles": 3000,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 6,
+      "volume_mm3": 806.865581560322,
+      "bounds_mm": [
+        [
+          -21.699159622192383,
+          -28.54949188232422,
+          1.7999999523162842
+        ],
+        [
+          41.85677719116211,
+          34.04147720336914,
+          2.4000000953674316
+        ]
+      ]
+    },
+    "right_face_blue": {
+      "triangles": 7048,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 7,
+      "volume_mm3": 658.8754812321093,
+      "bounds_mm": [
+        [
+          -14.55179214477539,
+          -33.735069274902344,
+          1.7999999523162842
+        ],
+        [
+          31.60677146911621,
+          34.7700309753418,
+          2.4000000953674316
+        ]
+      ]
+    },
+    "right_face_gold": {
+      "triangles": 25898,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 13,
+      "volume_mm3": 993.9524741290261,
+      "bounds_mm": [
+        [
+          -33.44219970703125,
+          -44.010009765625,
+          1.7999999523162842
+        ],
+        [
+          49.9979133605957,
+          34.61757278442383,
+          2.4000000953674316
+        ]
+      ]
+    },
+    "right_face_purple": {
+      "triangles": 6500,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 3,
+      "volume_mm3": 8757.858988600354,
+      "bounds_mm": [
+        [
+          -49.999794006347656,
+          -44.17082977294922,
+          0.0
+        ],
+        [
+          49.999794006347656,
+          44.27399826049805,
+          2.4000000953674316
+        ]
+      ]
+    },
+    "right_face_violet": {
+      "triangles": 2840,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 494.30292623152485,
+      "bounds_mm": [
+        [
+          -41.85677719116211,
+          -2.5006768703460693,
+          1.7999999523162842
+        ],
+        [
+          9.036441802978516,
+          34.04147720336914,
+          2.4000000953674316
+        ]
+      ]
+    },
+    "tall_eyes_black": {
+      "triangles": 2752,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 2,
+      "volume_mm3": 69.19430158534219,
+      "bounds_mm": [
+        [
+          -23.7993106842041,
+          101.10079193115234,
+          3.0
+        ],
+        [
+          23.7993106842041,
+          108.0,
+          3.5999999046325684
+        ]
+      ]
+    },
+    "tall_eyes_purple": {
+      "triangles": 3916,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 1,
+      "volume_mm3": 4785.555196742286,
+      "bounds_mm": [
+        [
+          -34.49825668334961,
+          65.5,
+          0.0
+        ],
+        [
+          34.49825668334961,
+          119.99877166748047,
+          4.199999809265137
+        ]
+      ]
+    },
+    "tall_eyes_white": {
+      "triangles": 3488,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "orientation_errors": 0,
+      "degenerate_faces": 0,
+      "components": 6,
+      "volume_mm3": 151.17402864359786,
+      "bounds_mm": [
+        [
+          -32.4991340637207,
+          97.0015869140625,
+          3.0
+        ],
+        [
+          32.4991340637207,
+          108.0,
+          3.5999999046325684
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fusion Print Design"
+  short_description: "Design and verify printable parts through Fusion MCP"
+  default_prompt: "Use $fusion-print-design to create or revise the requested part with Fusion MCP and verify the resulting CAD and print exports."

@@ -1,0 +1,477 @@
+{
+  "status": "PASS",
+  "stl_file_count": 22,
+  "step_file_count": 20,
+  "mesh_checks": [
+    {
+      "family": "NX3",
+      "file": "center_hat_blue_base.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 1,
+      "expected": "one connected solid",
+      "size_mm": [
+        40.0,
+        63.69346904754639,
+        10.0
+      ],
+      "volume_mm3": 4712.081985473407,
+      "solid_equivalent_PLA_g_1p24": 5.842981661987025,
+      "sha256": "ae75e67d27aacbc9fa27fe6b21ec3c07b5a809847956bbe8fed538cb7d0a1f09"
+    },
+    {
+      "family": "NX3",
+      "file": "center_hat_assembled.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 1,
+      "expected": "one connected solid",
+      "size_mm": [
+        40.0,
+        63.69346904754639,
+        10.0
+      ],
+      "volume_mm3": 4816.893653998833,
+      "solid_equivalent_PLA_g_1p24": 5.972948130958552,
+      "sha256": "5082756f63a01d312564cbec609e6f2711857dc13ca633c753e9f06b00deca15"
+    },
+    {
+      "family": "NX3",
+      "file": "center_hat_glue_base_3_of_5.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 1,
+      "expected": "one connected solid",
+      "size_mm": [
+        40.0,
+        8.547883987426758,
+        10.0
+      ],
+      "volume_mm3": 1871.8908771049555,
+      "solid_equivalent_PLA_g_1p24": 2.3211446876101447,
+      "sha256": "3438e81863daaa49197a9800451206b31cc08969c20357548fbfccca7727532d"
+    },
+    {
+      "family": "NX3",
+      "file": "glue_on_base_SOURCE_GEOMETRY.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 1,
+      "expected": "one connected solid",
+      "size_mm": [
+        82.5845832824707,
+        19.120675563812256,
+        10.0
+      ],
+      "volume_mm3": 4164.430265553879,
+      "solid_equivalent_PLA_g_1p24": 5.16389352928681,
+      "sha256": "da266036545d519201ea5a7a820a934d291cf9bc8f4e35c120d72625074806e6"
+    },
+    {
+      "family": "NX3",
+      "file": "right_mouse_assembled.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 1,
+      "expected": "one connected solid",
+      "size_mm": [
+        99.98793029785156,
+        88.54192861914635,
+        10.0
+      ],
+      "volume_mm3": 20941.499535512517,
+      "solid_equivalent_PLA_g_1p24": 25.96745942403552,
+      "sha256": "75ccf4cebb2417168308a8c4c0652d16a35a06f2971b7d4bd7bc957679c3815f"
+    },
+    {
+      "family": "NX3",
+      "file": "center_hat_raised_white.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 4,
+      "expected": "separate artwork islands",
+      "size_mm": [
+        20.56229019165039,
+        34.84164237976074,
+        1.2000000476837158
+      ],
+      "volume_mm3": 104.81166747454233,
+      "solid_equivalent_PLA_g_1p24": 0.1299664676684325,
+      "sha256": "a43055c2225bff353cbf731adcea2449885d98b6d4135f682fcfb84e28ba3de2"
+    },
+    {
+      "family": "NX3",
+      "file": "left_brooms_raised_gold.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 7,
+      "expected": "separate artwork islands",
+      "size_mm": [
+        99.98793029785156,
+        73.99775981903076,
+        1.2000000476837158
+      ],
+      "volume_mm3": 1732.9384066855075,
+      "solid_equivalent_PLA_g_1p24": 2.1488436242900293,
+      "sha256": "d7e59f004ec07aab5a2c78cc524a3a5cff54a0196644a6ef10e3746ef58f4ace"
+    },
+    {
+      "family": "NX3",
+      "file": "left_brooms_assembled.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 1,
+      "expected": "one connected solid",
+      "size_mm": [
+        99.98793029785156,
+        88.54192861914635,
+        10.0
+      ],
+      "volume_mm3": 20128.237373424683,
+      "solid_equivalent_PLA_g_1p24": 24.959014343046608,
+      "sha256": "a0c0158f0d221438fea71b2ba7f5820740b70962f7141898c86a4ae7963e684c"
+    },
+    {
+      "family": "NX3",
+      "file": "right_mouse_raised_gold.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 10,
+      "expected": "separate artwork islands",
+      "size_mm": [
+        99.98793029785156,
+        73.99775981903076,
+        1.2000000476837158
+      ],
+      "volume_mm3": 2546.200568773341,
+      "solid_equivalent_PLA_g_1p24": 3.1572887052789427,
+      "sha256": "559ad74ad9369091e1e5a725b3fb3a9d6f0b54f447fcd3eee0023ef7e7c1ae34"
+    },
+    {
+      "family": "NX3",
+      "file": "ear_blue_base.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 1,
+      "expected": "one connected solid",
+      "size_mm": [
+        99.98793029785156,
+        88.54192861914635,
+        10.0
+      ],
+      "volume_mm3": 18395.29896619369,
+      "solid_equivalent_PLA_g_1p24": 22.810170718080176,
+      "sha256": "12a80c1a5a516324b5e868ab0f93bf97cf3b7772234236dd2c5ff42c7911f90e"
+    },
+    {
+      "family": "NX3",
+      "file": "mount_test_strip.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 1,
+      "expected": "one connected solid",
+      "size_mm": [
+        87.32793045043945,
+        14.244168609380722,
+        10.0
+      ],
+      "volume_mm3": 5434.777831878034,
+      "solid_equivalent_PLA_g_1p24": 6.739124511528762,
+      "sha256": "7958078e5ea05805ca2fa3217834de1b199dd1fcffb0a824cc7a5de00a6fe996"
+    },
+    {
+      "family": "TimJ",
+      "file": "center_hat_blue_base.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 1,
+      "expected": "one connected solid",
+      "size_mm": [
+        49.0,
+        60.71273708343506,
+        10.0
+      ],
+      "volume_mm3": 3789.449965478457,
+      "solid_equivalent_PLA_g_1p24": 4.698917957193287,
+      "sha256": "4afdd2a3e5c4af719072d0bab2af63e4070568f5a99e0f008abfeb24976c53be"
+    },
+    {
+      "family": "TimJ",
+      "file": "center_hat_assembled.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 1,
+      "expected": "one connected solid",
+      "size_mm": [
+        49.0,
+        60.71273708343506,
+        10.0
+      ],
+      "volume_mm3": 3894.2616360644715,
+      "solid_equivalent_PLA_g_1p24": 4.828884428719944,
+      "sha256": "d247204c0c5c8693c0353c504f9416708daa1ab3b973794b8ae367a424890a4c"
+    },
+    {
+      "family": "TimJ",
+      "file": "center_hat_glue_base_3_of_5.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 1,
+      "expected": "one connected solid",
+      "size_mm": [
+        49.0,
+        7.228324890136719,
+        10.0
+      ],
+      "volume_mm3": 1727.4863140023233,
+      "solid_equivalent_PLA_g_1p24": 2.142083029362881,
+      "sha256": "54d010741fdb321c099d270750575a8811ddd59b8b02aa8208603a116bb5e30d"
+    },
+    {
+      "family": "TimJ",
+      "file": "glue_on_base_SOURCE_GEOMETRY.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 1,
+      "expected": "one connected solid",
+      "size_mm": [
+        69.1103515625,
+        9.666912078857422,
+        10.0
+      ],
+      "volume_mm3": 2239.2644536391867,
+      "solid_equivalent_PLA_g_1p24": 2.7766879225125916,
+      "sha256": "5fb472ae8975bfc084770e612b28b1bbc6322dbc36f47b72873afee16d485130"
+    },
+    {
+      "family": "TimJ",
+      "file": "right_mouse_assembled.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 1,
+      "expected": "one connected solid",
+      "size_mm": [
+        100.0,
+        86.08431434631348,
+        10.0
+      ],
+      "volume_mm3": 18717.13769580527,
+      "solid_equivalent_PLA_g_1p24": 23.209250742798538,
+      "sha256": "ab0050e0d1d16c62db7e0fb54f90bd25317a9c11c8d733f3aabc9e63c1260e40"
+    },
+    {
+      "family": "TimJ",
+      "file": "center_hat_raised_white.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 4,
+      "expected": "separate artwork islands",
+      "size_mm": [
+        20.56229019165039,
+        34.84164237976074,
+        1.2000000476837158
+      ],
+      "volume_mm3": 104.81166953513132,
+      "solid_equivalent_PLA_g_1p24": 0.12996647022356284,
+      "sha256": "2699b3b71e9cf5286690b873dc3e24edb815660c0a8b54dc3914fb25525c5689"
+    },
+    {
+      "family": "TimJ",
+      "file": "left_brooms_raised_gold.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 7,
+      "expected": "separate artwork islands",
+      "size_mm": [
+        100.0,
+        69.69999998807907,
+        1.2000000476837158
+      ],
+      "volume_mm3": 1581.1476450930295,
+      "solid_equivalent_PLA_g_1p24": 1.9606230799153566,
+      "sha256": "fa486a4f20ff985f61bf9d0ae17a8de106e23e29c879f94350895faa717c373b"
+    },
+    {
+      "family": "TimJ",
+      "file": "left_brooms_assembled.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 1,
+      "expected": "one connected solid",
+      "size_mm": [
+        100.0,
+        86.08431434631348,
+        10.0
+      ],
+      "volume_mm3": 17998.53927235699,
+      "solid_equivalent_PLA_g_1p24": 22.318188697722668,
+      "sha256": "f297f2943ef928367456ef50f7c99884f4c287549a41fd7149a57f9e64abf780"
+    },
+    {
+      "family": "TimJ",
+      "file": "right_mouse_raised_gold.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 10,
+      "expected": "separate artwork islands",
+      "size_mm": [
+        100.0,
+        69.69999998807907,
+        1.2000000476837158
+      ],
+      "volume_mm3": 2299.7460685413107,
+      "solid_equivalent_PLA_g_1p24": 2.851685124991225,
+      "sha256": "e4a1407d1e1401652e5f4bfa2d551a3a10a6db7eb503a0c2851bb2f09586ab1d"
+    },
+    {
+      "family": "TimJ",
+      "file": "ear_blue_base.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 1,
+      "expected": "one connected solid",
+      "size_mm": [
+        100.0,
+        86.08431434631348,
+        10.0
+      ],
+      "volume_mm3": 16417.391627534224,
+      "solid_equivalent_PLA_g_1p24": 20.357565618142438,
+      "sha256": "2e1ec39588cd544f951e4ff3c43b98fb754f676fb1b79f321bdcbc69f181e132"
+    },
+    {
+      "family": "TimJ",
+      "file": "mount_test_strip.stl",
+      "watertight": true,
+      "winding_consistent": true,
+      "solid_components": 1,
+      "expected": "one connected solid",
+      "size_mm": [
+        91.56885528564453,
+        16.084314346313477,
+        10.0
+      ],
+      "volume_mm3": 3544.054484753929,
+      "solid_equivalent_PLA_g_1p24": 4.394627561094872,
+      "sha256": "b04cb4fdf40f160200d76153e6e4e0d9ae97bba7159e26a0cc92e0da540245f0"
+    }
+  ],
+  "step_checks": [
+    {
+      "file": "CAD/NX3/center_hat_assembled.step",
+      "valid_solids": 1
+    },
+    {
+      "file": "CAD/NX3/center_hat_blue_base.step",
+      "valid_solids": 1
+    },
+    {
+      "file": "CAD/NX3/center_hat_glue_base_3_of_5.step",
+      "valid_solids": 1
+    },
+    {
+      "file": "CAD/NX3/center_hat_raised_white.step",
+      "valid_solids": 4
+    },
+    {
+      "file": "CAD/NX3/ear_blue_base.step",
+      "valid_solids": 1
+    },
+    {
+      "file": "CAD/NX3/glue_on_base_SOURCE_GEOMETRY.step",
+      "valid_solids": 1
+    },
+    {
+      "file": "CAD/NX3/left_brooms_layer_assembly.step",
+      "valid_solids": 8
+    },
+    {
+      "file": "CAD/NX3/left_brooms_raised_gold.step",
+      "valid_solids": 7
+    },
+    {
+      "file": "CAD/NX3/right_mouse_layer_assembly.step",
+      "valid_solids": 11
+    },
+    {
+      "file": "CAD/NX3/right_mouse_raised_gold.step",
+      "valid_solids": 10
+    },
+    {
+      "file": "CAD/TimJ/center_hat_assembled.step",
+      "valid_solids": 1
+    },
+    {
+      "file": "CAD/TimJ/center_hat_blue_base.step",
+      "valid_solids": 1
+    },
+    {
+      "file": "CAD/TimJ/center_hat_glue_base_3_of_5.step",
+      "valid_solids": 1
+    },
+    {
+      "file": "CAD/TimJ/center_hat_raised_white.step",
+      "valid_solids": 4
+    },
+    {
+      "file": "CAD/TimJ/ear_blue_base.step",
+      "valid_solids": 1
+    },
+    {
+      "file": "CAD/TimJ/glue_on_base_SOURCE_GEOMETRY.step",
+      "valid_solids": 1
+    },
+    {
+      "file": "CAD/TimJ/left_brooms_layer_assembly.step",
+      "valid_solids": 8
+    },
+    {
+      "file": "CAD/TimJ/left_brooms_raised_gold.step",
+      "valid_solids": 7
+    },
+    {
+      "file": "CAD/TimJ/right_mouse_layer_assembly.step",
+      "valid_solids": 11
+    },
+    {
+      "file": "CAD/TimJ/right_mouse_raised_gold.step",
+      "valid_solids": 10
+    }
+  ],
+  "source_compatibility_checks": {
+    "NX3": {
+      "protected_mount_missing_mm3": 2.3156712084452618e-05,
+      "protected_mount_extra_mm3": 2.4577781573498214e-05,
+      "source_mount_intersection_with_base_mm3": 1.2609550313066695,
+      "revised_mount_intersection_with_base_mm3": 1.2609550313577529,
+      "all_5_original_bores_preserved": true,
+      "center_hat_uses_3_original_bores": true,
+      "nominal_accessory_intersections_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nominal_center_adapter_front_bond_projection_mm2": 144.36075938909514
+    },
+    "TimJ": {
+      "protected_mount_missing_mm3": 5.153897583820855e-07,
+      "protected_mount_extra_mm3": 8.395157275723856e-06,
+      "source_mount_intersection_with_base_mm3": 0.0,
+      "revised_mount_intersection_with_base_mm3": 0.0,
+      "all_5_original_bores_preserved": true,
+      "center_hat_uses_3_original_bores": true,
+      "nominal_accessory_intersections_mm3": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nominal_center_adapter_front_bond_projection_mm2": 170.6741781049343
+    }
+  },
+  "limitations": [
+    "No physical print or retention-force testing.",
+    "Reference meshes themselves have small tessellation overlaps; compare revised geometry against that baseline.",
+    "NX3 and Tim J interfaces are separate; do not mix their bases and ears.",
+    "Center hat uses a trimmed three-position subset of each source interface; front-mounted adapter needs physical bonding and clearance checks."
+  ]
+}

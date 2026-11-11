@@ -1,0 +1,59 @@
+REFERENCE SOURCES AND MODIFICATIONS
+
+NX3 mounting family:
+Original design: NX3CREATIONSLLC / Nx3CreationsLLC.
+Printables reupload and larger-headband remix: dressyspider.
+https://www.printables.com/model/413543-disney-interchangeable-headband-and-ears
+https://www.printables.com/model/413611-larger-disney-interchangeable-headband
+https://cults3d.com/en/3d-model/fashion/disney-interchangeable-headband-and-ears
+The Printables pages identify Creative Commons Attribution 4.0.
+License: http://creativecommons.org/licenses/by/4.0/
+
+NX3 glue-on base remix: Titanhunter.
+https://www.printables.com/model/1907777-disney-interchangeable-headband-adapter-5-magnet-h
+Source file: Headband - Disney 5 Magnets.stl.
+The author describes cutting the magnet section from the original and
+smoothing its edges for gluing onto an existing headband.
+License identified on source page: Creative Commons Attribution 4.0.
+http://creativecommons.org/licenses/by/4.0/
+
+Tim J mounting family:
+Original blank and glue-on base: Tim J.
+https://www.printables.com/model/82037-interchangeable-mickey-ears
+Original files: MickeyEar_Blank.stl and MickeyEar_Base.stl.
+License identified on source page: Creative Commons Attribution-
+NonCommercial-ShareAlike 4.0 International.
+http://creativecommons.org/licenses/by-nc-sa/4.0/
+Tim J-derived geometry in this package is provided under that same license.
+
+Third supplied reference used to establish its mounting family:
+Interchangeable Mickey Ear - Pretzel, by Sprzout.
+https://www.printables.com/model/765654-interchangeable-mickey-ear-pretzel
+The model description specifies five positions and 6 x 3 mm magnets.
+Its related waffle model explicitly credits Tim J's blank and base:
+https://www.printables.com/model/748877-interchangeable-mickey-waffle-ear
+No pretzel or waffle decorative geometry was used in the finished models.
+
+MODIFICATIONS IN THIS PACKAGE
+- Original source meshes are retained in Reference_files with their authors
+  credited above; descriptive local filenames identify the downloaded files.
+- Functional lower mounting strips were clipped from the original ear files.
+  A disconnected decorative shoe fragment in the NX3 crop was excluded.
+- Source mounting strips were not scaled. Their curves, bore diameters,
+  depths, spacing and axes were not replaced by guessed dimensions.
+- A thin blue backing and the previously selected mouse/broom artwork were
+  added above the functional mounting strips. Artwork was counter-rotated
+  and fitted without altering the mounting interface.
+- A 2 mm backing infill, inset 1.1 mm from the outline, closes the visual gap
+  above the source bar. The source surfaces above the pocket-floor height
+  and all original bores remain intact. Base-interference checks verify that
+  this infill introduces no new interference with the source glue-on base.
+- The NX3 glue base was rigidly rotated/translated into the ear's coordinate
+  system. The Tim J glue base retains its original coordinates.
+- Center hat strips/bases use the central three original magnet locations,
+  with the outer two locations trimmed away. Their center placement is an
+  adaptation for this project, not an original feature of the references.
+- CAD STEP mounting surfaces are sewn faceted solids derived from the STL
+  surfaces. The generator, source hashes and geometry report document this.
+
+No endorsement by any source author or brand is implied.

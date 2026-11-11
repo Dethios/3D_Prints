@@ -1,0 +1,266 @@
+{
+  "NX3": {
+    "source_ear": "NX3_Mickey_Fantasia_source.stl",
+    "source_glue_base": "Titanhunter_NX3_glue_adapter_source.stl",
+    "source_ear_sha256": "1431df5616b21150c17ba5f6c6810d3c6c8c543283fc475149dda1db8e987d8a",
+    "source_base_sha256": "3bfaa466bcfb601e7cc71d802ed64fc29d6633df399fbd4d920773c9ab0a3b77",
+    "mount_geometry_method": "Unscaled original mesh clipped below specified Y; base rigidly transformed only",
+    "source_x_translation_mm": -0.52529784,
+    "protected_region_y_max_mm": 14.4,
+    "protected_region_z_min_mm": 2.01,
+    "non_mount_artwork_fragments_removed": 1,
+    "protected_mount_missing_volume_mm3": 2.3156712084452618e-05,
+    "protected_mount_extra_volume_mm3": 2.4577781573498214e-05,
+    "bore_caps": [
+      {
+        "center": [
+          -25.717388020370944,
+          5.89228441447333,
+          5.000000024741849
+        ],
+        "normal": [
+          0.29475449900020134,
+          -0.9555730141223686,
+          -4.812632788205345e-07
+        ]
+      },
+      {
+        "center": [
+          -13.003937933191438,
+          8.794046863240084,
+          5.00000002474191
+        ],
+        "normal": [
+          0.149041454209962,
+          -0.988830948608833,
+          -5.790648110675594e-07
+        ]
+      },
+      {
+        "center": [
+          4.1304400591746527e-08,
+          9.768557548522951,
+          5.000000024741737
+        ],
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "center": [
+          13.003937383157682,
+          8.794046727629468,
+          5.000000024741912
+        ],
+        "normal": [
+          -0.14904257458320053,
+          -0.9888307797401854,
+          -1.661394013182482e-07
+        ]
+      },
+      {
+        "center": [
+          25.717389606100486,
+          5.892284413120423,
+          5.0000000247417935
+        ],
+        "normal": [
+          -0.2947551444665592,
+          -0.9555728150227467,
+          3.6995911103134484e-08
+        ]
+      }
+    ],
+    "hat_bore_caps": [
+      {
+        "center": [
+          -13.003937933191441,
+          8.794046863240084,
+          5.000000024741908
+        ],
+        "normal": [
+          0.149041454209962,
+          -0.988830948608833,
+          -5.790648110675594e-07
+        ]
+      },
+      {
+        "center": [
+          4.1304400502595316e-08,
+          9.768557548522951,
+          5.000000024741737
+        ],
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "center": [
+          13.00393738315768,
+          8.794046727629466,
+          5.000000024741911
+        ],
+        "normal": [
+          -0.14904257458320053,
+          -0.9888307797401854,
+          -1.661394013182482e-07
+        ]
+      }
+    ],
+    "artwork_placement": {
+      "left_brooms": {
+        "scale": 1.0,
+        "radial_offset_mm": 9.5
+      },
+      "right_mouse": {
+        "scale": 1.0,
+        "radial_offset_mm": 6.0
+      }
+    },
+    "source_spec": {
+      "ear": "NX3_Mickey_Fantasia_source.stl",
+      "base": "Titanhunter_NX3_glue_adapter_source.stl",
+      "cx": 0.52529784,
+      "cy": 38.79776001,
+      "cut_y": 14.5,
+      "hat_halfwidth": 20.0
+    },
+    "center_hat_note": "Trimmed source curve using only the central three of five original bores; mount at crown front to avoid the ear frames."
+  },
+  "TimJ": {
+    "source_ear": "TimJ_MickeyEar_Blank_source.stl",
+    "source_glue_base": "TimJ_MickeyEar_Base_source.stl",
+    "source_ear_sha256": "09697265b47d9271bf7346d2e246d9c68ff9a7cde046fb0859cad021ddb0c39d",
+    "source_base_sha256": "a61b537a98acbe5548810b0346de65663d9131e88edfe931359bad4ea22ab2fe",
+    "mount_geometry_method": "Unscaled original mesh clipped below specified Y; base rigidly transformed only",
+    "source_x_translation_mm": -0.0,
+    "protected_region_y_max_mm": -0.1,
+    "protected_region_z_min_mm": 2.01,
+    "non_mount_artwork_fragments_removed": 0,
+    "protected_mount_missing_volume_mm3": 5.153897583820855e-07,
+    "protected_mount_extra_volume_mm3": 8.395157275723856e-06,
+    "bore_caps": [
+      {
+        "center": [
+          -30.37174876409213,
+          -10.79609275594111,
+          4.999999842091671
+        ],
+        "normal": [
+          0.39198229515396243,
+          -0.9199727606216519,
+          -9.321990314533388e-08
+        ]
+      },
+      {
+        "center": [
+          -17.9177951991475,
+          -7.199441602370076,
+          4.999999814308351
+        ],
+        "normal": [
+          0.1817267934376768,
+          -0.9833490593613422,
+          -1.5247464980553814e-07
+        ]
+      },
+      {
+        "center": [
+          1.1966124106200175e-17,
+          -5.493000030517578,
+          4.999999971554807
+        ],
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "center": [
+          18.654532215751598,
+          -7.335593459909992,
+          5.000000089484326
+        ],
+        "normal": [
+          -0.18172714761480213,
+          -0.9833489939079493,
+          -1.097379251058469e-07
+        ]
+      },
+      {
+        "center": [
+          30.366977998395488,
+          -10.794060060639394,
+          5.00000024055914
+        ],
+        "normal": [
+          -0.3919819796142751,
+          -0.9199728950659923,
+          -1.2531964003610965e-06
+        ]
+      }
+    ],
+    "hat_bore_caps": [
+      {
+        "center": [
+          -17.917795199147502,
+          -7.199441602370075,
+          4.999999814308351
+        ],
+        "normal": [
+          0.1817267934376768,
+          -0.9833490593613422,
+          -1.5247464980553814e-07
+        ]
+      },
+      {
+        "center": [
+          3.589837231860053e-17,
+          -5.49300003051758,
+          4.999999971554806
+        ],
+        "normal": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "center": [
+          18.6545322157516,
+          -7.335593459909992,
+          5.000000089484327
+        ],
+        "normal": [
+          -0.18172714761480213,
+          -0.9833489939079493,
+          -1.097379251058469e-07
+        ]
+      }
+    ],
+    "artwork_placement": {
+      "left_brooms": {
+        "scale": 0.94,
+        "radial_offset_mm": 11.5
+      },
+      "right_mouse": {
+        "scale": 0.94,
+        "radial_offset_mm": 8.5
+      }
+    },
+    "source_spec": {
+      "ear": "TimJ_MickeyEar_Blank_source.stl",
+      "base": "TimJ_MickeyEar_Base_source.stl",
+      "cx": 0.0,
+      "cy": 20.0,
+      "cut_y": 0.0,
+      "hat_halfwidth": 24.5
+    },
+    "center_hat_note": "Trimmed source curve using only the central three of five original bores; mount at crown front to avoid the ear frames."
+  }
+}

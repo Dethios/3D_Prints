@@ -1,0 +1,4 @@
+interface:
+  display_name: "Voron Print Preflight"
+  short_description: "Check geometry, slicer settings and print fit"
+  default_prompt: "Use $voron-print-preflight to review the selected model with my Voron 2 presets and report checks, warnings and pending fit tests."

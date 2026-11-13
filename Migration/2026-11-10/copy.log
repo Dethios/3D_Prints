@@ -1,0 +1,29 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Tuesday, 10 November, 2026 22:41:34
+   Source : C:\Users\vic-l\OneDrive\.codex_sync\3D Prints\
+     Dest : D:\Build\3D Prints\_incoming_sync_2026-11-10\
+
+    Files : *.*
+	    
+  Options : *.* /NDL /NFL /S /E /DCOPY:DAT /COPY:DAT /NP /R:1 /W:1 
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :       197       197         0         0         0         0
+   Files :      1186      1186         0         0         0         0
+   Bytes :   5.627 g   5.627 g         0         0         0         0
+   Times :   0:05:37   0:05:37                       0:00:00   0:00:00
+
+
+   Speed :           17,912,358 Bytes/sec.
+   Speed :            1,024.953 MegaBytes/min.
+   Ended : Tuesday, 10 November, 2026 22:47:11
+

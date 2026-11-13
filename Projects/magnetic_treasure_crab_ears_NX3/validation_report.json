@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "units": "mm",
+  "magnet_size_diameter_by_thickness_mm": [
+    6,
+    3
+  ],
+  "stl_checks": {
+    "glue_on_base_SOURCE_GEOMETRY.stl": {
+      "dimensions_mm": [
+        82.585,
+        19.121,
+        10.0
+      ],
+      "volume_mm3": 4164.43,
+      "sha256": "da266036545d519201ea5a7a820a934d291cf9bc8f4e35c120d72625074806e6",
+      "approved_source_bytes_match": true
+    },
+    "center_hat_glue_base_3_of_5.stl": {
+      "dimensions_mm": [
+        40.0,
+        8.548,
+        10.0
+      ],
+      "volume_mm3": 1871.891,
+      "sha256": "3438e81863daaa49197a9800451206b31cc08969c20357548fbfccca7727532d",
+      "approved_source_bytes_match": true
+    },
+    "left_crab_face.stl": {
+      "dimensions_mm": [
+        99.8,
+        87.978,
+        4.75
+      ],
+      "volume_mm3": 17199.562,
+      "sha256": "b9da22b938952c5484a68bd5bb16121c43edce2d1fb9c2fa14aedc909b64c0df"
+    },
+    "right_crab_face.stl": {
+      "dimensions_mm": [
+        99.8,
+        87.978,
+        4.75
+      ],
+      "volume_mm3": 15952.561,
+      "sha256": "ca696c47d6b25d250e9fb218b595af5134a2c596f5f3cbe6b76b96ff4f0fbc41"
+    },
+    "crab_eyes.stl": {
+      "dimensions_mm": [
+        68.4,
+        73.351,
+        10.0
+      ],
+      "volume_mm3": 10209.772,
+      "sha256": "79da12bc6f797fa031112b5af560e202651d492ac7827f759f9196d0c0768bd9"
+    },
+    "ear_magnet_carrier_print_two.stl": {
+      "dimensions_mm": [
+        87.328,
+        14.244,
+        11.0
+      ],
+      "volume_mm3": 5450.859,
+      "sha256": "364f6286f9169a1539bebf507c17df60b3a323d7ad446a084268c132de91c705"
+    },
+    "ear_magnet_fit_test_strip.stl": {
+      "dimensions_mm": [
+        87.328,
+        14.244,
+        10.0
+      ],
+      "volume_mm3": 5434.778,
+      "sha256": "592d1cb7a487d812d57771923152fef381a86be78ad7fd46dc3ad2f024909d85"
+    }
+  },
+  "ear_baseline_base_intersection_mm3": 1.2609569100813869,
+  "eye_baseline_base_intersection_mm3": 1.1011412788270898,
+  "added_mating_interference_mm3": 0,
+  "nominal_assembly_accessory_overlaps_mm3": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "face_carrier_bonding_projection_mm2_left_right": [
+    391.5,
+    391.5
+  ],
+  "face_carrier_nominal_adhesive_gap_mm": 0.09999999999999964,
+  "fit_evidence": "Digital checks on the approved NX3 nominal band poses. Physical fit pending."
+}

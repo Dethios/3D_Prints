@@ -6,9 +6,9 @@ CAD sources, printable models, reference assets and validation tools for project
 
 | Folder or file | Contents |
 | --- | --- |
-| [Magnetic treasure crab ears v3](magnetic_treasure_crab_ears_v3/README.md) | Earlier crab design with its own receivers, CadQuery source, STEP/STL parts, fit coupons and validation tools. |
+| Magnetic treasure crab ears v3 | Earlier crab design; its project folder is not present in this workspace. |
 | [Sorcerer ears](Projects/sorcerer_ears_CAD_STL_v2/READ_ME_FIRST.txt) | NX3 and TimJ mounting variants, editable source, STEP/STL exports, fit strips and previews. |
-| [Treasure crab ears for NX3](Projects/magnetic_treasure_crab_ears_NX3/README.md) | NX3 mounting kit, print list and assembly notes. The design and print plates are in the local workspace. |
+| [Treasure crab ears for NX3](Projects/magnetic_treasure_crab_ears_NX3/README.md) | NX3 mounting kit, parts list and assembly notes. The design and print plates are in the local workspace. |
 | [Printables downloads](Printables/README.md) | Downloaded models grouped by listing, with maker notes and original filenames. |
 | [Custom projects](Projects/README.md) | Ear kits, sorcerer hat and the Chube Air UHF integration. |
 | [GitHub mods](GitHub-Mods/README.md) | Separate A4T, A4Tv2, and whopping Voron mods checkouts with their upstream history. |
@@ -28,7 +28,7 @@ See [CAD and Print Workflow](PRINT_WORKFLOW.md) for detailed pathway selection a
 
 ## Codex skills and agent operations
 
-Project skills live in `.agents/skills/`. Open a new Codex session in this workspace after adding them so the client can discover them. They support automatic selection when relevant and explicit invocation using `$skill-name`. If the current client has not refreshed its skill list, ask it to read the linked `SKILL.md` directly.
+Project skills live in `.agents/skills/`. Open a new Codex session in this workspace after adding them, so the client can discover them. They support automatic selection when relevant and explicit invocation using `$skill-name`. If the current client has not refreshed its skill list, ask it to read the linked `SKILL.md` directly.
 
 | Skill | Use | Example prompt |
 | --- | --- | --- |
@@ -58,7 +58,7 @@ The study's seven STLs passed digital mesh checks. PrusaSlicer 2.9.7 on Windows 
 
 ### Recommended next improvements
 
-1. **Record the approved interface once.** Add a small per-family manifest for source paths and hashes, pocket counts and axes, assembly poses, expected clearance and attribution. Start with NX3. Have builders and validators read it so decorative variants share the same mounting evidence.
+1. **Record the approved interface once.** Add a small per-family manifest for source paths and hashes, pocket counts and axes, assembly poses, expected clearance and attribution. Start with NX3. Have builders and validators read it, so decorative variants share the same mounting evidence.
 2. **Automate the digital checks.** Give each scripted project a documented build and validation entry point. Reuse checks for reloaded STL solids, source-interface differences and nominal assembly collisions. Run the inexpensive geometry checks first, then render the changed views and slice the affected parts. Publish verified exports per revision when authorized.
 3. **Make slicer checks reproducible.** Add a versioned geometry-only slicer profile or a repeatable export of the effective settings. Record the nozzle, layer heights, orientation, brim, support settings and layer evidence. Keep machine-specific startup code and physical-printer configuration local.
 4. **Refine the existing skills before adding roles.** Extend `fusion-print-design` to cover preserving approved interfaces in scripted CAD and extend `voron-print-preflight` with the isolated CLI fallback. Use `print3d` for fit and source geometry, `automation` for repeatable checks, and `reviewer` when a mounting change merits independent review. Verify tool access and the coordination ledger before dispatch.

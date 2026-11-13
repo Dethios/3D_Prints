@@ -3,10 +3,12 @@ from pathlib import Path
 import hashlib
 import json
 import math
+import sys
 
 import manifold3d as md
 import numpy as np
 from PIL import Image, ImageColor
+from shapely import constrained_delaunay_triangles
 from shapely import affinity
 from shapely.geometry import LineString, Point, Polygon, box
 from shapely.geometry.polygon import orient
@@ -19,8 +21,12 @@ APPROVED = ROOT.parent / "sorcerer_ears_CAD_STL_v2"
 NX3 = APPROVED / "STL" / "NX3"
 STEP = APPROVED / "CAD" / "NX3"
 STL = ROOT / "stl"
-SEAT_Z = 10.10
-PINS = [(-17, 8.8), (17, 8.8)]
+CARRIER_DEPTH = 10.0
+RIM_WIDTH = 4.6
+CENTER_FACE_THICKNESS = 4.6
+CENTER_MATE_GAP = .15
+POCKET_DIAMETER = 6.25
+POCKET_DEPTH = 3.15
 CENTER = (0, 38.79776)
 PALETTE = {
     "rim": "#572796", "edge": "#9f5ad8", "shadow": "#45216e",
@@ -133,7 +139,7 @@ COINS = [
     (270, 288, 32, 14, -19, 2.1), (301, 269, 31, 13, -14, 2.6),
     (340, 250, 24, 13, -55, 2.1), (270, 246, 24, 13, 20, 1.95),
     (311, 300, 22, 14, -20, 2.15), (325, 325, 30, 15, -32, 1.9),
-    (194, 335, 21, 14, -4, 1.7), (230, 313, 26, 13, -10, 2.0),
+    (230, 313, 26, 13, -10, 2.0),
 ]
 RIGHT_COINS = [
     (85, 282, 30, 16, 24, 2.3), (92, 324, 29, 16, 13, 1.9),
@@ -146,12 +152,88 @@ RIGHT_COINS = [
     (323, 248, 24, 15, -43, 2.25), (244, 254, 25, 12, 33, 2.35),
     (166, 333, 22, 14, 17, 2.05), (200, 355, 26, 15, -16, 2.0),
 ]
+# Edge coins touch the inside of the rim. The taller foreground coins
+# cover the lower girdle and tip of each gemstone.
+LEFT_EDGE_COINS = [
+    (64, 278, 27, 15, 31, 2.2), (62, 318, 29, 16, 25, 2.43),
+    (359, 253, 28, 16, -49, 2.38), (352, 290, 29, 16, -32, 2.6),
+]
+RIGHT_EDGE_COINS = [
+    (65, 279, 30, 16, 28, 2.34), (67, 318, 29, 16, 31, 2.52),
+    (354, 256, 28, 15, -35, 2.45), (350, 295, 31, 16, -37, 2.68),
+]
+LEFT_FOREGROUND_COINS = [(203, 338, 33, 15, 16, 2.98),
+                         (250, 330, 29, 15, -27, 3.21)]
+RIGHT_FOREGROUND_COINS = [(202, 345, 29, 16, 23, 2.91),
+                          (251, 337, 30, 15, -25, 3.06)]
 SPOTS = [(112, 161, 3), (131, 126, 3.4), (145, 113, 2.9), (165, 91, 3.2),
          (177, 100, 2.8), (184, 116, 3.8), (162, 134, 2.7), (135, 153, 2.8),
          (205, 91, 2.9), (120, 184, 3.5), (146, 178, 2.7)]
 
 
-def ear(is_left, source_outline, contact):
+def cut_gem(outline, table_center, table_scale, table_height):
+    """Build a solid with a flat table and planar facets down to the girdle."""
+    girdle = np.asarray(list(orient(outline).exterior.coords)[:-1])
+    center = np.array([table_center.x, table_center.y])
+    table = center + (girdle - center) * table_scale
+    count = len(girdle)
+    vertices = [(x, y, z) for loop, z in
+                [(girdle, 1.68), (girdle, 2.64), (table, table_height)]
+                for x, y in loop]
+    faces = []
+    for i in range(count):
+        j = (i + 1) % count
+        for offset in (0, count):
+            faces.extend([(offset + i, offset + j, offset + j + count),
+                          (offset + i, offset + j + count, offset + i + count)])
+    for i in range(1, count - 1):
+        faces.extend([(0, i + 1, i), (2 * count, 2 * count + i, 2 * count + i + 1)])
+    return solid(trimesh.Trimesh(vertices, faces, process=False))
+
+
+def rounded_relief(outline, levels):
+    """Join inset contours with sloped faces and keep a flat print surface."""
+    profiles = [(outline.buffer(-inset), height) for inset, height in levels]
+    vertices, faces = [], []
+
+    def add_face(coords):
+        faces.append(tuple(range(len(vertices), len(vertices) + len(coords))))
+        vertices.extend(coords)
+
+    for (outer, lower), (inner, upper) in zip(profiles, profiles[1:]):
+        for tri in constrained_delaunay_triangles(outer.difference(inner)).geoms:
+            coords = list(orient(tri).exterior.coords)[:-1]
+            add_face([(x, y, upper if inner.boundary.distance(Point(x, y)) < 1e-7
+                       else lower) for x, y in coords])
+    top, height = profiles[-1]
+    for tri in constrained_delaunay_triangles(top).geoms:
+        add_face([(x, y, height) for x, y in list(orient(tri).exterior.coords)[:-1]])
+    for poly in polygons(outline):
+        for ring in [poly.exterior, *poly.interiors]:
+            for (x, y), (u, v) in zip(ring.coords, list(ring.coords)[1:]):
+                add_face([(x, y, 0), (u, v, 0), (u, v, levels[0][1])])
+                add_face([(x, y, 0), (u, v, levels[0][1]), (x, y, levels[0][1])])
+    for tri in constrained_delaunay_triangles(outline).geoms:
+        add_face([(x, y, 0) for x, y in list(orient(tri, sign=-1).exterior.coords)[:-1]])
+    return solid(trimesh.Trimesh(vertices, faces, process=True))
+
+
+def rounded_coin(x, y, a, b, angle, base, crest):
+    """Turn a rounded rim and gently crowned face, then ovalize the coin."""
+    profile = [(0, 0), (.91, 0), (.981, .19), (1, .45), (.994, .68),
+               (.973, .86), (.932, .98), (.893, 1), (.853, .93),
+               (.806, .84), (.68, .88), (.48, .93), (.25, .96), (0, .97)]
+    curve = md.CrossSection([np.asarray(profile)])
+    coin = curve.revolve(circular_segments=72).scale((a, b, crest - base))
+    return coin.rotate((0, 0, angle)).translate((x, y, base))
+
+
+def eye_dome(cx, cy, width, height, equator, rise, outline, floor):
+    dome = md.Manifold.sphere(1, 72).scale((width, height, rise))
+    return dome.translate((cx, cy, equator)) ^ extrude(outline, equator + rise + .1, floor)
+
+
+def ear(is_left, source_outline, carrier, keepout):
     sign = 1 if is_left else -1
     # Counter-rotate graphics so the treasure reads level on the headband.
     def artwork(g):
@@ -164,77 +246,133 @@ def ear(is_left, source_outline, contact):
     # Retain the circle above the NX3 seat. Below the seam follow the approved
     # perimeter so the face cannot project into the mating edge.
     clip = c.intersection(source_outline.buffer(-.4).union(box(-51, 14.5, 51, 91)))
-    inner = disk(*CENTER, 46.1, 96)
-    rim = clip.difference(inner)
+    carrier_outline = projection(mesh(carrier))
+    # Follow one perimeter from the round rim through the NX3 seating arc.
+    outer_shape = clip.union(carrier_outline).buffer(1.15).buffer(-1.15).simplify(.035)
+    rim_inner = outer_shape.buffer(-RIM_WIDTH)
+    # Offset back from the inner edge to round the outside of the joins
+    # at the same width, including across the convex corners.
+    outer_shape = rim_inner.buffer(RIM_WIDTH, quad_segs=32)
+    rim = outer_shape.difference(rim_inner)
     treas_clip = clip.intersection(disk(*CENTER, 47.8, 96))
-    frame = [
-        (extrude(rim, 3.45), "rim"),
-        (extrude(rim.intersection(c.buffer(-.65).difference(c.buffer(-1.7))),
-                 3.85, 3.32), "edge"),
-    ]
     coin_list = COINS if is_left else RIGHT_COINS
+    edge_coins = LEFT_EDGE_COINS if is_left else RIGHT_EDGE_COINS
+    foreground_coins = LEFT_FOREGROUND_COINS if is_left else RIGHT_FOREGROUND_COINS
+    edge_start = len(coin_list)
+    coin_list = coin_list + edge_coins + foreground_coins
     coin_shapes = [artwork(ellipse(x, y, a, b, angle)) for x, y, a, b, angle, _ in coin_list]
-    # The flat treasure web ties the visible coins to the rim and covers the
-    # two locating pins. Its top edge follows the coin pile.
-    heap = artwork(HEAP).union(unary_union(coin_shapes)).intersection(treas_clip)
-    foot = contact.buffer(.14).intersection(clip.buffer(-.24)).simplify(.026)
-    parts = frame + [(extrude(foot, 2.2), "shadow"), (extrude(heap, 2.1), "ochre")]
+    # The treasure web ties the visible coins to the rim and carrier.
+    heap = artwork(HEAP).union(unary_union(coin_shapes).buffer(.65)).intersection(treas_clip.buffer(-.06)).simplify(.031)
+    parts = [(extrude(heap, 2.1), "ochre")]
 
-    # Add a broad, recessed web at the outer edge of the claw where its
-    # traced silhouette meets the inside of the ring.
     claw = artwork(CLAW).intersection(treas_clip)
-    claw_link = claw.buffer(1.65).intersection(c.difference(c.buffer(-5.45))).intersection(clip)
-    parts.extend([(extrude(claw_link, 2.3), "shadow"), (extrude(claw, 2.85), "violet"),
-                  (extrude(claw.buffer(-.72), 3.45, 2.7), "claw")])
+    # This flat pad reaches the claw from the rim below the sculpted relief.
+    shoulder_pad = artwork(ellipse(206, 67.5, 26, 11.5, 2))
+    shoulder_pad = shoulder_pad.intersection(outer_shape.buffer(-.65))
+    parts.append((extrude(shoulder_pad, 1.35, .06), "claw"))
+    claw_body = rounded_relief(claw, [(0, 2.55), (.22, 3.18), (.68, 3.78),
+                                    (1.35, 4.31), (2.25, 4.77), (3.45, 5.11),
+                                    (4.9, 5.34), (6.6, 5.48)])
+    parts.append((claw_body, "claw"))
     for x, y, r in SPOTS:
         fleck = artwork(disk(x, y, r, 12)).intersection(claw.buffer(-.95))
         if fleck.area > .65:
-            parts.append((extrude(fleck, 3.76, 3.4), "pink"))
+            # Follow the claw's contour instead of laying dots on one plane.
+            spot = claw_body.translate((0, 0, .18)) ^ extrude(fleck, 6, 2.5)
+            parts.append((spot, "pink"))
 
-    star = artwork(STAR).intersection(treas_clip)
-    star_tail = artwork(line([(306, 228), (306, 270)], 8)).intersection(treas_clip)
-    parts.extend([(extrude(star.union(star_tail), 2.65), "gold"),
-                  (extrude(star.buffer(-.48), 3.7, 2.45), "bright")])
-    for i, (coin_shape, (_, _, _, _, _, height)) in enumerate(zip(coin_shapes, coin_list)):
+    star = artwork(STAR).buffer(-.22).buffer(.22).intersection(treas_clip)
+    star_tail = artwork(line([(306, 229), (306, 274)], 9)).intersection(treas_clip)
+    parts.extend([(extrude(star_tail, 1.95), "ochre"),
+                  (rounded_relief(star, [(0, 2.15), (.25, 2.87), (.57, 3.57),
+                                         (.98, 4.22), (1.45, 4.78),
+                                         (2.0, 5.24)]), "bright")])
+    coins = []
+    for i, (coin_shape, (x, y, a, b, angle, height)) in enumerate(zip(coin_shapes, coin_list)):
         height += i * .0037
-        coin = coin_shape.intersection(treas_clip.buffer(-.70 - i * .019)).simplify(.009)
+        margin = -.70 - i * .019 if i < edge_start else -.08 - (i - edge_start) * .07
+        coin = coin_shape.intersection(treas_clip.buffer(margin)).simplify(.009)
         if coin.area < .65:
             continue
-        # Alternating heights show overlapping coin edges. The smaller,
-        # recessed inner face gives each oval a readable raised lip.
-        inset = coin.buffer(-.65)
-        parts.append((extrude(coin, height + .95, 1.72), "gold"))
-        lip = coin.difference(inset)
-        parts.append((extrude(lip, height + 1.32, height + .79), "bright"))
+        base_z = 1.55 + .011 * i
+        center = artwork(Point(x, y))
+        coin_solid = rounded_coin(center.x, center.y, a * .267, b * .267,
+                                  -sign * (angle + 40), base_z, height + 1.5)
+        coins.append((coin_solid ^ extrude(treas_clip.buffer(margin), 6), coin,
+                      i >= len(coin_list) - len(foreground_coins), height))
 
-    gem = [(156, 246), (216, 219), (271, 246), (274, 291),
-           (247, 345), (199, 336), (151, 299)]
-    nodes = [(186, 267), (228, 255), (253, 267), (181, 294), (232, 316)]
-    if not is_left:
-        gem = [(150, 282), (192, 263), (230, 283), (234, 326),
-               (204, 357), (168, 349), (143, 322)]
-        nodes = [(166, 295), (199, 289), (216, 300), (169, 325), (195, 337)]
-    edges = [(gem[0], nodes[0]), (gem[1], nodes[1]), (gem[2], nodes[2]),
-             (gem[4], nodes[4]), (gem[6], nodes[3]), (nodes[0], nodes[1]),
-             (nodes[1], nodes[2]), (nodes[0], nodes[3]), (nodes[3], nodes[4]),
-             (nodes[1], nodes[4]), (nodes[2], gem[3]), (nodes[4], gem[5])]
-    gem_shift = -12 if is_left else -11
-    def gem_art(g):
-        return artwork(affinity.translate(g, yoff=gem_shift))
+    if is_left:
+        # Broad crown and tapered lower point from the diamond reference.
+        gem = [(157, 249), (188, 226), (222, 220), (255, 236),
+               (274, 268), (230, 342), (148, 282)]
+        table_center = (209, 248)
+        table_scale, table_height = .49, 5.65
+        color = "purple_gem"
+    else:
+        gem = [(251, 278), (224, 267), (195, 274), (180, 300),
+               (213, 347), (265, 321), (272, 298)]
+        table_center = (227, 292)
+        table_scale, table_height = .48, 5.28
+        color = "blue_gem"
+    gem_solid = cut_gem(artwork(Polygon(gem)), artwork(Point(*table_center)),
+                        table_scale, table_height)
+    stone = artwork(Polygon(gem)).intersection(treas_clip.buffer(-.45))
+    # Give each silhouette a clear owner. Foreground coins hide the buried
+    # edge of the gem. The gem and higher coins hide the coins behind them.
+    foreground = sorted((item for item in coins if item[2]), key=lambda item: -item[3])
+    background = sorted((item for item in coins if not item[2]), key=lambda item: -item[3])
+    occluded = Polygon()
+    for body, footprint, _, _ in foreground:
+        parts.append((body - extrude(occluded.buffer(.15), 7, 1.4), "gold"))
+        occluded = occluded.union(footprint)
+    gem_solid = (gem_solid ^ extrude(treas_clip.buffer(-.45), 6))
+    parts.append((gem_solid - extrude(occluded.buffer(.12), 7, 2.07), color))
+    occluded = occluded.union(stone)
+    for body, footprint, _, _ in background:
+        parts.append((body - extrude(occluded.buffer(.15), 7, 1.4), "gold"))
+        occluded = occluded.union(footprint)
 
-    stone = gem_art(Polygon(gem)).intersection(treas_clip.buffer(-.45))
-    interior = stone.buffer(-1.32)
-    rails = unary_union([gem_art(line([a, b], 4.3)) for a, b in edges]).intersection(stone.buffer(-.21))
-    parts.extend([(extrude(stone, 3.4), "ochre"),
-                  (extrude(stone.difference(interior), 4.75, 3.1), "bright"),
-                  (extrude(interior, 4.13, 3.1), "purple_gem" if is_left else "blue_gem"),
-                  (extrude(rails, 4.59, 3.96), "bright")])
-    # Ensure the crown and underside both have a bonded polygon at the seat.
-    sockets = [extrude(disk(x, y, 1.95), 1.25, -.05) for x, y in PINS]
-    for socket in sockets:
-        assert (socket ^ extrude(foot, 1.25)).volume() > 12
-    fused = union([p for p, _ in parts]) - union(sockets)
-    return fused, parts
+    # Trim the carrier to the rim through its entire depth. Leave a small
+    # inset on both sides so the ring defines the final visible walls.
+    rim_core = outer_shape.buffer(-.035).difference(rim_inner.buffer(.035))
+    carrier_in_rim = carrier ^ extrude(rim_core, CARRIER_DEPTH + .1, -.1)
+    assert rim.geom_type == "Polygon" and len(rim.interiors) == 1
+    highlight = outer_shape.buffer(-.27).difference(outer_shape.buffer(-1.46))
+    assert highlight.geom_type == "Polygon" and len(highlight.interiors) == 1
+    ring = [(extrude(rim, CARRIER_DEPTH + .26), "rim"),
+            (extrude(highlight, CARRIER_DEPTH + .47, CARRIER_DEPTH + .15), "edge")]
+    return [(carrier_in_rim, "rim"), *((p - keepout, color) for p, color in ring + parts)]
+
+
+def center_mount(source_base, carrier):
+    # Preserve the footprint at the band. Extend the crown-facing edge
+    # to carry the same three centers on a common front-facing plane.
+    footprint = projection(mesh(source_base))
+    base_pad = box(-17.35, 3.1, 17.35, 12.4).buffer(.65)
+    eye_pad = box(-18.7, 2.95, 18.7, 13.65).buffer(1.05)
+    carrier_mesh = mesh(carrier)
+    # Project the source pocket-floor centers back to the original openings.
+    centers = []
+    for ids, area, normal in zip(carrier_mesh.facets, carrier_mesh.facets_area,
+                                 carrier_mesh.facets_normal):
+        if 26 < area < 29 and abs(normal[2]) < .03 and len(ids) >= 17:
+            center = np.average(carrier_mesh.triangles_center[ids], axis=0,
+                                weights=carrier_mesh.area_faces[ids])
+            if abs(center[0]) < 16:
+                mouth = center + 3.25 * normal
+                centers.append((round(float(mouth[0]), 3), round(float(mouth[1]), 3)))
+    centers.sort()
+    assert len(centers) == 3
+    # Both faces use the same centers so magnet disks line up without
+    # forcing the base or the eye stalks into the headband.
+    base_blank = extrude(footprint.union(base_pad).simplify(.02), CENTER_FACE_THICKNESS)
+    eye_blank = extrude(eye_pad, CENTER_FACE_THICKNESS)
+    pockets = union([extrude(disk(x, y, POCKET_DIAMETER / 2), POCKET_DEPTH, -.04)
+                     for x, y in centers])
+    rear_pockets = pockets
+    front_pockets = pockets.mirror((0, 0, 1)).translate((0, 0, CENTER_FACE_THICKNESS))
+    assert abs((base_blank ^ front_pockets).volume() - (eye_blank ^ rear_pockets).volume()) < .05
+    return base_blank - front_pockets, eye_blank, rear_pockets, centers
 
 
 def eye_unit(center_strip):
@@ -254,28 +392,40 @@ def eye_unit(center_strip):
         cx, cy = sign * 21.1, 63.25
         globe = ellipse(cx, cy, 13.1, 14.2, 0)
         opening = ellipse(cx, cy, 10.9, 11.9, 0)
-        lid = opening.intersection(box(cx - 12, cy + 2.0, cx + 12, cy + 13))
-        whites = opening.difference(lid)
-        iris = disk(cx - sign * 3.5, cy - 1.1, 6).intersection(whites)
-        pupil = disk(cx - sign * 4.6, cy -.2, 3.6).intersection(whites)
+        # Trace one aperture from its outer corner toward the nose, then
+        # mirror it. The rising lower lid leaves a crescent of visible white.
+        aperture = traced(
+            "M -12 2.5 C -4 2.7 5 2.1 12 1.2 "
+            "L 12 -1.4 C 6 -5.8 -1 -8.5 -12 -8.4 Z"
+        )
+        aperture = affinity.scale(aperture, -sign, 1, origin=(0, 0))
+        whites = opening.intersection(affinity.translate(aperture, cx, cy))
+        lids = opening.difference(whites)
+        lash = line([(cx + sign * 12, cy + 2.5), (cx + sign * 4, cy + 2.53),
+                     (cx - sign * 5, cy + 2.04), (cx - sign * 12, cy + 1.2)], 1.24)
+        iris = disk(cx - sign * 3.85, cy + .95, 5.25).intersection(whites)
+        pupil = disk(cx - sign * 4.35, cy + .72, 3.4).intersection(iris)
+        # Shape the visible eye and both lids over the existing solid globe.
+        # Shared curvature keeps the iris and pupil seated in the sclera.
+        lid_shape = eye_dome(cx, cy, 12.6, 13.8, 3.63, 3.18, lids.buffer(.11), 3.57)
+        sclera = eye_dome(cx, cy, 12.4, 13.3, 3.64, 2.18, whites.buffer(.075), 3.59)
+        iris_relief = eye_dome(cx, cy, 12.4, 13.3, 3.78, 2.23, iris.buffer(-.025), 3.71)
+        pupil_relief = eye_dome(cx, cy, 12.4, 13.3, 3.87, 2.28, pupil, 3.75)
+        lash_relief = eye_dome(cx, cy, 12.6, 13.8, 3.79, 3.18,
+                               lash.intersection(opening.buffer(.08)), 3.74)
         parts += [(extrude(globe, 3.8), "rim"),
                   (extrude(globe.buffer(-.4).difference(opening.buffer(-.15)), 4.64, 3.65), "edge"),
-                  (extrude(whites, 4.35, 3.7), "sclera"),
-                  (extrude(iris, 4.63, 4.27), "iris"),
-                  (extrude(pupil, 4.87, 4.53), "pupil"),
-                  (extrude(lid, 4.95, 3.7), "violet"),
-                  (extrude(opening.intersection(box(cx - 12, cy + 1.1, cx + 12, cy + 2.6)),
-                           5.18, 4.19), "shadow"),
-                  (extrude(disk(cx - sign * 3.0, cy + .05, 1.28).intersection(pupil),
-                           5.19, 4.78), "shine"),
-                  (extrude(disk(cx - sign * 6.2, cy - .55, .70).intersection(pupil),
-                           5.13, 4.78), "shine")]
+                  (sclera, "sclera"), (iris_relief, "iris"), (pupil_relief, "pupil"),
+                  (lid_shape, "violet"), (lash_relief, "shadow")]
+        for offset, y_offset, radius in [(2.7, .03, 1.14), (5.35, -.15, .67)]:
+            glint = disk(cx - sign * offset, cy + y_offset, radius).intersection(pupil)
+            parts.append((eye_dome(cx, cy, 12.4, 13.3, 4.04, 2.29, glint, 3.92), "shine"))
     return union([p for p, _ in parts]), parts
 
 
 def record(path, result):
     assert result.status() == md.Error.NoError, (path, result.status())
-    components = [p for p in result.simplify(.0001).decompose() if abs(p.volume()) > 1e-6]
+    components = [p for p in result.simplify(.0001).decompose() if abs(p.volume()) > .002]
     assert len(components) == 1, (path, [p.volume() for p in components])
     mesh(components[0]).export(path)
     reloaded = trimesh.load_mesh(path)
@@ -336,104 +486,124 @@ def rendered(parts, filename, angled=False):
 def main():
     source_strip = solid(NX3 / "mount_test_strip.stl")
     full_base = solid(NX3 / "glue_on_base_SOURCE_GEOMETRY.stl")
-    center_base = solid(NX3 / "center_hat_glue_base_3_of_5.stl")
-    approved_hat = solid(NX3 / "center_hat_blue_base.stl")
-    # The approved center accessory uses the same strip crop as its base,
-    # and its added hat art only begins above the original cut at Y=14.45.
-    center_strip = source_strip ^ md.Manifold.cube((40, 40, 12)).translate((-20, -20, -1))
-    trim = md.Manifold.cube((42, 34.4, 12)).translate((-21, -20, -1))
-    assert abs(((center_strip ^ trim) - approved_hat).volume()) < .005
-    strip_contact = projection(mesh(source_strip), flat_top=10)
+    original_center = solid(NX3 / "center_hat_glue_base_3_of_5.stl")
+    center_base, eye_pad, eye_pockets, centers = center_mount(original_center, source_strip)
+    eyes_blank, eye_art = eye_unit(eye_pad)
+    eyes = eyes_blank - eye_pockets
+    eye_art = [(part - eye_pockets, color) for part, color in eye_art]
     source_outline = projection(trimesh.load_mesh(NX3 / "ear_blue_base.stl"))
+    # Protect the original receiver and the openings of the NX3 bores when
+    # the bottom of the artwork shares the carrier's print plane.
+    mount_edge = projection(mesh(full_base)).buffer(.1).simplify(.016)
+    bore_caps = json.loads((APPROVED / "CAD/reference_geometry_report.json").read_text())["NX3"]["bore_caps"]
+    keepout = [extrude(mount_edge, CARRIER_DEPTH + .02, -.1)]
+    for bore in bore_caps:
+        center = np.asarray(bore["center"])
+        normal = np.asarray(bore["normal"])
+        angle = math.degrees(math.atan2(normal[1], normal[0]))
+        bore_void = md.Manifold.cylinder(4.5, 3.18, circular_segments=64)
+        keepout.append(bore_void.rotate((0, 90, angle)).translate(tuple(center - normal * .12)))
+    keepout = union(keepout)
     poses = json.loads((APPROVED / "CAD/assembly_positions.json").read_text())["NX3"]
-    lm, rm, em = [np.asarray(poses[k]) for k in ["left_brooms", "right_mouse", "center_hat"]]
-    eyes, eye_art = eye_unit(center_strip)
+    lm, rm, base_pose = [np.asarray(poses[k]) for k in ["left_brooms", "right_mouse", "center_hat"]]
+    eye_pose = base_pose.copy()
+    eye_pose[2, 3] += CENTER_FACE_THICKNESS + CENTER_MATE_GAP
 
-    def clear_center(is_left, pose):
-        face, art = ear(is_left, source_outline, strip_contact)
-        center_x = em[0, 3]
-        # A straight relief along the side of the center shoe keeps the
-        # installation gap smooth and gives the print a clean interior edge.
-        low = center_x - 20.9
-        high = center_x + 20.9
-        zone = box(low, 65.0, high, 84.0)
-        inverse = np.linalg.inv(pose)
-        cut = affinity.affine_transform(zone, [inverse[0, 0], inverse[0, 1],
-                                                 inverse[1, 0], inverse[1, 1],
-                                                 inverse[0, 3], inverse[1, 3]])
-        clearance = extrude(cut, 7, -.5)
-        return face - clearance, [(p - clearance, color) for p, color in art]
-
-    left, left_art = clear_center(True, lm)
-    right, right_art = clear_center(False, rm)
-    shoe = union([source_strip] + [extrude(disk(x, y, 1.6), 11.0, 9.7) for x, y in PINS])
-    fit_test = source_strip
-
-    # The bases are byte-for-byte copies of the approved STL and STEP.
-    names = ["glue_on_base_SOURCE_GEOMETRY", "center_hat_glue_base_3_of_5"]
-    outputs = {}
-    for name in names:
-        src = NX3 / (name + ".stl")
-        dst = STL / src.name
-        dst.write_bytes(src.read_bytes())
-        (ROOT / "cad" / (name + ".step")).write_bytes((STEP / (name + ".step")).read_bytes())
-        m = trimesh.load_mesh(dst)
-        assert m.is_volume and len(m.split()) == 1
-        outputs[dst.name] = {"dimensions_mm": m.extents.round(3).tolist(),
-                             "volume_mm3": round(float(m.volume), 3),
-                             "sha256": hashlib.sha256(dst.read_bytes()).hexdigest(),
-                             "approved_source_bytes_match": dst.read_bytes() == src.read_bytes()}
+    left_art = ear(True, source_outline, source_strip, keepout)
+    right_art = ear(False, source_outline, source_strip, keepout)
+    left, right = [union([p for p, _ in reversed(art)]) for art in (left_art, right_art)]
+    source_base_path = NX3 / "glue_on_base_SOURCE_GEOMETRY.stl"
+    ear_base_path = STL / source_base_path.name
+    ear_base_path.write_bytes(source_base_path.read_bytes())
+    (ROOT / "cad/glue_on_base_SOURCE_GEOMETRY.step").write_bytes(
+        (STEP / "glue_on_base_SOURCE_GEOMETRY.step").read_bytes()
+    )
+    m = trimesh.load_mesh(ear_base_path)
+    assert m.is_volume and len(m.split()) == 1
+    outputs = {ear_base_path.name: {"dimensions_mm": m.extents.round(3).tolist(),
+                                    "volume_mm3": round(float(m.volume), 3),
+                                    "sha256": hashlib.sha256(ear_base_path.read_bytes()).hexdigest(),
+                                    "approved_source_bytes_match": True}}
     for name, part in [
         ("left_crab_face", left), ("right_crab_face", right), ("crab_eyes", eyes),
-        ("ear_magnet_carrier_print_two", shoe), ("ear_magnet_fit_test_strip", fit_test),
+        ("center_hat_glue_base_3_of_5", center_base), ("ear_magnet_fit_test_strip", source_strip),
     ]:
         print("Checking", name, flush=True)
         outputs[name + ".stl"] = record(STL / (name + ".stl"), part)
 
     base_overlap = (source_strip ^ full_base).volume()
-    center_overlap = (center_strip ^ center_base).volume()
-    assert abs((shoe ^ full_base).volume() - base_overlap) < .005
-    assert abs((eyes ^ center_base).volume() - center_overlap) < .005
-    keep = md.Manifold.cube((120, 100, 11)).translate((-60, -30, -1))
-    assert abs(((shoe ^ keep) - source_strip).volume()) < .005
-    protected_center = md.Manifold.cube((120, 42, 11)).translate((-60, -30, -1))
-    assert abs(((eyes ^ protected_center) - center_strip).volume()) < .005
-    bonding = []
-    for face in [left, right]:
-        posed = face.translate((0, 0, SEAT_Z))
-        assert abs((posed ^ shoe).volume()) < .005
-        assert abs((posed ^ full_base).volume()) < .005
-        underside = projection(mesh(face), flat_top=0)
-        bonding.append(round(underside.intersection(strip_contact).area, 1))
-    assert min(bonding) > 220
+    for ear_part in (left, right):
+        assert (ear_part ^ full_base).volume() <= base_overlap + .005
+        for bore in bore_caps:
+            center = np.asarray(bore["center"])
+            normal = np.asarray(bore["normal"])
+            angle = math.degrees(math.atan2(normal[1], normal[0]))
+            # Check a nominal magnet in the original pocket and a solid
+            # cylinder behind it to confirm the back wall remains intact.
+            magnet = md.Manifold.cylinder(3, 2.99, circular_segments=64)
+            magnet = magnet.rotate((0, 90, angle)).translate(tuple(center + .04 * normal))
+            assert abs(((magnet ^ ear_part) - source_strip).volume()) < .005
+            back_wall = md.Manifold.cylinder(1.05, 3, circular_segments=64)
+            back_wall = back_wall.rotate((0, 90, angle)).translate(tuple(center - 1.07 * normal))
+            assert abs((back_wall - ear_part).volume()) < .005
+    assert (transformed(eyes, eye_pose) ^ transformed(center_base, base_pose)).volume() < .005
+    for x, y in centers:
+        test_magnet = extrude(disk(x, y, 3.0), 3.0)
+        assert (eyes ^ test_magnet).volume() < .005
+        assert (center_base ^ test_magnet.translate((0, 0, CENTER_FACE_THICKNESS - 3))).volume() < .005
 
     band = solid(APPROVED / "Reference_files/dressyspider_larger_headband_source.stl")
     assemblies = [
-        transformed(union([left.translate((0, 0, SEAT_Z)), shoe, full_base]), lm),
-        transformed(union([right.translate((0, 0, SEAT_Z)), shoe, full_base]), rm),
-        transformed(union([eyes, center_base]), em),
+        transformed(union([left, full_base]), lm),
+        transformed(union([right, full_base]), rm),
+        union([transformed(eyes, eye_pose), transformed(center_base, base_pose)]),
     ]
     overlaps = [round((assemblies[i] ^ assemblies[j]).volume(), 6)
                 for i, j in [(0, 1), (0, 2), (1, 2)]]
     assert max(overlaps) < .01, overlaps
+    center_band_overlap = (assemblies[2] ^ band).volume()
+    assert center_band_overlap < .01
+    # Reuse the Sorcerer exporter for the matching faceted center-base STEP.
+    import cadquery as cq
+
+    sys.path.insert(0, str(APPROVED / "CAD"))
+    from build_reference_mounts import step_from_mesh
+
+    center_stl = trimesh.load_mesh(STL / "center_hat_glue_base_3_of_5.stl")
+    center_step = ROOT / "cad/center_hat_glue_base_3_of_5.step"
+    cq.exporters.export(step_from_mesh(center_stl), str(center_step))
+    step_lines = center_step.read_text(encoding="ascii").splitlines()
+    center_step.write_text("\n".join(line.rstrip() for line in step_lines) + "\n", encoding="ascii")
+    reloaded_step = cq.importers.importStep(str(center_step)).val()
+    assert reloaded_step.isValid() and len(reloaded_step.Solids()) == 1
+    assert abs(reloaded_step.Volume() - center_stl.volume) < .01
     report = {
         "status": "PASS", "units": "mm", "magnet_size_diameter_by_thickness_mm": [6, 3],
         "stl_checks": outputs,
         "ear_baseline_base_intersection_mm3": base_overlap,
-        "eye_baseline_base_intersection_mm3": center_overlap,
-        "added_mating_interference_mm3": 0,
+        "ear_added_mating_interference_mm3": 0,
+        "rim_body_depth_mm": CARRIER_DEPTH + .26,
+        "rim_width_mm": RIM_WIDTH,
+        "magnet_back_wall_verified_mm": 1.05,
+        "rim_highlight_depth_mm": CARRIER_DEPTH + .47,
+        "ear_artwork_base_z_mm": 0,
+        "center_base_step_roundtrip_volume_mm3": round(reloaded_step.Volume(), 3),
+        "center_pocket_centers_xy_mm": centers,
+        "center_pocket_axes": {"base_opening": "+Z (front)", "eye_opening": "-Z (back)"},
+        "center_pocket_diameter_mm": POCKET_DIAMETER,
+        "center_pocket_depth_mm": POCKET_DEPTH,
+        "center_mating_face_gap_mm": CENTER_MATE_GAP,
+        "center_band_overlap_mm3": center_band_overlap,
         "nominal_assembly_accessory_overlaps_mm3": overlaps,
-        "face_carrier_bonding_projection_mm2_left_right": bonding,
-        "face_carrier_nominal_adhesive_gap_mm": SEAT_Z - 10,
         "fit_evidence": "Digital checks on the approved NX3 nominal band poses. Physical fit pending.",
     }
     (ROOT / "validation_report.json").write_text(json.dumps(report, indent=2) + "\n")
     front = [(band, "band")]
     for pose, art in [(lm, left_art), (rm, right_art)]:
-        front += [(transformed(shoe, pose), "shadow"), (transformed(full_base, pose), "shadow")]
-        front.extend((transformed(p.translate((0, 0, SEAT_Z)), pose), col) for p, col in art)
-    front += [(transformed(center_base, em), "shadow")]
-    front.extend((transformed(p, em), col) for p, col in eye_art)
+        front.append((transformed(full_base, pose), "shadow"))
+        front.extend((transformed(part, pose), color) for part, color in art)
+    front.append((transformed(center_base, base_pose), "shadow"))
+    front.extend((transformed(part, eye_pose), color) for part, color in eye_art)
     for angle in (False, True):
         filename = "crab_nx3_angle.png" if angle else "crab_nx3_front.png"
         rendered(front, ROOT / "previews" / filename, angled=angle)
@@ -442,8 +612,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
 
 
 

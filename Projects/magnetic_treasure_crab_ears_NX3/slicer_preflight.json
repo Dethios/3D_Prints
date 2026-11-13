@@ -1,188 +1,71 @@
 {
+  "status": "PASS",
   "slicer": "PrusaSlicer 2.9.7",
-  "profiles": "VictorCustom and Polymaker PolyChroma Matte. Geometry settings copied from Cosmetic Parts / Functional Parts to scratch INIs after both full print INIs triggered Windows access violation 0xC0000005 when loaded by the CLI.",
-  "brim": "Initial low-bed-adhesion warnings on four mount prints cleared after adding a 4 mm outer brim. No supports were enabled.",
-  "toolpath_checks": {
-    "left_crab_face": {
-      "settings": {
-        "filament used [g]": "19.45",
-        "brim_width": "0",
-        "fill_density": "20%",
-        "first_layer_height": "0.25",
-        "gcode_flavor": "klipper",
-        "layer_height": "0.15",
-        "nozzle_diameter": "0.5",
-        "perimeters": "3",
-        "support_material": "0"
-      },
-      "extrusion_layers": 31,
-      "first_layer_xy_extrusion_segments_excluding_brim": 2981,
-      "bridge_layer_z_mm": [
-        1.45,
-        1.75,
-        1.9,
-        2.05,
-        2.2,
-        2.35,
-        2.5,
-        2.65,
-        3.25
-      ],
-      "reviewed_layer_z_mm": [
-        0.25,
-        2.35,
-        4.45
-      ]
+  "project": "Crab_NX3_Voron24_45deg.3mf",
+  "printer": "VictorCustom",
+  "filament": "Polymaker PolyChroma Matte PLA",
+  "nozzle_mm": 0.5,
+  "layer_mm": 0.15,
+  "first_layer_mm": 0.25,
+  "part_count": 6,
+  "parts": {
+    "Left integrated ear": {
+      "stl": "left_crab_face.stl",
+      "rotation_z_deg": 45,
+      "outer_brim_mm": 0,
+      "supports": false
     },
-    "right_crab_face": {
-      "settings": {
-        "filament used [g]": "18.46",
-        "brim_width": "0",
-        "fill_density": "20%",
-        "first_layer_height": "0.25",
-        "gcode_flavor": "klipper",
-        "layer_height": "0.15",
-        "nozzle_diameter": "0.5",
-        "perimeters": "3",
-        "support_material": "0"
-      },
-      "extrusion_layers": 31,
-      "first_layer_xy_extrusion_segments_excluding_brim": 3129,
-      "bridge_layer_z_mm": [
-        1.45,
-        1.9,
-        2.05,
-        2.35,
-        2.5,
-        2.65,
-        3.25
-      ],
-      "reviewed_layer_z_mm": [
-        0.25,
-        2.35,
-        4.45
-      ]
+    "Right integrated ear": {
+      "stl": "right_crab_face.stl",
+      "rotation_z_deg": 45,
+      "outer_brim_mm": 0,
+      "supports": false
     },
-    "crab_eyes": {
-      "settings": {
-        "filament used [g]": "10.85",
-        "brim_width": "0",
-        "fill_density": "20%",
-        "first_layer_height": "0.25",
-        "gcode_flavor": "klipper",
-        "layer_height": "0.15",
-        "nozzle_diameter": "0.5",
-        "perimeters": "3",
-        "support_material": "0"
-      },
-      "extrusion_layers": 66,
-      "first_layer_xy_extrusion_segments_excluding_brim": 1366,
-      "bridge_layer_z_mm": [
-        2.65,
-        3.4,
-        3.7,
-        3.85,
-        4.0,
-        8.2,
-        9.1
-      ],
-      "reviewed_layer_z_mm": [
-        0.25,
-        3.25,
-        4.45
-      ]
+    "Center crab eyes": {
+      "stl": "crab_eyes.stl",
+      "rotation_z_deg": 45,
+      "outer_brim_mm": 0,
+      "supports": false
     },
-    "ear_magnet_carrier_print_two": {
-      "settings": {
-        "filament used [g]": "7.60",
-        "brim_width": "4",
-        "fill_density": "40%",
-        "first_layer_height": "0.25",
-        "gcode_flavor": "klipper",
-        "layer_height": "0.15",
-        "nozzle_diameter": "0.5",
-        "perimeters": "4",
-        "support_material": "0"
-      },
-      "extrusion_layers": 73,
-      "first_layer_xy_extrusion_segments_excluding_brim": 467,
-      "bridge_layer_z_mm": [
-        8.2
-      ],
-      "reviewed_layer_z_mm": [
-        0.25,
-        5.05,
-        7.75
-      ]
+    "Left ear base": {
+      "stl": "glue_on_base_SOURCE_GEOMETRY.stl",
+      "rotation_z_deg": 45,
+      "outer_brim_mm": 4,
+      "supports": false
     },
-    "glue_on_base_SOURCE_GEOMETRY": {
-      "settings": {
-        "filament used [g]": "5.89",
-        "brim_width": "4",
-        "fill_density": "40%",
-        "first_layer_height": "0.25",
-        "gcode_flavor": "klipper",
-        "layer_height": "0.15",
-        "nozzle_diameter": "0.5",
-        "perimeters": "4",
-        "support_material": "0"
-      },
-      "extrusion_layers": 66,
-      "first_layer_xy_extrusion_segments_excluding_brim": 482,
-      "bridge_layer_z_mm": [
-        8.2
-      ],
-      "reviewed_layer_z_mm": [
-        0.25,
-        5.05,
-        7.75
-      ]
+    "Right ear base": {
+      "stl": "glue_on_base_SOURCE_GEOMETRY.stl",
+      "rotation_z_deg": 45,
+      "outer_brim_mm": 4,
+      "supports": false
     },
-    "center_hat_glue_base_3_of_5": {
-      "settings": {
-        "filament used [g]": "2.70",
-        "brim_width": "4",
-        "fill_density": "40%",
-        "first_layer_height": "0.25",
-        "gcode_flavor": "klipper",
-        "layer_height": "0.15",
-        "nozzle_diameter": "0.5",
-        "perimeters": "4",
-        "support_material": "0"
-      },
-      "extrusion_layers": 66,
-      "first_layer_xy_extrusion_segments_excluding_brim": 228,
-      "bridge_layer_z_mm": [
-        8.2
-      ],
-      "reviewed_layer_z_mm": [
-        0.25,
-        5.05,
-        7.75
-      ]
-    },
-    "ear_magnet_fit_test_strip": {
-      "settings": {
-        "filament used [g]": "7.58",
-        "brim_width": "4",
-        "fill_density": "40%",
-        "first_layer_height": "0.25",
-        "gcode_flavor": "klipper",
-        "layer_height": "0.15",
-        "nozzle_diameter": "0.5",
-        "perimeters": "4",
-        "support_material": "0"
-      },
-      "extrusion_layers": 66,
-      "first_layer_xy_extrusion_segments_excluding_brim": 467,
-      "bridge_layer_z_mm": [
-        8.2
-      ],
-      "reviewed_layer_z_mm": [
-        0.25,
-        5.05,
-        7.75
-      ]
+    "Front-facing center base": {
+      "stl": "center_hat_glue_base_3_of_5.stl",
+      "rotation_z_deg": 45,
+      "outer_brim_mm": 4,
+      "supports": false
     }
-  }
+  },
+  "first_layer_contact": "All six parts",
+  "support_extrusions": 0,
+  "reviewed_layers_mm": [
+    0.25,
+    3.85,
+    10.45
+  ],
+  "estimated_time": "5h 0m 5s",
+  "filament_g": 93.28,
+  "physical_fit": "Pending",
+  "slicer_warnings": [
+    {
+      "part": "Left integrated ear",
+      "messages": [
+        "Floating bridge anchors",
+        "Long bridging extrusions"
+      ],
+      "longest_bridge_segment_mm": 25.2,
+      "layer_z_mm": 1.9,
+      "physical_bridge_check": "Pending"
+    }
+  ]
 }

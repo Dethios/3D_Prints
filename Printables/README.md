@@ -1,6 +1,6 @@
 # Printables downloads
 
-Files downloaded from Printables, as identified by the owner. Original filenames and file contents are preserved.
+Files downloaded from Printables and related local print plates. Local filenames and file contents are preserved.
 
 | Model / maker notes | Creator | Printables ID | Local assets |
 | --- | --- | --- | --- |
@@ -12,6 +12,11 @@ Files downloaded from Printables, as identified by the owner. Original filenames
 | [Tripp Trapp / IKEA Trofast storage](tripp-trapp-trofast/README.md) | Not verified | [361329](https://www.printables.com/model/361329-tripp-trapp-stokke-chair-ikea-trofast-plastic-stor) | Both V4 side 3MFs |
 | [Modular mini-figure display shelf](modular-mini-figure-display-shelf/README.md) | vrplanet | [1179271](https://www.printables.com/model/1179271-modular-mini-figure-display-shelf) | STL, 3MF, and maker PDF |
 | [Stroller umbrella holder](stroller-umbrella-holder/README.md) | wallace (maker package) | [460943](https://www.printables.com/model/460943-stroller-ubmrella-holder) | STL, SCAD, maker PDF, and two related 3MFs with unverified provenance |
+| [Yet Another Fidget Infinity Cube v2](yet-another-fidget-infinity-cube-v2/README.md) | Austin Vojta | [928](https://www.printables.com/model/928-yet-another-fidget-infinity-cube-v2) | Two rounded STL variants |
+| [Mickey and Minnie Mouse Halloween Pumpkin Lamp](mickey-and-minnie-mouse-halloween-pumpkin-lamp/README.md) | TheLightning | [1526654](https://www.printables.com/model/1526654-mickey-and-minnie-mouse-halloween-pumpkin-lamp) | Two source 3MFs and a local PrusaSlicer plate |
+| [Mickey Mouse Pumpkin](mickey-mouse-pumpkin/README.md) | KN16, remix of nicklopez1983 | [623415](https://www.printables.com/model/623415-mickey-mouse-pumpkin) | Tealight STL |
+| [LEGO-style head lantern – Halloween](lego-style-head-lantern-halloween/README.md) | Spider753268 | [1846487](https://www.printables.com/model/1846487-lego-style-head-lantern-halloween) | Skeleton head 3MF |
+| [Parametric hand-pump limiter](parametric-hand-pump-limiter/README.md) | Riskable | [26012](https://www.printables.com/model/26012-save-hand-sanitizer-and-soap-parametric-hand-pump-) | 8 × 3 mm STL |
 
 Each model folder has a README with its source, local inventory, available maker instructions and unresolved details. Where direct Printables access was blocked, the notes use local maker PDFs, indexed descriptions, or maker listings elsewhere. Exact license terms are marked unverified where the source could not be read.
 

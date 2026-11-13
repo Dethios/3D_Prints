@@ -1,5 +1,7 @@
 # Custom projects
 
+- [Container lid](container-lid/README.md) is an original design for a household container.
+
 - [Chube Hotend Integration](Chube_Hotend_Integration/README.md): owner's Chube Air UHF adaptation of the A4T Rapido cowling.
 - [Sorcerer hat](sorcerer_hat/README.md): owner's hat without ears, with separate moon and star geometry.
 

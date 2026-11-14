@@ -7,6 +7,7 @@ __pycache__/
 .env.*
 !.env.example
 .codex/coordination/
+/.coordination/
 
 # These retain their own Git history and upstreams.
 /GitHub-Mods/A4T/

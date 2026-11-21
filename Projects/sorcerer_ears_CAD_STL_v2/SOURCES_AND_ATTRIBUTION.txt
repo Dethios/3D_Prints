@@ -53,6 +53,10 @@ MODIFICATIONS IN THIS PACKAGE
 - Center hat strips/bases use the central three original magnet locations,
   with the outer two locations trimmed away. Their center placement is an
   adaptation for this project, not an original feature of the references.
+- The 3D NX3 center hat uses the rear-facing three-pocket pattern measured
+  from the sibling Crab NX3 center base, a derivative of the Titanhunter NX3
+  adapter. The rounded crown and brim are newly modeled, with the existing
+  sorcerer artwork adapted to the curved crown.
 - CAD STEP mounting surfaces are sewn faceted solids derived from the STL
   surfaces. The generator, source hashes and geometry report document this.
 

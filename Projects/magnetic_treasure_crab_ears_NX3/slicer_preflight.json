@@ -53,19 +53,7 @@
     3.85,
     10.45
   ],
-  "estimated_time": "5h 0m 5s",
-  "filament_g": 93.28,
-  "physical_fit": "Pending",
-  "slicer_warnings": [
-    {
-      "part": "Left integrated ear",
-      "messages": [
-        "Floating bridge anchors",
-        "Long bridging extrusions"
-      ],
-      "longest_bridge_segment_mm": 25.2,
-      "layer_z_mm": 1.9,
-      "physical_bridge_check": "Pending"
-    }
-  ]
+  "estimated_time": "4h 59m 51s",
+  "filament_g": 93.35,
+  "physical_fit": "Pending"
 }

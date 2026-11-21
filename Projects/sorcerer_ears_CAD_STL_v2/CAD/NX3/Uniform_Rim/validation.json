@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "mount_centerline_face_width_mm": 5.0557,
+  "mating_base_sha256": "da266036545d519201ea5a7a820a934d291cf9bc8f4e35c120d72625074806e6",
+  "baseline_mating_overlap_mm3": 1.2609550313577529,
+  "five_bores_preserved": true,
+  "ear_pair_overlap_mm3": 0.0,
+  "ears": {
+    "left_brooms": {
+      "artwork_placement": {
+        "scale": 0.94,
+        "radial_offset_mm": 7.5
+      },
+      "gold_solid_count": 7,
+      "dimensions_xyz_mm": [
+        99.988,
+        88.542,
+        10.35
+      ],
+      "exported_rim_width_range_mm": [
+        5.0536,
+        5.0557
+      ],
+      "center_hat_overlap_mm3": 0.0,
+      "center_base_overlap_mm3": 0.0,
+      "mating_base_overlap_mm3": 1.260954791783206
+    },
+    "right_mouse": {
+      "artwork_placement": {
+        "scale": 0.94,
+        "radial_offset_mm": 4.5
+      },
+      "gold_solid_count": 10,
+      "dimensions_xyz_mm": [
+        99.988,
+        88.542,
+        10.35
+      ],
+      "exported_rim_width_range_mm": [
+        5.0536,
+        5.0557
+      ],
+      "center_hat_overlap_mm3": 0.0,
+      "center_base_overlap_mm3": 0.0,
+      "mating_base_overlap_mm3": 1.260954791783206
+    }
+  },
+  "physical_fit": "Pending"
+}

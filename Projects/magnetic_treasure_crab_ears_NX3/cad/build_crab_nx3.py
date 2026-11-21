@@ -172,13 +172,13 @@ SPOTS = [(112, 161, 3), (131, 126, 3.4), (145, 113, 2.9), (165, 91, 3.2),
 
 
 def cut_gem(outline, table_center, table_scale, table_height):
-    """Build a solid with a flat table and planar facets down to the girdle."""
+    """Build a faceted gem with a foundation that starts on the print bed."""
     girdle = np.asarray(list(orient(outline).exterior.coords)[:-1])
     center = np.array([table_center.x, table_center.y])
     table = center + (girdle - center) * table_scale
     count = len(girdle)
     vertices = [(x, y, z) for loop, z in
-                [(girdle, 1.68), (girdle, 2.64), (table, table_height)]
+                [(girdle, 0), (girdle, 2.64), (table, table_height)]
                 for x, y in loop]
     faces = []
     for i in range(count):

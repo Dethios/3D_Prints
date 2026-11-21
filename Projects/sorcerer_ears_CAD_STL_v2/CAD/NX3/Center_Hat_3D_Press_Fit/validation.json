@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "mating_base": "magnetic_treasure_crab_ears_NX3/stl/center_hat_glue_base_3_of_5.stl",
+  "mating_base_sha256": "6b01b0286c63678d9c931d8f94c2ce56d62f709e2b7c4db2109a434bad656ca2",
+  "mount_normal": "-Z (rear), 90 degrees from the under-hat mount",
+  "nominal_mating_gap_mm": 0.15,
+  "crown_scale": 1.5,
+  "vertical_bisection": true,
+  "print_face_area_mm2": 2365.399,
+  "hat_offset_from_base_mm": [
+    0.0,
+    0.0,
+    4.75
+  ],
+  "matching_pockets": [
+    {
+      "center_xy_mm": [
+        -12.52,
+        5.58
+      ],
+      "diameter_mm": 6.25,
+      "depth_mm": 3.15
+    },
+    {
+      "center_xy_mm": [
+        0.0,
+        6.519
+      ],
+      "diameter_mm": 6.25,
+      "depth_mm": 3.15
+    },
+    {
+      "center_xy_mm": [
+        12.52,
+        5.58
+      ],
+      "diameter_mm": 6.25,
+      "depth_mm": 3.15
+    }
+  ],
+  "nominal_assembly_intersections_mm3": {
+    "supplied_center_base": 0.0,
+    "left_brooms_ear": 0.0,
+    "left_brooms_base": 0.0,
+    "right_mouse_ear": 0.0,
+    "right_mouse_base": 0.0
+  },
+  "headband_front_clearance_lower_bound_mm": 5.15,
+  "exports": {
+    "center_hat_3d_blue": {
+      "dimensions_xyz_mm": [
+        58.512,
+        78.077,
+        19.206
+      ],
+      "mesh_volume_mm3": 19044.741,
+      "solid_count": 1
+    },
+    "center_hat_3d_raised_white": {
+      "dimensions_xyz_mm": [
+        35.895,
+        58.104,
+        10.954
+      ],
+      "mesh_volume_mm3": 3605.618,
+      "solid_count": 5
+    },
+    "center_hat_3d_assembled": {
+      "dimensions_xyz_mm": [
+        58.512,
+        78.077,
+        19.206
+      ],
+      "mesh_volume_mm3": 22778.218,
+      "solid_count": 1
+    },
+    "moon_and_stars_flat_print": {
+      "dimensions_xyz_mm": [
+        113.833,
+        24.154,
+        9.424
+      ],
+      "mesh_volume_mm3": 3605.608,
+      "solid_count": 5
+    }
+  },
+  "physical_fit": "Pending",
+  "press_fit": {
+    "nominal_clearance_per_side_mm": 0.08,
+    "entry_bevel_mm": [
+      0.22,
+      0.55
+    ],
+    "relief_above_crown_mm": 0.7,
+    "pieces": {
+      "crescent": {
+        "artwork_area_mm2": 233.93,
+        "plan_dimensions_mm": [
+          22.81,
+          24.15
+        ],
+        "seat_z_mm": 3.1
+      },
+      "top_star": {
+        "artwork_area_mm2": 93.73,
+        "plan_dimensions_mm": [
+          14.23,
+          14.17
+        ],
+        "seat_z_mm": 2.2
+      },
+      "small_right_star": {
+        "artwork_area_mm2": 36.2,
+        "plan_dimensions_mm": [
+          8.55,
+          8.31
+        ],
+        "seat_z_mm": 3.1
+      },
+      "lower_left_star": {
+        "artwork_area_mm2": 86.91,
+        "plan_dimensions_mm": [
+          13.44,
+          13.77
+        ],
+        "seat_z_mm": 3.35
+      },
+      "lower_right_star": {
+        "artwork_area_mm2": 100.81,
+        "plan_dimensions_mm": [
+          14.81,
+          14.71
+        ],
+        "seat_z_mm": 3.75
+      }
+    },
+    "physical_press_fit": "Pending"
+  }
+}

@@ -29,14 +29,43 @@ Both use five 6 x 3 mm magnet positions, but their spacing, axes and mating
 curves differ. A five-hole count alone does not make them interchangeable.
 
 PARTS TO PRINT WITHIN YOUR CHOSEN FAMILY
-For the two ears:
+For the NX3 ears with the continuous gold rim:
+  Use STL/NX3/Uniform_Rim. Print left_brooms_assembled.stl and
+  right_mouse_assembled.stl for a single-color pair. For separate colors,
+  print two ear_blue_base.stl plus one of each *_gold_flat_print.stl and
+  attach the gold pieces to the blue backings. The *_raised_gold.stl files
+  preserve assembly positions for a multipart slice with the blue backing.
+  Reuse the standard NX3 glue-on bases or the matching NX3 headband.
+
+For the original two-layer ears:
   2 x ear_blue_base.stl
   1 x left_brooms_raised_gold.stl
   1 x right_mouse_raised_gold.stl
   2 x glue_on_base_SOURCE_GEOMETRY.stl (if using a store-bought headband)
 OR print the two *_assembled.stl files instead of the separate color parts.
 
-For the optional interchangeable center hat:
+For the centered flat-back NX3 hat with press-fit artwork:
+  Print center_hat_3d_blue.stl and moon_and_stars_flat_print.stl separately
+  from STL/NX3/Center_Hat_3D_Press_Fit_Centered. Both are oriented at Z=0.
+  Remove the brim from each insert before seating it in its matching recess.
+  Use center_hat_3d_assembled.stl for a one-color print.
+  center_hat_3d_raised_white.stl shows the inserts at installed heights.
+  Use the center_hat_glue_base_3_of_5.stl from the sibling Crab NX3 project.
+
+For the earlier enlarged flat-back 3D NX3 center hat and Crab NX3 glue base:
+  Use STL/NX3/Center_Hat_3D_Flat_Back/center_hat_3d_assembled.stl for one color.
+  For two colors, import center_hat_3d_blue.stl and
+  center_hat_3d_raised_white.stl from that same folder as one multipart object.
+  Use the center_hat_glue_base_3_of_5.stl from the sibling Crab NX3 project.
+
+For the earlier full-depth 3D NX3 center hat and Crab NX3 glue base:
+  Use STL/NX3/Center_Hat_3D/center_hat_3d_assembled.stl for one color.
+  For a multipart print, import center_hat_3d_blue.stl and
+  center_hat_3d_raised_white.stl together as one object. The four white
+  accents follow the curved crown and share coordinates with the blue part.
+  Use the center_hat_glue_base_3_of_5.stl from the sibling Crab NX3 project.
+
+For the original flat interchangeable center hat:
   1 x center_hat_blue_base.stl
   1 x center_hat_raised_white.stl
   1 x center_hat_glue_base_3_of_5.stl
@@ -54,6 +83,15 @@ Optional center hat: 6 more magnets, three per mating side.
 Use consistent polarity on every accessory and the opposite on its bases.
 
 DIMENSIONS AND TWO-LAYER ARTWORK
+The NX3 continuous rim measures 5.06 mm in the front view, matching the
+glue-on base measured at its centerline. It follows the full perimeter
+through the lower mounting arc. The gold rim sits 0.35 mm above the 10 mm
+mount to clear the center-hat adapter. The brooms and mouse artwork is
+scaled to 94% so every detail fits inside the wider border.
+Rebuild with python CAD/build_nx3_uniform_rim_ears.py. The STEP exports and
+validation record are in CAD/NX3/Uniform_Rim. The earlier NX3 print plates
+contain the earlier geometry.
+
 The ear outlines are approximately 100 mm / 3.94 in wide, as in the source
 templates. They are not the 88 mm v1 outlines. Keeping the interfaces at the
 source scale is essential. Do not scale the complete model to adjust fit.
@@ -71,7 +109,51 @@ the included artwork to read upright. Dry-fit before gluing.
 Filenames refer to a FRONT VIEW: brooms on viewer's left / wearer's right,
 mouse on viewer's right / wearer's left.
 
-CENTER HAT — A REFERENCE-DERIVED ADAPTATION
+CENTER HAT — 3D NX3 REVISION
+The current press-fit hat has a centered crown and brim with the larger
+crescent and four stars. Use the inserts from the same centered revision
+because their curved faces follow the new crown. Each insert
+has a flat underside and a beveled entry edge. The top follows the curved
+crown. The matching recess has a flat floor and 0.08 mm nominal clearance
+per side. Verify physical fit with the intended filament and printer.
+PrusaSlicer 2.9.7 sliced the body at 0.20 mm (Galaxy Blue ASA) and the
+inserts at 0.15 mm (Cotton White PLA), both with a 0.5 mm nozzle and supports
+off. A 4 mm brim cleared the insert adhesion warning seen with a 2 mm brim.
+Rebuild with python CAD/build_nx3_hat_press_fit.py. See the STEP exports and
+validation record in CAD/NX3/Center_Hat_3D_Press_Fit_Centered. See
+previews/NX3_center_hat_press_fit_centered.png for the straight-on views.
+
+The enlarged flat-back version keeps the front half of the crown and brim
+after a vertical center cut. The crown is scaled to 150% in each axis before
+the cut. The finished hat is about 58.5 mm wide, 78.1 mm tall and 19.2 mm deep.
+Its three mounting pockets are built into the lower brim at their original
+locations and dimensions. The cut face is already at Z=0 for printing.
+The assembled STL sliced with supports disabled in PrusaSlicer 2.9.7 using
+the Galaxy Blue ASA settings, a 0.5 mm nozzle and 0.2 mm layers. The magnet
+pockets have bridged roofs. Physical fit with the printed base is pending.
+Rebuild with python CAD/build_nx3_center_hat_3d.py --flat-back from the project
+folder. STEP and validation files are in CAD/NX3/Center_Hat_3D_Flat_Back.
+See previews/NX3_center_hat_3d_flat_back.png for the assembly and print face.
+
+The 3D version has an oval brim and a tapered crown with the raised moon and
+stars. The mating plate faces rearward, 90 degrees from the original underside
+interface. Its three rear-facing magnet pockets line up with the front-facing
+pockets in magnetic_treasure_crab_ears_NX3/stl/center_hat_glue_base_3_of_5.stl.
+The pockets measure 6.25 mm in diameter and 3.15 mm deep for 6 x 3 mm magnets.
+The assembly check uses a 0.15 mm face gap. The validation record identifies the
+exact checked base by SHA-256. Test with your printed base and actual magnets.
+
+Rebuild with python CAD/build_nx3_center_hat_3d.py from this project folder
+with the Crab NX3 project beside it. STEP exports and validation are under
+CAD/NX3/Center_Hat_3D. See previews/NX3_center_hat_3d.png for the assembly.
+For the 3D version, start with the rear plate flat on the bed and inspect
+supports under the crown and brim and bridges over the rear magnet pockets.
+The PrusaSlicer 2.9.7 check used the existing Galaxy Blue ASA settings
+(0.5 mm nozzle, 0.2 mm layers), +45 degrees Z, and automatic supports from
+the build plate. The slicer placed removable support in the three pockets
+and under the raised body. Clean the pockets before checking magnet fit.
+
+CENTER HAT — ORIGINAL FLAT VERSION
 The supplied references do not provide a center hat mount. The center parts
 use the three middle magnet positions and mating curve from the chosen
 source interface; the ends containing the outer two positions are trimmed.

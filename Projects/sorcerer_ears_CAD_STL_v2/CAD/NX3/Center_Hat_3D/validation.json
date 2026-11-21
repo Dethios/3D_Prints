@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "mating_base": "magnetic_treasure_crab_ears_NX3/stl/center_hat_glue_base_3_of_5.stl",
+  "mating_base_sha256": "2beb482b8a5f032d123c63c8331b54e6d225be0270d6489c1cef6d33ddfecdfa",
+  "mount_normal": "-Z (rear), 90 degrees from the under-hat mount",
+  "nominal_mating_gap_mm": 0.15,
+  "hat_offset_from_base_mm": [
+    0.0,
+    0.0,
+    4.75
+  ],
+  "matching_pockets": [
+    {
+      "center_xy_mm": [
+        -12.52,
+        5.58
+      ],
+      "diameter_mm": 6.25,
+      "depth_mm": 3.15
+    },
+    {
+      "center_xy_mm": [
+        0.0,
+        6.519
+      ],
+      "diameter_mm": 6.25,
+      "depth_mm": 3.15
+    },
+    {
+      "center_xy_mm": [
+        12.52,
+        5.58
+      ],
+      "diameter_mm": 6.25,
+      "depth_mm": 3.15
+    }
+  ],
+  "nominal_assembly_intersections_mm3": {
+    "supplied_center_base": 0.0,
+    "left_brooms_ear": 0.0,
+    "left_brooms_base": 0.0,
+    "right_mouse_ear": 0.0,
+    "right_mouse_base": 0.0
+  },
+  "headband_front_clearance_lower_bound_mm": 5.15,
+  "exports": {
+    "center_hat_3d_blue": {
+      "dimensions_xyz_mm": [
+        39.005,
+        66.019,
+        26.5
+      ],
+      "mesh_volume_mm3": 14894.372,
+      "solid_count": 1
+    },
+    "center_hat_3d_raised_white": {
+      "dimensions_xyz_mm": [
+        17.889,
+        32.751,
+        8.231
+      ],
+      "mesh_volume_mm3": 92.858,
+      "solid_count": 4
+    },
+    "center_hat_3d_assembled": {
+      "dimensions_xyz_mm": [
+        39.005,
+        66.019,
+        26.5
+      ],
+      "mesh_volume_mm3": 14987.23,
+      "solid_count": 1
+    }
+  },
+  "physical_fit": "Pending"
+}

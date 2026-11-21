@@ -22,8 +22,8 @@
         87.758,
         10.47
       ],
-      "volume_mm3": 29041.406,
-      "sha256": "48bfae90c878e46bad12e99b4ee8bcfec7c549be7b798735a9727390ec4944fb"
+      "volume_mm3": 29542.191,
+      "sha256": "5c9f951f44e3c75cb5dc187b406a44c3d41868495e23aa485406b72173fc9f64"
     },
     "right_crab_face.stl": {
       "dimensions_mm": [
@@ -31,8 +31,8 @@
         87.758,
         10.47
       ],
-      "volume_mm3": 28274.602,
-      "sha256": "1196602c6edf9c5a5deef2cb1a461f8767ffe8e53b5a8aa5eed86aa022ebbd42"
+      "volume_mm3": 28278.328,
+      "sha256": "74cf34915f80d850ecf58c1e28681d017cd72fd1579dae2f05cadc72f904d65f"
     },
     "crab_eyes.stl": {
       "dimensions_mm": [
@@ -69,7 +69,7 @@
   "magnet_back_wall_verified_mm": 1.05,
   "rim_highlight_depth_mm": 10.47,
   "ear_artwork_base_z_mm": 0,
-  "center_base_step_roundtrip_volume_mm3": 1877.05,
+  "center_base_step_roundtrip_volume_mm3": 1875.702,
   "center_pocket_centers_xy_mm": [
     [
       -12.52,

@@ -52,3 +52,30 @@ Ellis rotates parts 45° in the bed plane mainly to make rear seam placement mor
 4. Save the 3MF with the selected settings. Reopen and slice it to confirm the final layout, first-layer adhesion features and pocket bridges.
 
 The NX3 crab plate used +45° on all eight parts, 0° base infill angle, and 4 mm outer brims on the five mount pieces. Those settings were checked together in PrusaSlicer. Choose brim and infill settings for each future plate.
+
+## Slice and print on the Creality K2 with CFS
+
+The K2 has stock Costco hardware, one four-slot CFS and four bundled Unicorn nozzle sizes. PrusaSlicer 2.9.7 has matching printer and print presets named `Creality K2 (0.2 mm)`, `Creality K2 (0.4 mm)`, `Creality K2 (0.6 mm)` and `Creality K2 (0.8 mm)`. The profiles use one physical nozzle and four virtual extruders. The saved Moonraker host at `192.168.1.246:4409` is associated with all four profiles. See [LAN access and installed software](Printer/README.md#creality-k2).
+
+### Prepare the plate and assign colors
+
+1. Confirm the installed nozzle and select the corresponding printer and print presets. Use K2 presets and review any settings brought in by an imported 3MF. The profiles use a 260 × 260 × 260 mm print envelope.
+2. Check that the CFS is connected and enabled. Load the intended spools, check that their material and color are correct on the printer, and assign a suitable slicer filament preset to each used slot. For a first multicolor check, use different colors of the same CFS-compatible filament type.
+3. Import aligned STLs for each multicolor part together as a single multipart object, or open a 3MF and verify alignment and assignments. Assign each part to the intended extruder. Use multi-material painting for regions on a single mesh. [Importing multipart models](https://help.prusa3d.com/article/importing-multi-material-model_121191) · [Multi-material painting](https://help.prusa3d.com/article/multi-material-painting_262620)
+4. Use the following mapping when the CFS shows the default slot assignments. For a single-color plate, assign all parts to whichever loaded slot you intend to use.
+
+| PrusaSlicer extruder | G-code tool | CFS slot |
+| --- | --- | --- |
+| 1 | `T0` | 1 / A (`T1A`) |
+| 2 | `T1` | 2 / B (`T1B`) |
+| 3 | `T2` | 3 / C (`T1C`) |
+| 4 | `T3` | 4 / D (`T1D`) |
+
+### Review, transfer and print
+
+1. Slice and preview by tool. Verify that each color appears in the right place, inspect thin details and color boundaries, and check the first layer, supports, bridges and any support or brim tool assignments. Save the configured project as 3MF and export the reviewed G-code.
+2. Keep the wipe tower and PrusaSlicer's single-extruder multi-material priming disabled with these presets. The K2 performs CFS swaps and flushes at its chute. When checking the G-code, confirm that firmware object polygons precede `START_PRINT`, the initial tool and temperature wait come before `LINE_PURGE`, `G92 E0` follows the purge before first-layer moves, and the file calls `END_PRINT`. The K2's `START_PRINT` already runs the adaptive mesh. [KAMP-K2](https://bbraeu.github.io/Creality-Helper-Script-Wiki-K2/helper-script/klipper-adaptive-meshing-and-purging-k2/) · [K2 CFS tool changes](https://bbraeu.github.io/Creality-Helper-Script-Wiki-K2/helper-script/cfs-k2/)
+3. With authorization to transfer, upload the reviewed G-code to the K2 through the saved PrusaSlicer Moonraker connection or the Mainsail file panel. Before starting, confirm the file, nozzle, clear build plate and purge chute, and physical CFS slot order. Match the spools to the tool numbers already encoded in the file. If starting from the Creality touchscreen, confirm CFS is enabled and review any filament mapping shown before starting. [Creality K2 user manual](https://wiki.creality.com/products/fully-enclosed/k2/%E5%A4%9A%E8%AF%AD%E7%A7%8D%E8%AF%B4%E6%98%8E%E4%B9%A6/k2-sm-001_%E8%AF%B4%E6%98%8E%E4%B9%A6%28%E8%8B%B1%E6%96%87%29.pdf)
+4. Start only when authorized. For a new nozzle, filament or color combination, use a small test and watch the first layer and first change. Record whether the cut, retract, load and flush succeed and whether color carryover remains before committing to a full plate.
+
+On November 22, 2026, all four presets passed local G-code checks on a four-slot test plate, a slot-1-only plate and a slot-4-only plate. The 12 exports verified the tool IDs and startup and shutdown sequence. Transfer, physical swaps, purge quality and printed results remain unverified by this check.

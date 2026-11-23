@@ -1,6 +1,13 @@
 # 3D Print Projects
 
-CAD sources, printable models, reference assets and validation tools for projects intended for a Voron 2.
+CAD sources, printable models, reference assets and validation tools for the Voron 2.4 and Creality K2.
+
+## Printers
+
+| Printer | Setup | Workflow |
+| --- | --- | --- |
+| Voron 2.4 | PrusaSlicer `VictorCustom` | [Prepare a Voron print](#prepare-a-voron-print) |
+| Creality K2 | Stock Costco hardware, 0.2, 0.4, 0.6 and 0.8 mm Unicorn nozzles, and one four-slot CFS | [Slice and print with CFS](PRINT_WORKFLOW.md#slice-and-print-on-the-creality-k2-with-cfs) · [Mainsail at `192.168.1.246:4409` and installed software](Printer/README.md#creality-k2) |
 
 ## Projects
 
@@ -12,7 +19,7 @@ CAD sources, printable models, reference assets and validation tools for project
 | [Printables downloads](Printables/README.md) | Downloaded models grouped by listing, with maker notes and original filenames. |
 | [Custom projects](Projects/README.md) | Ear kits, sorcerer hat and the Chube Air UHF integration. |
 | [GitHub mods](GitHub-Mods/README.md) | Separate A4T, A4Tv2, and whopping Voron mods checkouts with their upstream history. |
-| [Printer files](Printer/README.md) | Rewiring parts, cutter mod, and calibration and test prints. |
+| [Printer files](Printer/README.md) | K2 dashboard and software inventory, rewiring parts, cutter mod, and calibration and test prints. |
 | [Star Wars source notes](Unverified-Downloads/README.md) | Candidate download pages, maker instructions, license evidence and local plate contents. |
 
 The local workspace includes print plates, downloaded models, GitHub checkouts and migration records. Download listings and local filenames are recorded in the linked indexes.
@@ -21,10 +28,16 @@ The local workspace includes print plates, downloaded models, GitHub checkouts a
 
 - **Autodesk Fusion and Fusion MCP** support interactive CAD design, dimensions and assembly inspection. Preserve the editable design reference and export STEP and print meshes.
 - **CadQuery** supports scripted geometry, reproducible builds and parameter variants. Edit the existing generator when revising a scripted project.
-- **PrusaSlicer** is the main slicer for orientation, supports, layer inspection and G-code generation.
+- **PrusaSlicer** handles orientation, supports, layer inspection and G-code for both printers. Use the matching machine and nozzle preset. The K2 presets support CFS slot assignment and multicolor preview.
 - **Blender is optional** for rendered previews using the included scripts. Use an assembly view or a render from generated geometry when appearance and placement need review.
 
 See [CAD and Print Workflow](PRINT_WORKFLOW.md) for detailed pathway selection and print checks.
+
+### Illustration to CAD
+
+Start with supplied or generated artwork and a dimensioned front-view guide from the carrier. Fit the illustration inside the available field, review it at print size, and record the selected file and hash. Hand CAD the editable contours, region masks, or relief inputs with their scale and placement. Use the [Printable Art Design skill](.agents/skills/printable-art-design/SKILL.md) for the handoff and optional local ComfyUI procedure.
+
+The Mulan NX3 study in `Projects/mulan_openwork_ears_NX3/` is a local example. Its `artwork/SOURCES.md` records the references and their roles. Its `previews/reference_comparison.png` shows the fitted illustration, existing STL relief, and paint guide side by side. Use the geometric relief and the target printer's toolpaths to evaluate printed detail.
 
 ## Codex skills and agent operations
 
@@ -34,21 +47,25 @@ Project skills live in `.agents/skills/`. Open a new Codex session in this works
 | --- | --- | --- |
 | [fusion-print-design](.agents/skills/fusion-print-design/SKILL.md) | Fusion MCP modeling, assembly inspection and verified exports | `Use $fusion-print-design to revise this bracket using the supplied mating dimensions, export STEP and STL into its project folder, and report the checks.` |
 | [voron-print-preflight](.agents/skills/voron-print-preflight/SKILL.md) | Geometry, saved Voron presets, layer review and physical fit evidence | `Use $voron-print-preflight on magnetic_treasure_crab_ears_v3/stl/magnet_fit_coupon.stl with my VictorCustom printer and actual filament. Report warnings and pending checks.` |
+| [k2-cfs-preflight](.agents/skills/k2-cfs-preflight/SKILL.md) | K2 presets, four-slot assignments, layer preview and startup and shutdown G-code | `Use $k2-cfs-preflight to check this plate against its intended nozzle and CFS slots.` |
+| [printable-art-design](.agents/skills/printable-art-design/SKILL.md) | Illustration generation and review, editable print artwork, and CAD handoff | `Use $printable-art-design to fit this supplied illustration to the approved carrier and prepare its editable CAD inputs.` |
 
-Skills guide the available tools. Fusion MCP, local executables and app access must be available to the executing agent. For a new Fusion design, use the design skill through export, then the preflight skill through local slicing and layer review. For existing scripted projects, rebuild with CadQuery and its validator before preflight. Physical fit results belong with the part revision and selected settings.
+Fusion MCP, local executables and app access must be available to the executing agent. For a new Fusion design, use the design skill through export, then use the target printer's preflight skill. For existing scripted projects, rebuild with CadQuery and its validator before preflight. Physical fit results belong with the part revision and selected settings.
 
-Main owns integration and chooses installed roles according to the current global `agents/*.toml` files. Assign only independent work that benefits from delegation, using explicit supported model and effort settings from those roles.
+### Worker assignments
 
-| Installed role | Recommended operation | Expected evidence |
+Repo profiles live in [`.codex/agents/`](.codex/agents/). Use a fresh trusted local Codex session to pick up the repo roster and instructions. Main proactively delegates substantial independent work and supplies an explicit supported model and effort from each profile's routing guidance. On clients that expose only installed global roles, use the fallback with the repo profile's assignment instructions. [OpenAI custom agent documentation](https://learn.chatgpt.com/docs/agent-configuration/subagents)
+
+| Repo role | Assignment inputs and acceptance | Installed fallback |
 | --- | --- | --- |
-| `print3d` | CAD dimensions, tolerances, materials, orientation and fit decisions | Critical measurements, assumptions, interface checks and proposed coupon |
-| `automation` | Reusable builds, mesh checks and local slicing helpers | Commands, tool versions, exit status, report contents and output paths |
-| `computer_use` | Supported Fusion or PrusaSlicer UI operations | Observed target document, layer inspection and saved project path when requested |
-| `reviewer` | Independent review of consequential mounting, load or tolerance changes | Findings tied to approved mating geometry, nominal assembly and export evidence |
+| [`print-inspector`](.codex/agents/print-inspector.toml) | Compare the actual exports to the exact approved interface and revision. Return measured deviations, mesh evidence, interference and pending physical checks. | `explorer` for inspection, `reviewer` for independent fit review |
+| [`print-cad-designer`](.codex/agents/print-cad-designer.toml) | Verify the selected artwork revision and placement for illustration-led designs. Use the owning project generator or identified Fusion design and mating files. Return editable source, regenerated exports and geometry validation. | `print3d` |
+| [`print-art-designer`](.codex/agents/print-art-designer.toml) | Use scoped visual references, the dimensioned envelope, and keepouts. Return the exact reviewed image and hash, fitted preview, editable CAD inputs, placement and feature measurements, and unresolved defects. | `adaptive_worker` |
+| [`print-process-specialist`](.codex/agents/print-process-specialist.toml) | Use the actual printer, nozzle, material and model revision. Return toolpath evidence, effective settings, CFS mapping when applicable and pending physical checks. | `print3d` |
 
-Give each worker an objective, input paths, owned files or application session, allowed actions, acceptance checks and stopping condition. Verify its actual tools before assigning Fusion or GUI work. One agent owns each live Fusion or PrusaSlicer session at a time. Keep ordinary workers as leaves and preserve others' edits.
+For each assignment, main records the objective, literal input and exclusive output paths, prerequisites, authorized actions, live tool access, time and retry limits, and the acceptance check. Use an empty write scope for read-only inspection and a verified worktree for complex independent writers. Serialize access to each live Fusion or PrusaSlicer session. Match checks to the actual project, using the [documented build and validation commands](PRINT_WORKFLOW.md#rebuild-and-preview) in an owned worktree or scratch copy when they overwrite files. Main owns the local ledger at `.coordination/ledger.json`, integration and approvals. Printer transfer, firmware changes, print start and publication require authorization covering those actions.
 
-For example, ask `Use print3d to compare the proposed carrier against the approved NX3 interface, then use automation to verify the exported STL and scratch slices. Keep app edits serialized.` Main can keep tightly coupled CAD and preview iterations local. Printer transfer, firmware changes and print start require authorization covering those actions.
+For example, `Design a new NX3 ear face using the approved Sorcerer interface` can start a source-interface inspection and an artwork study in parallel once the envelope is known. The CAD worker integrates the fitted artwork, then the process specialist checks the resulting plate. Keep reusable scripts with `automation` and use `computer_use` when a visual app operation needs its own assignment.
 
 ## Lessons from the NX3 crab study
 
@@ -61,7 +78,6 @@ The study's seven STLs passed digital mesh checks. PrusaSlicer 2.9.7 on Windows 
 1. **Record the approved interface once.** Add a small per-family manifest for source paths and hashes, pocket counts and axes, assembly poses, expected clearance and attribution. Start with NX3. Have builders and validators read it, so decorative variants share the same mounting evidence.
 2. **Automate the digital checks.** Give each scripted project a documented build and validation entry point. Reuse checks for reloaded STL solids, source-interface differences and nominal assembly collisions. Run the inexpensive geometry checks first, then render the changed views and slice the affected parts. Publish verified exports per revision when authorized.
 3. **Make slicer checks reproducible.** Add a versioned geometry-only slicer profile or a repeatable export of the effective settings. Record the nozzle, layer heights, orientation, brim, support settings and layer evidence. Keep machine-specific startup code and physical-printer configuration local.
-4. **Refine the existing skills before adding roles.** Extend `fusion-print-design` to cover preserving approved interfaces in scripted CAD and extend `voron-print-preflight` with the isolated CLI fallback. Use `print3d` for fit and source geometry, `automation` for repeatable checks, and `reviewer` when a mounting change merits independent review. Verify tool access and the project ledger at `.coordination/ledger.json` before dispatch. Git ignores the ledger and its recovery files.
 
 ## Rebuild scripted models
 

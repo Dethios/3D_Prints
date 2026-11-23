@@ -6,23 +6,36 @@ CAD sources, printable models, reference assets and validation tools for the Vor
 
 | Printer | Setup | Workflow |
 | --- | --- | --- |
-| Voron 2.4 | PrusaSlicer `VictorCustom` | [Prepare a Voron print](#prepare-a-voron-print) |
+| Voron 2.4 | PrusaSlicer nozzle profiles and matching `Voron PIF` print presets for 0.25, 0.4, 0.5 and 0.6 mm | [Prepare a Voron print](#prepare-a-voron-print) |
 | Creality K2 | Stock Costco hardware, 0.2, 0.4, 0.6 and 0.8 mm Unicorn nozzles, and one four-slot CFS | [Slice and print with CFS](PRINT_WORKFLOW.md#slice-and-print-on-the-creality-k2-with-cfs) · [Mainsail at `192.168.1.246:4409` and installed software](Printer/README.md#creality-k2) |
 
-## Projects
+## Project index
 
-| Folder or file | Contents |
+| Project | Contents |
 | --- | --- |
-| Magnetic treasure crab ears v3 | Earlier crab design; its project folder is not present in this workspace. |
-| [Sorcerer ears](Projects/sorcerer_ears_CAD_STL_v2/READ_ME_FIRST.txt) | NX3 and TimJ mounting variants, editable source, STEP/STL exports, fit strips and previews. |
-| [Treasure crab ears for NX3](Projects/magnetic_treasure_crab_ears_NX3/README.md) | NX3 mounting kit, parts list and assembly notes. The design and print plates are in the local workspace. |
-| [Printables downloads](Printables/README.md) | Downloaded models grouped by listing, with maker notes and original filenames. |
-| [Custom projects](Projects/README.md) | Ear kits, sorcerer hat and the Chube Air UHF integration. |
-| [GitHub mods](GitHub-Mods/README.md) | Separate A4T, A4Tv2, and whopping Voron mods checkouts with their upstream history. |
-| [Printer files](Printer/README.md) | K2 dashboard and software inventory, rewiring parts, cutter mod, and calibration and test prints. |
-| [Star Wars source notes](Unverified-Downloads/README.md) | Candidate download pages, maker instructions, license evidence and local plate contents. |
+| [Sorcerer ears](Projects/sorcerer_ears_CAD_STL_v2/READ_ME_FIRST.txt) | NX3 print files, uniform-rim ears and 3D center hats, plus CAD and source references for the NX3 and Tim J mounting families. Generate the Tim J STLs before slicing that family. |
+| [Treasure crab ears for NX3](Projects/magnetic_treasure_crab_ears_NX3/README.md) | Integrated five-pocket ear carriers, a matched three-pocket crown base and eye unit, a Voron 3MF, and digital validation reports. |
+| [Small-arm clamp adapter](Projects/small_arm_40x40_clamp_adapter/README.md) | CAD source, STEP and STL for an 18 × 18 mm holder on a 40 × 40 mm clamp. Physical assembly fit is pending. |
+| [Chube hotend integration](Projects/Chube_Hotend_Integration/README.md) | A4T cowling adaptation for the Chube Air UHF and CW2/Tap, with source references and print files. |
+| [Sorcerer hat](Projects/sorcerer_hat/README.md) | Standalone hat with separate moon and star geometry. |
+| [Container lid](Projects/container-lid/README.md) | Original replacement lid STL. |
 
-The local workspace includes print plates, downloaded models, GitHub checkouts and migration records. Download listings and local filenames are recorded in the linked indexes.
+The earlier magnetic treasure crab ears v3 kit is in Git history at `a9a95b8`. It uses its own receivers.
+
+## Model library and printer files
+
+| Folder | Contents |
+| --- | --- |
+| [Printables downloads](Printables/README.md) | Downloaded models grouped by listing, with maker notes and original filenames. |
+| [GitHub mods](GitHub-Mods/README.md) | Index of the separate A4T, A4Tv2 and whopping Voron mods checkouts. |
+| [Printer files](Printer/README.md) | K2 software inventory, [rewiring parts](Printer/rewiring/README.md), cutter and [Voron roller](Printer/mod-parts/voron2-roller/) mods, test patterns and [ASA-CF08 Bozzle flow calibration](Printer/calibration/flow/ASA-CF08%20Bozzle/README.md). |
+| [Star Wars source notes](Unverified-Downloads/README.md) | Candidate download pages, maker instructions, license evidence and local plate contents. |
+| [Migration records](Migration/2026-11-10/README.md) | Import manifests, source-path records and the rewiring reorganization. |
+
+### Local workspace projects and files
+
+- `Projects/mulan_openwork_ears_NX3/` contains the Mulan lithograph-relief ear study, its artwork and source notes, CAD scripts, a single-extruder print plate and a separate color review plate. Start with its local `README.md`.
+- The workspace also holds Sorcerer NX3 relief studies and K2 plates, alternate small-arm plates, and the downloaded Multifunction Arm mounting system. These files are local to the workstation.
 
 ## Choose a design pathway
 
@@ -46,7 +59,7 @@ Project skills live in `.agents/skills/`. Open a new Codex session in this works
 | Skill | Use | Example prompt |
 | --- | --- | --- |
 | [fusion-print-design](.agents/skills/fusion-print-design/SKILL.md) | Fusion MCP modeling, assembly inspection and verified exports | `Use $fusion-print-design to revise this bracket using the supplied mating dimensions, export STEP and STL into its project folder, and report the checks.` |
-| [voron-print-preflight](.agents/skills/voron-print-preflight/SKILL.md) | Geometry, saved Voron presets, layer review and physical fit evidence | `Use $voron-print-preflight on magnetic_treasure_crab_ears_v3/stl/magnet_fit_coupon.stl with my VictorCustom printer and actual filament. Report warnings and pending checks.` |
+| [voron-print-preflight](.agents/skills/voron-print-preflight/SKILL.md) | Geometry, saved Voron presets, layer review and physical fit evidence | `Use $voron-print-preflight on the Crab NX3 fit strip with the installed Voron nozzle and intended filament. Report warnings and pending checks.` |
 | [k2-cfs-preflight](.agents/skills/k2-cfs-preflight/SKILL.md) | K2 presets, four-slot assignments, layer preview and startup and shutdown G-code | `Use $k2-cfs-preflight to check this plate against its intended nozzle and CFS slots.` |
 | [printable-art-design](.agents/skills/printable-art-design/SKILL.md) | Illustration generation and review, editable print artwork, and CAD handoff | `Use $printable-art-design to fit this supplied illustration to the approved carrier and prepare its editable CAD inputs.` |
 
@@ -67,18 +80,6 @@ For each assignment, main records the objective, literal input and exclusive out
 
 For example, `Design a new NX3 ear face using the approved Sorcerer interface` can start a source-interface inspection and an artwork study in parallel once the envelope is known. The CAD worker integrates the fitted artwork, then the process specialist checks the resulting plate. Keep reusable scripts with `automation` and use `computer_use` when a visual app operation needs its own assignment.
 
-## Lessons from the NX3 crab study
-
-The NX3 study reused the approved Sorcerer ear and crown receivers for 6 × 3 mm magnets. Separate keyed carriers kept the mounts behind the flat decorative faces. The nominal assembly exposed interference between the ear faces and the center mount, which was resolved by trimming the artwork at the lower inside corners. The original pocket geometry stayed at source scale.
-
-The study's seven STLs passed digital mesh checks. PrusaSlicer 2.9.7 on Windows crashed when its CLI loaded the full saved Cosmetic Parts and Functional Parts INIs. Scratch profiles using their geometry settings allowed slicing and layer review. The narrow mounts cleared the slicer's bed-adhesion warnings with a 4 mm outer brim in that check. Physical fit, bonding and retention remain unverified.
-
-### Recommended next improvements
-
-1. **Record the approved interface once.** Add a small per-family manifest for source paths and hashes, pocket counts and axes, assembly poses, expected clearance and attribution. Start with NX3. Have builders and validators read it, so decorative variants share the same mounting evidence.
-2. **Automate the digital checks.** Give each scripted project a documented build and validation entry point. Reuse checks for reloaded STL solids, source-interface differences and nominal assembly collisions. Run the inexpensive geometry checks first, then render the changed views and slice the affected parts. Publish verified exports per revision when authorized.
-3. **Make slicer checks reproducible.** Add a versioned geometry-only slicer profile or a repeatable export of the effective settings. Record the nozzle, layer heights, orientation, brim, support settings and layer evidence. Keep machine-specific startup code and physical-printer configuration local.
-
 ## Rebuild scripted models
 
 Use Python 3.12 and uv. From the workspace root, prepare a local environment.
@@ -91,27 +92,12 @@ uv pip install --python .venv/Scripts/python.exe -r Projects/sorcerer_ears_CAD_S
 
 If the configured uv cache is inaccessible, add `--no-cache` immediately after `uv`. Run builds in a scratch copy when comparing revisions because the scripts update generated files.
 
-### Crab ears
-
-From `magnetic_treasure_crab_ears_v3/`, run the build and validator in order.
-
-```powershell
-python cad/build_crab_v3.py
-python analysis/validate_v3.py
-```
-
-Inspect `validation_report.json`, including its `failures` array.
-
-### Sorcerer ears
-
-From `Projects/sorcerer_ears_CAD_STL_v2/`, run the build and validator in order.
-
-```powershell
-python CAD/build_reference_mounts.py
-python CAD/check_and_position.py
-```
-
-Inspect `validation_results.json` and confirm its status. Keep each mounting family's parts together and preserve original coordinates for multipart color exports.
+| Project | Commands from the project directory | Evidence to review |
+| --- | --- | --- |
+| Sorcerer ears, base mounting families | Run `python CAD/build_reference_mounts.py`, then `python CAD/check_and_position.py`. | `validation_results.json` and the variant's assembly previews. |
+| Sorcerer NX3, uniform-rim ears and 3D center hats | Choose the variant and its generator in [the print and build notes](Projects/sorcerer_ears_CAD_STL_v2/READ_ME_FIRST.txt). | The variant's `CAD/NX3/.../validation.json` and print-part coordinates. |
+| Treasure crab ears for NX3 | Run `python cad/build_crab_nx3.py` with the Sorcerer ears project beside it. | `validation_report.json` and a fresh layer check of the affected parts. The checked-in `slicer_preflight.json` records the tracked plate. |
+| Small-arm clamp adapter | Run `python build_adapter.py`. | STEP and reloaded STL dimensions, hole pattern, counterbores and print orientation. |
 
 Optional Blender rendering commands are listed in the workflow guide.
 
@@ -119,7 +105,7 @@ Optional Blender rendering commands are listed in the workflow guide.
 
 Launch `C:\Program Files\Prusa3D\PrusaSlicer\prusa-slicer.exe`. Installed presets are in `C:\Users\vic-l\AppData\Roaming\PrusaSlicer`.
 
-1. Select the `VictorCustom` printer and the appropriate print and filament presets. The saved printer profile specifies Klipper, a 0.5 mm nozzle and a 350 × 350 × 320 mm envelope. Confirm the actual nozzle and usable volume.
+1. Select the installed nozzle's printer profile and matching `Voron PIF - … mm` print preset, then select the intended filament. The saved printer profiles specify Klipper and a 350 × 350 × 320 mm configured envelope. Some existing 3MFs embed a `VictorCustom` profile. Check the selected settings against the installed nozzle and usable volume.
 2. Review the layers for thin details, continuous walls, unsupported islands, bridges and first-layer adhesion. Review imported 3MF printer settings and custom G-code.
 3. Before a physical run of a tolerance-critical part, test a fit coupon or mount strip in the intended material and settings. For digital-only work, record the physical fit check as pending.
 4. Save the configured project as 3MF and export reviewed G-code. Printer transfer and print start are separate actions.

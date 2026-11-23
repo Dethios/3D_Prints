@@ -2,25 +2,21 @@
 
 ## Project Structure
 
-- `magnetic_treasure_crab_ears_v3/` contains the earlier crab design with its own receivers, generator, exports and validation scripts. Its mounts are a separate kit from the approved Sorcerer NX3 interface.
-- `Projects/sorcerer_ears_CAD_STL_v2/` contains Python generators and STEP files in `CAD/`, printable parts in `STL/`, and source meshes in `Reference_files/`. Read `READ_ME_FIRST.txt` before choosing the NX3 or TimJ mounting family.
-- `Projects/magnetic_treasure_crab_ears_NX3/` contains the NX3 crab kit. Its generator reads the approved Sorcerer NX3 files from the sibling project directory.
-- `Printables/` groups downloaded STEP, STL and 3MF files by model, preserving their original filenames. `Printables/polymaker-refill-spool/` contains the spool assets.
-- `Projects/` contains owner-authored projects, including the sorcerer hat and Chube Hotend Integration. Preserve derivative references and keep project work separate from upstream checkouts.
-- `GitHub-Mods/` holds separate Git repositories. `Printer/` contains local printer parts and slicer work. `Unverified-Downloads/` holds models without confirmed attribution.
-- `Printer/rewiring/` groups PUG glands, PUG mounting options, cable management and other mounts. See its README for maker listings and match confidence.
+- Use the [root project index](README.md#project-index) to find the tracked designs in `Projects/`. Keep each design and its derivative references with its owning project. Keep upstream checkout changes within the appropriate nested repository.
+- [Sorcerer ears](Projects/sorcerer_ears_CAD_STL_v2/READ_ME_FIRST.txt) owns the NX3 and Tim J CAD and reference geometry. The repository includes NX3 STLs and base Voron plates. Generate Tim J STLs before slicing that family. Check which geometry an existing plate embeds before using it for a revised variant.
+- [Crab NX3](Projects/magnetic_treasure_crab_ears_NX3/README.md) uses the approved Sorcerer NX3 ear interface and owns its revised crown base and eye pair. The earlier crab v3 kit and its receivers are in Git history at `a9a95b8`.
+- [Printables](Printables/README.md) groups downloaded models by listing and preserves original filenames. [GitHub-Mods](GitHub-Mods/README.md) indexes the separately managed local checkouts. [Unverified-Downloads](Unverified-Downloads/README.md) records source and license evidence by model.
+- [Printer](Printer/README.md) contains machine notes, mods, test patterns and calibration. [Printer rewiring](Printer/rewiring/README.md) records PUG choices, mounting options and maker sources. [Migration records](Migration/2026-11-10/README.md) describe the original import and rewiring reorganization.
+- The Mulan NX3 project, Sorcerer NX3 relief studies and some slicer plates are local workspace files. Check `git ls-files` and `git status` before citing an asset as available in a fresh clone or preparing it for publication.
 
 ## Build and Preview
 
 Use [CAD and Print Workflow](PRINT_WORKFLOW.md) to select CadQuery or Autodesk Fusion MCP, validate the geometry, render a Blender preview when useful, and slice in PrusaSlicer. Confirm the target printer, installed nozzle and material before choosing presets.
 
-- **Voron 2.4.** Use the `VictorCustom` workflow and its matching print and filament presets.
+- **Voron 2.4.** Select the printer preset for the installed nozzle and its matching `Voron PIF - … mm` print preset. Installed preset sizes are 0.25, 0.4, 0.5 and 0.6 mm. Some saved plates embed `VictorCustom`. Inspect their effective settings before exporting. See [Prepare a Voron print](README.md#prepare-a-voron-print).
 - **Creality K2.** Use the matching `Creality K2 (… mm)` printer and print presets for the installed 0.2, 0.4, 0.6 or 0.8 mm Unicorn nozzle. The Costco unit has stock hardware and one four-slot CFS. For multicolor, preserve part alignment and verify the slot assignments, toolpaths and K2 startup and shutdown macros. Use [the K2 workflow](PRINT_WORKFLOW.md#slice-and-print-on-the-creality-k2-with-cfs) and [installed software inventory](Printer/README.md#creality-k2). Mainsail is at `192.168.1.246:4409`.
 
-Run commands from the corresponding project folder.
-
-- **Crab ears.** With CadQuery 2.7 and SciPy installed, run `python cad/build_crab_v3.py` to regenerate the models, then `python analysis/validate_v3.py` to check them.
-- **Sorcerer ears.** With Python 3.12, install dependencies using `python -m pip install -r CAD/requirements.txt`. Run `python CAD/build_reference_mounts.py` to rebuild both variants and `python CAD/check_and_position.py` to validate them. Run `blender --background --python CAD/render_reference_previews.py` to render the exported STLs.
+Use the [build table](README.md#rebuild-scripted-models) for current Sorcerer, Crab NX3 and small-arm generators and their validation evidence. Run commands from each project folder with the documented Python 3.12 environment. Use a scratch copy for trial builds that overwrite exports or reports. For illustration-led projects kept locally, follow the project's own build and validation instructions.
 
 For reference-led redesigns, capture the visual features to preserve and the exact approved mating files before modeling. Check the silhouette and front view alongside an assembly view that shows the mount. Treat Blender as optional for this check. A render from the generated geometry can establish appearance and placement while slicer toolpaths establish which features survive slicing.
 

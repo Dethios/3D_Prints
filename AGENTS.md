@@ -42,6 +42,8 @@ GPT-6.2 Sol Medium is the saved main coordinator. Main resolves requirements, as
 
 Dispatch design authors with an explicit supported model and at least **High** reasoning. Use the role profile's higher-reasoning route for cases where reference fidelity, fit, alignment or print constraints interact. Main may gather measurements, run acceptance checks and integrate the specialist's output. If a qualified design author, required reservation or tool is unavailable, report the blocker and continue independent work while leaving the affected design revision pending.
 
+**Required reservation before design dispatch.** Before spawning or reassigning a `print-art-designer` or `print-cad-designer`, use the [repository reservation validator](tools/coordination/coordination_ledger.py) to successfully reserve the assignment in `.coordination/ledger.json`. Reserve the design role and exact model and effort intended for dispatch. Apply the same requirement when using a compatible native fallback. If the reservation fails or the validator is unavailable, report the blocker and leave the dependent design work pending. Keep both role profiles unpinned so the orchestrator can select a supported model and an effort of High or above.
+
 Proactively dispatch useful bounded inspection, development and validation assignments without waiting for a separate delegation request.
 
 - Dispatch `print-inspector` for fit, dimensions, source interfaces, mesh quality and validation evidence. Start independent inspection while main establishes requirements. Use an independent inspector on consequential CAD changes once the exports are ready.

@@ -30,10 +30,18 @@ Use the full path to `blender.exe` if it is outside PATH. For a new Fusion desig
 
 ## Slice for the Voron 2
 
-Open `C:\Program Files\Prusa3D\PrusaSlicer\prusa-slicer.exe`. Read the installed presets from `C:\Users\vic-l\AppData\Roaming\PrusaSlicer`. The saved physical printer selection is `Voron2.4 * VictorCustom`. The `VictorCustom` printer preset specifies Klipper, a 0.5 mm nozzle and a 350 × 350 × 320 mm configured envelope. Confirm the installed nozzle and usable volume before relying on these values.
+Open `C:\Program Files\Prusa3D\PrusaSlicer\prusa-slicer.exe`. The installed presets are under `%APPDATA%\PrusaSlicer`. The Voron printer presets use Klipper and a 350 × 350 × 320 mm configured envelope. Confirm the installed nozzle and usable volume before slicing.
+
+| Nozzle | Printer preset | Print preset |
+| --- | --- | --- |
+| 0.4 mm Rapido, standard flow | `0.4 mm` | `Voron PIF - 0.4 mm` |
+| 0.5 mm Bozzle, high flow | `0.5 mm Bozzle CHT` | `Voron PIF - 0.5 mm` |
+| 0.6 mm bimetal CHT, high flow | `0.6 mm CHT` | `Voron PIF - 0.6 mm` |
+
+Hardened or wear-resistant nozzles are available in all three sizes. The 0.25 mm nozzle is clogged and its presets are archived. Older 3MFs can still contain embedded `VictorCustom` or 0.25 mm settings.
 
 1. Load the intended model. When using a third-party 3MF, import geometry only or explicitly reselect and check the Voron settings, including custom G-code.
-2. Select `VictorCustom` and a compatible preset for the actual filament. Local examples include `Polymaker PolyChroma Matte` (PLA) and `Polymaker ASA`. Start with `Functional Parts` for mounts and `Cosmetic Parts` for visual pieces, then tune for the part. The ear documentation's 0.4 mm starting settings need review against the 0.5 mm profile, especially at narrow reliefs, stems and magnet-pocket bridges.
+2. Select the matching printer and PIF presets from the table and the preset for the actual filament. Local examples include `Polymaker PolyChroma Matte` (PLA) and `Polymaker ASA`. Use a flow limit calibrated for the material and nozzle. Review narrow reliefs, stems and magnet-pocket bridges whenever changing nozzle size.
 3. Inspect the first layer, wall continuity, islands, bridges and supports. Keep support material out of blind magnet bores. Preserve shared coordinates in multicolor parts and verify the machine's available color-change method. Adjust fit in CAD or on a test coupon.
 4. For tolerance-critical parts, slice the magnet coupon or mount test strip with the same nozzle, material, orientation and settings as the intended print. Confirm mating fit and magnet polarity before producing the full set.
 5. Save a project 3MF with the selected presets and record the CAD revision and any fit results. Export local G-code only after reviewing the layers. Treat transfer or print start as separate actions.

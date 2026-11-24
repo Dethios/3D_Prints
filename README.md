@@ -6,7 +6,7 @@ CAD sources, printable models, reference assets and validation tools for the Vor
 
 | Printer | Setup | Workflow |
 | --- | --- | --- |
-| Voron 2.4 | PrusaSlicer nozzle profiles and matching `Voron PIF` print presets for 0.25, 0.4, 0.5 and 0.6 mm | [Prepare a Voron print](#prepare-a-voron-print) |
+| Voron 2.4 | PrusaSlicer profiles for 0.4 mm Rapido, 0.5 mm high-flow Bozzle and 0.6 mm high-flow bimetal CHT nozzles | [Prepare a Voron print](#prepare-a-voron-print) |
 | Creality K2 | Stock Costco hardware, 0.2, 0.4, 0.6 and 0.8 mm Unicorn nozzles, and one four-slot CFS | [Slice and print with CFS](PRINT_WORKFLOW.md#slice-and-print-on-the-creality-k2-with-cfs) · [Mainsail at `192.168.1.246:4409` and installed software](Printer/README.md#creality-k2) |
 
 ## Project index

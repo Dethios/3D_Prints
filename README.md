@@ -78,6 +78,8 @@ Repo profiles live in [`.codex/agents/`](.codex/agents/). Use a fresh trusted lo
 
 For each assignment, main records the objective, literal input and exclusive output paths, prerequisites, authorized actions, live tool access, time and retry limits, and the acceptance check. Use an empty write scope for read-only inspection and a verified worktree for complex independent writers. Serialize access to each live Fusion or PrusaSlicer session. Match checks to the actual project, using the [documented build and validation commands](PRINT_WORKFLOW.md#rebuild-and-preview) in an owned worktree or scratch copy when they overwrite files. Main owns the local ledger at `.coordination/ledger.json`, integration and approvals. Printer transfer, firmware changes, print start and publication require authorization covering those actions.
 
+Use the [repository reservation validator](tools/coordination/coordination_ledger.py) for this project's ledger commands. It requires at least High reasoning for `print-art-designer` and `print-cad-designer`, and preserves the orchestrator's choice of any supported model and eligible higher effort. The check applies to ledger reservations. Native dispatch follows the repository's agent instructions. Run `python -m unittest discover -s tools/coordination -v` to verify the reservation rules.
+
 For example, `Design a new NX3 ear face using the approved Sorcerer interface` can start a source-interface inspection and an artwork study in parallel once the envelope is known. The CAD worker integrates the fitted artwork, then the process specialist checks the resulting plate. Keep reusable scripts with `automation` and use `computer_use` when a visual app operation needs its own assignment.
 
 ## Rebuild scripted models

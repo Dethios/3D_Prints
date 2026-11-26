@@ -11,3 +11,5 @@ Run `python build_adapter.py` from this directory in a CadQuery environment to r
 **Physical assembly fit is pending.** Check the adapter with the actual clamp, holder, and fasteners.
 
 The mating clamp and small-arm system were designed by RostaP. [Multifunction Arm mounting system on Printables](https://www.printables.com/model/165239-multifunction-arm-mounting-system?lang=en)
+
+The ASA-CF08 base plates include RostaP's small-arm holder geometry from the linked listing. That geometry is available under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The adapter plate contains the repository's separately authored adapter.

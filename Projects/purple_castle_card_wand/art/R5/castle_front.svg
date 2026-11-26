@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" width="149.637681mm" height="375.869565mm" viewBox="15 24 590 1482" fill-rule="evenodd">
+  <title>Purple castle card wand · fitted front with fitted bow and paired curls · R5</title>
+  <desc>Front at 140 mm star width. Gold and purple rounded star, three towers, cream Mickey in a purple gateway, and pink bow. Each path or use element defines a closed editable printable profile. All relief values are offsets above component-local facings in millimeters.</desc>
+  <defs>
+    <path id="outer" d="M310 38 C327 38 335 49 346 65 L412 166 Q417 175 427 178 L552 216 C576 223 586 238 586 255 C586 272 577 283 564 297 L502 368 Q493 377 495 391 L514 506 C520 535 507 555 484 558 Q473 560 458 555 L324 503 Q310 497 296 503 L162 555 Q147 560 136 558 C113 555 100 535 106 506 L125 391 Q127 377 118 368 L56 297 C43 283 34 272 34 255 C34 238 44 223 68 216 L193 178 Q203 175 208 166 L274 65 C285 49 293 38 310 38 Z"/>
+    <path id="inner" d="M310 61 C317 61 321 67 326 75 L392 180 Q402 196 418 201 L543 239 C557 243 564 251 559 262 Q557 268 546 280 L480 355 Q468 369 472 391 L492 510 Q497 541 468 531 L329 478 Q310 470 291 478 L152 531 Q123 541 128 510 L148 391 Q152 369 140 355 L74 280 Q63 268 61 262 C56 251 63 243 77 239 L202 201 Q218 196 228 180 L294 75 C299 67 303 61 310 61 Z"/>
+    <path id="field" d="M310 76 Q314 76 318 83 L383 186 Q393 204 414 211 L538 249 Q551 253 543 262 L471 346 Q457 362 461 390 L479 508 Q481 522 469 517 L333 466 Q310 456 287 466 L151 517 Q139 522 141 508 L159 390 Q163 362 149 346 L77 262 Q69 253 82 249 L206 211 Q227 204 237 186 L302 83 Q306 76 310 76 Z"/>
+    <path id="scroll" d="M387 182 C362 137 306 91 247 59 C197 33 152 18 111 23 C66 27 34 54 27 93 C18 132 34 169 64 186 C91 201 121 199 143 183 C164 168 169 143 162 121 C157 104 145 92 128 92 C115 91 104 99 101 112 C98 124 104 132 114 132 Q125 132 118 142 C111 152 96 152 85 144 C71 133 70 110 81 94 C91 78 108 72 127 73 C166 75 212 97 256 124 C302 151 337 185 353 206 C361 217 375 219 384 212 C393 206 394 196 387 182 Z"/>
+    <path id="sparkle" d="M144 241 C147 241 148 248 151 255 C154 264 158 268 169 271 Q177 273 173 278 Q172 280 166 282 C154 285 151 290 148 301 Q145 315 141 309 Q139 307 138 301 C135 290 131 285 120 282 Q110 280 112 275 Q112 272 119 270 C132 266 135 261 139 249 Q141 241 144 241 Z"/>
+    <path id="side-flag" d="M226 241 L226 206 Q226 201 230 201 Q234 201 235 205 L235 208 C245 205 249 208 253 211 C258 214 265 213 268 212 Q272 212 270 216 L264 223 L269 227 Q272 230 269 232 C257 238 250 229 242 230 Q237 230 235 231 L235 241 Z"/>
+    <path id="side-roof" d="M199 294 C204 283 219 252 225 239 Q227 235 230 235 Q234 235 236 240 L261 294 Q262 298 258 298 L202 298 Q198 298 199 294 Z"/>
+    <path id="side-tower" d="M205 305 Q205 297 212 297 L248 297 Q255 297 255 305 L259 398 Q259 403 254 406 L207 426 Q201 428 200 422 Z"/>
+    <path id="cap" d="M202 292 Q230 290 258 292 Q264 292 264 298 L264 305 Q264 311 258 312 Q230 315 202 312 Q196 311 196 305 L196 298 Q196 293 202 292 Z"/>
+    <path id="side-window" d="M224 336 L224 325 C224 314 235 314 235 325 L235 336 Z"/>
+    <path id="tail" d="M364 339 C360 377 336 441 305 506 C291 537 284 552 276 563 C269 573 259 572 251 562 C240 547 231 525 225 506 Q224 500 220 501 C197 506 170 516 147 520 C125 524 114 519 119 498 C127 468 150 426 173 398 Q183 375 209 366 L349 332 Z"/>
+    <path id="loop" d="M355 245 C335 222 308 204 279 190 C242 173 199 164 173 172 C148 179 133 198 130 227 C127 251 130 285 131 310 C131 343 130 368 143 385 C151 395 161 399 177 399 C224 398 299 371 352 342 Q367 297 355 245 Z"/>
+    <path id="fold" d="M350 283 C326 276 298 261 276 261 C260 261 249 268 247 276 C244 290 258 300 276 301 C298 302 328 294 350 292 Q352 288 350 283 Z"/>
+    <mask id='mask-inner' maskUnits='userSpaceOnUse' x='0' y='0' width='650' height='1520'><rect width='650' height='1520' fill='white'/><use xlink:href='#inner' fill='black'/></mask>
+    <mask id='mask-field' maskUnits='userSpaceOnUse' x='0' y='0' width='650' height='1520'><rect width='650' height='1520' fill='white'/><use xlink:href='#field' fill='black'/></mask>
+    <mask id='mask-side-window' maskUnits='userSpaceOnUse' x='0' y='0' width='650' height='1520'><rect width='650' height='1520' fill='white'/><use xlink:href='#side-window' fill='black'/></mask>
+    <mask id='mask-fold' maskUnits='userSpaceOnUse' x='0' y='0' width='650' height='1520'><rect width='650' height='1520' fill='white'/><use xlink:href='#fold' fill='black'/></mask>
+  </defs>
+  <g id="handle" inkscape:groupmode="layer" inkscape:label="01 · Purple grip and gold collars" data-part="handle">
+    <path id="grip" fill="#8343a4" data-h="0" d="M263 689 Q263 671 281 671 L339 671 Q357 671 357 689 L357 1420 Q359 1460 341 1479 Q328 1494 310 1494 Q292 1494 279 1479 Q261 1460 263 1420 Z"/>
+    <path id="neck" fill="#8343a4" data-h="0" d="M249 485 Q310 455 371 485 L362 556 Q353 604 357 672 Q310 685 263 672 Q267 604 258 556 Z"/>
+    <path id="top-collar" fill="#f4be4e" data-h="1.2" d="M262 659 Q310 655 358 659 C368 660 369 690 359 694 Q310 699 261 694 C251 692 250 663 262 659 Z"/>
+    <path id="second-collar" fill="#f4be4e" data-h="1.2" d="M263 690 Q310 686 357 690 C367 693 366 716 357 720 Q310 726 263 720 C254 717 252 695 263 690 Z"/>
+    <path id="pommel-ring" fill="#f4be4e" data-h="1.2" d="M257 1384 Q310 1380 363 1384 C373 1386 374 1416 363 1421 Q310 1425 257 1421 C246 1418 246 1388 257 1384 Z"/>
+  </g>
+  <g id="star" inkscape:groupmode="layer" inkscape:label="02 · Gold rim and stepped purple field" data-part="head">
+    <use id="carrier" xlink:href="#outer" data-h="0" fill="#8343a4"/>
+    <use id="rim-outer" xlink:href="#outer" data-cut="inner" mask="url(#mask-inner)" data-h="1.8" fill="#f4be4e"/>
+    <use id="inner-lip" xlink:href="#inner" data-cut="field" mask="url(#mask-field)" data-h="0.8" fill="#8343a4"/>
+    <use id="star-field" xlink:href="#field" data-h="0" fill="#8343a4"/>
+  </g>
+  <g id="sky" inkscape:groupmode="layer" inkscape:label="03 · Flags and starlight" data-part="head">
+    <use id="left-star" xlink:href="#sparkle" data-h="1.4" fill="#ffefd5"/>
+    <use id="right-star" xlink:href="#sparkle" transform="translate(620 6) scale(-1 1)" data-h="1.4" fill="#ffefd5"/>
+    <path id="high-flag" data-h="1.2" fill="#f4be4e" d="M309 151 L309 112 Q309 107 313 107 Q317 107 318 112 L318 115 C329 112 335 114 341 117 Q347 120 353 118 Q359 117 356 122 L349 130 L355 136 Q358 140 353 141 C340 145 334 135 324 137 L318 138 L318 151 Z"/>
+    <use id="left-flag" xlink:href="#side-flag" data-h="1.2" fill="#f4be4e"/>
+    <use id="right-flag" xlink:href="#side-flag" transform="translate(166 0)" data-h="1.2" fill="#f4be4e"/>
+  </g>
+  <g id="citadel" inkscape:groupmode="layer" inkscape:label="04 · Castle walls, openings, cornices and roofs" data-part="head">
+    <path id="keep" fill="#ffefd5" data-h="1.2" d="M286 233 L341 233 L344 328 L283 328 Z M307 270 L320 270 L320 257 C320 245 307 245 307 257 Z M306 310 L321 310 L321 300 C321 285 306 285 306 300 Z"/>
+    <path id="high-roof" fill="#55a6de" data-h="1.6" d="M277 223 C285 206 302 165 309 150 Q311 146 314 146 Q317 146 319 151 L351 223 Q353 227 348 227 L280 227 Q275 227 277 223 Z"/>
+    <path id="high-cornice" fill="#ffefd5" data-h="2" d="M279 221 Q314 218 348 221 Q354 221 354 227 L354 236 Q354 241 348 243 Q314 247 280 243 Q273 242 273 235 L273 228 Q273 222 279 221 Z"/>
+    <path id="gatehouse" fill="#ffefd5" data-h="1.6" d="M244 402 L247 327 Q247 323 251 323 L266 323 L267 315 Q267 311 270 311 L282 311 Q285 311 285 314 L285 318 L297 318 L297 312 Q297 308 300 308 L324 308 Q327 308 327 312 L327 317 L339 317 L339 313 Q339 310 343 310 L354 310 Q357 310 357 314 L358 323 L373 323 Q377 323 377 327 L378 403 L354 429 L347 429 L347 370 C347 350 329 336 311 336 C291 336 275 351 275 371 L275 429 L268 429 Z"/>
+    <use id="left-tower" xlink:href="#side-tower" data-cut="side-window" mask="url(#mask-side-window)" data-h="2" fill="#ffefd5"/>
+    <use id="right-tower" xlink:href="#side-tower" data-cut="side-window" mask="url(#mask-side-window)" transform="translate(626 0) scale(-1 1)" data-h="2" fill="#ffefd5"/>
+    <use id="left-roof" xlink:href="#side-roof" data-h="2" fill="#55a6de"/>
+    <use id="right-roof" xlink:href="#side-roof" transform="translate(166 0)" data-h="2" fill="#55a6de"/>
+    <use id="left-cornice" xlink:href="#cap" data-h="2.6" fill="#ffefd5"/>
+    <use id="right-cornice" xlink:href="#cap" transform="translate(166 0)" data-h="2.6" fill="#ffefd5"/>
+    <path id="mickey" fill="#ffefd5" data-h="1.6" d="M296.49 379.149 A9.6 9.6 0 1 1 305.096 369.885 A15.3 15.3 0 0 1 316.904 369.885 A9.6 9.6 0 1 1 325.51 379.149 A15.3 15.3 0 1 1 296.49 379.149 Z"/>
+  </g>
+  <g id="ornament" inkscape:groupmode="layer" inkscape:label="05 · Paired gold scrollwork" data-part="head">
+    <use id="left-scroll" xlink:href="#scroll" transform="matrix(.394898 .029049 0 .421 152.0408 352.789)" data-h="3" fill="#f4be4e"/>
+    <use id="right-scroll" xlink:href="#scroll" transform="matrix(-.394898 .029049 0 .421 467.9592 352.789)" data-h="3" fill="#f4be4e"/>
+  </g>
+  <g id="bow" inkscape:groupmode="layer" inkscape:label="07 · Separate pink bow" data-part="bow">
+    <use id="left-tail" transform="matrix(.421 0 0 .421 141.6 365)" xlink:href="#tail" data-h="1.2" fill="#e75d91"/>
+    <use id="right-tail" xlink:href="#tail" transform="matrix(-.421 0 0 .421 478.4 365)" data-h="1.2" fill="#e75d91"/>
+    <use id="left-loop" transform="matrix(.421 0 0 .421 141.6 365)" xlink:href="#loop" data-cut="fold" mask="url(#mask-fold)" data-h="3.4" fill="#e75d91"/>
+    <use id="right-loop" xlink:href="#loop" data-cut="fold" mask="url(#mask-fold)" transform="matrix(-.421 0 0 .421 478.4 365)" data-h="3.4" fill="#e75d91"/>
+    <use id="left-fold-floor" transform="matrix(.421 0 0 .421 141.6 365)" xlink:href="#fold" data-h="2.4" fill="#e75d91"/>
+    <use id="right-fold-floor" xlink:href="#fold" transform="matrix(-.421 0 0 .421 478.4 365)" data-h="2.4" fill="#e75d91"/>
+    <path id="knot" fill="#e75d91" transform="matrix(.421 0 0 .421 141.6 365)" data-h="4.4" d="M373 233 C389 231 411 231 427 233 C444 234 451 245 453 263 C455 281 455 314 452 334 C450 350 444 359 429 361 C411 363 390 363 372 361 C355 360 349 350 347 334 C344 314 344 282 346 263 C348 245 354 235 373 233 Z"/>
+  </g>
+</svg>

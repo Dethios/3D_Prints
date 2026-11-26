@@ -1,0 +1,20 @@
+{
+  "removed": [
+    "rose-left-petal",
+    "rose-outer-petal",
+    "rose-spiral-petal"
+  ],
+  "retained_features_exact": 34,
+  "previous_petals_area_mm2": 102.181,
+  "exposed_material": "purple star-field",
+  "three_footprints_identical": true,
+  "relief_file_identical": true,
+  "alpha_identical": true,
+  "preview_changed_pixels": 9199,
+  "preview_change_bounds_px": [
+    467,
+    662,
+    589,
+    771
+  ]
+}

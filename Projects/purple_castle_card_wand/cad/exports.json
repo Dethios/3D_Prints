@@ -1,0 +1,242 @@
+{
+  "head_cream": {
+    "sha256": "34d3309868fb11bc0f84576b4492565e2e6414186442b9344fac8603d0d81820",
+    "bbox_mm": [
+      [
+        -50.302,
+        -39.189,
+        9.8
+      ],
+      [
+        50.302,
+        20.67,
+        13.0
+      ]
+    ],
+    "cad_solids": 9,
+    "mesh_shells": 9,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true
+  },
+  "head_gold": {
+    "sha256": "f3c99345994afdbca78289d366267a4adb05bcdd62b7cf30d910f60e7f9b4bf0",
+    "bbox_mm": [
+      [
+        -70.0,
+        -65.325,
+        9.8
+      ],
+      [
+        70.0,
+        66.703,
+        12.8
+      ]
+    ],
+    "cad_solids": 6,
+    "mesh_shells": 6,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true
+  },
+  "head_blue": {
+    "sha256": "c7ea6155a697d8cd7ade6598a6f271f95cd78ff6ded5fb08665d40bb2808fafe",
+    "bbox_mm": [
+      [
+        -27.999,
+        2.109,
+        9.8
+      ],
+      [
+        29.469,
+        39.312,
+        11.8
+      ]
+    ],
+    "cad_solids": 3,
+    "mesh_shells": 3,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true
+  },
+  "head_purple": {
+    "sha256": "81c55dbe07438c59534d6c6bcfaa9c6d7da17bb8282a5d091ea024d64de4756a",
+    "bbox_mm": [
+      [
+        -70.0,
+        -65.325,
+        7.4
+      ],
+      [
+        70.0,
+        66.703,
+        14.4
+      ]
+    ],
+    "cad_solids": 1,
+    "mesh_shells": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true
+  },
+  "bow_pink": {
+    "sha256": "c156aec20b5a738203b5dcbf51bed1aa2477bfac921b5bb882b8a4f97cbf8866",
+    "bbox_mm": [
+      [
+        -27.926,
+        -93.305,
+        13.2
+      ],
+      [
+        27.926,
+        -46.354,
+        19.4
+      ]
+    ],
+    "cad_solids": 1,
+    "mesh_shells": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true
+  },
+  "rear_purple": {
+    "sha256": "0a9c964d553aa5297b9c2a18f08b9f991f981a0f86f6d4933984256ff6c39a70",
+    "bbox_mm": [
+      [
+        -70.0,
+        -69.0,
+        -9.7
+      ],
+      [
+        70.0,
+        66.703,
+        7.4
+      ]
+    ],
+    "cad_solids": 1,
+    "mesh_shells": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true
+  },
+  "keeper_purple": {
+    "sha256": "0668ea6da70694726aac2cc4a874e92d9a470efab66daa38e79a2d696935ea2a",
+    "bbox_mm": [
+      [
+        12.75,
+        9.65,
+        0.3
+      ],
+      [
+        19.25,
+        28.45,
+        2.72
+      ]
+    ],
+    "cad_solids": 1,
+    "mesh_shells": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true
+  },
+  "pivot_pin_purple": {
+    "sha256": "737506286191b841112c4918c0cb1cd163a91eb449e35da300532459c5f7ecf4",
+    "bbox_mm": [
+      [
+        12.86,
+        12.86,
+        -1.22
+      ],
+      [
+        19.14,
+        19.14,
+        5.65
+      ]
+    ],
+    "cad_solids": 1,
+    "mesh_shells": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true
+  },
+  "shell_key_1_purple": {
+    "sha256": "d7884ae7835ea48900646de78498f16312971d48f51bddc36d01c573093a0568",
+    "bbox_mm": [
+      [
+        -37.57,
+        20.43,
+        5.79
+      ],
+      [
+        -34.43,
+        23.57,
+        8.8
+      ]
+    ],
+    "cad_solids": 1,
+    "mesh_shells": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true
+  },
+  "shell_key_2_purple": {
+    "sha256": "145feccc0ab455fe146409f9dec39a046269a9c43acc87a90d67f4b83788b24f",
+    "bbox_mm": [
+      [
+        31.43,
+        22.43,
+        5.79
+      ],
+      [
+        34.57,
+        25.57,
+        8.8
+      ]
+    ],
+    "cad_solids": 1,
+    "mesh_shells": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true
+  },
+  "handle_purple": {
+    "sha256": "d9e73faaf982efe57067e507cf6b05d9bb8ac6b51526e824cc93819960a58c17",
+    "bbox_mm": [
+      [
+        -13.1142,
+        -302.57,
+        -7.8
+      ],
+      [
+        13.1143,
+        -49.0,
+        9.8275
+      ]
+    ],
+    "cad_solids": 1,
+    "mesh_shells": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true
+  },
+  "handle_gold": {
+    "sha256": "3673493a486cf911d506e5847024d19b7697bb6a315ab46a12a5509d1079b695",
+    "bbox_mm": [
+      [
+        -15.4798,
+        -284.56,
+        -7.8
+      ],
+      [
+        15.48,
+        -90.29,
+        10.12
+      ]
+    ],
+    "cad_solids": 3,
+    "mesh_shells": 3,
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "units": "mm",
+  "local_datums": {
+    "head": "Top of the fixed purple carrier, prior assembly Z=9.8.",
+    "bow": "Top of the separate 1.8 mm backing, prior assembly Z=15.0."
+  },
+  "profiles": [
+    {"ids":["keep"],"edge":1.2,"crest":1.8,"rise_run":2.8,"form":"Soft convex wall across tower width. Preserve both openings."},
+    {"ids":["gatehouse"],"edge":1.6,"crest":2.2,"rise_run":2.8,"form":"Round the face gently toward both jambs. Preserve arch opening and crenellations."},
+    {"ids":["left-tower","right-tower"],"edge":2.0,"crest":2.6,"rise_run":3.2,"form":"Shallow cylindrical wall along the shaft. Keep arrow windows recessed."},
+    {"ids":["high-roof"],"edge":1.6,"crest":2.4,"rise_run":3.0,"form":"Convex horizontal sections narrowing toward the spire."},
+    {"ids":["left-roof","right-roof"],"edge":2.0,"crest":2.8,"rise_run":3.0,"form":"Convex horizontal sections narrowing toward the spire."},
+    {"ids":["high-cornice"],"edge":2.0,"crest":2.4,"rise_run":1.2,"form":"Soft rounded lip, most visible along the eave."},
+    {"ids":["left-cornice","right-cornice"],"edge":2.6,"crest":3.0,"rise_run":1.2,"form":"Soft rounded lip, most visible along the eave."},
+    {"ids":["left-scroll","right-scroll"],"edge":2.8,"crest":3.4,"rise_run":1.5,"form":"Round the cross-section of each single unbranched gold ribbon, softening its inner terminal."},
+    {"ids":["left-tail","right-tail"],"edge":1.2,"crest":1.6,"rise_run":2.8,"form":"Slight convex roll, with a softer return to the ribbon tips."},
+    {"ids":["left-loop","right-loop"],"edge":2.8,"crest":3.8,"rise_run":3.5,"form":"Padded lobe with shallow crown. Ease downward into the fold and toward the knot."},
+    {"ids":["left-fold-floor","right-fold-floor"],"edge":1.8,"crest":1.8,"rise_run":0.0,"form":"Keep the existing low recess, framed by a gradual decrease in loop height."},
+    {"ids":["knot"],"edge":3.6,"crest":4.8,"rise_run":3.0,"form":"Cushion-shaped center with a round, broad crown and no sharp raised perimeter."}
+  ],
+  "intersections": "Use the established visible region and color partition before sculpting each surface. Keep the exterior silhouette, cutouts, fixed bow mounting pads and blind sockets. These heights describe proposed visible tops only."
+}

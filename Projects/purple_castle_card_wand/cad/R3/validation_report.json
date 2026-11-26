@@ -1,0 +1,789 @@
+{
+  "units": "mm",
+  "profiles_sha256": "88a6f184d527f653d4a63e7e9ba1386a475350a14dbce7817cd2d8bbab21469b",
+  "map_sha256": "7accccd1a3cf7daf40577cce16578f958b45425a6085578119ab02c394c61b40",
+  "parent_step_sha256": "ddce0078634cd15a40940c72492b475f91860ae6c70a9a0788230b0b5ae34360",
+  "step_sha256": "47154aecf3b182cc2261b42a7a764e737d8904dda519b5dac8431cb806119264",
+  "step_named_parts": 12,
+  "step_valid_solids": 29,
+  "step_bspline_faces_by_group": {
+    "head_blue": 3,
+    "head_gold": 2,
+    "head_cream": 9,
+    "bow_pink": 5
+  },
+  "stls": {
+    "bow_pink": {
+      "sha256": "5cd391dc4c7b45a69c312d9a1314cc5b4fc76718d88d37d75087c9337d7a21a8",
+      "byte_identical_R2": false,
+      "solids": 1,
+      "mesh_is_volume": true,
+      "consistent_winding": true,
+      "watertight": true,
+      "bbox_mm": [
+        [
+          -27.926,
+          -93.305,
+          13.2
+        ],
+        [
+          27.926,
+          -46.354,
+          19.8
+        ]
+      ],
+      "triangles": 7506
+    },
+    "handle_gold": {
+      "sha256": "3673493a486cf911d506e5847024d19b7697bb6a315ab46a12a5509d1079b695",
+      "byte_identical_R2": true,
+      "solids": 3,
+      "mesh_is_volume": true,
+      "consistent_winding": true,
+      "watertight": true,
+      "bbox_mm": [
+        [
+          -15.4798,
+          -284.56,
+          -7.8
+        ],
+        [
+          15.48,
+          -90.29,
+          10.12
+        ]
+      ],
+      "triangles": 7004
+    },
+    "handle_purple": {
+      "sha256": "d9e73faaf982efe57067e507cf6b05d9bb8ac6b51526e824cc93819960a58c17",
+      "byte_identical_R2": true,
+      "solids": 1,
+      "mesh_is_volume": true,
+      "consistent_winding": true,
+      "watertight": true,
+      "bbox_mm": [
+        [
+          -13.1142,
+          -302.57,
+          -7.8
+        ],
+        [
+          13.1143,
+          -49.0,
+          9.8275
+        ]
+      ],
+      "triangles": 34476
+    },
+    "head_blue": {
+      "sha256": "a81fd67bdedf352d7ad511c73cc28d1da097b0b70f8ad9180840def7958926d1",
+      "byte_identical_R2": false,
+      "solids": 3,
+      "mesh_is_volume": true,
+      "consistent_winding": true,
+      "watertight": true,
+      "bbox_mm": [
+        [
+          -27.999,
+          2.109,
+          9.8
+        ],
+        [
+          29.469,
+          39.312,
+          12.5963
+        ]
+      ],
+      "triangles": 2680
+    },
+    "head_cream": {
+      "sha256": "0a36b45caf2abbf3f6454975cff6a5cde775845054d731af8c2a652028144c49",
+      "byte_identical_R2": false,
+      "solids": 9,
+      "mesh_is_volume": true,
+      "consistent_winding": true,
+      "watertight": true,
+      "bbox_mm": [
+        [
+          -50.302,
+          -39.189,
+          9.8
+        ],
+        [
+          50.302,
+          20.67,
+          13.0
+        ]
+      ],
+      "triangles": 16072
+    },
+    "head_gold": {
+      "sha256": "3b289f02827a8d3108f4eb05175a261f274193d234a30da701359a138a774c98",
+      "byte_identical_R2": false,
+      "solids": 6,
+      "mesh_is_volume": true,
+      "consistent_winding": true,
+      "watertight": true,
+      "bbox_mm": [
+        [
+          -70.0,
+          -65.325,
+          9.8
+        ],
+        [
+          70.0,
+          66.703,
+          13.1962
+        ]
+      ],
+      "triangles": 14620
+    },
+    "head_purple": {
+      "sha256": "81c55dbe07438c59534d6c6bcfaa9c6d7da17bb8282a5d091ea024d64de4756a",
+      "byte_identical_R2": true,
+      "solids": 1,
+      "mesh_is_volume": true,
+      "consistent_winding": true,
+      "watertight": true,
+      "bbox_mm": [
+        [
+          -70.0,
+          -65.325,
+          7.4
+        ],
+        [
+          70.0,
+          66.703,
+          14.4
+        ]
+      ],
+      "triangles": 9124
+    },
+    "keeper_purple": {
+      "sha256": "0668ea6da70694726aac2cc4a874e92d9a470efab66daa38e79a2d696935ea2a",
+      "byte_identical_R2": true,
+      "solids": 1,
+      "mesh_is_volume": true,
+      "consistent_winding": true,
+      "watertight": true,
+      "bbox_mm": [
+        [
+          12.75,
+          9.65,
+          0.3
+        ],
+        [
+          19.25,
+          28.45,
+          2.72
+        ]
+      ],
+      "triangles": 3104
+    },
+    "pivot_pin_purple": {
+      "sha256": "737506286191b841112c4918c0cb1cd163a91eb449e35da300532459c5f7ecf4",
+      "byte_identical_R2": true,
+      "solids": 1,
+      "mesh_is_volume": true,
+      "consistent_winding": true,
+      "watertight": true,
+      "bbox_mm": [
+        [
+          12.86,
+          12.86,
+          -1.22
+        ],
+        [
+          19.14,
+          19.14,
+          5.65
+        ]
+      ],
+      "triangles": 2012
+    },
+    "rear_purple": {
+      "sha256": "0a9c964d553aa5297b9c2a18f08b9f991f981a0f86f6d4933984256ff6c39a70",
+      "byte_identical_R2": true,
+      "solids": 1,
+      "mesh_is_volume": true,
+      "consistent_winding": true,
+      "watertight": true,
+      "bbox_mm": [
+        [
+          -70.0,
+          -69.0,
+          -9.7
+        ],
+        [
+          70.0,
+          66.703,
+          7.4
+        ]
+      ],
+      "triangles": 21094
+    },
+    "shell_key_1_purple": {
+      "sha256": "d7884ae7835ea48900646de78498f16312971d48f51bddc36d01c573093a0568",
+      "byte_identical_R2": true,
+      "solids": 1,
+      "mesh_is_volume": true,
+      "consistent_winding": true,
+      "watertight": true,
+      "bbox_mm": [
+        [
+          -37.57,
+          20.43,
+          5.79
+        ],
+        [
+          -34.43,
+          23.57,
+          8.8
+        ]
+      ],
+      "triangles": 668
+    },
+    "shell_key_2_purple": {
+      "sha256": "145feccc0ab455fe146409f9dec39a046269a9c43acc87a90d67f4b83788b24f",
+      "byte_identical_R2": true,
+      "solids": 1,
+      "mesh_is_volume": true,
+      "consistent_winding": true,
+      "watertight": true,
+      "bbox_mm": [
+        [
+          31.43,
+          22.43,
+          5.79
+        ],
+        [
+          34.57,
+          25.57,
+          8.8
+        ]
+      ],
+      "triangles": 668
+    }
+  },
+  "surface_measurements": {
+    "rose-spiral-petal": {
+      "local_datum_world_z_mm": 9.8,
+      "samples": 434,
+      "target_edge_crest_mm": [
+        3.2,
+        3.2
+      ],
+      "mesh_top_local_height_range_mm": [
+        3.2,
+        3.2
+      ],
+      "sampled_rise_mm": 0.0,
+      "min_location_xy_mm": [
+        -1.203,
+        -35.504
+      ],
+      "max_location_xy_mm": [
+        -1.203,
+        -35.504
+      ]
+    },
+    "right-scroll": {
+      "local_datum_world_z_mm": 9.8,
+      "samples": 2912,
+      "target_edge_crest_mm": [
+        2.8,
+        3.4
+      ],
+      "mesh_top_local_height_range_mm": [
+        2.7614,
+        3.3947
+      ],
+      "sampled_rise_mm": 0.6334,
+      "min_location_xy_mm": [
+        7.844,
+        -39.607
+      ],
+      "max_location_xy_mm": [
+        29.844,
+        -26.357
+      ]
+    },
+    "left-scroll": {
+      "local_datum_world_z_mm": 9.8,
+      "samples": 2913,
+      "target_edge_crest_mm": [
+        2.8,
+        3.4
+      ],
+      "mesh_top_local_height_range_mm": [
+        2.796,
+        3.395
+      ],
+      "sampled_rise_mm": 0.599,
+      "min_location_xy_mm": [
+        -29.472,
+        -40.107
+      ],
+      "max_location_xy_mm": [
+        -29.222,
+        -26.107
+      ]
+    },
+    "rose-outer-petal": {
+      "local_datum_world_z_mm": 9.8,
+      "samples": 922,
+      "target_edge_crest_mm": [
+        2.8,
+        2.8
+      ],
+      "mesh_top_local_height_range_mm": [
+        2.8,
+        2.8
+      ],
+      "sampled_rise_mm": 0.0,
+      "min_location_xy_mm": [
+        1.092,
+        -39.098
+      ],
+      "max_location_xy_mm": [
+        1.092,
+        -39.098
+      ]
+    },
+    "right-cornice": {
+      "local_datum_world_z_mm": 9.8,
+      "samples": 1471,
+      "target_edge_crest_mm": [
+        2.6,
+        3.0
+      ],
+      "mesh_top_local_height_range_mm": [
+        2.5883,
+        2.9988
+      ],
+      "sampled_rise_mm": 0.4105,
+      "min_location_xy_mm": [
+        13.261,
+        -1.579
+      ],
+      "max_location_xy_mm": [
+        21.511,
+        -0.079
+      ]
+    },
+    "left-cornice": {
+      "local_datum_world_z_mm": 9.8,
+      "samples": 1471,
+      "target_edge_crest_mm": [
+        2.6,
+        3.0
+      ],
+      "mesh_top_local_height_range_mm": [
+        2.5884,
+        2.9988
+      ],
+      "sampled_rise_mm": 0.4105,
+      "min_location_xy_mm": [
+        -28.84,
+        -1.579
+      ],
+      "max_location_xy_mm": [
+        -20.59,
+        -0.079
+      ]
+    },
+    "rose-left-petal": {
+      "local_datum_world_z_mm": 9.8,
+      "samples": 279,
+      "target_edge_crest_mm": [
+        2.4,
+        2.4
+      ],
+      "mesh_top_local_height_range_mm": [
+        2.4,
+        2.4
+      ],
+      "sampled_rise_mm": 0.0,
+      "min_location_xy_mm": [
+        -3.971,
+        -35.511
+      ],
+      "max_location_xy_mm": [
+        -3.971,
+        -35.511
+      ]
+    },
+    "right-roof": {
+      "local_datum_world_z_mm": 9.8,
+      "samples": 1914,
+      "target_edge_crest_mm": [
+        2.0,
+        2.8
+      ],
+      "mesh_top_local_height_range_mm": [
+        1.9092,
+        2.7961
+      ],
+      "sampled_rise_mm": 0.8868,
+      "min_location_xy_mm": [
+        14.175,
+        2.2
+      ],
+      "max_location_xy_mm": [
+        21.925,
+        7.95
+      ]
+    },
+    "left-roof": {
+      "local_datum_world_z_mm": 9.8,
+      "samples": 1914,
+      "target_edge_crest_mm": [
+        2.0,
+        2.8
+      ],
+      "mesh_top_local_height_range_mm": [
+        1.9092,
+        2.7961
+      ],
+      "sampled_rise_mm": 0.8868,
+      "min_location_xy_mm": [
+        -27.926,
+        2.2
+      ],
+      "max_location_xy_mm": [
+        -20.176,
+        7.95
+      ]
+    },
+    "right-tower": {
+      "local_datum_world_z_mm": 9.8,
+      "samples": 4927,
+      "target_edge_crest_mm": [
+        2.0,
+        2.6
+      ],
+      "mesh_top_local_height_range_mm": [
+        1.8107,
+        2.599
+      ],
+      "sampled_rise_mm": 0.7883,
+      "min_location_xy_mm": [
+        22.03,
+        -29.234
+      ],
+      "max_location_xy_mm": [
+        21.53,
+        -16.734
+      ]
+    },
+    "left-tower": {
+      "local_datum_world_z_mm": 9.8,
+      "samples": 4991,
+      "target_edge_crest_mm": [
+        2.0,
+        2.6
+      ],
+      "mesh_top_local_height_range_mm": [
+        1.9292,
+        2.6
+      ],
+      "sampled_rise_mm": 0.6708,
+      "min_location_xy_mm": [
+        -21.326,
+        -29.484
+      ],
+      "max_location_xy_mm": [
+        -20.076,
+        -16.734
+      ]
+    },
+    "high-cornice": {
+      "local_datum_world_z_mm": 9.8,
+      "samples": 1965,
+      "target_edge_crest_mm": [
+        2.0,
+        2.4
+      ],
+      "mesh_top_local_height_range_mm": [
+        1.9918,
+        2.3982
+      ],
+      "sampled_rise_mm": 0.4064,
+      "min_location_xy_mm": [
+        -8.561,
+        20.044
+      ],
+      "max_location_xy_mm": [
+        -0.061,
+        17.544
+      ]
+    },
+    "mickey": {
+      "local_datum_world_z_mm": 9.8,
+      "samples": 1283,
+      "target_edge_crest_mm": [
+        1.6,
+        1.6
+      ],
+      "mesh_top_local_height_range_mm": [
+        1.6,
+        1.6
+      ],
+      "sampled_rise_mm": 0.0,
+      "min_location_xy_mm": [
+        -0.289,
+        -24.841
+      ],
+      "max_location_xy_mm": [
+        -0.289,
+        -24.841
+      ]
+    },
+    "gatehouse": {
+      "local_datum_world_z_mm": 9.8,
+      "samples": 6762,
+      "target_edge_crest_mm": [
+        1.6,
+        2.2
+      ],
+      "mesh_top_local_height_range_mm": [
+        1.5175,
+        2.1992
+      ],
+      "sampled_rise_mm": 0.6817,
+      "min_location_xy_mm": [
+        16.184,
+        -26.873
+      ],
+      "max_location_xy_mm": [
+        10.684,
+        -9.623
+      ]
+    },
+    "high-roof": {
+      "local_datum_world_z_mm": 9.8,
+      "samples": 2935,
+      "target_edge_crest_mm": [
+        1.6,
+        2.4
+      ],
+      "mesh_top_local_height_range_mm": [
+        1.5237,
+        2.3994
+      ],
+      "sampled_rise_mm": 0.8756,
+      "min_location_xy_mm": [
+        10.15,
+        20.295
+      ],
+      "max_location_xy_mm": [
+        0.9,
+        27.295
+      ]
+    },
+    "keep": {
+      "local_datum_world_z_mm": 9.8,
+      "samples": 3506,
+      "target_edge_crest_mm": [
+        1.2,
+        1.8
+      ],
+      "mesh_top_local_height_range_mm": [
+        1.1085,
+        1.7969
+      ],
+      "sampled_rise_mm": 0.6883,
+      "min_location_xy_mm": [
+        -6.141,
+        14.529
+      ],
+      "max_location_xy_mm": [
+        -2.641,
+        5.029
+      ]
+    },
+    "knot": {
+      "local_datum_world_z_mm": 15.0,
+      "samples": 2415,
+      "target_edge_crest_mm": [
+        3.6,
+        4.8
+      ],
+      "mesh_top_local_height_range_mm": [
+        3.5875,
+        4.7993
+      ],
+      "sampled_rise_mm": 1.2117,
+      "min_location_xy_mm": [
+        -4.843,
+        -64.043
+      ],
+      "max_location_xy_mm": [
+        -0.343,
+        -57.043
+      ]
+    },
+    "right-loop": {
+      "local_datum_world_z_mm": 15.0,
+      "samples": 6670,
+      "target_edge_crest_mm": [
+        2.8,
+        3.8
+      ],
+      "mesh_top_local_height_range_mm": [
+        2.7278,
+        3.7992
+      ],
+      "sampled_rise_mm": 1.0715,
+      "min_location_xy_mm": [
+        5.752,
+        -56.072
+      ],
+      "max_location_xy_mm": [
+        20.002,
+        -64.572
+      ]
+    },
+    "left-loop": {
+      "local_datum_world_z_mm": 15.0,
+      "samples": 6594,
+      "target_edge_crest_mm": [
+        2.8,
+        3.8
+      ],
+      "mesh_top_local_height_range_mm": [
+        2.7394,
+        3.7998
+      ],
+      "sampled_rise_mm": 1.0604,
+      "min_location_xy_mm": [
+        -5.522,
+        -53.072
+      ],
+      "max_location_xy_mm": [
+        -18.772,
+        -64.572
+      ]
+    },
+    "right-fold-floor": {
+      "local_datum_world_z_mm": 15.0,
+      "samples": 629,
+      "target_edge_crest_mm": [
+        1.8,
+        1.8
+      ],
+      "mesh_top_local_height_range_mm": [
+        1.8,
+        1.8
+      ],
+      "sampled_rise_mm": 0.0,
+      "min_location_xy_mm": [
+        11.435,
+        -59.539
+      ],
+      "max_location_xy_mm": [
+        11.435,
+        -59.539
+      ]
+    },
+    "left-fold-floor": {
+      "local_datum_world_z_mm": 15.0,
+      "samples": 604,
+      "target_edge_crest_mm": [
+        1.8,
+        1.8
+      ],
+      "mesh_top_local_height_range_mm": [
+        1.8,
+        1.8
+      ],
+      "sampled_rise_mm": 0.0,
+      "min_location_xy_mm": [
+        -13.846,
+        -59.539
+      ],
+      "max_location_xy_mm": [
+        -13.846,
+        -59.539
+      ]
+    },
+    "right-tail": {
+      "local_datum_world_z_mm": 15.0,
+      "samples": 5252,
+      "target_edge_crest_mm": [
+        1.2,
+        1.6
+      ],
+      "mesh_top_local_height_range_mm": [
+        1.1796,
+        1.5999
+      ],
+      "sampled_rise_mm": 0.4203,
+      "min_location_xy_mm": [
+        4.504,
+        -63.964
+      ],
+      "max_location_xy_mm": [
+        14.754,
+        -78.464
+      ]
+    },
+    "left-tail": {
+      "local_datum_world_z_mm": 15.0,
+      "samples": 5246,
+      "target_edge_crest_mm": [
+        1.2,
+        1.6
+      ],
+      "mesh_top_local_height_range_mm": [
+        1.1822,
+        1.5999
+      ],
+      "sampled_rise_mm": 0.4177,
+      "min_location_xy_mm": [
+        -3.853,
+        -64.714
+      ],
+      "max_location_xy_mm": [
+        -14.853,
+        -78.714
+      ]
+    }
+  },
+  "projected_symmetric_difference_mm2": {
+    "head_cream": 0.0,
+    "head_gold": 0.0,
+    "head_blue": 0.0,
+    "bow_pink": 0.04705
+  },
+  "bow_backing_and_socket_symmetric_difference_mm3": 0.0,
+  "pair_intersections_over_0p00001_mm3": {
+    "handle_purple / rear_purple": 0.036161,
+    "head_blue / head_cream": 5.6e-05,
+    "head_cream / head_gold": 0.000321,
+    "head_gold / head_purple": 7.5e-05
+  },
+  "grip_sweep": {
+    "min_mesh_bow_clearance_mm": 3.0368,
+    "min_at_angle_deg": 60,
+    "pitch_mm": 3,
+    "samples": 169,
+    "angle_step_deg": 15,
+    "withdrawal_mm": 21,
+    "direction_deg_about_plus_y": -2520,
+    "peak_overlap_mm3": {
+      "rear": 0.03616139402869896,
+      "bow": 0.0,
+      "face": 0.0
+    },
+    "peak_first_turn_mm3": 0.03616139402869896,
+    "peak_at_deg": {
+      "rear": 0,
+      "bow": 0,
+      "face": 0
+    }
+  },
+  "R2_fixed_card_geometry_unchanged_R2_pose_count": 576,
+  "physical_validation": "Pending printed fit, relief finish, bond, durability and reader test."
+}

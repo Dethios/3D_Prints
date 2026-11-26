@@ -1,0 +1,41 @@
+{
+  "changed_prior_features": [
+    "left-scroll",
+    "right-scroll"
+  ],
+  "added_features": [
+    "rose-left-petal",
+    "rose-outer-petal",
+    "rose-spiral-petal"
+  ],
+  "profiles": 37,
+  "protected_footprints_identical": true,
+  "rose_bounds_mm": [
+    -7.294,
+    -39.189,
+    7.668,
+    -26.08
+  ],
+  "rose_width_height_mm": [
+    14.962,
+    13.109
+  ],
+  "petal_areas_mm2": {
+    "rose-left-petal": 17.36,
+    "rose-outer-petal": 57.52,
+    "rose-spiral-petal": 27.3
+  },
+  "petal_minimum_separations_mm": {
+    "rose-left-petal to rose-outer-petal": 0.715,
+    "rose-left-petal to rose-spiral-petal": 1.203,
+    "rose-outer-petal to rose-spiral-petal": 0.672
+  },
+  "rose_edge_separations_mm": {
+    "mickey": 1.155,
+    "left-scroll": 0.918,
+    "right-scroll": 0.877,
+    "gatehouse": 1.583,
+    "inner-lip": 1.493
+  },
+  "rose_center_x_offset_from_mickey_mm": -0.067
+}

@@ -1,0 +1,36 @@
+{
+  "changed_prior_features": [
+    "left-scroll",
+    "right-scroll"
+  ],
+  "profiles": 37,
+  "protected_footprints_identical": true,
+  "exact_mirror": true,
+  "each_curl_area_mm2": 181.99,
+  "gold_area_change_percent": -59.09,
+  "left_bounds_mm": [
+    -36.295,
+    -40.198,
+    -7.771,
+    -23.52
+  ],
+  "paired_tip_gap_mm": 15.542,
+  "rose_gap_left_right_mm": [
+    3.288,
+    2.411
+  ],
+  "purple_lip_gap_mm": 2.578,
+  "vertical_material_sections_mm": {
+    "-25.0": [
+      4.533
+    ],
+    "-29.0": [
+      3.651,
+      4.705
+    ],
+    "-31.0": [
+      4.156,
+      5.347
+    ]
+  }
+}

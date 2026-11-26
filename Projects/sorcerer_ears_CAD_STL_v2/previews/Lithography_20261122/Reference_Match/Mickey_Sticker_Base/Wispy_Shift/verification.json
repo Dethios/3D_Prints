@@ -1,0 +1,33 @@
+{
+  "scale": 0.889,
+  "scale_change_from_approved_placement_percent": 0.0,
+  "position_mounted_px": [
+    199,
+    192
+  ],
+  "rear_shoe_visible_percent": 58.8,
+  "rear_shoe_contact_sample_pixels": 127,
+  "stars_visible": 10,
+  "relocated_stars": [
+    {
+      "source_star": 8,
+      "mounted_shift_px": [
+        6,
+        -12
+      ]
+    },
+    {
+      "source_star": 10,
+      "mounted_shift_px": [
+        39,
+        -225
+      ]
+    }
+  ],
+  "sha256": {
+    "mickey-sticker-isolated-star-clearance.png": "1c2a986d9a25e82646b94eed2c8352c8dac163ce8c8775c89dd642ccd5145cb1",
+    "isolated-sticker-wispy.png": "f4440ae7e2cf3da7452f4bed5fd589619c210f1b5c9cd7a4dd190c667967efc2",
+    "mickey-mounted-sticker-wispy-shift.png": "7dffd3f742a25bb85d8d895ae1f28bada81dbc4dcfe0d9dd154679a439d13511",
+    "mickey-flat-sticker-wispy-shift-lithography.png": "4b5521b0a86544cb605c609aa80918b56a0a2ebd878bfe0823b9dc3d984546cf"
+  }
+}

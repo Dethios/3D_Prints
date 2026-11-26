@@ -1,0 +1,285 @@
+{
+  "prompt": [
+    18,
+    "b09767b0-5648-43d1-92e7-2e1fe85ed4b9",
+    {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "10": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ],
+          "resolution": 0,
+          "prompt": "Edit the single lowered left glove in image 1, fine smooth enamel illustration. Use the lowered clenched hand in image 2 as the anatomy reference. Exactly FOUR DIGITS TOTAL, anatomically classic Mickey Mouse: ONE short curled thumb on viewer-right and exactly THREE regular rounded curled fingers next to it. Under the fist draw ONLY TWO dividing seams between the three regular fingers. The small thumb notch is a separate contour at far right and belongs to the thumb. As a single local correction, fuse the two far-left narrow fingertip lobes into one broader smooth rounded fingertip, remove the leftmost fingertip separation line, and smooth the lower outer contour at that exact join. The other two short finger separations and the three back-of-glove seam dashes near the cuff remain. A solid warm ivory glove, gold and medium brown continuous sharp linework from image 1, exact wrist, cuff, sleeve, hand footprint, position, red and navy backdrop. No extra pinky, no fourth regular finger, no new seam below the glove and no changes elsewhere. Keep framing fixed. Every illustration contour should be smooth professional enamel-line detail.",
+          "negative_prompt": "",
+          "images.image_1": [
+            "31",
+            0
+          ],
+          "images.image_2": [
+            "32",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "27",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "13": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "12",
+            0
+          ],
+          "filename_prefix": "nx3-litho-b8e20d28dc/mickey-lower-glove-four-total-digits"
+        }
+      },
+      "31": {
+        "class_type": "AUSBOSS_NODES_ImageCropRotatePad",
+        "inputs": {
+          "image": "nx3-litho-b8e20d28dc/lower-glove-context.png",
+          "rotation_degrees": 0.0,
+          "crop_aspect_ratio": "free",
+          "crop_x": 0,
+          "crop_y": 0,
+          "crop_width": 0,
+          "crop_height": 0,
+          "pad_left": 0,
+          "pad_top": 0,
+          "pad_right": 0,
+          "pad_bottom": 0,
+          "feather": 0,
+          "canvas_multiple": 16,
+          "fill_color": "#163263",
+          "resize_to_megapixels": true,
+          "megapixels": 0.6,
+          "resize_method": "lanczos",
+          "resolution_steps": 16
+        }
+      },
+      "32": {
+        "class_type": "AUSBOSS_NODES_ImageCropRotatePad",
+        "inputs": {
+          "image": "nx3-litho-b8e20d28dc/animation-pose-reference.png",
+          "rotation_degrees": 0.0,
+          "crop_aspect_ratio": "free",
+          "crop_x": 0,
+          "crop_y": 0,
+          "crop_width": 0,
+          "crop_height": 0,
+          "pad_left": 0,
+          "pad_top": 0,
+          "pad_right": 0,
+          "pad_bottom": 0,
+          "feather": 0,
+          "canvas_multiple": 16,
+          "fill_color": "#163263",
+          "resize_to_megapixels": true,
+          "megapixels": 0.3,
+          "resize_method": "lanczos",
+          "resolution_steps": 16
+        }
+      },
+      "22": {
+        "class_type": "LoraLoaderModelOnly",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "lora_name": "qwen-image-2.1-consistency.safetensors",
+          "strength_model": 0.5
+        }
+      },
+      "23": {
+        "class_type": "BasicScheduler",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "scheduler": "simple",
+          "steps": 40,
+          "denoise": 1.0
+        }
+      },
+      "24": {
+        "class_type": "SplitSigmas",
+        "inputs": {
+          "sigmas": [
+            "23",
+            0
+          ],
+          "step": 39
+        }
+      },
+      "25": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        }
+      },
+      "26": {
+        "class_type": "SamplerCustom",
+        "inputs": {
+          "model": [
+            "22",
+            0
+          ],
+          "add_noise": true,
+          "sigmas": [
+            "24",
+            0
+          ],
+          "latent_image": [
+            "10",
+            2
+          ],
+          "noise_seed": 20261123733,
+          "cfg": 1.0,
+          "positive": [
+            "10",
+            0
+          ],
+          "negative": [
+            "10",
+            1
+          ],
+          "sampler": [
+            "25",
+            0
+          ]
+        }
+      },
+      "27": {
+        "class_type": "SamplerCustom",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "add_noise": false,
+          "sigmas": [
+            "24",
+            1
+          ],
+          "latent_image": [
+            "26",
+            0
+          ],
+          "noise_seed": 20261123733,
+          "cfg": 1.0,
+          "positive": [
+            "10",
+            0
+          ],
+          "negative": [
+            "10",
+            1
+          ],
+          "sampler": [
+            "25",
+            0
+          ]
+        }
+      }
+    },
+    {
+      "client_id": "nx3-litho-b8e20d28dc",
+      "create_time": 1795410098238
+    },
+    [
+      "13"
+    ]
+  ],
+  "outputs": {
+    "13": {
+      "images": [
+        {
+          "filename": "mickey-lower-glove-four-total-digits_00001_.png",
+          "subfolder": "nx3-litho-b8e20d28dc",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 800,
+            "height": 800
+          },
+          "id": "2c5a4941-dd47-4b89-9f59-d2d25941f784"
+        }
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "b09767b0-5648-43d1-92e7-2e1fe85ed4b9",
+          "timestamp": 1795410098246
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [],
+          "prompt_id": "b09767b0-5648-43d1-92e7-2e1fe85ed4b9",
+          "timestamp": 1795410098285
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "b09767b0-5648-43d1-92e7-2e1fe85ed4b9",
+          "timestamp": 1795410257713
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "13": {
+      "node_id": "13",
+      "display_node": "13",
+      "parent_node": null,
+      "real_node_id": "13"
+    }
+  }
+}

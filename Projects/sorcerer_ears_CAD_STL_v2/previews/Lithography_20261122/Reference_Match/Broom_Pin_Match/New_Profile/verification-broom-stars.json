@@ -1,0 +1,29 @@
+{
+  "change": "Two stars cloned from the prior approved artwork for the upper and left gaps",
+  "mounted_rim_angle_degrees": 40,
+  "pixels_per_mm": 9.22,
+  "placement": [
+    {
+      "center_mounted_preview_px": [
+        412,
+        320
+      ],
+      "nearest_edge_gap_px": 56.6
+    },
+    {
+      "center_mounted_preview_px": [
+        582,
+        155
+      ],
+      "nearest_edge_gap_px": 24.0
+    }
+  ],
+  "unchanged_outside_added_stars": true,
+  "flat_alpha_matches_cad_opening": true,
+  "sha256": {
+    "brooms-mounted-clean-lines.png": "c6b38163d6195e263eb764123f029980c741b058e7ffd974aac1ee49e272a217",
+    "brooms-flat-clean-lines-lithography.png": "6eaad03b70a522c63a56bb8a142a07c946086e55d83edfee992f3eb18a24590b",
+    "brooms-mounted-clean-lines-more-stars.png": "dab2a0e4e11305d1edd8cf833f35f7b8e1f73e4b3a22bb7b9b06a8eba1aa4ed3",
+    "brooms-flat-clean-lines-more-stars-lithography.png": "2086ada23b6ba45c9f08f14d0db76b876ba068e99e214825fa18286df96b102b"
+  }
+}

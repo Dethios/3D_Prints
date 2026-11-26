@@ -1,0 +1,130 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_bf16.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_bf16.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "auto",
+      "dtype": "default"
+    }
+  },
+  "5": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "nx3-litho-002582748d/mickey-hidden-rear-shoe-comfy-master.png"
+    }
+  },
+  "6": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "nx3-litho-002582748d/mickey-gloves-belt-pose.png"
+    }
+  },
+  "7": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "nx3-litho-002582748d/mickey-enamel-reference.png"
+    }
+  },
+  "10": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "resolution": 0,
+      "prompt": "Edit image 1, the approved flat-enamel Sorcerer Mickey ear illustration, as a focused anatomy correction. Use image 2 as the exact gesture and clothing reference; image 3 is a pin style reference only. Preserve the original cobalt hat and facial expression, navy color field, all surrounding stars, gold rim, large central figure, pose direction and 1024 square framing of image 1. Replace the raised white glove with the SPECIFIC open hand in image 2: at the end of a short dark wrist above the red raised sleeve, the palm is turned upward and toward the right, the rounded thumb sticks UP on the left side of the hand shape, and four softly rounded finger tips extend together to the RIGHT above the palm, with a subtle even curve to separate them. The lowered white glove at the lower left, at the end of the red sleeve, is lightly curled with its fingers pointing down and the thumb against its side, compact like the fist in image 2. Neither glove resembles a mitten, a flipper or an unconnected blob. Small clean glove cuffs. Both hands keep their positions; draw anatomically readable glove shapes and only a few purposeful, even engraved lines. Add a clearly visible narrow warm ochre-brown tied fabric BELT with a centered knot and short hanging tails at his natural waist, like image 2. Below the belt the scarlet ROBE SPLITS OPEN in a clear V, showing a dark charcoal-purple garment between two distinct scarlet coat panels. The two edges of the robe opening have clean fine dark-and-gold contours and the panels flare separately as in image 2. Show his one visible golden-brown shoe at the lower right. The rear shoe remains hidden by the coat and the rim. Leave the rest of the character composition and stars alone. Paint flat saturated enamel colors with restrained precise gold edges, no speckles, glows, diffuse shading, extra limbs, extra fingers, letters or annotations.",
+      "negative_prompt": "",
+      "images.image_1": [
+        "5",
+        0
+      ],
+      "images.image_2": [
+        "6",
+        0
+      ],
+      "images.image_3": [
+        "7",
+        0
+      ]
+    }
+  },
+  "11": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "seed": 20261122914,
+      "steps": 40,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0,
+      "positive": [
+        "10",
+        0
+      ],
+      "negative": [
+        "10",
+        1
+      ],
+      "latent_image": [
+        "10",
+        2
+      ]
+    }
+  },
+  "12": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "11",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "13": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "filename_prefix": "nx3-litho-002582748d/mickey-gloves-and-belt"
+    }
+  }
+}

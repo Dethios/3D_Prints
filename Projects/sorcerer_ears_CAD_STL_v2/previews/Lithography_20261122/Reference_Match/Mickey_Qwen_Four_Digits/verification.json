@@ -1,0 +1,44 @@
+{
+  "restored_hands_source": "Qwen full-art render",
+  "fit_regions": [
+    {
+      "source_box": [
+        633,
+        193,
+        826,
+        350
+      ],
+      "target_area": [
+        633,
+        193,
+        826,
+        350
+      ],
+      "pixels_copied": 11426
+    },
+    {
+      "source_box": [
+        347,
+        533,
+        480,
+        669
+      ],
+      "target_area": [
+        347,
+        533,
+        480,
+        669
+      ],
+      "pixels_copied": 8197
+    }
+  ],
+  "changed_pixels_mounted": 20825,
+  "source_sha256": {
+    "mickey-mounted-connected-wrist.png": "a73e8e0108a7c7623b64798932320b144d560a3e264fdc6897311804fc1bc057",
+    "mickey-flat-connected-wrist-lithography.png": "00cb7620779f604aabf4d4d49ced77abada3c36dcac294c6bf165e4223494124",
+    "qwen-registered-selected-hands.png": "8cbf6dc4177974e147327112d62badcf9c68a90a17a1e7c516d21f4557a3f07c",
+    "mickey-mounted-qwen-four-digits.png": "0577f50e4a799b645bb0c07cecd72e1c5821aced09744bda91aec66a23f0d472",
+    "mickey-flat-qwen-four-digits-lithography.png": "aa9da148df578a54bbe6f9ab3b797498bb9d4b0bfb099a56891114e12618a94e",
+    "animation-pose-reference.png": "a2616b54cc47e91e4eb1b346478889233fa291b0d6fecf1002539945d7671ac9"
+  }
+}

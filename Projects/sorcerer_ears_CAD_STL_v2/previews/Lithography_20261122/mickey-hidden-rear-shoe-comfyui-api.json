@@ -1,0 +1,110 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_bf16.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_bf16.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "auto",
+      "dtype": "default"
+    }
+  },
+  "5": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "nx3-litho-167a88624a/mickey-comfy-master.png"
+    }
+  },
+  "10": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "resolution": 0,
+      "prompt": "Make one surgical localized adjustment only to this front-view flat enamel vector artwork. This is the exact design and pose to preserve. At the BOTTOM LEFT of the central figure there are two golden-brown shoes total. The LEFT shoe, extending leftward from underneath the robe toward the viewer\u2019s left, is the rear foot and should be hidden. Remove ONLY that left golden-brown shoe completely and fill its spot with the adjacent flat navy field, using the current red hem above it as the continuing robe boundary. The golden-brown shoe on the BOTTOM RIGHT stays as currently shown. Preserve the rest of Mickey and both hands, face, hat brim, whole navy field, stars and exact golden ear frame exactly as in this image. Clean solid color matching at the bottom left. Keep the original framing, proportions, outlines and the original 1024-square composition.",
+      "negative_prompt": "",
+      "images.image_1": [
+        "5",
+        0
+      ]
+    }
+  },
+  "11": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "seed": 20261122789,
+      "steps": 40,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0,
+      "positive": [
+        "10",
+        0
+      ],
+      "negative": [
+        "10",
+        1
+      ],
+      "latent_image": [
+        "10",
+        2
+      ]
+    }
+  },
+  "12": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "11",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "13": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "filename_prefix": "nx3-litho-167a88624a/mickey-hidden-rear-shoe"
+    }
+  }
+}

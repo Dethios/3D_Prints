@@ -1,0 +1,16 @@
+{
+  "mickey": {
+    "source": "mickey-gloves-and-belt-comfy-master.png",
+    "rescale": 0.9423,
+    "art_pixels": 145460,
+    "opening_fill_percent": 30.5,
+    "pixels_above_46_percent_alpha_outside_lip_clearance": 2
+  },
+  "brooms": {
+    "source": "brooms-separated-grips-legs-source.png",
+    "rescale": 0.8461,
+    "art_pixels": 131532,
+    "opening_fill_percent": 27.58,
+    "pixels_above_46_percent_alpha_outside_lip_clearance": 0
+  }
+}

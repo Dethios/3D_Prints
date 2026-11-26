@@ -1,0 +1,14 @@
+{
+  "mounted_changed_pixels": 123056,
+  "flat_changed_pixels": 129024,
+  "ear_placement_and_star_pixels_preserved": true,
+  "sha256": {
+    "user-selected-broom.png": "8aad351e1e8a8b12633e1802753b93bbf9d430177fc50ffe48572b42f92cc956",
+    "reference-profile-cutout.png": "86b8ed9a57b1c4046bb86f738439a36d1a99995b2ebf2655d9f6c22476ea6f03",
+    "selected-broom-clean-lines.png": "162b4db8613a9f8726784ba8640d3a698aae17145638a107369d10ee1caea10f",
+    "brooms-mounted-selected-original-angle.png": "94e559bcaef55c98761d30d30b17e08e3183e554948f117d215daf4dbb4e431c",
+    "brooms-flat-selected-original-angle-lithography.png": "fcccfa575be353f4cdfd6d902229e63bbd8e7f99c4331eb3393f13ec8b354e1a",
+    "brooms-mounted-clean-lines.png": "c6b38163d6195e263eb764123f029980c741b058e7ffd974aac1ee49e272a217",
+    "brooms-flat-clean-lines-lithography.png": "6eaad03b70a522c63a56bb8a142a07c946086e55d83edfee992f3eb18a24590b"
+  }
+}

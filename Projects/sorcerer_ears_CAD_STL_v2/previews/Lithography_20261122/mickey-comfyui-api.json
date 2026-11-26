@@ -1,0 +1,130 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_bf16.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_bf16.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "auto",
+      "dtype": "default"
+    }
+  },
+  "5": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "nx3-litho-167a88624a/mickey-true-ear-layout.png"
+    }
+  },
+  "6": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "nx3-litho-167a88624a/mickey-pose-reference.png"
+    }
+  },
+  "7": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "nx3-litho-167a88624a/mickey-enamel-reference.png"
+    }
+  },
+  "10": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "resolution": 0,
+      "prompt": "Image 1 gives the exact ear frame and the layout silhouette. Image 2 shows the required character pose and anatomy. Image 3 gives the enamel pin outlines and coloring style. Paint a single recognizable Sorcerer Mickey, compact and well proportioned, humane rounded peach cheek and muzzle, two correctly aligned white eyes looking toward his lifted glove, round black ears and nose, cheerful restrained smile. His vivid cobalt sorcerer hat points upper left with a separate wrapped blue brim and white moon and stars. His right arm reaches up-right with a clearly recognizable white glove with thumb and fingers, and his lowered left white glove projects left from a red sleeve with its cuff and fingers clear. Both hands are anatomically clean with at most two smooth thin interior finger lines. Rich scarlet robe flows toward the lower right with only a few intentional seams. Visible shoe rounded golden brown with one clean curved sole seam and the back foot hidden behind the robe near the lower rim. Match the pose and figure direction from image 2, not the other pose in the pin. Enlarge the good figure within the field and design the stars around the figure; keep every glove, cap and shoe inside the frame. No other figure or object. Produce a polished FRONT VIEW, flat color-lithography master like an enamel pin illustrated as vector art. Keep the ear-shaped outside contour and bottom inward curve from image 1, at its exact position and scale. Thin even antique-gold outer rim, solid dark royal navy field, warm off-white outside. Stay comfortably inside the inner gold rim with about 1.5 mm of navy between any design and the rim. Use a compact composition that fills the upper and side areas with 6-8 broad, clearly spaced pale-gold twinkling stars sized to the gaps. Cover the available space through placement, not extra outlines. Crisp uniform dark outlines and restrained fine gold borders between large matte color areas. Use a small fixed palette of navy, cobalt blue, red, ivory, muted warm peach, golden brown and gold. Solid untextured fills suitable for conversion to a layered color image. No lettering, shadows, gleam, metallic reflections, gradients, stray marks, narrow wisps, or shapes beyond the rim.",
+      "negative_prompt": "",
+      "images.image_1": [
+        "5",
+        0
+      ],
+      "images.image_2": [
+        "6",
+        0
+      ],
+      "images.image_3": [
+        "7",
+        0
+      ]
+    }
+  },
+  "11": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "seed": 20261122123,
+      "steps": 40,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0,
+      "positive": [
+        "10",
+        0
+      ],
+      "negative": [
+        "10",
+        1
+      ],
+      "latent_image": [
+        "10",
+        2
+      ]
+    }
+  },
+  "12": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "11",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "13": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "filename_prefix": "nx3-litho-167a88624a/mickey"
+    }
+  }
+}

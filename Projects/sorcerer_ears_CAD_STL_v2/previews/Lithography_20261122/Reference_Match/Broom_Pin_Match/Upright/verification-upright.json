@@ -1,0 +1,26 @@
+{
+  "source": "broom-comfy-cutout.png",
+  "mount_degrees": 40.0,
+  "star_count": 8,
+  "broom_fit": [
+    {
+      "source_pose_deskew_degrees": 9.0,
+      "feet_rim_position_flat_px": 200,
+      "scale": 1.0,
+      "rim_contact_pixels": 53,
+      "occluded_percent": 0.09
+    },
+    {
+      "source_pose_deskew_degrees": 9.0,
+      "feet_rim_position_flat_px": 533,
+      "scale": 1.0,
+      "rim_contact_pixels": 92,
+      "occluded_percent": 0.26
+    }
+  ],
+  "sha256": {
+    "broom-comfy-cutout.png": "e50a43f6971db16be47a811661175d4269146f869a26fa99bc1a93620ec3496c",
+    "brooms-mounted-upright.png": "9b31adf2fa93f9181f7786754cb67cab0b00d224160b6084b08c149dc9069c4a",
+    "brooms-flat-upright-lithography.png": "097ce1f24fed7b576c954cf2fb25134bf846c9ca6a0b9e396c33b111f27ad509"
+  }
+}

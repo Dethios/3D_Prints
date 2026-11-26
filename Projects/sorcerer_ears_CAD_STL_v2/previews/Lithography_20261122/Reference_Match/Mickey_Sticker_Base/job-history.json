@@ -1,0 +1,285 @@
+{
+  "prompt": [
+    19,
+    "45cccafa-4134-4269-93b3-2a6132eb48e5",
+    {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "10": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ],
+          "resolution": 0,
+          "prompt": "Put the ENTIRE Sorcerer Mickey sticker artwork from image 2 inside the gold-edged navy ear opening in image 1. Trace image 2 with close visual fidelity. Use its exact expressive face, blue bent pointed hat and two gold stars with gold crescent, red robe and gold rope, right hand pointing up with one raised index and thumb, lowered spread glove with three dark dashes, and most importantly BOTH soft, rounded golden-yellow flat cartoon shoes from image 2. Preserve exactly its small, partly robe-hidden left shoe extending to the left and its forward right shoe with rounded projecting toe and narrow heel next to black ankle. Same angles and proportions as image 2, with no brown oxfords, added toe seams or added boot soles. Use the exact long ivory ribbon-like spiral: thin rising hook at the upper right by the pointing finger, one broad sweep to the left past the face and hat, back around the waist to the right, then the curled lower-left tip. Keep the small distinct four-point ivory twinkles from the sticker in their relative places, including the upper-right, around the head and waist, and lower-left points. Copy the sticker artwork only. Remove the photographed finger, translucent border, photo surface texture, and bokeh. Use clean precise editorial illustration edges and solid sticker colors, restrained fine contours. Keep the exact mounted rim shape, angle, plain navy field, and border from image 1. Fit the whole sticker composition generously inside the ear, retain all star and swirl endpoints, and keep Mickey upright as in the sticker. Put the two visible shoes close to the lower region, keep the adjacent ivory curl visible. Deliver one full ear on cream paper.",
+          "negative_prompt": "",
+          "images.image_1": [
+            "31",
+            0
+          ],
+          "images.image_2": [
+            "32",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "27",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "13": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "12",
+            0
+          ],
+          "filename_prefix": "nx3-litho-dcddee7002/mickey-sticker-in-mounted-ear"
+        }
+      },
+      "31": {
+        "class_type": "AUSBOSS_NODES_ImageCropRotatePad",
+        "inputs": {
+          "image": "nx3-litho-dcddee7002/blank-mounted-ear.png",
+          "rotation_degrees": 0.0,
+          "crop_aspect_ratio": "free",
+          "crop_x": 0,
+          "crop_y": 0,
+          "crop_width": 0,
+          "crop_height": 0,
+          "pad_left": 0,
+          "pad_top": 0,
+          "pad_right": 0,
+          "pad_bottom": 0,
+          "feather": 0,
+          "canvas_multiple": 16,
+          "fill_color": "#163263",
+          "resize_to_megapixels": true,
+          "megapixels": 0.99,
+          "resize_method": "lanczos",
+          "resolution_steps": 16
+        }
+      },
+      "32": {
+        "class_type": "AUSBOSS_NODES_ImageCropRotatePad",
+        "inputs": {
+          "image": "nx3-litho-dcddee7002/sticker-composition.png",
+          "rotation_degrees": 0.0,
+          "crop_aspect_ratio": "free",
+          "crop_x": 0,
+          "crop_y": 0,
+          "crop_width": 0,
+          "crop_height": 0,
+          "pad_left": 0,
+          "pad_top": 0,
+          "pad_right": 0,
+          "pad_bottom": 0,
+          "feather": 0,
+          "canvas_multiple": 16,
+          "fill_color": "#163263",
+          "resize_to_megapixels": true,
+          "megapixels": 0.63,
+          "resize_method": "lanczos",
+          "resolution_steps": 16
+        }
+      },
+      "22": {
+        "class_type": "LoraLoaderModelOnly",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "lora_name": "qwen-image-2.1-consistency.safetensors",
+          "strength_model": 0.5
+        }
+      },
+      "23": {
+        "class_type": "BasicScheduler",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "scheduler": "simple",
+          "steps": 40,
+          "denoise": 1.0
+        }
+      },
+      "24": {
+        "class_type": "SplitSigmas",
+        "inputs": {
+          "sigmas": [
+            "23",
+            0
+          ],
+          "step": 39
+        }
+      },
+      "25": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        }
+      },
+      "26": {
+        "class_type": "SamplerCustom",
+        "inputs": {
+          "model": [
+            "22",
+            0
+          ],
+          "add_noise": true,
+          "sigmas": [
+            "24",
+            0
+          ],
+          "latent_image": [
+            "10",
+            2
+          ],
+          "noise_seed": 20261123893,
+          "cfg": 1.0,
+          "positive": [
+            "10",
+            0
+          ],
+          "negative": [
+            "10",
+            1
+          ],
+          "sampler": [
+            "25",
+            0
+          ]
+        }
+      },
+      "27": {
+        "class_type": "SamplerCustom",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "add_noise": false,
+          "sigmas": [
+            "24",
+            1
+          ],
+          "latent_image": [
+            "26",
+            0
+          ],
+          "noise_seed": 20261123893,
+          "cfg": 1.0,
+          "positive": [
+            "10",
+            0
+          ],
+          "negative": [
+            "10",
+            1
+          ],
+          "sampler": [
+            "25",
+            0
+          ]
+        }
+      }
+    },
+    {
+      "client_id": "nx3-litho-dcddee7002",
+      "create_time": 1795411275045
+    },
+    [
+      "13"
+    ]
+  ],
+  "outputs": {
+    "13": {
+      "images": [
+        {
+          "filename": "mickey-sticker-in-mounted-ear_00001_.png",
+          "subfolder": "nx3-litho-dcddee7002",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 1024,
+            "height": 1024
+          },
+          "id": "c4573a71-56e9-4a9d-88a5-359c1f336e2e"
+        }
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "45cccafa-4134-4269-93b3-2a6132eb48e5",
+          "timestamp": 1795411275047
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [],
+          "prompt_id": "45cccafa-4134-4269-93b3-2a6132eb48e5",
+          "timestamp": 1795411275052
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "45cccafa-4134-4269-93b3-2a6132eb48e5",
+          "timestamp": 1795411463271
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "13": {
+      "node_id": "13",
+      "display_node": "13",
+      "parent_node": null,
+      "real_node_id": "13"
+    }
+  }
+}

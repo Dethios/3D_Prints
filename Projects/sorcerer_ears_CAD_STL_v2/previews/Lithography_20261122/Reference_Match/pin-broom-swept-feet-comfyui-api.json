@@ -1,0 +1,120 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_bf16.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_bf16.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "auto",
+      "dtype": "default"
+    }
+  },
+  "5": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "nx3-litho-2054ef3a20/broom-widened-edit-guide.png"
+    }
+  },
+  "6": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "nx3-litho-2054ef3a20/broom-direct-pin-reference.png"
+    }
+  },
+  "10": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "resolution": 0,
+      "prompt": "Precisely edit image 1, a wide standalone Fantasia enchanted broom, using image 2 as the visual reference for exact shape. Preserve the width and height of image 1, almost three quarters as wide as tall. Keep the plain navy field and one centered broom. Specifically change the TWO straw feet below the collar to match image 2: broaden the connected low straw skirt, keep a small smoothly rounded arch between the two feet, and reshape both toes into short tapering splayed straw sweeps. The LEFT lower toe extends leftward to a soft narrow curl, the RIGHT toe sweeps higher and points outward RIGHT. Both feet are continuous straw, with fine strands that flow all the way off the toes; there are no oval toe caps, boot soles, hems, cuffs or dividing seams across the straw foot. Keep the waist collar high, narrow arm wrists and the small golden hands clearly gripping individual gold bucket handles. Tilt the two red buckets slightly OUTWARD as in the pin, left base toward left, right base toward right. Keep separate little navy holes inside both handles and the wide ivory stripe across each bucket. Solid clean matte enamel colors, crisp outlines, no extra objects or border. This is a faithful cleanup of the two squat sweeping toes of the reference, not a redesign.",
+      "negative_prompt": "",
+      "images.image_1": [
+        "5",
+        0
+      ],
+      "images.image_2": [
+        "6",
+        0
+      ]
+    }
+  },
+  "11": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "seed": 20261123488,
+      "steps": 40,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0,
+      "positive": [
+        "10",
+        0
+      ],
+      "negative": [
+        "10",
+        1
+      ],
+      "latent_image": [
+        "10",
+        2
+      ]
+    }
+  },
+  "12": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "11",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "13": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "filename_prefix": "nx3-litho-2054ef3a20/pin-broom-swept-feet"
+    }
+  }
+}

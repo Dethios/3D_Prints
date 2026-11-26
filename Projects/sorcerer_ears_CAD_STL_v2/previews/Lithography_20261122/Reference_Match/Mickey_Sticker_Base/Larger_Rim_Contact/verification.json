@@ -1,0 +1,25 @@
+{
+  "scale": 0.889,
+  "scale_change_percent": 20.3,
+  "position_mounted_px": [
+    225,
+    170
+  ],
+  "rear_shoe_visible_percent": 98.2,
+  "rear_shoe_contact_sample_pixels": 42,
+  "stars_visible": 10,
+  "relocated_stars": [
+    {
+      "source_star": 10,
+      "mounted_shift_px": [
+        -3,
+        -165
+      ]
+    }
+  ],
+  "sha256": {
+    "mickey-sticker-isolated-star-clearance.png": "1c2a986d9a25e82646b94eed2c8352c8dac163ce8c8775c89dd642ccd5145cb1",
+    "mickey-mounted-sticker-larger.png": "726f72ea368a16e20aecc2062cef9b6ebde0dcbcdede5e04f11e7a4b71211b31",
+    "mickey-flat-sticker-larger-lithography.png": "09843198c6f3c30523ba4ea30db30dc993253025c392b6af0f2c27cc111f7b82"
+  }
+}

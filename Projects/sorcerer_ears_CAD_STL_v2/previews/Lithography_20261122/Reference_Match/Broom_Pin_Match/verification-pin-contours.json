@@ -1,0 +1,24 @@
+{
+  "source": "pin-cleanup-fallback.png",
+  "mount_degrees": 40.0,
+  "star_count": 8,
+  "broom_fit": [
+    {
+      "tilt_degrees": 44.0,
+      "scale": 1.0,
+      "rim_contact_pixels": 119,
+      "occluded_percent": 0.38
+    },
+    {
+      "tilt_degrees": 27.0,
+      "scale": 1.0,
+      "rim_contact_pixels": 120,
+      "occluded_percent": 0.28
+    }
+  ],
+  "sha256": {
+    "pin-cleanup-fallback.png": "e123197a86d871d753d2395bc20687aaa7992b1b4b60ce4b9eab7e83f30740e5",
+    "brooms-mounted-pin-contours.png": "c27bf125efcbcd08adf8db8104c78d35a334209805e47750b23db50732ebd2ea",
+    "brooms-flat-pin-contours-lithography.png": "9cf8e4fcda849b5b7b838e72dbba17bc0e7ecdefd5a20cf335296c94cc3ad899"
+  }
+}

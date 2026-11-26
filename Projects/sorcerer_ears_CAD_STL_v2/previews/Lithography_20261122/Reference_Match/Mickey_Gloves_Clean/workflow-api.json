@@ -1,0 +1,219 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_bf16.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_bf16.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "10": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "resolution": 0,
+      "prompt": "Cleanly restore the two hand details in image 1 in their exact positions, matching the glove anatomy and seams in image 2. On the left, Mickey's lifted ivory glove is seen PALM UP. Match the upright thumb, fingers held out together, the one short fold beside the thumb and small natural finger divisions near the tips. No three decorative dorsal knuckle lines on the raised palm. On the right the lower ivory glove is a compact relaxed curl with three short lines on the back of the hand and very short marks separating the curled finger tips. Keep the exact cuff positions and silhouettes, black wrists, red sleeve and navy background. Render each glove with solid clean ivory and crisp continuous thin dark-brown engraving and subtle antique-gold edge lines, just like finished flat vector enamel pin art. Remove all pixelation, blur and noisy shading. Do not move the crops, redesign the gloves, add extra fingers or regenerate the layout. The clean palm crease and two distinct hand poses matter above all.",
+      "negative_prompt": "",
+      "images.image_1": [
+        "31",
+        0
+      ],
+      "images.image_2": [
+        "32",
+        0
+      ]
+    }
+  },
+  "12": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "27",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "13": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "filename_prefix": "nx3-litho-08abda8ec4/mickey-glove-enamel-cleanup"
+    }
+  },
+  "31": {
+    "class_type": "AUSBOSS_NODES_ImageCropRotatePad",
+    "inputs": {
+      "image": "nx3-litho-08abda8ec4/glove-shape-guide.png",
+      "rotation_degrees": 0.0,
+      "crop_aspect_ratio": "free",
+      "crop_x": 0,
+      "crop_y": 0,
+      "crop_width": 0,
+      "crop_height": 0,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "feather": 0,
+      "canvas_multiple": 16,
+      "fill_color": "#163263",
+      "resize_to_megapixels": true,
+      "megapixels": 0.8,
+      "resize_method": "lanczos",
+      "resolution_steps": 16
+    }
+  },
+  "32": {
+    "class_type": "AUSBOSS_NODES_ImageCropRotatePad",
+    "inputs": {
+      "image": "nx3-litho-08abda8ec4/animation-gloves.png",
+      "rotation_degrees": 0.0,
+      "crop_aspect_ratio": "free",
+      "crop_x": 0,
+      "crop_y": 0,
+      "crop_width": 0,
+      "crop_height": 0,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "feather": 0,
+      "canvas_multiple": 16,
+      "fill_color": "#163263",
+      "resize_to_megapixels": true,
+      "megapixels": 0.35,
+      "resize_method": "lanczos",
+      "resolution_steps": 16
+    }
+  },
+  "22": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "lora_name": "qwen-image-2.1-consistency.safetensors",
+      "strength_model": 0.5
+    }
+  },
+  "23": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "scheduler": "simple",
+      "steps": 40,
+      "denoise": 1.0
+    }
+  },
+  "24": {
+    "class_type": "SplitSigmas",
+    "inputs": {
+      "sigmas": [
+        "23",
+        0
+      ],
+      "step": 39
+    }
+  },
+  "25": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler"
+    }
+  },
+  "26": {
+    "class_type": "SamplerCustom",
+    "inputs": {
+      "model": [
+        "22",
+        0
+      ],
+      "add_noise": true,
+      "sigmas": [
+        "24",
+        0
+      ],
+      "latent_image": [
+        "10",
+        2
+      ],
+      "noise_seed": 20261123629,
+      "cfg": 1.0,
+      "positive": [
+        "10",
+        0
+      ],
+      "negative": [
+        "10",
+        1
+      ],
+      "sampler": [
+        "25",
+        0
+      ]
+    }
+  },
+  "27": {
+    "class_type": "SamplerCustom",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "add_noise": false,
+      "sigmas": [
+        "24",
+        1
+      ],
+      "latent_image": [
+        "26",
+        0
+      ],
+      "noise_seed": 20261123629,
+      "cfg": 1.0,
+      "positive": [
+        "10",
+        0
+      ],
+      "negative": [
+        "10",
+        1
+      ],
+      "sampler": [
+        "25",
+        0
+      ]
+    }
+  }
+}

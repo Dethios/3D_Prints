@@ -1,0 +1,34 @@
+{
+  "mounted_rim_degrees": 40.0,
+  "source_pose_deskew_degrees": 0.0,
+  "brooms": [
+    {
+      "height_px": 465,
+      "height_increase_percent": 10.2,
+      "visible_bounds_preview_px": [
+        200,
+        418,
+        595,
+        878
+      ],
+      "cropped_percent": 0.68
+    },
+    {
+      "height_px": 425,
+      "height_increase_percent": -7.6,
+      "visible_bounds_preview_px": [
+        524,
+        221,
+        885,
+        645
+      ],
+      "cropped_percent": 0.29
+    }
+  ],
+  "stars": 7,
+  "sha256": {
+    "reference-profile-cutout.png": "86b8ed9a57b1c4046bb86f738439a36d1a99995b2ebf2655d9f6c22476ea6f03",
+    "brooms-mounted-selected-original-angle.png": "94e559bcaef55c98761d30d30b17e08e3183e554948f117d215daf4dbb4e431c",
+    "brooms-flat-selected-original-angle-lithography.png": "fcccfa575be353f4cdfd6d902229e63bbd8e7f99c4331eb3393f13ec8b354e1a"
+  }
+}

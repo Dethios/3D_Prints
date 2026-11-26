@@ -1,0 +1,14 @@
+{
+  "scale": 0.739,
+  "relative_max_scale": 0.618,
+  "mounted_rim_degrees": -40,
+  "minimum_perimeter_clearance_px": 8.246211251235321,
+  "sha256": {
+    "mickey-sticker-isolated-star-clearance.png": "1c2a986d9a25e82646b94eed2c8352c8dac163ce8c8775c89dd642ccd5145cb1",
+    "ear-interior-alpha.png": "c8f2a15e024f685a0e1ada586cf3daa8c6e87ed848d9b3d26f058cac8326d753",
+    "ear-outer-alpha.png": "9996e035fcd83c389353a7bb05bca08977cc7b123d8e9034c483dd93c2987e92",
+    "mickey-mounted-sticker-qwen-final.png": "d86e4d15403e55c04959060c2264df9c7520c17a73edbad487c4d7187acb20c2",
+    "mickey-flat-sticker-qwen-final-lithography.png": "b6341c945c327cd54f0f33144897dd72d19615415611b370e6f8246e14497b5d",
+    "sticker-reference.png": "ad6210a212ca94ad660062530ee6e21a0ef6a5bafa69caa551f79fa62d37accf"
+  }
+}

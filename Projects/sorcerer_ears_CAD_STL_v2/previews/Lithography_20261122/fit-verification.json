@@ -1,0 +1,16 @@
+{
+  "mickey": {
+    "source": "mickey-hidden-rear-shoe-comfy-master.png",
+    "rescale": 0.9473,
+    "art_pixels": 145675,
+    "opening_fill_percent": 30.55,
+    "pixels_above_46_percent_alpha_outside_lip_clearance": 0
+  },
+  "brooms": {
+    "source": "brooms-comfy-master.png",
+    "rescale": 0.8451,
+    "art_pixels": 158865,
+    "opening_fill_percent": 33.31,
+    "pixels_above_46_percent_alpha_outside_lip_clearance": 0
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_bf16.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_bf16.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "10": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "resolution": 0,
+      "prompt": "Edit image 1, the FULL square enamel-pin art. Make a targeted, professional revision of Mickey's TWO WHITE GLOVES only. Image 2 is the original animation pose and anatomy guide, not a texture source. Draw the two gloves in image 1's existing clean high-resolution enamel illustration style: very smooth continuous precise curves, smooth thin consistent brown inner contours and gold keyline, solid warm ivory, consistent with the existing facial contours, nose, hat edge and robe. Preserve the exact image 1 composition, angle, body, shoes, head, hat, sleeve shapes, rim, stars, navy field, and the wrist positions. The raised right glove is a PALM-UP offering gesture: open cupped palm as in image 2, aligned fingers extended gently right, rounded lifted thumb at left, one short curved natural thumb-base palm crease, short finger separations near their tips. There are no three cartoon back-of-hand marks on the raised palm. White cuff smoothly encloses the top of the existing black forearm with absolutely no blue gap. Lowered left glove at the waist is the back of a relaxed curled fist, round short scalloped curled fingertips and thumb at right, three short smooth back-of-hand markings as in image 2. Keep its white cuff attached to the sleeve. Preserve the exact placement and size of both hands and the artwork outside the glove-and-cuff areas. Crisp clean continuous linework, distinct contours, smooth even ink, no blur, shading, photo texture or jagged lines. Render the full original square frame with the local edits.",
+      "negative_prompt": "",
+      "images.image_1": [
+        "31",
+        0
+      ],
+      "images.image_2": [
+        "32",
+        0
+      ]
+    }
+  },
+  "12": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "27",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "13": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "filename_prefix": "nx3-litho-bfb2ba7ceb/mickey-full-art-targeted-hands"
+    }
+  },
+  "31": {
+    "class_type": "AUSBOSS_NODES_ImageCropRotatePad",
+    "inputs": {
+      "image": "nx3-litho-bfb2ba7ceb/full-enamel-art-input.png",
+      "rotation_degrees": 0.0,
+      "crop_aspect_ratio": "free",
+      "crop_x": 0,
+      "crop_y": 0,
+      "crop_width": 0,
+      "crop_height": 0,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "feather": 0,
+      "canvas_multiple": 16,
+      "fill_color": "#163263",
+      "resize_to_megapixels": true,
+      "megapixels": 1.05,
+      "resize_method": "lanczos",
+      "resolution_steps": 16
+    }
+  },
+  "32": {
+    "class_type": "AUSBOSS_NODES_ImageCropRotatePad",
+    "inputs": {
+      "image": "nx3-litho-bfb2ba7ceb/animation-pose-reference.png",
+      "rotation_degrees": 0.0,
+      "crop_aspect_ratio": "free",
+      "crop_x": 0,
+      "crop_y": 0,
+      "crop_width": 0,
+      "crop_height": 0,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "feather": 0,
+      "canvas_multiple": 16,
+      "fill_color": "#163263",
+      "resize_to_megapixels": true,
+      "megapixels": 0.38,
+      "resize_method": "lanczos",
+      "resolution_steps": 16
+    }
+  },
+  "22": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "lora_name": "qwen-image-2.1-consistency.safetensors",
+      "strength_model": 0.5
+    }
+  },
+  "23": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "scheduler": "simple",
+      "steps": 40,
+      "denoise": 1.0
+    }
+  },
+  "24": {
+    "class_type": "SplitSigmas",
+    "inputs": {
+      "sigmas": [
+        "23",
+        0
+      ],
+      "step": 39
+    }
+  },
+  "25": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler"
+    }
+  },
+  "26": {
+    "class_type": "SamplerCustom",
+    "inputs": {
+      "model": [
+        "22",
+        0
+      ],
+      "add_noise": true,
+      "sigmas": [
+        "24",
+        0
+      ],
+      "latent_image": [
+        "10",
+        2
+      ],
+      "noise_seed": 20261123717,
+      "cfg": 1.0,
+      "positive": [
+        "10",
+        0
+      ],
+      "negative": [
+        "10",
+        1
+      ],
+      "sampler": [
+        "25",
+        0
+      ]
+    }
+  },
+  "27": {
+    "class_type": "SamplerCustom",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "add_noise": false,
+      "sigmas": [
+        "24",
+        1
+      ],
+      "latent_image": [
+        "26",
+        0
+      ],
+      "noise_seed": 20261123717,
+      "cfg": 1.0,
+      "positive": [
+        "10",
+        0
+      ],
+      "negative": [
+        "10",
+        1
+      ],
+      "sampler": [
+        "25",
+        0
+      ]
+    }
+  }
+}

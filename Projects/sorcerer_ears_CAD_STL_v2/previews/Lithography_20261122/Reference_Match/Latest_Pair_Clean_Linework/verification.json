@@ -1,0 +1,19 @@
+{
+  "mounted_angles_degrees": {
+    "left_brooms": 40.0,
+    "right_mouse": -40.0
+  },
+  "image_dimensions": [
+    1799,
+    1583
+  ],
+  "source_sha256": {
+    "assembly_positions.json": "947cd5bf449e6a6943e1f3e8c9c556220938dca5ad6b4918ffce3a60c21294a6",
+    "dressyspider_larger_headband_source.stl": "8582df6c3f65a8cb7162a8401e3bbdd05973aabff3d5be7b93239edfbcca1df2",
+    "ear-outer-alpha.png": "9996e035fcd83c389353a7bb05bca08977cc7b123d8e9034c483dd93c2987e92",
+    "ear-interior-alpha.png": "c8f2a15e024f685a0e1ada586cf3daa8c6e87ed848d9b3d26f058cac8326d753",
+    "brooms-flat-clean-lines-more-stars-lithography.png": "2086ada23b6ba45c9f08f14d0db76b876ba068e99e214825fa18286df96b102b",
+    "mickey-flat-smooth-gloves-lithography.png": "cb34e9a9aa0a6a33df9bc013cc6c045a1e1610e5e5370eeb4f0a600781d0714e"
+  },
+  "preview_sha256": "b59a53fc5bb560972eaa4c3e3a8c9703a223f1464202898302c73ea102015a5d"
+}

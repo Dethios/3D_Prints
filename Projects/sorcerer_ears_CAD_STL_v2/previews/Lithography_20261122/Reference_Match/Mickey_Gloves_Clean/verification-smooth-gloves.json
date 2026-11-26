@@ -1,0 +1,44 @@
+{
+  "edit": "Two Qwen-restored gloves composited locally over the source artwork",
+  "donors": [
+    {
+      "render_crop": [
+        97,
+        182,
+        504,
+        445
+      ],
+      "destination_box": [
+        648,
+        210,
+        167,
+        108
+      ],
+      "changed_mask_pixels": 9908
+    },
+    {
+      "render_crop": [
+        697,
+        197,
+        923,
+        451
+      ],
+      "destination_box": [
+        366,
+        547,
+        91,
+        102
+      ],
+      "changed_mask_pixels": 7375
+    }
+  ],
+  "outside_mask_pixel_match": true,
+  "flat_alpha_matches_cad_opening": true,
+  "sha256": {
+    "glove-cleanup-comfy-render.png": "32f66294e4caf48b7ced2ff8fef221d3902bf0f29e7afabe0e6e0c1c11e6303d",
+    "mickey-mounted-more-stars.png": "29cf6685161d020022c27191971d3c6f2cea58568a0daaed984864314d2a4d2d",
+    "mickey-flat-more-stars-lithography.png": "6e06cb915365d37711bf749111286b4f244a166de41744f95ace5650cf719841",
+    "mickey-mounted-smooth-gloves.png": "b0e538f9ee1595b5776e656c3cee2767f2cbdb5f75da2159e3232a210f00611b",
+    "mickey-flat-smooth-gloves-lithography.png": "cb34e9a9aa0a6a33df9bc013cc6c045a1e1610e5e5370eeb4f0a600781d0714e"
+  }
+}

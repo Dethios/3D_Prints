@@ -1,0 +1,14 @@
+{
+  "strong_donor_wisp_pixels": 29843,
+  "removed_original_ribbon_pixels": 59735,
+  "reference_crop_origin": [
+    222,
+    168
+  ],
+  "shaft_and_figure_preserved": true,
+  "sha256": {
+    "mickey-sticker-isolated-star-clearance.png": "1c2a986d9a25e82646b94eed2c8352c8dac163ce8c8775c89dd642ccd5145cb1",
+    "qwen-wisps-registered.png": "68c934c8323d759850b39ff6dc9c87f7d070abf05453defdf259d5da186b53b9",
+    "isolated-sticker-wispy.png": "f4440ae7e2cf3da7452f4bed5fd589619c210f1b5c9cd7a4dd190c667967efc2"
+  }
+}

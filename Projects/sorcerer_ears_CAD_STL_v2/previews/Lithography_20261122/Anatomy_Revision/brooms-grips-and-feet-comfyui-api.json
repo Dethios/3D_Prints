@@ -1,0 +1,120 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_bf16.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_bf16.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "auto",
+      "dtype": "default"
+    }
+  },
+  "5": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "nx3-litho-002582748d/brooms-comfy-master.png"
+    }
+  },
+  "6": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "nx3-litho-002582748d/broom-hands-and-bristle-legs.png"
+    }
+  },
+  "10": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "resolution": 0,
+      "prompt": "Edit image 1, the approved two-broom Fantasia ear illustration, using the cropped enamel pin in image 2 as the construction reference. Preserve the exact circular ear outline with the concave bottom, gold rim, solid navy field, gold stars, sizing, arrangement of the two broom figures, four reddish wood buckets with blue water, and warm straw and amber palette of image 1. Correct ONLY the connecting anatomy and the straw feet of BOTH broom figures. Each broom has two thin curved wooden arms. At the termination of each arm draw a clearly shaped small four-finger wooden hand, with a rounded thumb and readable fingers closed AROUND a separate raised U-shaped bucket handle. The HANDS GRIP the handles, four hands total. Leave visible open space inside each handle, between the hand and the lip of the bucket where the slender handle spans. The bucket is hanging from that handle. The actual wrist or branch ends at the hand and never merges into the bucket rim, water, or staves. The handle is an independent narrow gold-outline element below and through the grasp. At the bottom of BOTH broom figures, the straw skirt splits into TWO separate bundles like short legs and splayed feet, exactly as the broom pin reference. Each pair diverges from the tied straw waist and has a deep clearly visible triangular gap of navy between the two legs; bristle tufts flare at each foot and toe. Four separate broom feet total, two per figure. Keep the clean fine gold outlines and large definite shapes of a printed hard-enamel design. No blurry blended connections, single brush-head skirts, extra pails, extra arms, person, text or framing changes.",
+      "negative_prompt": "",
+      "images.image_1": [
+        "5",
+        0
+      ],
+      "images.image_2": [
+        "6",
+        0
+      ]
+    }
+  },
+  "11": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "seed": 20261122961,
+      "steps": 40,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0,
+      "positive": [
+        "10",
+        0
+      ],
+      "negative": [
+        "10",
+        1
+      ],
+      "latent_image": [
+        "10",
+        2
+      ]
+    }
+  },
+  "12": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "11",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "13": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "filename_prefix": "nx3-litho-002582748d/brooms-grips-and-feet"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "mickey": {
+    "mount_angle_deg": -40.0,
+    "print_counter_rotation_deg": 40.0,
+    "main_art": [
+      {
+        "art_scale": 0.715,
+        "rim_x_in_flat_pixels": 404,
+        "graphic_tilt_deg": 0.0,
+        "rim_contact_samples": 119,
+        "occluded_sample_ratio": 0.0083,
+        "shoe_retention": [
+          0.8492239467849224,
+          1.0
+        ]
+      }
+    ],
+    "stars": 8,
+    "input_stars": 8,
+    "art_clear_of_outer_rim": true
+  }
+}

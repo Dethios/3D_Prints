@@ -1,0 +1,10 @@
+{
+  "changed_mounted_pixels": 874,
+  "flat_alpha_matches_cad_opening": true,
+  "sha256": {
+    "mickey-mounted-smooth-gloves.png": "b0e538f9ee1595b5776e656c3cee2767f2cbdb5f75da2159e3232a210f00611b",
+    "mickey-flat-smooth-gloves-lithography.png": "cb34e9a9aa0a6a33df9bc013cc6c045a1e1610e5e5370eeb4f0a600781d0714e",
+    "mickey-mounted-connected-wrist.png": "a73e8e0108a7c7623b64798932320b144d560a3e264fdc6897311804fc1bc057",
+    "mickey-flat-connected-wrist-lithography.png": "00cb7620779f604aabf4d4d49ced77abada3c36dcac294c6bf165e4223494124"
+  }
+}

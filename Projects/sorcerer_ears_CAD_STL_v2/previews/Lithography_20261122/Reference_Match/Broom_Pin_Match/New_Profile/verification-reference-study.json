@@ -1,0 +1,34 @@
+{
+  "mounted_rim_degrees": 40.0,
+  "source_pose_deskew_degrees": -24.0,
+  "brooms": [
+    {
+      "height_px": 465,
+      "height_increase_percent": 10.2,
+      "visible_bounds_preview_px": [
+        110,
+        425,
+        506,
+        885
+      ],
+      "cropped_percent": 9.89
+    },
+    {
+      "height_px": 505,
+      "height_increase_percent": 9.8,
+      "visible_bounds_preview_px": [
+        464,
+        133,
+        894,
+        620
+      ],
+      "cropped_percent": 0.77
+    }
+  ],
+  "stars": 10,
+  "sha256": {
+    "reference-profile-cutout.png": "86b8ed9a57b1c4046bb86f738439a36d1a99995b2ebf2655d9f6c22476ea6f03",
+    "brooms-mounted-reference-study.png": "6d8daca4771108ffc6e7fbd8ccd3377480e988ac1ee67310267eec2ab4bc2599",
+    "brooms-flat-reference-study-lithography.png": "748ccbaa935b37d8fcdeaff1b63a729ffe2971e533834de756f5fd6be959b4a3"
+  }
+}

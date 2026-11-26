@@ -1,0 +1,285 @@
+{
+  "prompt": [
+    21,
+    "79b2d075-9230-4671-aeec-8dc5fefaef78",
+    {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "10": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ],
+          "resolution": 0,
+          "prompt": "Edit image 1, keeping the complete character exactly as it is at the original position and scale. Change ONLY the magical ivory ribbon that winds in the air behind Mickey. Make that same existing spiral much lighter, more wispy and delicate, with thin smooth gas-like streams, long graceful tapered ends and a few slender nested strokes. The current thick opaque white band should become a controlled airy ribbon, mostly one-third the previous thickness, still crisp and readable on the same dark navy field and light ivory, no blurred edges or fog. Keep the original exact spiral path and occlusion, from the pointing fingertip and upper-right hook to the broad left return and across the waist to the lower loop and curled lower-left tail. Preserve the ten twinkles in their exact positions. Do not modify Mickey including his outline, proportions, face, costume, hands, shoes, palette or pose. Image 2 identifies the original pose and magic motif. Preserve the square scene framing and the clean outline style of image 1.",
+          "negative_prompt": "",
+          "images.image_1": [
+            "31",
+            0
+          ],
+          "images.image_2": [
+            "32",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "27",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "13": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "12",
+            0
+          ],
+          "filename_prefix": "nx3-litho-383de2199f/mickey-sticker-wispy-spiral"
+        }
+      },
+      "31": {
+        "class_type": "AUSBOSS_NODES_ImageCropRotatePad",
+        "inputs": {
+          "image": "nx3-litho-383de2199f/sticker-art-navy.png",
+          "rotation_degrees": 0.0,
+          "crop_aspect_ratio": "free",
+          "crop_x": 0,
+          "crop_y": 0,
+          "crop_width": 0,
+          "crop_height": 0,
+          "pad_left": 0,
+          "pad_top": 0,
+          "pad_right": 0,
+          "pad_bottom": 0,
+          "feather": 0,
+          "canvas_multiple": 16,
+          "fill_color": "#163263",
+          "resize_to_megapixels": true,
+          "megapixels": 0.99,
+          "resize_method": "lanczos",
+          "resolution_steps": 16
+        }
+      },
+      "32": {
+        "class_type": "AUSBOSS_NODES_ImageCropRotatePad",
+        "inputs": {
+          "image": "nx3-litho-383de2199f/sticker-pose-reference.png",
+          "rotation_degrees": 0.0,
+          "crop_aspect_ratio": "free",
+          "crop_x": 0,
+          "crop_y": 0,
+          "crop_width": 0,
+          "crop_height": 0,
+          "pad_left": 0,
+          "pad_top": 0,
+          "pad_right": 0,
+          "pad_bottom": 0,
+          "feather": 0,
+          "canvas_multiple": 16,
+          "fill_color": "#163263",
+          "resize_to_megapixels": true,
+          "megapixels": 0.63,
+          "resize_method": "lanczos",
+          "resolution_steps": 16
+        }
+      },
+      "22": {
+        "class_type": "LoraLoaderModelOnly",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "lora_name": "qwen-image-2.1-consistency.safetensors",
+          "strength_model": 0.5
+        }
+      },
+      "23": {
+        "class_type": "BasicScheduler",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "scheduler": "simple",
+          "steps": 40,
+          "denoise": 1.0
+        }
+      },
+      "24": {
+        "class_type": "SplitSigmas",
+        "inputs": {
+          "sigmas": [
+            "23",
+            0
+          ],
+          "step": 39
+        }
+      },
+      "25": {
+        "class_type": "KSamplerSelect",
+        "inputs": {
+          "sampler_name": "euler"
+        }
+      },
+      "26": {
+        "class_type": "SamplerCustom",
+        "inputs": {
+          "model": [
+            "22",
+            0
+          ],
+          "add_noise": true,
+          "sigmas": [
+            "24",
+            0
+          ],
+          "latent_image": [
+            "10",
+            2
+          ],
+          "noise_seed": 20261123931,
+          "cfg": 1.0,
+          "positive": [
+            "10",
+            0
+          ],
+          "negative": [
+            "10",
+            1
+          ],
+          "sampler": [
+            "25",
+            0
+          ]
+        }
+      },
+      "27": {
+        "class_type": "SamplerCustom",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "add_noise": false,
+          "sigmas": [
+            "24",
+            1
+          ],
+          "latent_image": [
+            "26",
+            0
+          ],
+          "noise_seed": 20261123931,
+          "cfg": 1.0,
+          "positive": [
+            "10",
+            0
+          ],
+          "negative": [
+            "10",
+            1
+          ],
+          "sampler": [
+            "25",
+            0
+          ]
+        }
+      }
+    },
+    {
+      "client_id": "nx3-litho-383de2199f",
+      "create_time": 1795412328136
+    },
+    [
+      "13"
+    ]
+  ],
+  "outputs": {
+    "13": {
+      "images": [
+        {
+          "filename": "mickey-sticker-wispy-spiral_00001_.png",
+          "subfolder": "nx3-litho-383de2199f",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 1024,
+            "height": 1024
+          },
+          "id": "8c6a6997-01a9-4aba-82f0-868af4e9f83f"
+        }
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "79b2d075-9230-4671-aeec-8dc5fefaef78",
+          "timestamp": 1795412328139
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [],
+          "prompt_id": "79b2d075-9230-4671-aeec-8dc5fefaef78",
+          "timestamp": 1795412328144
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "79b2d075-9230-4671-aeec-8dc5fefaef78",
+          "timestamp": 1795412556047
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "13": {
+      "node_id": "13",
+      "display_node": "13",
+      "parent_node": null,
+      "real_node_id": "13"
+    }
+  }
+}

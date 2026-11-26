@@ -1,0 +1,62 @@
+{
+  "pixels_per_mm": 9.22,
+  "nominal_rim_margin_mm": 0.12,
+  "decoration_thickness_mm": 1.2,
+  "four_slots": {
+    "1": [
+      "Blue",
+      "#2446A1"
+    ],
+    "2": [
+      "White",
+      "#F4EFEB"
+    ],
+    "3": [
+      "Red",
+      "#D52D36"
+    ],
+    "4": [
+      "Black",
+      "#20202A"
+    ]
+  },
+  "parts": {
+    "brooms": {
+      "native_art_sha256": "b5dc5d687b702ffe9ee047647488247ea2a66c93d18b1f2d1e9a30d21d6ad721",
+      "bed_bounds_xy_mm": [
+        30.284,
+        91.306,
+        111.913,
+        164.345
+      ],
+      "artwork_area_mm2": 2037.755,
+      "paint_or_white_area_mm2": 2037.755,
+      "colored_area_mm2_by_slot": {},
+      "footprint_islands": 13,
+      "artwork_top_mm": 1.2,
+      "volumes": 2,
+      "face_count": 35792
+    },
+    "mickey": {
+      "native_art_sha256": "ce8955a802bf2aa13a1bc8dfd7131b0174e744d969cd2631eac60d25fccb8564",
+      "bed_bounds_xy_mm": [
+        150.798,
+        93.668,
+        221.623,
+        162.176
+      ],
+      "artwork_area_mm2": 1472.151,
+      "paint_or_white_area_mm2": 775.748,
+      "colored_area_mm2_by_slot": {
+        "1": 140.188,
+        "3": 443.645,
+        "4": 112.57
+      },
+      "footprint_islands": 23,
+      "artwork_top_mm": 1.2,
+      "volumes": 5,
+      "face_count": 81888
+    }
+  },
+  "plate_sha256": "17d791dd1826dcd247e48847f7e6cce3fbbdabbfa6388191c66533fe5a96d482"
+}

@@ -1,0 +1,14 @@
+{
+  "scale": 0.739,
+  "relative_max_scale": 0.618,
+  "mounted_rim_degrees": -40,
+  "minimum_perimeter_clearance_px": 9.219544457292887,
+  "sha256": {
+    "qwen-sticker-isolated-raw.png": "8b90253090ce6353295bae0068ddbcf5dc49e1f7808dd2e28ca8455f7a019662",
+    "ear-interior-alpha.png": "c8f2a15e024f685a0e1ada586cf3daa8c6e87ed848d9b3d26f058cac8326d753",
+    "ear-outer-alpha.png": "9996e035fcd83c389353a7bb05bca08977cc7b123d8e9034c483dd93c2987e92",
+    "mickey-mounted-sticker-qwen.png": "fcd3df40b766ea2901369d9575793e06067ebaa3b3196bab5d637e54835e9ca7",
+    "mickey-flat-sticker-qwen-lithography.png": "85ab1afebacb7bee304176146dde37b91a79670b66c98b4b10ad3a69e6a5ee86",
+    "sticker-reference.png": "ad6210a212ca94ad660062530ee6e21a0ef6a5bafa69caa551f79fa62d37accf"
+  }
+}

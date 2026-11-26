@@ -1,0 +1,16 @@
+{
+  "mickey": {
+    "opaque_or_antialiased_art_pixels": 136440,
+    "transparent_pixels": 912136,
+    "pixels_differing_over_two_levels_when_composited_over_navy": 0,
+    "source_preview": "Mickey_Sticker_Base\\Wispy_Ornaments\\mickey-flat-wispy-original-ornaments-lithography.png",
+    "sha256": "ce8955a802bf2aa13a1bc8dfd7131b0174e744d969cd2631eac60d25fccb8564"
+  },
+  "brooms": {
+    "opaque_or_antialiased_art_pixels": 183394,
+    "transparent_pixels": 865182,
+    "pixels_differing_over_two_levels_when_composited_over_navy": 0,
+    "source_preview": "Broom_Pin_Match\\New_Profile\\Marked_Stars\\brooms-flat-marked-stars-lithography.png",
+    "sha256": "b5dc5d687b702ffe9ee047647488247ea2a66c93d18b1f2d1e9a30d21d6ad721"
+  }
+}

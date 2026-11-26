@@ -1,0 +1,29 @@
+{
+  "change": "Two stars cloned from the prior approved artwork for the upper and left gaps",
+  "mounted_rim_angle_degrees": -40,
+  "pixels_per_mm": 9.22,
+  "placement": [
+    {
+      "center_mounted_preview_px": [
+        550,
+        149
+      ],
+      "nearest_edge_gap_px": 21.0
+    },
+    {
+      "center_mounted_preview_px": [
+        312,
+        409
+      ],
+      "nearest_edge_gap_px": 53.3
+    }
+  ],
+  "unchanged_outside_added_stars": true,
+  "flat_alpha_matches_cad_opening": true,
+  "sha256": {
+    "mickey-mounted-lowered.png": "1c1e3fbb9e4b1bda7e7a43724c84bd873f86fc9f4d9e84c2407c9f4e3ef87a6c",
+    "mickey-flat-lowered-lithography.png": "18d6b4758893b4f0f8bbc5e56b3d1278d4400ce4ec1ae7c994929c52277b6eca",
+    "mickey-mounted-more-stars.png": "29cf6685161d020022c27191971d3c6f2cea58568a0daaed984864314d2a4d2d",
+    "mickey-flat-more-stars-lithography.png": "6e06cb915365d37711bf749111286b4f244a166de41744f95ace5650cf719841"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "brooms": {
+    "mount_angle_deg": 40.0,
+    "print_counter_rotation_deg": -40.0,
+    "main_art": [
+      {
+        "art_scale": 1.03,
+        "rim_x_in_flat_pixels": 345,
+        "graphic_tilt_deg": 39.0,
+        "rim_contact_samples": 151,
+        "occluded_sample_ratio": 0.0203
+      },
+      {
+        "art_scale": 1.03,
+        "rim_x_in_flat_pixels": 610,
+        "graphic_tilt_deg": 0.0,
+        "rim_contact_samples": 221,
+        "occluded_sample_ratio": 0.0523
+      }
+    ],
+    "stars": 10,
+    "input_stars": 10,
+    "art_clear_of_outer_rim": true
+  },
+  "mickey": {
+    "mount_angle_deg": -40.0,
+    "print_counter_rotation_deg": 40.0,
+    "main_art": [
+      {
+        "art_scale": 1.04,
+        "rim_x_in_flat_pixels": 575,
+        "graphic_tilt_deg": 0.0,
+        "rim_contact_samples": 124,
+        "occluded_sample_ratio": 0.0189
+      }
+    ],
+    "stars": 8,
+    "input_stars": 8,
+    "art_clear_of_outer_rim": true
+  }
+}

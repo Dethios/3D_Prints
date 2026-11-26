@@ -1,0 +1,110 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_bf16.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_bf16.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "auto",
+      "dtype": "default"
+    }
+  },
+  "5": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "nx3-litho-93692f091b/exact-broom-pin-contour-guide.png"
+    }
+  },
+  "10": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "resolution": 0,
+      "prompt": "Make a meticulous enlarged flat enamel illustration traced from image 1, a close isolated photograph of one specific enchanted broom pin. Keep the SAME outline, same posture, same arm angles, same short broad proportions, same leg silhouette and color placement of that broom. One broom only, total, centrally set against the plain uniform deep navy background as shown. Do not redesign or elongate the shape. The total silhouette is broad, about 72 percent as wide as it is high. The bent angular thin arms branch at roughly one quarter of the full height from its handle tip. The straight amber neck reaches an ample straw waist slightly above midheight. Both compact wooden mittens hold separate small arched bucket handles close to the bucket rims; visible navy openings inside the handles, two red buckets total, with one wide warm ivory stripe on each. The buckets tilt outward to either side and their bottoms reach into the top third of the straw skirt, as shown. The straw is one broad continuous bell-shaped waist and skirt that splits late into two SHORT, WIDE splayed feet through a small smoothly rounded central U-shaped arch. The arch starts at around 78 percent of full height, NOT up at the waist. The two feet have different poses: left foot sweeps lower to the left with a rounded curled toe, right foot lifts slightly higher and sweeps right. Carefully match the two broad foot silhouettes in the actual reference. Avoid long spindly separated legs, a deep V divide, a narrow waist or giant human gloves. Treat it as high-resolution enamel color master art, with solid warm amber wood, light golden straw, red and cream buckets and restrained gold edges. Clean crisp closed smooth outline. Plain solid navy background with no stars, labels, prop artifacts or original photography texture. Preserve the image size and position.",
+      "negative_prompt": "",
+      "images.image_1": [
+        "5",
+        0
+      ]
+    }
+  },
+  "11": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "seed": 20261123277,
+      "steps": 40,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0,
+      "positive": [
+        "10",
+        0
+      ],
+      "negative": [
+        "10",
+        1
+      ],
+      "latent_image": [
+        "10",
+        2
+      ]
+    }
+  },
+  "12": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "11",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "13": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "filename_prefix": "nx3-litho-93692f091b/pin-compact-broom"
+    }
+  }
+}

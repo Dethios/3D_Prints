@@ -1,0 +1,14 @@
+{
+  "mounted_rim_degrees": -40,
+  "mounted_art_rotation_degrees": 0,
+  "mounted_art_scale": 1.0,
+  "mounted_art_origin_px": [
+    71,
+    83
+  ],
+  "rim_midpoint_to_overlap_center_mm": 2.27,
+  "rear_shoe_in_opening_percent": 49.4,
+  "forward_shoe_in_opening_percent": 100.0,
+  "visible_original_field_pixels_unchanged": true,
+  "flat_export_alpha_matches_cad_opening": true
+}

@@ -1,0 +1,50 @@
+{
+  "edit": "Two glove shapes and seams extracted from the attached animation frame",
+  "donors": [
+    {
+      "reference_box": [
+        216,
+        16,
+        335,
+        94
+      ],
+      "destination_anchor": [
+        690,
+        308
+      ],
+      "scale": 1.64,
+      "reference_anchor": [
+        253,
+        84
+      ],
+      "changed_mask_pixels": 9869
+    },
+    {
+      "reference_box": [
+        63,
+        232,
+        132,
+        299
+      ],
+      "destination_anchor": [
+        421,
+        558
+      ],
+      "scale": 1.8,
+      "reference_anchor": [
+        99,
+        245
+      ],
+      "changed_mask_pixels": 6909
+    }
+  ],
+  "outside_mask_pixel_match": true,
+  "flat_alpha_matches_cad_opening": true,
+  "sha256": {
+    "attached-glove-reference.png": "a2616b54cc47e91e4eb1b346478889233fa291b0d6fecf1002539945d7671ac9",
+    "mickey-mounted-more-stars.png": "29cf6685161d020022c27191971d3c6f2cea58568a0daaed984864314d2a4d2d",
+    "mickey-flat-more-stars-lithography.png": "6e06cb915365d37711bf749111286b4f244a166de41744f95ace5650cf719841",
+    "mickey-mounted-reference-gloves.png": "be60678123f3159f56fde85ac9cb7209e5d183535c4b086e8a806fe8b9d92daf",
+    "mickey-flat-reference-gloves-lithography.png": "d87288f6c9797480625e3ff7047eb0c106eca7bdeda973b278395ae7019aeb3f"
+  }
+}

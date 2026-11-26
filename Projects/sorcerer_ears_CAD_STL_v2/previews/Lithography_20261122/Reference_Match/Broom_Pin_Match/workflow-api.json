@@ -1,0 +1,219 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_bf16.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_bf16.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "10": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "resolution": 0,
+      "prompt": "Restore the isolated enamel-pin broom from these two images into clean, crisp flat colors. Image 1 fixes the exact silhouette and placements and image 2 shows the same actual pin. Preserve its proportions and every edge, particularly both short asymmetric straw feet, the late rounded opening offset to the right of the shaft, the higher outward right toe and planted left toe, and the compact mitten hands gripping visibly separate handles. Keep both pails tilted outward with their original unequal placement. Use crisp thin gold and dark engraving lines, warm golden-yellow straw, red buckets with broad ivory hoops, and the exact same solid navy backdrop. Remove the tiny stray adjacent red cape fragment below the left bucket only. Present a single broom. The geometry remains registered to the guide at the same size. Smooth the color noise and improve edges.",
+      "negative_prompt": "",
+      "images.image_1": [
+        "31",
+        0
+      ],
+      "images.image_2": [
+        "32",
+        0
+      ]
+    }
+  },
+  "12": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "27",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "13": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "filename_prefix": "nx3-litho-2f78ce6434/broom-pin-regular-consistency"
+    }
+  },
+  "31": {
+    "class_type": "AUSBOSS_NODES_ImageCropRotatePad",
+    "inputs": {
+      "image": "nx3-litho-2f78ce6434/exact-broom-pin-contour-guide.png",
+      "rotation_degrees": 0.0,
+      "crop_aspect_ratio": "free",
+      "crop_x": 0,
+      "crop_y": 0,
+      "crop_width": 0,
+      "crop_height": 0,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "feather": 0,
+      "canvas_multiple": 16,
+      "fill_color": "#163263",
+      "resize_to_megapixels": true,
+      "megapixels": 0.8,
+      "resize_method": "lanczos",
+      "resolution_steps": 16
+    }
+  },
+  "32": {
+    "class_type": "AUSBOSS_NODES_ImageCropRotatePad",
+    "inputs": {
+      "image": "nx3-litho-2f78ce6434/broom-direct-pin-reference.png",
+      "rotation_degrees": 0.0,
+      "crop_aspect_ratio": "free",
+      "crop_x": 0,
+      "crop_y": 0,
+      "crop_width": 0,
+      "crop_height": 0,
+      "pad_left": 0,
+      "pad_top": 0,
+      "pad_right": 0,
+      "pad_bottom": 0,
+      "feather": 0,
+      "canvas_multiple": 16,
+      "fill_color": "#163263",
+      "resize_to_megapixels": true,
+      "megapixels": 0.35,
+      "resize_method": "lanczos",
+      "resolution_steps": 16
+    }
+  },
+  "22": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "lora_name": "qwen-image-2.1-consistency.safetensors",
+      "strength_model": 0.5
+    }
+  },
+  "23": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "scheduler": "simple",
+      "steps": 40,
+      "denoise": 1.0
+    }
+  },
+  "24": {
+    "class_type": "SplitSigmas",
+    "inputs": {
+      "sigmas": [
+        "23",
+        0
+      ],
+      "step": 39
+    }
+  },
+  "25": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler"
+    }
+  },
+  "26": {
+    "class_type": "SamplerCustom",
+    "inputs": {
+      "model": [
+        "22",
+        0
+      ],
+      "add_noise": true,
+      "sigmas": [
+        "24",
+        0
+      ],
+      "latent_image": [
+        "10",
+        2
+      ],
+      "noise_seed": 20261123531,
+      "cfg": 1.0,
+      "positive": [
+        "10",
+        0
+      ],
+      "negative": [
+        "10",
+        1
+      ],
+      "sampler": [
+        "25",
+        0
+      ]
+    }
+  },
+  "27": {
+    "class_type": "SamplerCustom",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "add_noise": false,
+      "sigmas": [
+        "24",
+        1
+      ],
+      "latent_image": [
+        "26",
+        0
+      ],
+      "noise_seed": 20261123531,
+      "cfg": 1.0,
+      "positive": [
+        "10",
+        0
+      ],
+      "negative": [
+        "10",
+        1
+      ],
+      "sampler": [
+        "25",
+        0
+      ]
+    }
+  }
+}

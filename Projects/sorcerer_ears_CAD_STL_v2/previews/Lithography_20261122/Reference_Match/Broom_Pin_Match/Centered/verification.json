@@ -1,0 +1,34 @@
+{
+  "mounted_rim_degrees": 40.0,
+  "source_pose_deskew_degrees": 9,
+  "brooms": [
+    {
+      "height_px": 565,
+      "height_increase_percent": 33.9,
+      "visible_bounds_preview_px": [
+        141,
+        351,
+        547,
+        879
+      ],
+      "cropped_percent": 5.31
+    },
+    {
+      "height_px": 595,
+      "height_increase_percent": 29.3,
+      "visible_bounds_preview_px": [
+        426,
+        126,
+        853,
+        718
+      ],
+      "cropped_percent": 0.76
+    }
+  ],
+  "stars": 7,
+  "sha256": {
+    "broom-comfy-cutout.png": "e50a43f6971db16be47a811661175d4269146f869a26fa99bc1a93620ec3496c",
+    "brooms-mounted-centered.png": "995280d40be674f274cf8b97d2008a04d193c562e003da0711c1584363463a86",
+    "brooms-flat-centered-lithography.png": "10b74cb3d5b5071334b32d50ab964b5cbb6cc0b32f2c73eb8c3e2eb07c6db3d5"
+  }
+}

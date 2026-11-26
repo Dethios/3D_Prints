@@ -1,0 +1,100 @@
+{
+  "exact_gold_mesh_ornaments": [
+    {
+      "original_mesh_component": 7,
+      "mounted_center_px": [
+        447,
+        198
+      ],
+      "size_px": [
+        262,
+        69
+      ]
+    },
+    {
+      "original_mesh_component": 3,
+      "mounted_center_px": [
+        821,
+        445
+      ],
+      "size_px": [
+        83,
+        151
+      ]
+    },
+    {
+      "original_mesh_component": 5,
+      "mounted_center_px": [
+        748,
+        432
+      ],
+      "size_px": [
+        66,
+        66
+      ]
+    },
+    {
+      "original_mesh_component": 1,
+      "mounted_center_px": [
+        513,
+        266
+      ],
+      "size_px": [
+        49,
+        49
+      ]
+    },
+    {
+      "original_mesh_component": 4,
+      "mounted_center_px": [
+        214,
+        325
+      ],
+      "size_px": [
+        38,
+        38
+      ]
+    },
+    {
+      "original_mesh_component": 6,
+      "mounted_center_px": [
+        390,
+        135
+      ],
+      "size_px": [
+        25,
+        25
+      ]
+    },
+    {
+      "original_mesh_component": 8,
+      "mounted_center_px": [
+        428,
+        233
+      ],
+      "size_px": [
+        31,
+        31
+      ]
+    },
+    {
+      "original_mesh_component": 2,
+      "mounted_center_px": [
+        871,
+        528
+      ],
+      "size_px": [
+        20,
+        20
+      ]
+    }
+  ],
+  "original_art_placement_unchanged": true,
+  "sha256": {
+    "mickey-mounted-sticker-wispy-shift.png": "7dffd3f742a25bb85d8d895ae1f28bada81dbc4dcfe0d9dd154679a439d13511",
+    "mickey-flat-sticker-wispy-shift-lithography.png": "4b5521b0a86544cb605c609aa80918b56a0a2ebd878bfe0823b9dc3d984546cf",
+    "mickey-mounted-wispy-original-ornaments.png": "89e171eb4a1455e06cd6c190b359512f8fc01be3e5496d69573e1036f1619de6",
+    "mickey-flat-wispy-original-ornaments-lithography.png": "bdf269f7176c26cbad3a081ed84709f645293ec988539c4174d884bfd39cd8c2",
+    "original-outline-reference.png": "c01f9c952911b670eeea5bfb2acef48e0aafddc22eb8575749054b13987b37e1"
+  }
+}

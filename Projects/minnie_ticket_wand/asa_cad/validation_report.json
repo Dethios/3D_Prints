@@ -1,0 +1,870 @@
+{
+  "units": "mm",
+  "source_donor_step_sha256": "1a60c699d2f997dd78d06de0b5be383e92f365ddfa82f84f5fed9889c92fcec3",
+  "artwork": {
+    "scale_mm_per_photo_pixel": 0.4047887323943662,
+    "roll_deg": 2.6,
+    "ear_span_trace_mm": 128.043,
+    "delivered_head_span_mm": 128.04193,
+    "max_contour_deviation_mm": {
+      "head_and_case_above_neck": 0.01135,
+      "bow": 0.02711
+    },
+    "chin_relief_mm": 0.65,
+    "front_pocket_shoulder_skin_mm": 1.75,
+    "measured_chin_probes_xy_mm": [
+      [
+        -10,
+        -40
+      ],
+      [
+        10,
+        -40
+      ]
+    ],
+    "measured_shoulder_probes_xy_mm": [
+      [
+        -20,
+        -46
+      ],
+      [
+        20,
+        -46
+      ]
+    ]
+  },
+  "exact_step": {
+    "source": {
+      "0": [
+        0.0,
+        0.0
+      ],
+      "75": [
+        0.0,
+        0.0
+      ],
+      "180": [
+        0.0,
+        0.0
+      ],
+      "450": [
+        0.0,
+        0.0
+      ],
+      "1080": [
+        0.0,
+        0.0
+      ],
+      "2160": [
+        0.0,
+        0.0
+      ],
+      "2520": [
+        0.0,
+        0.0
+      ]
+    },
+    "exported_step": {
+      "0": [
+        0.0,
+        0.0
+      ],
+      "75": [
+        0.0,
+        0.0
+      ],
+      "180": [
+        0.0,
+        0.0
+      ],
+      "450": [
+        0.0,
+        0.0
+      ],
+      "1080": [
+        0.0,
+        0.0
+      ],
+      "2160": [
+        0.0,
+        0.0
+      ],
+      "2520": [
+        0.0,
+        0.0
+      ]
+    },
+    "closed_assembly_intersections_mm3": {
+      "0/1": 0.0,
+      "0/4": 0.0,
+      "0/5": 0.0,
+      "1/2": 0.0,
+      "2/4": 0.0,
+      "5/6": 0.0,
+      "5/7": 0.0,
+      "5/8": 0.0,
+      "5/9": 0.0,
+      "5/10": 0.0,
+      "5/11": 0.0,
+      "5/12": 0.0,
+      "5/13": 0.0,
+      "5/14": 0.0,
+      "5/15": 0.0,
+      "5/16": 0.0,
+      "5/17": 0.0,
+      "5/18": 0.0,
+      "5/19": 0.0
+    },
+    "continuous_cuff_wall": {
+      "radii_mm": [
+        6.55,
+        7.35
+      ],
+      "y_limits_mm": [
+        -69.24,
+        -59.62
+      ],
+      "expected_annulus_mm3": 336.069989,
+      "measured_handle_material_mm3": 336.069989
+    },
+    "step_solid_count": 21,
+    "all_step_solids_valid": true
+  },
+  "photo_trace_script_sha256": "4b7e953f23caf6770d4d9c7c9ea9e6c6033df5d4a86e0be6f04ff2b5a1748807",
+  "artwork_json_sha256": "5006828fec89a9e3d0170d5bbe0d54d77a7c6431c7f22da20b03d32b85319199",
+  "assembly_step_sha256": "fd40571d938553f20a34d1777a30869eaa36b0a24a456f3d2d79b8a8a344b86d",
+  "stls": {
+    "alignment_pin_black_print_two": {
+      "file": "print_parts/alignment_pin_black_print_two.stl",
+      "sha256": "7bea86b18034ed9e1959e355a5dd0e881a572c38fb9503ba4e421b3f02709693",
+      "bbox_mm": [
+        [
+          -39.5419,
+          9.833,
+          -1.6
+        ],
+        [
+          -34.2268,
+          15.148,
+          1.6
+        ]
+      ],
+      "size_mm": [
+        5.3151,
+        5.3151,
+        3.2
+      ],
+      "shell_count": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_components_positive_volume": true
+    },
+    "bow_dots_white": {
+      "file": "print_parts/bow_dots_white.stl",
+      "sha256": "a0f0169313f223544571c95db04694b9b8320ee5a50fc9e08a3776a63279bdaa",
+      "bbox_mm": [
+        [
+          -24.6174,
+          39.7456,
+          5.25
+        ],
+        [
+          23.2746,
+          68.5145,
+          6.3
+        ]
+      ],
+      "size_mm": [
+        47.892,
+        28.7688,
+        1.05
+      ],
+      "shell_count": 14,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_components_positive_volume": true
+    },
+    "bow_pink": {
+      "file": "print_parts/bow_pink.stl",
+      "sha256": "e5c7bda9ba2cedd29aa2fe93b9f007ea2142c72305ec1cfce0e2116057ec4177",
+      "bbox_mm": [
+        [
+          -29.2863,
+          33.6854,
+          3.15
+        ],
+        [
+          27.869,
+          71.8462,
+          7.05
+        ]
+      ],
+      "size_mm": [
+        57.1554,
+        38.1608,
+        3.9
+      ],
+      "shell_count": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_components_positive_volume": true
+    },
+    "front_black": {
+      "file": "print_parts/front_black.stl",
+      "sha256": "35bfb6d91cedadb92fcbbe060bac36afd1be15eee2cd862f90bb9ec5c45656bb",
+      "bbox_mm": [
+        [
+          -63.7646,
+          -69.0,
+          0.75
+        ],
+        [
+          64.2773,
+          68.8742,
+          6.9988
+        ]
+      ],
+      "size_mm": [
+        128.0419,
+        137.8742,
+        6.2488
+      ],
+      "shell_count": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_components_positive_volume": true
+    },
+    "handle_cuff_pink": {
+      "file": "print_parts/handle_cuff_pink.stl",
+      "sha256": "ca9277902f377e40cb47dbbf3e8a7480ea8454bd2e3146ccb099b45d79c63af5",
+      "bbox_mm": [
+        [
+          -8.0997,
+          -174.0,
+          -7.8052
+        ],
+        [
+          8.1,
+          -49.0,
+          8.0999
+        ]
+      ],
+      "size_mm": [
+        16.1997,
+        125.0,
+        15.9051
+      ],
+      "shell_count": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_components_positive_volume": true
+    },
+    "rear_black": {
+      "file": "print_parts/rear_black.stl",
+      "sha256": "4c079e341a09196eecc9952b298e6c702daf8819509c1ab990145847ecb3f290",
+      "bbox_mm": [
+        [
+          -63.7646,
+          -69.0,
+          -6.9988
+        ],
+        [
+          64.276,
+          68.8742,
+          -0.75
+        ]
+      ],
+      "size_mm": [
+        128.0407,
+        137.8742,
+        6.2488
+      ],
+      "shell_count": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_components_positive_volume": true
+    },
+    "spacer_black": {
+      "file": "print_parts/spacer_black.stl",
+      "sha256": "d5630bfe41c931f0dfa1c0c251dd56963b49c921bed958071df7c7c9a59ebeb0",
+      "bbox_mm": [
+        [
+          -63.7638,
+          -50.0,
+          -0.75
+        ],
+        [
+          64.276,
+          68.8742,
+          0.75
+        ]
+      ],
+      "size_mm": [
+        128.0398,
+        118.8742,
+        1.5
+      ],
+      "shell_count": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_components_positive_volume": true
+    },
+    "coupon_front_black": {
+      "file": "fit_coupon/coupon_front_black.stl",
+      "sha256": "a1929d1c5e00b87cdd95f0af4dc50dbd9daa76de1e3d9dc0dabc7eeb61ba0d57",
+      "bbox_mm": [
+        [
+          -29.75,
+          -69.0,
+          0.75
+        ],
+        [
+          29.75,
+          -32.0,
+          6.9988
+        ]
+      ],
+      "size_mm": [
+        59.5,
+        37.0,
+        6.2488
+      ],
+      "shell_count": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_components_positive_volume": true
+    },
+    "coupon_handle_cuff_pink": {
+      "file": "fit_coupon/coupon_handle_cuff_pink.stl",
+      "sha256": "723fba0565b7435ce83587d2e404e6376a4f178fa9bfab6b673c9d2bb8a2e328",
+      "bbox_mm": [
+        [
+          -8.0997,
+          -85.0,
+          -7.8
+        ],
+        [
+          8.1,
+          -49.0,
+          8.0999
+        ]
+      ],
+      "size_mm": [
+        16.1997,
+        36.0,
+        15.8999
+      ],
+      "shell_count": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_components_positive_volume": true
+    },
+    "coupon_rear_black": {
+      "file": "fit_coupon/coupon_rear_black.stl",
+      "sha256": "d1b13a40404467e0bc34e32db18c6e4f89d76e773ba748c0353c2bb32c27566d",
+      "bbox_mm": [
+        [
+          -29.75,
+          -69.0,
+          -6.9988
+        ],
+        [
+          29.75,
+          -32.0,
+          -0.75
+        ]
+      ],
+      "size_mm": [
+        59.5,
+        37.0,
+        6.2488
+      ],
+      "shell_count": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_components_positive_volume": true
+    },
+    "coupon_spacer_black": {
+      "file": "fit_coupon/coupon_spacer_black.stl",
+      "sha256": "ee9ce7c1d5f4bc465261473a5c63cc43fa501facc3a621c0737efc97ba13d648",
+      "bbox_mm": [
+        [
+          -29.75,
+          -50.0,
+          -0.75
+        ],
+        [
+          29.75,
+          -32.0,
+          0.75
+        ]
+      ],
+      "size_mm": [
+        59.5,
+        18.0,
+        1.5
+      ],
+      "shell_count": 2,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_components_positive_volume": true
+    }
+  },
+  "assembled_pair_intersections_mm3": {
+    "alignment_pin_black_print_two/bow_dots_white": 0.0,
+    "alignment_pin_black_print_two/bow_pink": 0.0,
+    "alignment_pin_black_print_two/front_black": 0.0,
+    "alignment_pin_black_print_two/handle_cuff_pink": 0.0,
+    "alignment_pin_black_print_two/rear_black": 0.0,
+    "alignment_pin_black_print_two/spacer_black": 0.0,
+    "alignment_pin_black_print_two/alignment_pin_black_right": 0.0,
+    "bow_dots_white/bow_pink": 0.0002,
+    "bow_dots_white/front_black": 0.0,
+    "bow_dots_white/handle_cuff_pink": 0.0,
+    "bow_dots_white/rear_black": 0.0,
+    "bow_dots_white/spacer_black": 0.0,
+    "bow_dots_white/alignment_pin_black_right": 0.0,
+    "bow_pink/front_black": 0.0,
+    "bow_pink/handle_cuff_pink": 0.0,
+    "bow_pink/rear_black": 0.0,
+    "bow_pink/spacer_black": 0.0,
+    "bow_pink/alignment_pin_black_right": 0.0,
+    "front_black/handle_cuff_pink": 0.01863,
+    "front_black/rear_black": 0.0,
+    "front_black/spacer_black": 0.0,
+    "front_black/alignment_pin_black_right": 0.0,
+    "handle_cuff_pink/rear_black": 0.01636,
+    "handle_cuff_pink/spacer_black": 0.0,
+    "handle_cuff_pink/alignment_pin_black_right": 0.0,
+    "rear_black/spacer_black": 0.0,
+    "rear_black/alignment_pin_black_right": 0.0,
+    "spacer_black/alignment_pin_black_right": 0.0
+  },
+  "card": {
+    "simulated_card_mm": [
+      53.98,
+      85.6,
+      0.76
+    ],
+    "card_y_mm": [
+      -48.4,
+      37.2
+    ],
+    "groove_width_mm": 55.0,
+    "groove_thickness_mm": 1.5,
+    "positive_y_hard_stop_mm": 37.25,
+    "width_clearance_per_side_mm": 0.51,
+    "thickness_clearance_per_face_mm": 0.37,
+    "continuous_sweep_limits_y_mm": [
+      -175,
+      37.2
+    ],
+    "continuous_sweep_overlap_mm3": {
+      "alignment_pin_black_print_two": 0.0,
+      "bow_dots_white": 0.0,
+      "bow_pink": 0.0,
+      "front_black": 0.0,
+      "rear_black": 0.0,
+      "spacer_black": 0.0,
+      "alignment_pin_black_right": 0.0
+    },
+    "installed_handle_overlap_by_card_pull_mm": {
+      "0.5": 0.0,
+      "0.65": 0.32939,
+      "0.75": 0.98313,
+      "1.5": 5.7941,
+      "3.0": 15.57543,
+      "8.0": 48.24246
+    },
+    "spacer_overlap_by_card_push_mm": {
+      "0": 0.0,
+      "0.025": 0.0,
+      "0.075": 1.02562,
+      "0.3": 10.2562,
+      "1.0": 38.97356
+    },
+    "front_back_card_exposed_area_mm2": {
+      "front_black": 0.0,
+      "rear_black": 0.0
+    }
+  },
+  "screw_motion": {
+    "pitch_mm": 3,
+    "rotation_sign_about_positive_y_for_removal": -1,
+    "opposite_rotation_sweep_at_first_half_turn": {
+      "-1": [
+        0.01881,
+        0.02065,
+        0.02422,
+        0.01649,
+        0.02813,
+        0.03205
+      ],
+      "1": [
+        9.48352,
+        26.41636,
+        35.47698,
+        25.55642,
+        8.88018,
+        0.03205
+      ]
+    },
+    "rotation_step_deg": 15,
+    "total_rotation_deg": 2520,
+    "total_travel_mm": 21,
+    "peak_interference_mm3": 0.03498,
+    "peak_at_deg": 0,
+    "peak_first_turn_mm3": 0.03498,
+    "positive_overlap_samples": [
+      [
+        0,
+        0.03498
+      ],
+      [
+        15,
+        0.02282
+      ],
+      [
+        30,
+        0.01881
+      ],
+      [
+        45,
+        0.01987
+      ],
+      [
+        60,
+        0.02065
+      ],
+      [
+        75,
+        0.02481
+      ],
+      [
+        90,
+        0.02422
+      ],
+      [
+        105,
+        0.02048
+      ],
+      [
+        120,
+        0.01649
+      ],
+      [
+        135,
+        0.01667
+      ],
+      [
+        150,
+        0.02813
+      ],
+      [
+        165,
+        0.02743
+      ],
+      [
+        180,
+        0.03205
+      ],
+      [
+        195,
+        0.02111
+      ],
+      [
+        210,
+        0.01577
+      ],
+      [
+        225,
+        0.01649
+      ],
+      [
+        240,
+        0.01961
+      ],
+      [
+        255,
+        0.0232
+      ],
+      [
+        270,
+        0.02294
+      ],
+      [
+        285,
+        0.01909
+      ],
+      [
+        300,
+        0.01513
+      ],
+      [
+        315,
+        0.01458
+      ],
+      [
+        330,
+        0.02551
+      ],
+      [
+        345,
+        0.02447
+      ],
+      [
+        360,
+        0.02929
+      ],
+      [
+        375,
+        0.01935
+      ],
+      [
+        390,
+        0.01462
+      ],
+      [
+        405,
+        0.01583
+      ],
+      [
+        420,
+        0.01755
+      ],
+      [
+        435,
+        0.0214
+      ],
+      [
+        450,
+        0.0209
+      ],
+      [
+        465,
+        0.01746
+      ],
+      [
+        480,
+        0.0141
+      ],
+      [
+        495,
+        0.01341
+      ],
+      [
+        510,
+        0.02332
+      ],
+      [
+        525,
+        0.02234
+      ],
+      [
+        540,
+        0.02726
+      ],
+      [
+        555,
+        0.01776
+      ],
+      [
+        570,
+        0.01381
+      ],
+      [
+        585,
+        0.01506
+      ],
+      [
+        600,
+        0.01594
+      ],
+      [
+        615,
+        0.0193
+      ],
+      [
+        630,
+        0.01845
+      ],
+      [
+        645,
+        0.01528
+      ],
+      [
+        660,
+        0.01212
+      ],
+      [
+        675,
+        0.01304
+      ],
+      [
+        690,
+        0.02153
+      ],
+      [
+        705,
+        0.02049
+      ],
+      [
+        720,
+        0.02454
+      ],
+      [
+        735,
+        0.01601
+      ],
+      [
+        750,
+        0.01219
+      ],
+      [
+        765,
+        0.01314
+      ],
+      [
+        780,
+        0.01407
+      ],
+      [
+        795,
+        0.0168
+      ],
+      [
+        810,
+        0.01658
+      ],
+      [
+        825,
+        0.014
+      ],
+      [
+        840,
+        0.01131
+      ],
+      [
+        855,
+        0.0116
+      ],
+      [
+        870,
+        0.01903
+      ],
+      [
+        885,
+        0.01738
+      ],
+      [
+        900,
+        0.02155
+      ],
+      [
+        915,
+        0.01377
+      ],
+      [
+        930,
+        0.0109
+      ],
+      [
+        945,
+        0.01176
+      ],
+      [
+        960,
+        0.01226
+      ],
+      [
+        975,
+        0.01498
+      ],
+      [
+        990,
+        0.01449
+      ],
+      [
+        1005,
+        0.01198
+      ],
+      [
+        1035,
+        0.01001
+      ],
+      [
+        1050,
+        0.01646
+      ],
+      [
+        1065,
+        0.01603
+      ],
+      [
+        1080,
+        0.01895
+      ],
+      [
+        1095,
+        0.01275
+      ],
+      [
+        1140,
+        0.01072
+      ],
+      [
+        1155,
+        0.01251
+      ],
+      [
+        1170,
+        0.01287
+      ],
+      [
+        1185,
+        0.01066
+      ],
+      [
+        1230,
+        0.01369
+      ],
+      [
+        1245,
+        0.01328
+      ],
+      [
+        1260,
+        0.01599
+      ],
+      [
+        1275,
+        0.01116
+      ],
+      [
+        1335,
+        0.01055
+      ],
+      [
+        1350,
+        0.01105
+      ],
+      [
+        1410,
+        0.01144
+      ],
+      [
+        1425,
+        0.01103
+      ],
+      [
+        1440,
+        0.01344
+      ],
+      [
+        1620,
+        0.01054
+      ]
+    ]
+  },
+  "physical_fit": "Pending"
+}

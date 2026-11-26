@@ -1,0 +1,2840 @@
+{
+  "scope": "Local PrusaSlicer 2.9.7 CLI preflight of final CAD and K2 0.4 mm projects.",
+  "physical_tools": {
+    "T0": "A / Red ASA #BF1A11",
+    "T1": "B / unused",
+    "T2": "C / White ASA #DBD7D6",
+    "T3": "D / Black ASA #212721"
+  },
+  "plates": {
+    "swatches": {
+      "project_file": "K2_04_ASA_ColorMix_Swatches.3mf",
+      "project_sha256": "78fd1af8ce3fd561d265de4b3a367a107e24516641a1e52eb5a6327737ecab45",
+      "gcode_sha256": "ee868e89b73b4df0831766f55ab387ebf116a07a4f4264923690ea30ab5f4561",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-26 at 05:24:28 UTC",
+      "effective_gcode_settings": {
+        "filament used [g]": "0.43, 0.00, 0.50, 0.20",
+        "total filament used [g]": "1.13",
+        "total toolchanges": "61",
+        "estimated printing time (normal mode)": "13m 33s",
+        "bed_temperature": "95,95,95,95",
+        "bridge_angle": "0",
+        "brim_separation": "0.1",
+        "brim_width": "4",
+        "chamber_temperature": "0,0,0,0",
+        "extrusion_multiplier": "0.94,0.94,0.94,0.94",
+        "fill_density": "20%",
+        "fill_pattern": "adaptivecubic",
+        "first_layer_bed_temperature": "95,95,95,95",
+        "first_layer_height": "0.2",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "first_layer_temperature": "260,260,260,260",
+        "layer_height": "0.12",
+        "max_print_speed": "50",
+        "max_volumetric_speed": "6",
+        "nozzle_diameter": "0.4,0.4,0.4,0.4",
+        "physical_printer_settings_id": "",
+        "post_process": "",
+        "single_extruder_multi_material_priming": "0",
+        "support_material": "0",
+        "support_material_buildplate_only": "0",
+        "temperature": "250,250,250,250",
+        "wipe_tower": "0"
+      },
+      "physical_tool_selections": {
+        "T0": 28,
+        "T2": 23,
+        "T3": 11
+      },
+      "startup_shutdown_lines": {
+        "object_polygons": [
+          55,
+          56,
+          57
+        ],
+        "start": 63,
+        "initial_tool": 67,
+        "hotend_wait": 70,
+        "purge": 74,
+        "extrusion_reset": 75,
+        "end": 11432
+      },
+      "color_mix": {
+        "version": 1,
+        "physical_extruders": [
+          {
+            "id": 1,
+            "color": "#BF1A11"
+          },
+          {
+            "id": 2,
+            "color": "#808080"
+          },
+          {
+            "id": 3,
+            "color": "#DBD7D6"
+          },
+          {
+            "id": 4,
+            "color": "#212721"
+          }
+        ],
+        "virtual_extruders": [
+          {
+            "id": 5,
+            "kind": "fullspectrum",
+            "color": "#E8A6B1",
+            "components": [
+              {
+                "extruder": 1,
+                "ratio": 0.25
+              },
+              {
+                "extruder": 3,
+                "ratio": 0.75
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "kind": "fullspectrum",
+            "color": "#CF6A75",
+            "components": [
+              {
+                "extruder": 1,
+                "ratio": 0.5
+              },
+              {
+                "extruder": 3,
+                "ratio": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "recorded_temperature_commands": [
+        "M104 S0",
+        "M104 S250",
+        "M104 S260",
+        "M109 S250",
+        "M109 S260",
+        "M140 S0",
+        "M140 S95"
+      ],
+      "print_layer_count": 44,
+      "extrusion_roles": {
+        "Skirt/Brim": {
+          "T0": 506
+        },
+        "Perimeter": {
+          "T0": 1307,
+          "T2": 821,
+          "T3": 315
+        },
+        "External perimeter": {
+          "T0": 317,
+          "T2": 366,
+          "T3": 105
+        },
+        "Solid infill": {
+          "T3": 975
+        },
+        "Top solid infill": {
+          "T3": 35
+        }
+      },
+      "extrusion_xy_bounds_mm": [
+        [
+          90.472,
+          96.476
+        ],
+        [
+          159.528,
+          135.128
+        ]
+      ],
+      "bridges_overhangs_and_supports": {},
+      "first_layer_max_extrusion_speed_mm_s": 25.0,
+      "maximum_extrusion_speed_mm_s": 45.0,
+      "items": {
+        "25 red / 75 white": {
+          "part_extruders": {
+            "Mixed pink": 5,
+            "Solid white dot": 3
+          },
+          "bounds_mm": [
+            [
+              94.0,
+              128.4,
+              -0.0
+            ],
+            [
+              116.0,
+              131.6,
+              5.4
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 75.63,
+          "geometry_layers": 44,
+          "model_tools": [
+            "T0",
+            "T2"
+          ],
+          "majority_tool_layer_counts": {
+            "T2": 33,
+            "T0": 11
+          },
+          "first_12_layers_majority_tool": [
+            "T2",
+            "T0",
+            "T2",
+            "T2",
+            "T2",
+            "T0",
+            "T2",
+            "T2",
+            "T2",
+            "T0",
+            "T2",
+            "T2"
+          ]
+        },
+        "50 red / 50 white": {
+          "part_extruders": {
+            "Mixed pink": 6,
+            "Solid white dot": 3
+          },
+          "bounds_mm": [
+            [
+              134.0,
+              128.4,
+              -0.0
+            ],
+            [
+              156.0,
+              131.6,
+              5.4
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 75.63,
+          "geometry_layers": 44,
+          "model_tools": [
+            "T0",
+            "T2"
+          ],
+          "majority_tool_layer_counts": {
+            "T0": 22,
+            "T2": 22
+          },
+          "first_12_layers_majority_tool": [
+            "T0",
+            "T2",
+            "T0",
+            "T2",
+            "T0",
+            "T2",
+            "T0",
+            "T2",
+            "T0",
+            "T2",
+            "T0",
+            "T2"
+          ]
+        },
+        "Galaxy Black purge witness": {
+          "part_extruders": {
+            "Galaxy Black": 4
+          },
+          "bounds_mm": [
+            [
+              120.5,
+              100.0,
+              0.0
+            ],
+            [
+              129.5,
+              108.0,
+              2.6
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 79.87,
+          "geometry_layers": 21,
+          "model_tools": [
+            "T3"
+          ],
+          "majority_tool_layer_counts": {
+            "T3": 21
+          }
+        }
+      },
+      "white_dots": {
+        "25 red / 75 white": [
+          {
+            "part": "Solid white dot",
+            "component": 1,
+            "bounds_mm": [
+              [
+                110.1,
+                128.4,
+                1.2
+              ],
+              [
+                113.1,
+                129.3,
+                4.2
+              ]
+            ],
+            "checked_layers": 25,
+            "layers_with_printable_width": 24,
+            "layers_with_white_paths": 25,
+            "wrong_material_layers": [],
+            "missing_white_layers": [],
+            "unsupported_white_layers": []
+          }
+        ],
+        "50 red / 50 white": [
+          {
+            "part": "Solid white dot",
+            "component": 1,
+            "bounds_mm": [
+              [
+                150.1,
+                128.4,
+                1.2
+              ],
+              [
+                153.1,
+                129.3,
+                4.2
+              ]
+            ],
+            "checked_layers": 25,
+            "layers_with_printable_width": 24,
+            "layers_with_white_paths": 25,
+            "wrong_material_layers": [],
+            "missing_white_layers": [],
+            "unsupported_white_layers": []
+          }
+        ]
+      },
+      "slicer_warning_lines": [],
+      "slicer_warning_count": 0,
+      "geometry_source_and_placement": {
+        "25 red / 75 white": {
+          "bounds_mm": [
+            [
+              94.0,
+              128.4,
+              0.0
+            ],
+            [
+              116.0,
+              131.6,
+              5.4
+            ]
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            105.0,
+            130.0,
+            2.7000000477
+          ],
+          "print_overrides": {},
+          "parts": {
+            "Mixed pink": {
+              "extruder": 5,
+              "source": "",
+              "source_sha256": "",
+              "bounds_mm": [
+                [
+                  94.0,
+                  128.4,
+                  0.0
+                ],
+                [
+                  116.0,
+                  131.6,
+                  5.4
+                ]
+              ]
+            },
+            "Solid white dot": {
+              "extruder": 3,
+              "source": "",
+              "source_sha256": "",
+              "bounds_mm": [
+                [
+                  110.1,
+                  128.4,
+                  1.2
+                ],
+                [
+                  113.1,
+                  129.3,
+                  4.2
+                ]
+              ]
+            }
+          }
+        },
+        "50 red / 50 white": {
+          "bounds_mm": [
+            [
+              134.0,
+              128.4,
+              0.0
+            ],
+            [
+              156.0,
+              131.6,
+              5.4
+            ]
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            145.0,
+            130.0,
+            2.7000000477
+          ],
+          "print_overrides": {},
+          "parts": {
+            "Mixed pink": {
+              "extruder": 6,
+              "source": "",
+              "source_sha256": "",
+              "bounds_mm": [
+                [
+                  134.0,
+                  128.4,
+                  0.0
+                ],
+                [
+                  156.0,
+                  131.6,
+                  5.4
+                ]
+              ]
+            },
+            "Solid white dot": {
+              "extruder": 3,
+              "source": "",
+              "source_sha256": "",
+              "bounds_mm": [
+                [
+                  150.1,
+                  128.4,
+                  1.2
+                ],
+                [
+                  153.1,
+                  129.3,
+                  4.2
+                ]
+              ]
+            }
+          }
+        },
+        "Galaxy Black purge witness": {
+          "bounds_mm": [
+            [
+              120.5,
+              100.0,
+              0.0
+            ],
+            [
+              129.5,
+              108.0,
+              2.6
+            ]
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            125.0,
+            104.0,
+            1.3
+          ],
+          "print_overrides": {},
+          "parts": {
+            "Galaxy Black": {
+              "extruder": 4,
+              "source": "",
+              "source_sha256": "",
+              "bounds_mm": [
+                [
+                  120.5,
+                  100.0,
+                  0.0
+                ],
+                [
+                  129.5,
+                  108.0,
+                  2.6
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "overrides_from_installed_printer_print_and_asa_profiles": {
+        "bridge_fan_speed": "0,0,0,0",
+        "bridge_speed": "22",
+        "brim_separation": "0.10",
+        "brim_type": "outer_only",
+        "brim_width": "4",
+        "default_acceleration": "4500",
+        "external_perimeter_acceleration": "1500",
+        "external_perimeter_speed": "35",
+        "extruder_colour": "#BF1A11;#808080;#DBD7D6;#212721",
+        "filament_colour": "#BF1A11;#808080;#DBD7D6;#212721",
+        "first_layer_acceleration": "1200",
+        "first_layer_bed_temperature": "95,95,95,95",
+        "first_layer_height": "0.20",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "gap_fill_speed": "25",
+        "infill_speed": "50",
+        "layer_height": "0.12",
+        "max_fan_speed": "0,0,0,0",
+        "max_print_speed": "50",
+        "max_volumetric_speed": "6",
+        "min_fan_speed": "0,0,0,0",
+        "perimeter_acceleration": "2200",
+        "perimeter_speed": "45",
+        "physical_printer_settings_id": "",
+        "seam_position": "rear",
+        "small_perimeter_speed": "25",
+        "solid_infill_speed": "45",
+        "support_material_extruder": "0",
+        "support_material_interface_extruder": "0",
+        "support_material_interface_speed": "28",
+        "support_material_speed": "35",
+        "top_solid_infill_speed": "35",
+        "travel_acceleration": "6500"
+      }
+    },
+    "coupon": {
+      "project_file": "K2_04_ASA_Card_and_Thread_Coupon.3mf",
+      "project_sha256": "c02509e49e59365420efc5566295ef74cc8f3a6116ce0d1bbf27e77e0f1ae573",
+      "gcode_sha256": "aecb1f51a67b67b0a545941930d1413b371ca32cb98019dc3f4bd7015e861e6f",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-26 at 05:24:30 UTC",
+      "effective_gcode_settings": {
+        "filament used [g]": "0.86, 0.00, 3.15, 6.99",
+        "total filament used [g]": "11.00",
+        "total toolchanges": "105",
+        "estimated printing time (normal mode)": "1h 40m 15s",
+        "bed_temperature": "95,95,95,95",
+        "bridge_angle": "0",
+        "brim_separation": "0.1",
+        "brim_width": "4",
+        "chamber_temperature": "0,0,0,0",
+        "extrusion_multiplier": "0.94,0.94,0.94,0.94",
+        "fill_density": "20%",
+        "fill_pattern": "adaptivecubic",
+        "first_layer_bed_temperature": "95,95,95,95",
+        "first_layer_height": "0.2",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "first_layer_temperature": "260,260,260,260",
+        "layer_height": "0.12",
+        "max_print_speed": "50",
+        "max_volumetric_speed": "6",
+        "nozzle_diameter": "0.4,0.4,0.4,0.4",
+        "physical_printer_settings_id": "",
+        "post_process": "",
+        "single_extruder_multi_material_priming": "0",
+        "support_material": "1",
+        "support_material_buildplate_only": "1",
+        "temperature": "250,250,250,250",
+        "wipe_tower": "0"
+      },
+      "physical_tool_selections": {
+        "T0": 33,
+        "T2": 47,
+        "T3": 26
+      },
+      "startup_shutdown_lines": {
+        "object_polygons": [
+          54,
+          55,
+          56,
+          57
+        ],
+        "start": 63,
+        "initial_tool": 67,
+        "hotend_wait": 70,
+        "purge": 74,
+        "extrusion_reset": 75,
+        "end": 177585
+      },
+      "color_mix": {
+        "version": 1,
+        "physical_extruders": [
+          {
+            "id": 1,
+            "color": "#BF1A11"
+          },
+          {
+            "id": 2,
+            "color": "#808080"
+          },
+          {
+            "id": 3,
+            "color": "#DBD7D6"
+          },
+          {
+            "id": 4,
+            "color": "#212721"
+          }
+        ],
+        "virtual_extruders": [
+          {
+            "id": 5,
+            "kind": "fullspectrum",
+            "color": "#E8A6B1",
+            "components": [
+              {
+                "extruder": 1,
+                "ratio": 0.25
+              },
+              {
+                "extruder": 3,
+                "ratio": 0.75
+              }
+            ]
+          }
+        ]
+      },
+      "recorded_temperature_commands": [
+        "M104 S0",
+        "M104 S250",
+        "M104 S260",
+        "M109 S250",
+        "M109 S260",
+        "M140 S0",
+        "M140 S95"
+      ],
+      "print_layer_count": 150,
+      "extrusion_roles": {
+        "Skirt/Brim": {
+          "T2": 2841
+        },
+        "Support material": {
+          "T2": 340,
+          "T0": 217,
+          "T3": 351
+        },
+        "Perimeter": {
+          "T2": 17746,
+          "T3": 37005,
+          "T0": 6078
+        },
+        "External perimeter": {
+          "T2": 7211,
+          "T3": 14263,
+          "T0": 2427
+        },
+        "Solid infill": {
+          "T2": 2673,
+          "T3": 6818,
+          "T0": 855
+        },
+        "Overhang perimeter": {
+          "T0": 24,
+          "T2": 419,
+          "T3": 23
+        },
+        "Support material interface": {
+          "T0": 98,
+          "T3": 173,
+          "T2": 94
+        },
+        "Internal infill": {
+          "T3": 6938,
+          "T2": 2418,
+          "T0": 789
+        },
+        "Bridge infill": {
+          "T2": 196,
+          "T3": 268
+        },
+        "Top solid infill": {
+          "T2": 54,
+          "T3": 765,
+          "T0": 113
+        }
+      },
+      "extrusion_xy_bounds_mm": [
+        [
+          53.722,
+          79.972
+        ],
+        [
+          202.278,
+          186.75
+        ]
+      ],
+      "bridges_overhangs_and_supports": {
+        "Support material": {
+          "total_length_mm": 1397.813,
+          "max_segment_mm": 12.347,
+          "layer_count": 19
+        },
+        "Overhang perimeter": {
+          "total_length_mm": 312.773,
+          "max_segment_mm": 9.34,
+          "layer_count": 6
+        },
+        "Support material interface": {
+          "total_length_mm": 349.411,
+          "max_segment_mm": 7.887,
+          "layer_count": 6
+        },
+        "Bridge infill": {
+          "total_length_mm": 952.907,
+          "max_segment_mm": 6.214,
+          "layer_count": 4
+        }
+      },
+      "first_layer_max_extrusion_speed_mm_s": 25.0,
+      "maximum_extrusion_speed_mm_s": 50.0,
+      "items": {
+        "Coupon front shell": {
+          "part_extruders": {
+            "Galaxy Black front coupon": 4
+          },
+          "bounds_mm": [
+            [
+              57.25,
+              83.5,
+              0.0
+            ],
+            [
+              116.75,
+              120.5,
+              6.2488
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 1155.98,
+          "geometry_layers": 51,
+          "model_tools": [
+            "T3"
+          ],
+          "majority_tool_layer_counts": {
+            "T3": 51
+          }
+        },
+        "Coupon rear shell": {
+          "part_extruders": {
+            "Galaxy Black rear coupon": 4
+          },
+          "bounds_mm": [
+            [
+              139.25,
+              83.5,
+              -0.0
+            ],
+            [
+              198.75,
+              120.5,
+              6.2488
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 1155.95,
+          "geometry_layers": 51,
+          "model_tools": [
+            "T3"
+          ],
+          "majority_tool_layer_counts": {
+            "T3": 51
+          }
+        },
+        "Coupon spacer": {
+          "part_extruders": {
+            "Galaxy Black spacer coupon": 4
+          },
+          "bounds_mm": [
+            [
+              57.25,
+              157.0,
+              0.0
+            ],
+            [
+              116.75,
+              175.0,
+              1.5
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 81.12,
+          "geometry_layers": 12,
+          "model_tools": [
+            "T3"
+          ],
+          "majority_tool_layer_counts": {
+            "T3": 12
+          }
+        },
+        "Coupon handle and cuff": {
+          "part_extruders": {
+            "Mixed pink handle coupon": 5
+          },
+          "bounds_mm": [
+            [
+              160.90013,
+              148.0,
+              0.0
+            ],
+            [
+              177.09987,
+              184.0,
+              15.89994
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 99.37,
+          "geometry_layers": 132,
+          "model_tools": [
+            "T0",
+            "T2"
+          ],
+          "majority_tool_layer_counts": {
+            "T2": 99,
+            "T0": 33
+          },
+          "first_12_layers_majority_tool": [
+            "T2",
+            "T0",
+            "T2",
+            "T2",
+            "T2",
+            "T0",
+            "T2",
+            "T2",
+            "T2",
+            "T0",
+            "T2",
+            "T2"
+          ]
+        }
+      },
+      "white_dots": {},
+      "slicer_warning_lines": [],
+      "slicer_warning_count": 0,
+      "geometry_source_and_placement": {
+        "Coupon front shell": {
+          "bounds_mm": [
+            [
+              57.25,
+              83.5,
+              0.0
+            ],
+            [
+              116.75,
+              120.5,
+              6.248799
+            ]
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            87.0,
+            152.5,
+            -0.75
+          ],
+          "print_overrides": {
+            "fill_density": "100%",
+            "fill_pattern": "rectilinear",
+            "support_material": "0"
+          },
+          "parts": {
+            "Galaxy Black front coupon": {
+              "extruder": 4,
+              "source": "coupon_front_black.stl",
+              "source_sha256": "a1929d1c5e00b87cdd95f0af4dc50dbd9daa76de1e3d9dc0dabc7eeb61ba0d57",
+              "bounds_mm": [
+                [
+                  57.25,
+                  83.5,
+                  0.0
+                ],
+                [
+                  116.75,
+                  120.5,
+                  6.248799
+                ]
+              ]
+            }
+          }
+        },
+        "Coupon rear shell": {
+          "bounds_mm": [
+            [
+              139.25,
+              83.5,
+              0.0
+            ],
+            [
+              198.75,
+              120.5,
+              6.248799
+            ]
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              -1.2246467991473532e-16
+            ],
+            [
+              0.0,
+              1.2246467991473532e-16,
+              -1.0
+            ]
+          ],
+          "translation_mm": [
+            169.0,
+            51.5,
+            -0.75
+          ],
+          "print_overrides": {
+            "fill_density": "100%",
+            "fill_pattern": "rectilinear",
+            "support_material": "0"
+          },
+          "parts": {
+            "Galaxy Black rear coupon": {
+              "extruder": 4,
+              "source": "coupon_rear_black.stl",
+              "source_sha256": "d1b13a40404467e0bc34e32db18c6e4f89d76e773ba748c0353c2bb32c27566d",
+              "bounds_mm": [
+                [
+                  139.25,
+                  83.5,
+                  0.0
+                ],
+                [
+                  198.75,
+                  120.5,
+                  6.248799
+                ]
+              ]
+            }
+          }
+        },
+        "Coupon spacer": {
+          "bounds_mm": [
+            [
+              57.25,
+              157.0,
+              0.0
+            ],
+            [
+              116.75,
+              175.0,
+              1.5
+            ]
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            87.0,
+            207.0,
+            0.75
+          ],
+          "print_overrides": {
+            "fill_density": "100%",
+            "fill_pattern": "rectilinear",
+            "support_material": "0"
+          },
+          "parts": {
+            "Galaxy Black spacer coupon": {
+              "extruder": 4,
+              "source": "coupon_spacer_black.stl",
+              "source_sha256": "ee9ce7c1d5f4bc465261473a5c63cc43fa501facc3a621c0737efc97ba13d648",
+              "bounds_mm": [
+                [
+                  57.25,
+                  157.0,
+                  0.0
+                ],
+                [
+                  116.75,
+                  175.0,
+                  1.5
+                ]
+              ]
+            }
+          }
+        },
+        "Coupon handle and cuff": {
+          "bounds_mm": [
+            [
+              160.900126,
+              148.0,
+              0.0
+            ],
+            [
+              177.099874,
+              184.0,
+              15.899937
+            ]
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            168.9998731613,
+            233.0,
+            7.8000001907
+          ],
+          "print_overrides": {
+            "bridge_angle": "180"
+          },
+          "parts": {
+            "Mixed pink handle coupon": {
+              "extruder": 5,
+              "source": "coupon_handle_cuff_pink.stl",
+              "source_sha256": "723fba0565b7435ce83587d2e404e6376a4f178fa9bfab6b673c9d2bb8a2e328",
+              "bounds_mm": [
+                [
+                  160.900126,
+                  148.0,
+                  0.0
+                ],
+                [
+                  177.099874,
+                  184.0,
+                  15.899937
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "overrides_from_installed_printer_print_and_asa_profiles": {
+        "bridge_fan_speed": "0,0,0,0",
+        "bridge_speed": "22",
+        "brim_separation": "0.10",
+        "brim_type": "outer_only",
+        "brim_width": "4",
+        "default_acceleration": "4500",
+        "external_perimeter_acceleration": "1500",
+        "external_perimeter_speed": "35",
+        "extruder_colour": "#BF1A11;#808080;#DBD7D6;#212721",
+        "filament_colour": "#BF1A11;#808080;#DBD7D6;#212721",
+        "first_layer_acceleration": "1200",
+        "first_layer_bed_temperature": "95,95,95,95",
+        "first_layer_height": "0.20",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "gap_fill_speed": "25",
+        "infill_speed": "50",
+        "layer_height": "0.12",
+        "max_fan_speed": "0,0,0,0",
+        "max_print_speed": "50",
+        "max_volumetric_speed": "6",
+        "min_fan_speed": "0,0,0,0",
+        "perimeter_acceleration": "2200",
+        "perimeter_speed": "45",
+        "physical_printer_settings_id": "",
+        "seam_position": "rear",
+        "small_perimeter_speed": "25",
+        "solid_infill_speed": "45",
+        "support_material": "1",
+        "support_material_buildplate_only": "1",
+        "support_material_extruder": "0",
+        "support_material_interface_extruder": "0",
+        "support_material_interface_layers": "2",
+        "support_material_interface_spacing": "0.25",
+        "support_material_interface_speed": "28",
+        "support_material_spacing": "1.8",
+        "support_material_speed": "35",
+        "support_material_style": "snug",
+        "support_material_threshold": "30",
+        "support_material_xy_spacing": "70%",
+        "top_solid_infill_speed": "35",
+        "travel_acceleration": "6500"
+      }
+    },
+    "shells": {
+      "project_file": "K2_04_ASA_Black_Shells.3mf",
+      "project_sha256": "ec3a24772937d98182b152f9dd5812bf98c38a6eeeb2501f6f7456fa0695fc7e",
+      "gcode_sha256": "6b2ebde109339858b128f3c813417b2c8bdfff9984d3dcf36343897f8f6a9cd6",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-26 at 05:24:31 UTC",
+      "effective_gcode_settings": {
+        "filament used [g]": "0.00, 0.00, 0.00, 53.37",
+        "total filament used [g]": "53.37",
+        "estimated printing time (normal mode)": "6h 21m 39s",
+        "bed_temperature": "95,95,95,95",
+        "bridge_angle": "0",
+        "brim_separation": "0.1",
+        "brim_width": "4",
+        "chamber_temperature": "0,0,0,0",
+        "extrusion_multiplier": "0.94,0.94,0.94,0.94",
+        "fill_density": "100%",
+        "fill_pattern": "rectilinear",
+        "first_layer_bed_temperature": "95,95,95,95",
+        "first_layer_height": "0.2",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "first_layer_temperature": "260,260,260,260",
+        "layer_height": "0.12",
+        "max_print_speed": "50",
+        "max_volumetric_speed": "6",
+        "nozzle_diameter": "0.4,0.4,0.4,0.4",
+        "physical_printer_settings_id": "",
+        "post_process": "",
+        "single_extruder_multi_material_priming": "0",
+        "support_material": "0",
+        "support_material_buildplate_only": "0",
+        "temperature": "250,250,250,250",
+        "wipe_tower": "0"
+      },
+      "physical_tool_selections": {
+        "T3": 1
+      },
+      "startup_shutdown_lines": {
+        "object_polygons": [
+          20,
+          21
+        ],
+        "start": 27,
+        "initial_tool": 31,
+        "hotend_wait": 34,
+        "purge": 38,
+        "extrusion_reset": 39,
+        "end": 203017
+      },
+      "color_mix": null,
+      "recorded_temperature_commands": [
+        "M104 S0",
+        "M104 S250",
+        "M104 S260",
+        "M109 S260",
+        "M140 S0",
+        "M140 S95"
+      ],
+      "print_layer_count": 51,
+      "extrusion_roles": {
+        "Skirt/Brim": {
+          "T3": 4382
+        },
+        "External perimeter": {
+          "T3": 27402
+        },
+        "Perimeter": {
+          "T3": 76975
+        },
+        "Solid infill": {
+          "T3": 17794
+        },
+        "Internal infill": {
+          "T3": 17614
+        },
+        "Bridge infill": {
+          "T3": 442
+        },
+        "Top solid infill": {
+          "T3": 1799
+        },
+        "Overhang perimeter": {
+          "T3": 23
+        }
+      },
+      "extrusion_xy_bounds_mm": [
+        [
+          4.452,
+          5.544
+        ],
+        [
+          256.547,
+          250.455
+        ]
+      ],
+      "bridges_overhangs_and_supports": {
+        "Bridge infill": {
+          "total_length_mm": 1206.113,
+          "max_segment_mm": 8.554,
+          "layer_count": 2
+        },
+        "Overhang perimeter": {
+          "total_length_mm": 20.845,
+          "max_segment_mm": 2.6,
+          "layer_count": 1
+        }
+      },
+      "first_layer_max_extrusion_speed_mm_s": 25.0,
+      "maximum_extrusion_speed_mm_s": 50.0,
+      "items": {
+        "Front shell - inner face down": {
+          "part_extruders": {
+            "Galaxy Black front shell": 4
+          },
+          "bounds_mm": [
+            [
+              7.97903,
+              9.06289,
+              0.0
+            ],
+            [
+              136.02097,
+              146.93711,
+              6.2488
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 11076.66,
+          "geometry_layers": 51,
+          "model_tools": [
+            "T3"
+          ],
+          "majority_tool_layer_counts": {
+            "T3": 51
+          }
+        },
+        "Rear shell - inner face down": {
+          "part_extruders": {
+            "Galaxy Black rear shell": 4
+          },
+          "bounds_mm": [
+            [
+              124.97967,
+              109.06289,
+              -0.0
+            ],
+            [
+              253.02033,
+              246.93711,
+              6.2488
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 11078.02,
+          "geometry_layers": 51,
+          "model_tools": [
+            "T3"
+          ],
+          "majority_tool_layer_counts": {
+            "T3": 51
+          }
+        }
+      },
+      "white_dots": {},
+      "slicer_warning_lines": [],
+      "slicer_warning_count": 0,
+      "geometry_source_and_placement": {
+        "Front shell - inner face down": {
+          "bounds_mm": [
+            [
+              7.979034,
+              9.062889,
+              0.0
+            ],
+            [
+              136.020966,
+              146.937111,
+              6.248799
+            ]
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            71.7436752319,
+            78.0628890991,
+            -0.75
+          ],
+          "print_overrides": {},
+          "parts": {
+            "Galaxy Black front shell": {
+              "extruder": 4,
+              "source": "front_black.stl",
+              "source_sha256": "35bfb6d91cedadb92fcbbe060bac36afd1be15eee2cd862f90bb9ec5c45656bb",
+              "bounds_mm": [
+                [
+                  7.979034,
+                  9.062889,
+                  0.0
+                ],
+                [
+                  136.020966,
+                  146.937111,
+                  6.248799
+                ]
+              ]
+            }
+          }
+        },
+        "Rear shell - inner face down": {
+          "bounds_mm": [
+            [
+              124.979668,
+              109.062889,
+              0.0
+            ],
+            [
+              253.020332,
+              246.937111,
+              6.248799
+            ]
+          ],
+          "rotation": [
+            [
+              -1.0,
+              1.2246467991473532e-16,
+              1.4997597826618576e-32
+            ],
+            [
+              1.2246467991473532e-16,
+              1.0,
+              1.2246467991473532e-16
+            ],
+            [
+              0.0,
+              1.2246467991473532e-16,
+              -1.0
+            ]
+          ],
+          "translation_mm": [
+            189.2556991577,
+            178.0628890991,
+            -0.75
+          ],
+          "print_overrides": {},
+          "parts": {
+            "Galaxy Black rear shell": {
+              "extruder": 4,
+              "source": "rear_black.stl",
+              "source_sha256": "4c079e341a09196eecc9952b298e6c702daf8819509c1ab990145847ecb3f290",
+              "bounds_mm": [
+                [
+                  124.979668,
+                  109.062889,
+                  0.0
+                ],
+                [
+                  253.020332,
+                  246.937111,
+                  6.248799
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "overrides_from_installed_printer_print_and_asa_profiles": {
+        "bridge_fan_speed": "0,0,0,0",
+        "bridge_speed": "22",
+        "brim_separation": "0.10",
+        "brim_type": "outer_only",
+        "brim_width": "4",
+        "default_acceleration": "4500",
+        "external_perimeter_acceleration": "1500",
+        "external_perimeter_speed": "35",
+        "extruder_colour": "#BF1A11;#808080;#DBD7D6;#212721",
+        "filament_colour": "#BF1A11;#808080;#DBD7D6;#212721",
+        "fill_density": "100%",
+        "fill_pattern": "rectilinear",
+        "first_layer_acceleration": "1200",
+        "first_layer_bed_temperature": "95,95,95,95",
+        "first_layer_height": "0.20",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "gap_fill_speed": "25",
+        "infill_speed": "50",
+        "layer_height": "0.12",
+        "max_fan_speed": "0,0,0,0",
+        "max_print_speed": "50",
+        "max_volumetric_speed": "6",
+        "min_fan_speed": "0,0,0,0",
+        "perimeter_acceleration": "2200",
+        "perimeter_speed": "45",
+        "physical_printer_settings_id": "",
+        "seam_position": "rear",
+        "small_perimeter_speed": "25",
+        "solid_infill_speed": "45",
+        "support_material_extruder": "0",
+        "support_material_interface_extruder": "0",
+        "support_material_interface_speed": "28",
+        "support_material_speed": "35",
+        "top_solid_infill_speed": "35",
+        "travel_acceleration": "6500"
+      }
+    },
+    "spacer": {
+      "project_file": "K2_04_ASA_Black_Spacer_and_Pins.3mf",
+      "project_sha256": "6f42419aa4554e6afceb7bc7f31a9bf3eef301073013e0f5ff685ca53dfab25f",
+      "gcode_sha256": "83540fe3ef08e33a14156cf5185889f67a64208722faa4522dd40ae8f468f0b1",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-26 at 05:24:30 UTC",
+      "effective_gcode_settings": {
+        "filament used [g]": "0.00, 0.00, 0.00, 9.35",
+        "total filament used [g]": "9.35",
+        "estimated printing time (normal mode)": "1h 12m 29s",
+        "bed_temperature": "95,95,95,95",
+        "bridge_angle": "0",
+        "brim_separation": "0.1",
+        "brim_width": "4",
+        "chamber_temperature": "0,0,0,0",
+        "extrusion_multiplier": "0.94,0.94,0.94,0.94",
+        "fill_density": "100%",
+        "fill_pattern": "rectilinear",
+        "first_layer_bed_temperature": "95,95,95,95",
+        "first_layer_height": "0.2",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "first_layer_temperature": "260,260,260,260",
+        "layer_height": "0.12",
+        "max_print_speed": "50",
+        "max_volumetric_speed": "6",
+        "nozzle_diameter": "0.4,0.4,0.4,0.4",
+        "physical_printer_settings_id": "",
+        "post_process": "",
+        "single_extruder_multi_material_priming": "0",
+        "support_material": "0",
+        "support_material_buildplate_only": "0",
+        "temperature": "250,250,250,250",
+        "wipe_tower": "0"
+      },
+      "physical_tool_selections": {
+        "T3": 1
+      },
+      "startup_shutdown_lines": {
+        "object_polygons": [
+          27,
+          28,
+          29
+        ],
+        "start": 35,
+        "initial_tool": 39,
+        "hotend_wait": 42,
+        "purge": 46,
+        "extrusion_reset": 47,
+        "end": 51832
+      },
+      "color_mix": null,
+      "recorded_temperature_commands": [
+        "M104 S0",
+        "M104 S250",
+        "M104 S260",
+        "M109 S260",
+        "M140 S0",
+        "M140 S95"
+      ],
+      "print_layer_count": 26,
+      "extrusion_roles": {
+        "Skirt/Brim": {
+          "T3": 1949
+        },
+        "External perimeter": {
+          "T3": 6642
+        },
+        "Perimeter": {
+          "T3": 18437
+        },
+        "Solid infill": {
+          "T3": 10300
+        },
+        "Internal infill": {
+          "T3": 3682
+        },
+        "Top solid infill": {
+          "T3": 1082
+        }
+      },
+      "extrusion_xy_bounds_mm": [
+        [
+          50.464,
+          69.037
+        ],
+        [
+          214.177,
+          194.953
+        ]
+      ],
+      "bridges_overhangs_and_supports": {},
+      "first_layer_max_extrusion_speed_mm_s": 25.0,
+      "maximum_extrusion_speed_mm_s": 50.0,
+      "items": {
+        "Card spacer": {
+          "part_extruders": {
+            "Galaxy Black spacer": 4
+          },
+          "bounds_mm": [
+            [
+              53.98008,
+              72.56289,
+              0.0
+            ],
+            [
+              182.01992,
+              191.43711,
+              1.5
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 5867.74,
+          "geometry_layers": 12,
+          "model_tools": [
+            "T3"
+          ],
+          "majority_tool_layer_counts": {
+            "T3": 12
+          }
+        },
+        "Alignment pin 1": {
+          "part_extruders": {
+            "Galaxy Black alignment pin": 4
+          },
+          "bounds_mm": [
+            [
+              205.34246,
+              100.34246,
+              0.0
+            ],
+            [
+              210.65754,
+              105.65754,
+              3.2
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 24.21,
+          "geometry_layers": 26,
+          "model_tools": [
+            "T3"
+          ],
+          "majority_tool_layer_counts": {
+            "T3": 26
+          }
+        },
+        "Alignment pin 2": {
+          "part_extruders": {
+            "Galaxy Black alignment pin": 4
+          },
+          "bounds_mm": [
+            [
+              205.34246,
+              121.34246,
+              0.0
+            ],
+            [
+              210.65754,
+              126.65754,
+              3.2
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 24.21,
+          "geometry_layers": 26,
+          "model_tools": [
+            "T3"
+          ],
+          "majority_tool_layer_counts": {
+            "T3": 26
+          }
+        }
+      },
+      "white_dots": {},
+      "slicer_warning_lines": [],
+      "slicer_warning_count": 0,
+      "geometry_source_and_placement": {
+        "Card spacer": {
+          "bounds_mm": [
+            [
+              53.980082,
+              72.562889,
+              0.0
+            ],
+            [
+              182.019918,
+              191.437111,
+              1.5
+            ]
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            117.7438869476,
+            122.5628890991,
+            0.75
+          ],
+          "print_overrides": {},
+          "parts": {
+            "Galaxy Black spacer": {
+              "extruder": 4,
+              "source": "spacer_black.stl",
+              "source_sha256": "d5630bfe41c931f0dfa1c0c251dd56963b49c921bed958071df7c7c9a59ebeb0",
+              "bounds_mm": [
+                [
+                  53.980082,
+                  72.562889,
+                  0.0
+                ],
+                [
+                  182.019918,
+                  191.437111,
+                  1.5
+                ]
+              ]
+            }
+          }
+        },
+        "Alignment pin 1": {
+          "bounds_mm": [
+            [
+              205.342464,
+              100.342463,
+              0.0
+            ],
+            [
+              210.657536,
+              105.657537,
+              3.2
+            ]
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            244.8843727112,
+            90.5094881058,
+            1.6000000238
+          ],
+          "print_overrides": {},
+          "parts": {
+            "Galaxy Black alignment pin": {
+              "extruder": 4,
+              "source": "alignment_pin_black_print_two.stl",
+              "source_sha256": "7bea86b18034ed9e1959e355a5dd0e881a572c38fb9503ba4e421b3f02709693",
+              "bounds_mm": [
+                [
+                  205.342464,
+                  100.342463,
+                  0.0
+                ],
+                [
+                  210.657536,
+                  105.657537,
+                  3.2
+                ]
+              ]
+            }
+          }
+        },
+        "Alignment pin 2": {
+          "bounds_mm": [
+            [
+              205.342464,
+              121.342463,
+              0.0
+            ],
+            [
+              210.657536,
+              126.657537,
+              3.2
+            ]
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            244.8843727112,
+            111.5094881058,
+            1.6000000238
+          ],
+          "print_overrides": {},
+          "parts": {
+            "Galaxy Black alignment pin": {
+              "extruder": 4,
+              "source": "alignment_pin_black_print_two.stl",
+              "source_sha256": "7bea86b18034ed9e1959e355a5dd0e881a572c38fb9503ba4e421b3f02709693",
+              "bounds_mm": [
+                [
+                  205.342464,
+                  121.342463,
+                  0.0
+                ],
+                [
+                  210.657536,
+                  126.657537,
+                  3.2
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "overrides_from_installed_printer_print_and_asa_profiles": {
+        "bridge_fan_speed": "0,0,0,0",
+        "bridge_speed": "22",
+        "brim_separation": "0.10",
+        "brim_type": "outer_only",
+        "brim_width": "4",
+        "default_acceleration": "4500",
+        "external_perimeter_acceleration": "1500",
+        "external_perimeter_speed": "35",
+        "extruder_colour": "#BF1A11;#808080;#DBD7D6;#212721",
+        "filament_colour": "#BF1A11;#808080;#DBD7D6;#212721",
+        "fill_density": "100%",
+        "fill_pattern": "rectilinear",
+        "first_layer_acceleration": "1200",
+        "first_layer_bed_temperature": "95,95,95,95",
+        "first_layer_height": "0.20",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "gap_fill_speed": "25",
+        "infill_speed": "50",
+        "layer_height": "0.12",
+        "max_fan_speed": "0,0,0,0",
+        "max_print_speed": "50",
+        "max_volumetric_speed": "6",
+        "min_fan_speed": "0,0,0,0",
+        "perimeter_acceleration": "2200",
+        "perimeter_speed": "45",
+        "physical_printer_settings_id": "",
+        "seam_position": "rear",
+        "small_perimeter_speed": "25",
+        "solid_infill_speed": "45",
+        "support_material_extruder": "0",
+        "support_material_interface_extruder": "0",
+        "support_material_interface_speed": "28",
+        "support_material_speed": "35",
+        "top_solid_infill_speed": "35",
+        "travel_acceleration": "6500"
+      }
+    },
+    "handle": {
+      "project_file": "K2_04_ASA_Pink_Handle.3mf",
+      "project_sha256": "cd1f559ab61d8a052c3322d323324bb00b3269d5cb6e6e8cc540b7d7daae505f",
+      "gcode_sha256": "b618819a323bbe67dba1b196d60eb3f347f624201aa5cb5eb865c80a2c871c15",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-26 at 05:24:33 UTC",
+      "effective_gcode_settings": {
+        "filament used [g]": "2.84, 0.00, 8.74, 0.00",
+        "total filament used [g]": "11.58",
+        "total toolchanges": "66",
+        "estimated printing time (normal mode)": "1h 32m 36s",
+        "bed_temperature": "95,95,95,95",
+        "bridge_angle": "180",
+        "brim_separation": "0.1",
+        "brim_width": "6",
+        "chamber_temperature": "0,0,0,0",
+        "extrusion_multiplier": "0.94,0.94,0.94,0.94",
+        "fill_density": "20%",
+        "fill_pattern": "adaptivecubic",
+        "first_layer_bed_temperature": "95,95,95,95",
+        "first_layer_height": "0.2",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "first_layer_temperature": "260,260,260,260",
+        "layer_height": "0.12",
+        "max_print_speed": "50",
+        "max_volumetric_speed": "6",
+        "nozzle_diameter": "0.4,0.4,0.4,0.4",
+        "physical_printer_settings_id": "",
+        "post_process": "",
+        "single_extruder_multi_material_priming": "0",
+        "support_material": "1",
+        "support_material_buildplate_only": "1",
+        "temperature": "250,250,250,250",
+        "wipe_tower": "0"
+      },
+      "physical_tool_selections": {
+        "T0": 33,
+        "T2": 34
+      },
+      "startup_shutdown_lines": {
+        "object_polygons": [
+          30
+        ],
+        "start": 36,
+        "initial_tool": 40,
+        "hotend_wait": 43,
+        "purge": 47,
+        "extrusion_reset": 48,
+        "end": 100133
+      },
+      "color_mix": {
+        "version": 1,
+        "physical_extruders": [
+          {
+            "id": 1,
+            "color": "#BF1A11"
+          },
+          {
+            "id": 2,
+            "color": "#808080"
+          },
+          {
+            "id": 3,
+            "color": "#DBD7D6"
+          },
+          {
+            "id": 4,
+            "color": "#212721"
+          }
+        ],
+        "virtual_extruders": [
+          {
+            "id": 5,
+            "kind": "fullspectrum",
+            "color": "#E8A6B1",
+            "components": [
+              {
+                "extruder": 1,
+                "ratio": 0.25
+              },
+              {
+                "extruder": 3,
+                "ratio": 0.75
+              }
+            ]
+          }
+        ]
+      },
+      "recorded_temperature_commands": [
+        "M104 S0",
+        "M104 S250",
+        "M104 S260",
+        "M109 S250",
+        "M109 S260",
+        "M140 S0",
+        "M140 S95"
+      ],
+      "print_layer_count": 150,
+      "extrusion_roles": {
+        "Skirt/Brim": {
+          "T2": 816
+        },
+        "Support material": {
+          "T2": 692,
+          "T0": 238
+        },
+        "Perimeter": {
+          "T2": 27150,
+          "T0": 9324
+        },
+        "External perimeter": {
+          "T2": 10518,
+          "T0": 3497
+        },
+        "Solid infill": {
+          "T2": 4644,
+          "T0": 1682
+        },
+        "Overhang perimeter": {
+          "T0": 72,
+          "T2": 428
+        },
+        "Support material interface": {
+          "T0": 473,
+          "T2": 390
+        },
+        "Internal infill": {
+          "T2": 7103,
+          "T0": 2366
+        },
+        "Bridge infill": {
+          "T2": 196
+        },
+        "Top solid infill": {
+          "T2": 54,
+          "T0": 113
+        }
+      },
+      "extrusion_xy_bounds_mm": [
+        [
+          121.696,
+          65.711
+        ],
+        [
+          138.316,
+          193.251
+        ]
+      ],
+      "bridges_overhangs_and_supports": {
+        "Support material": {
+          "total_length_mm": 1266.506,
+          "max_segment_mm": 8.89,
+          "layer_count": 19
+        },
+        "Overhang perimeter": {
+          "total_length_mm": 473.729,
+          "max_segment_mm": 41.441,
+          "layer_count": 6
+        },
+        "Support material interface": {
+          "total_length_mm": 727.767,
+          "max_segment_mm": 11.995,
+          "layer_count": 7
+        },
+        "Bridge infill": {
+          "total_length_mm": 246.154,
+          "max_segment_mm": 5.95,
+          "layer_count": 3
+        }
+      },
+      "first_layer_max_extrusion_speed_mm_s": 25.0,
+      "maximum_extrusion_speed_mm_s": 50.0,
+      "items": {
+        "Handle and cuff - rear chord down": {
+          "part_extruders": {
+            "Mixed pink handle": 5
+          },
+          "bounds_mm": [
+            [
+              121.90013,
+              65.5,
+              -0.0
+            ],
+            [
+              138.09987,
+              190.5,
+              15.90511
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 433.3,
+          "geometry_layers": 132,
+          "model_tools": [
+            "T0",
+            "T2"
+          ],
+          "majority_tool_layer_counts": {
+            "T2": 99,
+            "T0": 33
+          },
+          "first_12_layers_majority_tool": [
+            "T2",
+            "T0",
+            "T2",
+            "T2",
+            "T2",
+            "T0",
+            "T2",
+            "T2",
+            "T2",
+            "T0",
+            "T2",
+            "T2"
+          ]
+        }
+      },
+      "white_dots": {},
+      "slicer_warning_lines": [],
+      "slicer_warning_count": 0,
+      "geometry_source_and_placement": {
+        "Handle and cuff - rear chord down": {
+          "bounds_mm": [
+            [
+              121.900126,
+              65.5,
+              0.0
+            ],
+            [
+              138.099874,
+              190.5,
+              15.905108
+            ]
+          ],
+          "rotation": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "translation_mm": [
+            129.9998731613,
+            239.5,
+            7.8051714897
+          ],
+          "print_overrides": {},
+          "parts": {
+            "Mixed pink handle": {
+              "extruder": 5,
+              "source": "handle_cuff_pink.stl",
+              "source_sha256": "ca9277902f377e40cb47dbbf3e8a7480ea8454bd2e3146ccb099b45d79c63af5",
+              "bounds_mm": [
+                [
+                  121.900126,
+                  65.5,
+                  0.0
+                ],
+                [
+                  138.099874,
+                  190.5,
+                  15.905108
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "overrides_from_installed_printer_print_and_asa_profiles": {
+        "bridge_angle": "180",
+        "bridge_fan_speed": "0,0,0,0",
+        "bridge_speed": "22",
+        "brim_separation": "0.10",
+        "brim_type": "outer_only",
+        "brim_width": "6",
+        "default_acceleration": "4500",
+        "external_perimeter_acceleration": "1500",
+        "external_perimeter_speed": "35",
+        "extruder_colour": "#BF1A11;#808080;#DBD7D6;#212721",
+        "filament_colour": "#BF1A11;#808080;#DBD7D6;#212721",
+        "first_layer_acceleration": "1200",
+        "first_layer_bed_temperature": "95,95,95,95",
+        "first_layer_height": "0.20",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "gap_fill_speed": "25",
+        "infill_speed": "50",
+        "layer_height": "0.12",
+        "max_fan_speed": "0,0,0,0",
+        "max_print_speed": "50",
+        "max_volumetric_speed": "6",
+        "min_fan_speed": "0,0,0,0",
+        "perimeter_acceleration": "2200",
+        "perimeter_speed": "45",
+        "physical_printer_settings_id": "",
+        "seam_position": "rear",
+        "small_perimeter_speed": "25",
+        "solid_infill_speed": "45",
+        "support_material": "1",
+        "support_material_buildplate_only": "1",
+        "support_material_extruder": "0",
+        "support_material_interface_extruder": "0",
+        "support_material_interface_layers": "2",
+        "support_material_interface_spacing": "0.25",
+        "support_material_interface_speed": "28",
+        "support_material_spacing": "1.8",
+        "support_material_speed": "35",
+        "support_material_style": "snug",
+        "support_material_threshold": "30",
+        "support_material_xy_spacing": "70%",
+        "top_solid_infill_speed": "35",
+        "travel_acceleration": "6500"
+      }
+    },
+    "bow": {
+      "project_file": "K2_04_ASA_Pink_Bow_White_Dots.3mf",
+      "project_sha256": "44e7015750485dce3676a5e216273255e0d3913d0811ea36e70d90a167debaa3",
+      "gcode_sha256": "57e0fa90b422bb5221481c6a015015bf6295fc89a65dec0eb1e3c558b1907ec8",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-26 at 05:24:33 UTC",
+      "effective_gcode_settings": {
+        "filament used [g]": "1.21, 0.00, 3.87, 0.00",
+        "total filament used [g]": "5.08",
+        "total toolchanges": "163",
+        "estimated printing time (normal mode)": "1h 26m 6s",
+        "bed_temperature": "95,95,95,95",
+        "bridge_angle": "0",
+        "brim_separation": "0",
+        "brim_width": "8",
+        "chamber_temperature": "0,0,0,0",
+        "extrusion_multiplier": "0.94,0.94,0.94,0.94",
+        "fill_density": "20%",
+        "fill_pattern": "adaptivecubic",
+        "first_layer_bed_temperature": "95,95,95,95",
+        "first_layer_height": "0.2",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "first_layer_temperature": "260,260,260,260",
+        "layer_height": "0.12",
+        "max_print_speed": "50",
+        "max_volumetric_speed": "6",
+        "nozzle_diameter": "0.4,0.4,0.4,0.4",
+        "physical_printer_settings_id": "",
+        "post_process": "",
+        "single_extruder_multi_material_priming": "0",
+        "support_material": "1",
+        "support_material_buildplate_only": "1",
+        "temperature": "250,250,250,250",
+        "wipe_tower": "0"
+      },
+      "physical_tool_selections": {
+        "T0": 82,
+        "T2": 82
+      },
+      "startup_shutdown_lines": {
+        "object_polygons": [
+          30
+        ],
+        "start": 36,
+        "initial_tool": 40,
+        "hotend_wait": 43,
+        "purge": 47,
+        "extrusion_reset": 48,
+        "end": 68715
+      },
+      "color_mix": {
+        "version": 1,
+        "physical_extruders": [
+          {
+            "id": 1,
+            "color": "#BF1A11"
+          },
+          {
+            "id": 2,
+            "color": "#808080"
+          },
+          {
+            "id": 3,
+            "color": "#DBD7D6"
+          },
+          {
+            "id": 4,
+            "color": "#212721"
+          }
+        ],
+        "virtual_extruders": [
+          {
+            "id": 5,
+            "kind": "fullspectrum",
+            "color": "#E8A6B1",
+            "components": [
+              {
+                "extruder": 1,
+                "ratio": 0.25
+              },
+              {
+                "extruder": 3,
+                "ratio": 0.75
+              }
+            ]
+          }
+        ]
+      },
+      "recorded_temperature_commands": [
+        "M104 S0",
+        "M104 S250",
+        "M104 S260",
+        "M109 S250",
+        "M109 S260",
+        "M140 S0",
+        "M140 S95"
+      ],
+      "print_layer_count": 373,
+      "extrusion_roles": {
+        "Skirt/Brim": {
+          "T2": 464
+        },
+        "Support material": {
+          "T2": 614,
+          "T0": 146
+        },
+        "Perimeter": {
+          "T2": 8991,
+          "T0": 4952
+        },
+        "External perimeter": {
+          "T2": 5145,
+          "T0": 2241
+        },
+        "Overhang perimeter": {
+          "T0": 42,
+          "T2": 105
+        },
+        "Support material interface": {
+          "T0": 278,
+          "T2": 941
+        },
+        "Solid infill": {
+          "T2": 415,
+          "T0": 109
+        }
+      },
+      "extrusion_xy_bounds_mm": [
+        [
+          101.342,
+          119.285
+        ],
+        [
+          158.321,
+          137.494
+        ]
+      ],
+      "bridges_overhangs_and_supports": {
+        "Support material": {
+          "total_length_mm": 3703.12,
+          "max_segment_mm": 39.687,
+          "layer_count": 44
+        },
+        "Overhang perimeter": {
+          "total_length_mm": 119.545,
+          "max_segment_mm": 2.73,
+          "layer_count": 30
+        },
+        "Support material interface": {
+          "total_length_mm": 904.721,
+          "max_segment_mm": 4.958,
+          "layer_count": 47
+        }
+      },
+      "first_layer_max_extrusion_speed_mm_s": 25.0,
+      "maximum_extrusion_speed_mm_s": 33.03,
+      "items": {
+        "Bow - upright": {
+          "part_extruders": {
+            "Mixed pink bow": 5,
+            "Solid white bow dots": 3
+          },
+          "bounds_mm": [
+            [
+              101.46835,
+              126.05,
+              -0.0
+            ],
+            [
+              158.53165,
+              129.95,
+              39.2204
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 8.89,
+          "geometry_layers": 326,
+          "model_tools": [
+            "T0",
+            "T2"
+          ],
+          "majority_tool_layer_counts": {
+            "T2": 244,
+            "T0": 82
+          },
+          "first_12_layers_majority_tool": [
+            "T2",
+            "T0",
+            "T2",
+            "T2",
+            "T2",
+            "T0",
+            "T2",
+            "T2",
+            "T2",
+            "T0",
+            "T2",
+            "T2"
+          ]
+        }
+      },
+      "white_dots": {
+        "Bow - upright": [
+          {
+            "part": "Solid white bow dots",
+            "component": 1,
+            "bounds_mm": [
+              [
+                106.07105,
+                126.8,
+                30.61739
+              ],
+              [
+                109.22805,
+                127.85,
+                33.77438
+              ]
+            ],
+            "checked_layers": 27,
+            "layers_with_printable_width": 26,
+            "layers_with_white_paths": 27,
+            "wrong_material_layers": [],
+            "missing_white_layers": [],
+            "unsupported_white_layers": []
+          },
+          {
+            "part": "Solid white bow dots",
+            "component": 2,
+            "bounds_mm": [
+              [
+                108.86029,
+                126.8,
+                25.29409
+              ],
+              [
+                112.17919,
+                127.85,
+                28.61299
+              ]
+            ],
+            "checked_layers": 28,
+            "layers_with_printable_width": 28,
+            "layers_with_white_paths": 28,
+            "wrong_material_layers": [],
+            "missing_white_layers": [],
+            "unsupported_white_layers": []
+          },
+          {
+            "part": "Solid white bow dots",
+            "component": 3,
+            "bounds_mm": [
+              [
+                114.56111,
+                126.8,
+                20.47631
+              ],
+              [
+                117.88,
+                127.85,
+                23.7952
+              ]
+            ],
+            "checked_layers": 28,
+            "layers_with_printable_width": 27,
+            "layers_with_white_paths": 28,
+            "wrong_material_layers": [],
+            "missing_white_layers": [],
+            "unsupported_white_layers": []
+          },
+          {
+            "part": "Solid white bow dots",
+            "component": 4,
+            "bounds_mm": [
+              [
+                106.92208,
+                126.8,
+                18.84397
+              ],
+              [
+                110.16003,
+                127.85,
+                22.08192
+              ]
+            ],
+            "checked_layers": 27,
+            "layers_with_printable_width": 26,
+            "layers_with_white_paths": 27,
+            "wrong_material_layers": [],
+            "missing_white_layers": [],
+            "unsupported_white_layers": []
+          },
+          {
+            "part": "Solid white bow dots",
+            "component": 5,
+            "bounds_mm": [
+              [
+                111.33327,
+                126.8,
+                13.12721
+              ],
+              [
+                114.73311,
+                127.85,
+                16.52705
+              ]
+            ],
+            "checked_layers": 28,
+            "layers_with_printable_width": 28,
+            "layers_with_white_paths": 28,
+            "wrong_material_layers": [],
+            "missing_white_layers": [],
+            "unsupported_white_layers": []
+          },
+          {
+            "part": "Solid white bow dots",
+            "component": 6,
+            "bounds_mm": [
+              [
+                107.38247,
+                126.8,
+                5.04384
+              ],
+              [
+                110.70137,
+                127.85,
+                8.36274
+              ]
+            ],
+            "checked_layers": 28,
+            "layers_with_printable_width": 27,
+            "layers_with_white_paths": 28,
+            "wrong_material_layers": [],
+            "missing_white_layers": [],
+            "unsupported_white_layers": []
+          },
+          {
+            "part": "Solid white bow dots",
+            "component": 7,
+            "bounds_mm": [
+              [
+                116.67826,
+                126.8,
+                7.13274
+              ],
+              [
+                119.99715,
+                127.85,
+                10.45163
+              ]
+            ],
+            "checked_layers": 27,
+            "layers_with_printable_width": 27,
+            "layers_with_white_paths": 27,
+            "wrong_material_layers": [],
+            "missing_white_layers": [],
+            "unsupported_white_layers": []
+          },
+          {
+            "part": "Solid white bow dots",
+            "component": 8,
+            "bounds_mm": [
+              [
+                149.37108,
+                126.8,
+                32.53888
+              ],
+              [
+                152.52808,
+                127.85,
+                35.69588
+              ]
+            ],
+            "checked_layers": 27,
+            "layers_with_printable_width": 26,
+            "layers_with_white_paths": 27,
+            "wrong_material_layers": [],
+            "missing_white_layers": [],
+            "unsupported_white_layers": []
+          },
+          {
+            "part": "Solid white bow dots",
+            "component": 9,
+            "bounds_mm": [
+              [
+                146.8982,
+                126.8,
+                27.17885
+              ],
+              [
+                150.2171,
+                127.85,
+                30.49774
+              ]
+            ],
+            "checked_layers": 27,
+            "layers_with_printable_width": 27,
+            "layers_with_white_paths": 27,
+            "wrong_material_layers": [],
+            "missing_white_layers": [],
+            "unsupported_white_layers": []
+          },
+          {
+            "part": "Solid white bow dots",
+            "component": 10,
+            "bounds_mm": [
+              [
+                141.67564,
+                126.8,
+                21.4752
+              ],
+              [
+                144.99453,
+                127.85,
+                24.7941
+              ]
+            ],
+            "checked_layers": 28,
+            "layers_with_printable_width": 28,
+            "layers_with_white_paths": 28,
+            "wrong_material_layers": [],
+            "missing_white_layers": [],
+            "unsupported_white_layers": []
+          },
+          {
+            "part": "Solid white bow dots",
+            "component": 11,
+            "bounds_mm": [
+              [
+                150.99403,
+                126.8,
+                20.32586
+              ],
+              [
+                154.31292,
+                127.85,
+                23.64476
+              ]
+            ],
+            "checked_layers": 27,
+            "layers_with_printable_width": 27,
+            "layers_with_white_paths": 27,
+            "wrong_material_layers": [],
+            "missing_white_layers": [],
+            "unsupported_white_layers": []
+          },
+          {
+            "part": "Solid white bow dots",
+            "component": 12,
+            "bounds_mm": [
+              [
+                145.32339,
+                126.8,
+                14.9837
+              ],
+              [
+                148.72323,
+                127.85,
+                18.38355
+              ]
+            ],
+            "checked_layers": 29,
+            "layers_with_printable_width": 28,
+            "layers_with_white_paths": 29,
+            "wrong_material_layers": [],
+            "missing_white_layers": [],
+            "unsupported_white_layers": []
+          },
+          {
+            "part": "Solid white bow dots",
+            "component": 13,
+            "bounds_mm": [
+              [
+                151.89402,
+                126.8,
+                7.37859
+              ],
+              [
+                155.21291,
+                127.85,
+                10.69749
+              ]
+            ],
+            "checked_layers": 27,
+            "layers_with_printable_width": 27,
+            "layers_with_white_paths": 27,
+            "wrong_material_layers": [],
+            "missing_white_layers": [],
+            "unsupported_white_layers": []
+          },
+          {
+            "part": "Solid white bow dots",
+            "component": 14,
+            "bounds_mm": [
+              [
+                142.5841,
+                126.8,
+                7.31359
+              ],
+              [
+                145.903,
+                127.85,
+                10.63249
+              ]
+            ],
+            "checked_layers": 28,
+            "layers_with_printable_width": 28,
+            "layers_with_white_paths": 28,
+            "wrong_material_layers": [],
+            "missing_white_layers": [],
+            "unsupported_white_layers": []
+          }
+        ]
+      },
+      "slicer_warning_lines": [],
+      "slicer_warning_count": 0,
+      "geometry_source_and_placement": {
+        "Bow - upright": {
+          "bounds_mm": [
+            [
+              101.468348,
+              126.05,
+              0.0
+            ],
+            [
+              158.531652,
+              129.95,
+              39.220397
+            ]
+          ],
+          "rotation": [
+            [
+              0.9986295347545738,
+              -0.052335956242943835,
+              0.0
+            ],
+            [
+              3.204653064661855e-18,
+              6.114842316355997e-17,
+              -1.0
+            ],
+            [
+              0.052335956242943835,
+              0.9986295347545738,
+              6.123233995736766e-17
+            ]
+          ],
+          "translation_mm": [
+            134.1351940877,
+            133.1000001431,
+            -33.4436924457
+          ],
+          "print_overrides": {},
+          "parts": {
+            "Mixed pink bow": {
+              "extruder": 5,
+              "source": "bow_pink.stl",
+              "source_sha256": "e5c7bda9ba2cedd29aa2fe93b9f007ea2142c72305ec1cfce0e2116057ec4177",
+              "bounds_mm": [
+                [
+                  101.468348,
+                  126.05,
+                  0.0
+                ],
+                [
+                  158.531652,
+                  129.95,
+                  39.220397
+                ]
+              ]
+            },
+            "Solid white bow dots": {
+              "extruder": 3,
+              "source": "bow_dots_white.stl",
+              "source_sha256": "a0f0169313f223544571c95db04694b9b8320ee5a50fc9e08a3776a63279bdaa",
+              "bounds_mm": [
+                [
+                  106.071049,
+                  126.8,
+                  5.043845
+                ],
+                [
+                  155.212914,
+                  127.85,
+                  35.695876
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "overrides_from_installed_printer_print_and_asa_profiles": {
+        "bridge_fan_speed": "0,0,0,0",
+        "bridge_speed": "22",
+        "brim_type": "outer_only",
+        "brim_width": "8",
+        "default_acceleration": "4500",
+        "external_perimeter_acceleration": "1500",
+        "external_perimeter_speed": "35",
+        "extruder_colour": "#BF1A11;#808080;#DBD7D6;#212721",
+        "filament_colour": "#BF1A11;#808080;#DBD7D6;#212721",
+        "first_layer_acceleration": "1200",
+        "first_layer_bed_temperature": "95,95,95,95",
+        "first_layer_height": "0.20",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "gap_fill_speed": "25",
+        "infill_speed": "50",
+        "layer_height": "0.12",
+        "max_fan_speed": "0,0,0,0",
+        "max_print_speed": "50",
+        "max_volumetric_speed": "6",
+        "min_fan_speed": "0,0,0,0",
+        "perimeter_acceleration": "2200",
+        "perimeter_speed": "45",
+        "physical_printer_settings_id": "",
+        "seam_position": "rear",
+        "small_perimeter_speed": "25",
+        "solid_infill_speed": "45",
+        "support_material": "1",
+        "support_material_buildplate_only": "1",
+        "support_material_extruder": "0",
+        "support_material_interface_extruder": "0",
+        "support_material_interface_layers": "2",
+        "support_material_interface_spacing": "0.25",
+        "support_material_interface_speed": "28",
+        "support_material_spacing": "1.8",
+        "support_material_speed": "35",
+        "support_material_style": "snug",
+        "support_material_xy_spacing": "70%",
+        "top_solid_infill_speed": "35",
+        "travel_acceleration": "6500"
+      }
+    }
+  },
+  "connector_checks": {
+    "support_samples": "Sampled support and interface paths in CAD space at intervals no larger than 0.375 mm.",
+    "nominal_sleeve_region_mm": {
+      "radius": 6.18,
+      "assembly_y_bounds": [
+        -69.55,
+        -59.55
+      ]
+    },
+    "physical_fit_note": "Inspect physical supports and sleeve clearance before trying the mating threads.",
+    "support_segments_crossing_nominal_sleeve_void": {
+      "handle": 0,
+      "coupon": 0
+    },
+    "maximum_connector_bridge_segment_mm": {
+      "handle": 5.95,
+      "coupon": 5.934
+    },
+    "rear_chord_second_layer_overhang": {
+      "path_mm": 41.441,
+      "points_sampled_over_previous_layer_projected_beads": 420,
+      "points_over_prior_model_or_brim_in_projection": 420,
+      "points_over_prior_model_alone_in_projection": 0
+    }
+  },
+  "physical_checks": [
+    "Printed pink shade and stripe visibility",
+    "CFS swaps and flush cleanliness",
+    "Bed adhesion and backside support removal",
+    "ASA dimensional and thread fit on the coupon"
+  ]
+}

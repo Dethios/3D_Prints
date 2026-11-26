@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "units": "mm",
+  "ring_depth_equals_carrier_mm": 10.0,
+  "nominal_front_view_rim_width_mm": 5.056,
+  "coin_rim": {
+    "key_coils_per_ear": 30,
+    "nominal_key_stroke_mm": 0.42,
+    "levels_z_mm": [
+      9.2,
+      9.48,
+      9.72,
+      10.0
+    ]
+  },
+  "magnet_size_mm": [
+    6,
+    3
+  ],
+  "five_original_pockets_per_ear": true,
+  "ear_pair_intersection_mm3": 0.0,
+  "opposite_adapter_intersections_mm3": [
+    0.0,
+    0.0
+  ],
+  "parts": {
+    "left": {
+      "extents_mm": [
+        99.988,
+        88.542,
+        10.0
+      ],
+      "volume_mm3": 32908.465,
+      "watertight": true,
+      "solid_count": 1,
+      "sha256": "990f552c2df43ef4101adb9cd54f33c308e546cc84f21130c4f9193cd32bb121",
+      "source_shell_material_lost_mm3": 0.001548,
+      "carrier_material_lost_outside_engraving_mm3": 0.0006975,
+      "inherited_adapter_intersection_mm3": 1.2609569,
+      "added_adapter_intersection_mm3": 0.000134,
+      "added_pocket_interference_mm3": [
+        1e-06,
+        6e-05,
+        1e-06,
+        7.4e-05,
+        1e-06
+      ],
+      "verified_pocket_back_wall_mm": 1.05,
+      "trio_overlap_with_lower_rim_mm3": 14.806,
+      "red_robe_overlap_with_left_rim_mm3": 3.076,
+      "artwork_area_at_0_25mm_raise_mm2": 4130.81,
+      "artwork_coverage_percent_of_safe_field": 73.7,
+      "outside_artwork_and_rim_change_mm3": {
+        "removed": 0.000258,
+        "added": 2.26e-05
+      },
+      "prior_artwork_area_at_0_25mm_raise_mm2": 4128.42,
+      "artwork_coverage_gain_percent": 0.1,
+      "printed_parts": 1,
+      "relief_field_z_mm": 2.0,
+      "max_artwork_height_above_backing_mm": 2.829,
+      "photo_relief_grid_mm": 0.215,
+      "foreground_scale_mm_per_source_px": 0.06836,
+      "added_band_intersection_mm3": 0.000133
+    },
+    "right": {
+      "extents_mm": [
+        99.988,
+        88.542,
+        10.0
+      ],
+      "volume_mm3": 31237.427,
+      "watertight": true,
+      "solid_count": 1,
+      "sha256": "680d6e59c96484ec232d507f404fe06faa66e8ac0685c696df93bc46ffd213dc",
+      "source_shell_material_lost_mm3": 0.0010291,
+      "carrier_material_lost_outside_engraving_mm3": 0.0002332,
+      "inherited_adapter_intersection_mm3": 1.2609569,
+      "added_adapter_intersection_mm3": 0.000134,
+      "added_pocket_interference_mm3": [
+        1e-06,
+        6e-05,
+        1e-06,
+        7.4e-05,
+        1e-06
+      ],
+      "verified_pocket_back_wall_mm": 1.05,
+      "rocket_overlap_with_lower_rim_mm3": 2.903,
+      "artwork_area_at_0_25mm_raise_mm2": 3251.7,
+      "artwork_coverage_percent_of_safe_field": 59.9,
+      "outside_artwork_and_rim_change_mm3": {
+        "removed": 0.0,
+        "added": 0.0
+      },
+      "prior_artwork_area_at_0_25mm_raise_mm2": 3251.7,
+      "artwork_coverage_gain_percent": 0.0,
+      "printed_parts": 1,
+      "relief_field_z_mm": 2.0,
+      "max_artwork_height_above_backing_mm": 3.06,
+      "photo_relief_grid_mm": 0.215,
+      "foreground_scale_mm_per_source_px": 0.075,
+      "added_band_intersection_mm3": 9.83e-05
+    }
+  },
+  "physical_fit": "Pending",
+  "source_sha256": {
+    "ear_blue_base.stl": "c33efb62e46bfd56d10040582ffee13f433c8c384333dbe9751104674c9e0a29",
+    "mount_test_strip.stl": "7958078e5ea05805ca2fa3217834de1b199dd1fcffb0a824cc7a5de00a6fe996",
+    "glue_on_base_SOURCE_GEOMETRY.stl": "da266036545d519201ea5a7a820a934d291cf9bc8f4e35c120d72625074806e6"
+  },
+  "artwork_base_sha256": {
+    "fan-trio-hands-corrected.png": "ab9e1219a2f7e7f1c1159e904ec4285f28e68d49f0ff4639f3a020e8a53f6f94",
+    "mulan-illustration2.png": "5235b237f5809df774995fe1fc18cad4ed5bfdb1ebb31d993f15328fc82f699f",
+    "Brighter-dragon.jpg": "4da27b80ed77f6930d986b502d44dc4dcae05515c8141579513fbbe239e1f3e5"
+  }
+}

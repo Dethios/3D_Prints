@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "slicer": "PrusaSlicer 2.9.7",
+  "project": "Mulan_NX3_Voron24_025mm_45deg.3mf",
+  "config": {
+    "printer_settings_id": "VictorCustom - 0.25 mm (Mulan project)",
+    "filament_settings_id": "\"Polymaker PolyChroma Matte\"",
+    "nozzle_diameter": "0.25",
+    "layer_height": "0.08",
+    "first_layer_height": "0.15",
+    "bed_shape": "0x0,350x0,350x350,0x350",
+    "temperature": "215",
+    "first_layer_temperature": "220",
+    "bed_temperature": "55",
+    "first_layer_bed_temperature": "60",
+    "gcode_flavor": "klipper",
+    "seam_position": "aligned",
+    "brim_width": "0",
+    "support_material": "0",
+    "resolution": "0.045",
+    "slice_closing_radius": "0.065",
+    "nozzle_high_flow": "0",
+    "min_layer_height": "0.05",
+    "max_layer_height": "0.18",
+    "bridge_speed": "22",
+    "bridge_flow_ratio": "0.75"
+  },
+  "part_count": 2,
+  "bed_rotation_deg": 45,
+  "first_layer_external_extrusion_moves_left_right": [
+    108,
+    108
+  ],
+  "max_toolpath_z_mm": 9.99,
+  "support_extrusion_moves": 0,
+  "longest_straight_bridge_move_mm": 4.24,
+  "longest_straight_bridge_z_mm": 8.07,
+  "longest_straight_bridge_midpoint_mm": [
+    258.82,
+    143.31
+  ],
+  "longest_contiguous_bridge_path_mm": 51.51,
+  "longest_contiguous_bridge_z_mm": 8.07,
+  "estimated_print_time": "20h 36m 15s",
+  "estimated_filament_g": 75.54,
+  "viewed_z_mm": [
+    0.15,
+    8.07,
+    3.75,
+    9.59
+  ],
+  "physical_fit": "Pending"
+}

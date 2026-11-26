@@ -1,0 +1,72 @@
+{
+  "tools": [
+    "T1",
+    "T0",
+    "T2",
+    "T3",
+    "T0",
+    "T1",
+    "T2",
+    "T0",
+    "T1",
+    "T3",
+    "T0",
+    "T1",
+    "T2",
+    "T0",
+    "T1",
+    "T3",
+    "T0",
+    "T1",
+    "T2",
+    "T0",
+    "T1",
+    "T3"
+  ],
+  "first_layer_objects": 19,
+  "grooves": {
+    "Upper glove finger 1": {
+      "floor_path_count": 16,
+      "face_paths_in_groove_core": 0
+    },
+    "Upper glove finger 2": {
+      "floor_path_count": 29,
+      "face_paths_in_groove_core": 0
+    },
+    "Lower glove finger 1": {
+      "floor_path_count": 6,
+      "face_paths_in_groove_core": 0
+    },
+    "Lower glove finger 2": {
+      "floor_path_count": 4,
+      "face_paths_in_groove_core": 0
+    },
+    "Lower glove finger 3": {
+      "floor_path_count": 5,
+      "face_paths_in_groove_core": 0
+    },
+    "Shoe upper seam": {
+      "floor_path_count": 10,
+      "face_paths_in_groove_core": 0
+    },
+    "Shoe sole seam": {
+      "floor_path_count": 23,
+      "face_paths_in_groove_core": 0
+    }
+  },
+  "layer_heights_mm": [
+    0.12,
+    0.24,
+    0.36,
+    0.48,
+    0.6,
+    0.72,
+    0.84,
+    0.96,
+    1.08,
+    1.2,
+    1.32,
+    1.44
+  ],
+  "virtual_fit": "passed"
+}

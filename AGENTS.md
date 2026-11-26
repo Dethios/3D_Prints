@@ -69,3 +69,9 @@ When a saved print preset fails in the CLI, isolate which preset causes the fail
 If submitting a change for review, use a short, action-oriented summary such as “Adjust crab-ear receiver clearance.” Identify the affected variant and dimensions, link any relevant issue, and include a CAD or slicer preview for visible changes.
 
 Before publishing a model, verify the asset-specific notices and rights for the source geometry and artwork. Stage only the authorized files. Keep local studies, generated archives, machine-specific slicer files and unrelated edits out of documentation-only pushes.
+
+## End-of-Turn Publication
+
+At the end of every turn that changes repository files, validate the completed, in-scope changes, commit only those changes, and push them to `origin/main` before reporting completion. This is standing authorization for routine pushes of the turn's completed repository work. Follow any explicit instruction to hold a change locally and preserve asset-specific publication requirements. Read-only turns require no commit or push.
+
+Use a normal fast-forward push. If remote changes, branch protection, or an access failure prevents publication, preserve the local work and report the blocker. After pushing, verify that `origin/main` contains the commit.

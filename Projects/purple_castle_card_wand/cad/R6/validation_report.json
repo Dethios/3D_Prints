@@ -1,0 +1,561 @@
+{
+  "units": "mm",
+  "source_SHA256": {
+    "castle_profiles.json": "ff1b7d81a01e941be9c393d3b716d585c54cd923cb2af1f61c3441d363779094",
+    "relief_map.json": "0a73df176ea6965100df1e30e2ab8e6ef9c29b43f17cfa8f05a5e893c9331611",
+    "minnie_card_wand.step": "fd40571d938553f20a34d1777a30869eaa36b0a24a456f3d2d79b8a8a344b86d",
+    "purple_castle_card_wand_R5.step": "26e2623d9702eae12372d11a601f0097114c06a24ef7ae14edc99760a1952c0a"
+  },
+  "step_sha256": "a82407cd00a1db9faeb40fd8c2b01c9a81352e0b157cbc0662e062f34d2f612b",
+  "mesh_files": {
+    "bow_pink": {
+      "sha256": "cd5af955ec1f754812eb84d11a204df1f66ec411192c4ea72fa94a493d138bdd",
+      "shells": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_positive_volume": true,
+      "bbox_mm": [
+        [
+          -27.978,
+          -71.589,
+          6.9
+        ],
+        [
+          27.978,
+          -31.833,
+          13.9999
+        ]
+      ],
+      "volume_mm3": 7436.814
+    },
+    "frame_purple": {
+      "sha256": "d9981a16b8f31116e16f18e17b121a576b9762fa00b9ab59dc1a62b52136314f",
+      "shells": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_positive_volume": true,
+      "bbox_mm": [
+        [
+          -65.0,
+          -60.659,
+          -0.9
+        ],
+        [
+          65.0,
+          61.938,
+          0.9
+        ]
+      ],
+      "volume_mm3": 9247.256
+    },
+    "handle_gold": {
+      "sha256": "ccc3fec269a901fb65d0e5ee217c73567fd96a1a8c6968cb3a629c3decd7f544",
+      "shells": 3,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_positive_volume": true,
+      "bbox_mm": [
+        [
+          -15.4798,
+          -293.91,
+          -7.8
+        ],
+        [
+          15.48,
+          -99.64,
+          10.12
+        ]
+      ],
+      "volume_mm3": 6726.37
+    },
+    "handle_purple": {
+      "sha256": "c72fdeafd4977b47edb1db51e3968c8f4362da17a96efb029134bcc40952d642",
+      "shells": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_positive_volume": true,
+      "bbox_mm": [
+        [
+          -13.1142,
+          -311.92,
+          -7.8
+        ],
+        [
+          13.1143,
+          -58.35,
+          9.8275
+        ]
+      ],
+      "volume_mm3": 72741.465
+    },
+    "head_blue": {
+      "sha256": "9628d03f59cc2b775a68118fc5b1524e0bc18d6f1006fd1e9d87afed1f946d28",
+      "shells": 3,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_positive_volume": true,
+      "bbox_mm": [
+        [
+          -25.955,
+          1.982,
+          2.9
+        ],
+        [
+          27.298,
+          32.736,
+          5.6995
+        ]
+      ],
+      "volume_mm3": 620.241
+    },
+    "head_cream": {
+      "sha256": "6960bee9618c6b6a407be5dc9534f4d75177a6039d1d9b0f734d4b147d025481",
+      "shells": 11,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_positive_volume": true,
+      "bbox_mm": [
+        [
+          -46.709,
+          -30.145,
+          2.1
+        ],
+        [
+          46.709,
+          19.194,
+          5.8987
+        ]
+      ],
+      "volume_mm3": 3030.54
+    },
+    "head_gold": {
+      "sha256": "1a98fb2f6a8a98dfcb06f4e0371aa20219bbc628a02025b5ab09fe67b2d72cd7",
+      "shells": 6,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_positive_volume": true,
+      "bbox_mm": [
+        [
+          -65.0,
+          -60.659,
+          2.1
+        ],
+        [
+          65.0,
+          61.938,
+          6.2981
+        ]
+      ],
+      "volume_mm3": 5861.175
+    },
+    "head_purple": {
+      "sha256": "2317bcb422b6cb961e4fc14e56cb04c92d7b7a4f3f6dacdb8bacd2af64d1358f",
+      "shells": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_positive_volume": true,
+      "bbox_mm": [
+        [
+          -65.0,
+          -78.35,
+          0.9
+        ],
+        [
+          65.0,
+          61.938,
+          7.6
+        ]
+      ],
+      "volume_mm3": 24382.13
+    },
+    "rear_purple": {
+      "sha256": "2ecf08bdbb4724b9ab5aa180843d89b8544fae64de9451e2972036f64b155140",
+      "shells": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_positive_volume": true,
+      "bbox_mm": [
+        [
+          -65.0,
+          -78.35,
+          -7.0
+        ],
+        [
+          65.0,
+          61.938,
+          -0.9
+        ]
+      ],
+      "volume_mm3": 21400.244
+    },
+    "frame_coupon_purple": {
+      "sha256": "af5ba9af0c0ca6e80762e17b4e80ee0349faf25ecccdd54c265a89a921407193",
+      "shells": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_positive_volume": true,
+      "bbox_mm": [
+        [
+          -30.8,
+          -59.35,
+          -0.9
+        ],
+        [
+          30.8,
+          31.7,
+          0.9
+        ]
+      ],
+      "volume_mm3": 1398.164
+    },
+    "front_coupon_purple": {
+      "sha256": "db011b9cdf4cfc22d358a19f5f051671c3d9faff12e4dc5a435426a31bca8f70",
+      "shells": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_positive_volume": true,
+      "bbox_mm": [
+        [
+          -30.8,
+          -78.35,
+          0.9
+        ],
+        [
+          30.8,
+          31.7,
+          7.0
+        ]
+      ],
+      "volume_mm3": 7018.775
+    },
+    "grip_stub_purple": {
+      "sha256": "9e164e38b6c2fcfcfa25a71452c9a6b475796a3ae23027f00dd67024c1b144c9",
+      "shells": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_positive_volume": true,
+      "bbox_mm": [
+        [
+          -12.429,
+          -94.0,
+          -7.8
+        ],
+        [
+          12.4295,
+          -58.35,
+          9.2819
+        ]
+      ],
+      "volume_mm3": 5959.962
+    },
+    "rear_coupon_purple": {
+      "sha256": "c93345d9a02995a6e7261d0ed7a0c16c65a5ce1b4cdd2876519f0d907ce4c0b4",
+      "shells": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "all_positive_volume": true,
+      "bbox_mm": [
+        [
+          -30.8,
+          -78.35,
+          -7.0
+        ],
+        [
+          30.8,
+          31.7,
+          -0.9
+        ]
+      ],
+      "volume_mm3": 7060.663
+    }
+  },
+  "step_named_parts": 9,
+  "step_valid_solids": 28,
+  "functional_assemblies": [
+    "bonded star head and bow",
+    "full-size threaded grip"
+  ],
+  "head_bond_land_each_side_mm2": 5137.365,
+  "upper_pocket_min_rim_wall_mm": 2.0333,
+  "star_xy_mm": [
+    -65.0,
+    -60.659,
+    65.0,
+    61.938
+  ],
+  "assembly_bounds_mm": [
+    [
+      -65.0,
+      -311.92,
+      -7.8
+    ],
+    [
+      65.0,
+      61.938,
+      14.0
+    ]
+  ],
+  "assembled_intersections_over_0p00001_mm3": {
+    "handle_purple / head_purple": 0.0200342,
+    "handle_purple / rear_purple": 0.0176988,
+    "head_cream / head_gold": 0.0001096
+  },
+  "card": {
+    "card_gauge_mm": [
+      53.98,
+      85.6,
+      1.2
+    ],
+    "rounded_corner_radius_mm": 3.18,
+    "slot_width_thickness_mm": [
+      55.0,
+      1.8
+    ],
+    "continuous_sweep_bottom_top_y_mm": [
+      -169.0,
+      27.85
+    ],
+    "swept_load_interference_mm3": {
+      "(-0.4, -0.29)": 0.0,
+      "(-0.4, 0)": 0.0,
+      "(-0.4, 0.29)": 0.0,
+      "(0, -0.29)": 0.0,
+      "(0, 0)": 0.0,
+      "(0, 0.29)": 0.0,
+      "(0.4, -0.29)": 0.0,
+      "(0.4, 0)": 0.0,
+      "(0.4, 0.29)": 0.0
+    },
+    "withdrawal_distance_to_grip_contact_mm": 0.6,
+    "withdrawal_interference_mm3": {
+      "0": 0.0,
+      "0.5": 0.0,
+      "0.59": 0.0,
+      "0.6": 5.4e-06,
+      "0.61": 0.1040448,
+      "0.7": 1.0355261,
+      "1.0": 4.0807,
+      "2.0": 14.3670281,
+      "4.0": 34.9071661
+    },
+    "upper_stop_interference_mm3": {
+      "0": 0.0,
+      "0.04": 0.0,
+      "0.05": 1.08e-05,
+      "0.08": 1.7346476,
+      "0.15": 5.8661477
+    },
+    "positive_gate_xyz_mm": [
+      [
+        -1.5,
+        -59.04,
+        -0.9
+      ],
+      [
+        1.5,
+        -58.88,
+        0.9
+      ]
+    ],
+    "gate_filled_fraction": 1.0,
+    "opposing_skin_patch_filled_fractions": {
+      "head_purple X-12": 1.0,
+      "rear_purple X-12": 1.0,
+      "head_purple X12": 1.0,
+      "rear_purple X12": 1.0
+    },
+    "shifted_tilted_escape_challenge": {
+      "0.76": {
+        "poses": 243,
+        "within_shell": 55,
+        "blocked_by_grip": 55,
+        "least_intersection_mm3": 18.42457
+      },
+      "1.2": {
+        "poses": 243,
+        "within_shell": 35,
+        "blocked_by_grip": 35,
+        "least_intersection_mm3": 29.18055
+      }
+    },
+    "open_front_or_back_projected_card_area_mm2": {
+      "head_purple": 0.0,
+      "rear_purple": 2e-06
+    }
+  },
+  "coupon_card": {
+    "card_gauge_mm": [
+      53.98,
+      85.6,
+      1.2
+    ],
+    "rounded_corner_radius_mm": 3.18,
+    "slot_width_thickness_mm": [
+      55.0,
+      1.8
+    ],
+    "continuous_sweep_bottom_top_y_mm": [
+      -169.0,
+      27.85
+    ],
+    "swept_load_interference_mm3": {
+      "(-0.4, -0.29)": 0.0,
+      "(-0.4, 0)": 0.0,
+      "(-0.4, 0.29)": 0.0,
+      "(0, -0.29)": 0.0,
+      "(0, 0)": 0.0,
+      "(0, 0.29)": 0.0,
+      "(0.4, -0.29)": 0.0,
+      "(0.4, 0)": 0.0,
+      "(0.4, 0.29)": 0.0
+    },
+    "withdrawal_distance_to_grip_contact_mm": 0.6,
+    "withdrawal_interference_mm3": {
+      "0": 0.0,
+      "0.5": 0.0,
+      "0.59": 0.0,
+      "0.6": 5.4e-06,
+      "0.61": 0.1040448,
+      "0.7": 1.0355261,
+      "1.0": 4.0807,
+      "2.0": 14.3670281,
+      "4.0": 34.9071661
+    },
+    "upper_stop_interference_mm3": {
+      "0": 0.0,
+      "0.04": 0.0,
+      "0.05": 1.08e-05,
+      "0.08": 1.7346476,
+      "0.15": 5.8661477
+    },
+    "positive_gate_xyz_mm": [
+      [
+        -1.5,
+        -59.04,
+        -0.9
+      ],
+      [
+        1.5,
+        -58.88,
+        0.9
+      ]
+    ],
+    "gate_filled_fraction": 1.0,
+    "opposing_skin_patch_filled_fractions": {
+      "head_purple X-12": 1.0,
+      "rear_purple X-12": 1.0,
+      "head_purple X12": 1.0,
+      "rear_purple X12": 1.0
+    },
+    "shifted_tilted_escape_challenge": {
+      "0.76": {
+        "poses": 243,
+        "within_shell": 55,
+        "blocked_by_grip": 55,
+        "least_intersection_mm3": 18.42457
+      },
+      "1.2": {
+        "poses": 243,
+        "within_shell": 35,
+        "blocked_by_grip": 35,
+        "least_intersection_mm3": 29.18055
+      }
+    },
+    "open_front_or_back_projected_card_area_mm2": {
+      "head_purple": 2803.374706,
+      "rear_purple": 2803.374706
+    }
+  },
+  "screw": {
+    "pitch_mm": 3.0,
+    "axial_travel_mm": 21,
+    "mesh_poses": 169,
+    "angle_step_deg": 15,
+    "mesh_max_overlap_mm3": {
+      "front": 0.020034216465733855,
+      "rear": 0.01769889902080556,
+      "bow": 0.0
+    },
+    "minimum_bow_to_rotating_grip_mm": 4.911236817386114,
+    "exact_STEP_pose_overlap_mm3": {
+      "0": [
+        0.0,
+        0.0
+      ],
+      "75": [
+        0.0,
+        0.0
+      ],
+      "180": [
+        0.0,
+        0.0
+      ],
+      "450": [
+        0.0,
+        0.0
+      ],
+      "1080": [
+        0.0,
+        0.0
+      ],
+      "2160": [
+        0.0,
+        0.0
+      ],
+      "2520": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "art_and_mounts": {
+    "measured_flags": {
+      "left-flag": {
+        "min_to_purple_lip_mm": 4.0714,
+        "min_to_gold_rim_mm": 6.6465
+      },
+      "high-flag": {
+        "min_to_purple_lip_mm": 3.0349,
+        "min_to_gold_rim_mm": 5.6057
+      },
+      "right-flag": {
+        "min_to_purple_lip_mm": 2.9547,
+        "min_to_gold_rim_mm": 5.4925
+      }
+    },
+    "bow_planar_bond_area_mm2": 575.02,
+    "measured_motif_root_sections": {
+      "mickey": {
+        "embedded_foot_mm2": 60.062,
+        "embedded_stem_mm2": 48.613
+      },
+      "right-star": {
+        "embedded_foot_mm2": 80.049,
+        "embedded_stem_mm2": 65.735
+      },
+      "left-star": {
+        "embedded_foot_mm2": 80.037,
+        "embedded_stem_mm2": 65.753
+      },
+      "right-flag": {
+        "embedded_foot_mm2": 29.235,
+        "embedded_stem_mm2": 19.64
+      },
+      "left-flag": {
+        "embedded_foot_mm2": 29.24,
+        "embedded_stem_mm2": 19.644
+      },
+      "high-flag": {
+        "embedded_foot_mm2": 28.413,
+        "embedded_stem_mm2": 18.934
+      }
+    },
+    "integral_bow_ribs": 2,
+    "bow_rib_height_mm": 0.7,
+    "bow_rib_slot_depth_mm": 0.93,
+    "bow_rib_lateral_clearance_per_side_mm": 0.2,
+    "bow_backing_thickness_mm": 2.3,
+    "face_motif_stepped_root_depth_mm": 0.8
+  },
+  "physical_status": "Coupon fit, adhesive, drop/pull, fatigue, thread wear, child access and reader operation unverified."
+}

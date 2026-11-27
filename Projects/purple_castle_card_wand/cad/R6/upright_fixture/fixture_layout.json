@@ -1,0 +1,474 @@
+{
+  "units": "mm",
+  "fixture": "upright_cradle_blue_A.stl",
+  "fixture_extruder": "physical blue A",
+  "fixture_sha256": "2756321e8c85cc001c3f5a01c3b486ed41ec27591c4ed0d61c8ba0a9e0f324d1",
+  "head_transform_row_major": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      78.35
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "fixture_transform_row_major": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "unchanged_R6_parts": {
+    "../print_parts/head_purple.stl": "2317bcb422b6cb961e4fc14e56cb04c92d7b7a4f3f6dacdb8bacd2af64d1358f",
+    "../print_parts/head_gold.stl": "1a98fb2f6a8a98dfcb06f4e0371aa20219bbc628a02025b5ab09fe67b2d72cd7",
+    "../print_parts/head_cream.stl": "6960bee9618c6b6a407be5dc9534f4d75177a6039d1d9b0f734d4b147d025481",
+    "../print_parts/head_blue.stl": "9628d03f59cc2b775a68118fc5b1524e0bc18d6f1006fd1e9d87afed1f946d28"
+  },
+  "fixture_bounds_mm": [
+    [
+      -71.8,
+      -19.0,
+      0.0
+    ],
+    [
+      71.8,
+      18.0,
+      88.0
+    ]
+  ],
+  "part_bounds_mm": [
+    [
+      -65,
+      -7.6,
+      0
+    ],
+    [
+      65,
+      -0.9,
+      140.288
+    ]
+  ],
+  "connected_fixture_solids": 1,
+  "nominal_lower_support_gap_mm": 0.12,
+  "intended_contacts": [
+    {
+      "kind": "lower-edge gap",
+      "x": -8.9,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 13.4359,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": -12.8,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 18.88,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": -16.9,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 18.88,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": -21.0,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 18.88,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": -25.1,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 18.88,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": -29.3,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 19.862,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": -33.4,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 18.9756,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": -36.9,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 17.8519,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": -40.0,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 17.5901,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": -43.1,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 18.2315,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": -46.1,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 20.2319,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "bow-land lower edge gap",
+      "x": -16.6,
+      "y_range": [
+        -5.95,
+        -4.99
+      ],
+      "top_z": 26.9432,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "bow-land lower edge gap",
+      "x": -22.5,
+      "y_range": [
+        -5.95,
+        -4.99
+      ],
+      "top_z": 24.9666,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower gold rim edge; gapped",
+      "x": -39.475,
+      "y_range": [
+        -4.15,
+        -2.92
+      ],
+      "top_z": 17.4526,
+      "gap_mm": 0.24
+    },
+    {
+      "kind": "gold curl underside; gapped",
+      "x": -2.5,
+      "y_range": [
+        -5.52,
+        -4.82
+      ],
+      "top_z": 41.9401,
+      "gap_mm": 0.24
+    },
+    {
+      "kind": "gold curl underside; gapped",
+      "x": -27.25,
+      "y_range": [
+        -5.52,
+        -4.82
+      ],
+      "top_z": 45.7454,
+      "gap_mm": 0.24
+    },
+    {
+      "kind": "cuttable structural edge tie",
+      "x": -47.9979,
+      "y_range": [
+        -2.45,
+        -1.65
+      ],
+      "z": 30.35,
+      "nominal_z_height": 0.64
+    },
+    {
+      "kind": "cuttable structural edge tie",
+      "x": -44.0323,
+      "y_range": [
+        -2.45,
+        -1.65
+      ],
+      "z": 54.35,
+      "nominal_z_height": 0.64
+    },
+    {
+      "kind": "cuttable structural edge tie",
+      "x": -64.7676,
+      "y_range": [
+        -2.45,
+        -1.65
+      ],
+      "z": 87.0,
+      "nominal_z_height": 0.64
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": 8.9,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 13.4359,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": 12.8,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 18.88,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": 16.9,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 18.88,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": 21.0,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 18.88,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": 25.1,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 18.88,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": 29.3,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 19.862,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": 33.4,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 18.9756,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": 36.9,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 17.8519,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": 40.0,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 17.5901,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": 43.1,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 18.2315,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower-edge gap",
+      "x": 46.1,
+      "y_range": [
+        -2.7,
+        -1.38
+      ],
+      "top_z": 20.2319,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "bow-land lower edge gap",
+      "x": 16.6,
+      "y_range": [
+        -5.95,
+        -4.99
+      ],
+      "top_z": 26.9432,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "bow-land lower edge gap",
+      "x": 22.5,
+      "y_range": [
+        -5.95,
+        -4.99
+      ],
+      "top_z": 24.9666,
+      "gap_mm": 0.12
+    },
+    {
+      "kind": "lower gold rim edge; gapped",
+      "x": 39.475,
+      "y_range": [
+        -4.15,
+        -2.92
+      ],
+      "top_z": 17.4526,
+      "gap_mm": 0.24
+    },
+    {
+      "kind": "gold curl underside; gapped",
+      "x": 2.5,
+      "y_range": [
+        -5.52,
+        -4.82
+      ],
+      "top_z": 41.9401,
+      "gap_mm": 0.24
+    },
+    {
+      "kind": "gold curl underside; gapped",
+      "x": 27.25,
+      "y_range": [
+        -5.52,
+        -4.82
+      ],
+      "top_z": 45.7454,
+      "gap_mm": 0.24
+    },
+    {
+      "kind": "cuttable structural edge tie",
+      "x": 47.9979,
+      "y_range": [
+        -2.45,
+        -1.65
+      ],
+      "z": 30.35,
+      "nominal_z_height": 0.64
+    },
+    {
+      "kind": "cuttable structural edge tie",
+      "x": 44.0323,
+      "y_range": [
+        -2.45,
+        -1.65
+      ],
+      "z": 54.35,
+      "nominal_z_height": 0.64
+    },
+    {
+      "kind": "cuttable structural edge tie",
+      "x": 64.7676,
+      "y_range": [
+        -2.45,
+        -1.65
+      ],
+      "z": 87.0,
+      "nominal_z_height": 0.64
+    }
+  ],
+  "lower_contact_strategy": "Purple edge and hidden bow-pad undersides have 0.12 mm nominal air gap. Six exterior rim/curl undersides have a 0.24 mm nominal air gap. Six zero-gap, cuttable purple perimeter ties brace the print.",
+  "bed_placement": "Add the four transformed head parts and the already-upright blue fixture as one multipart group. Translate the group together; use the fixture bounds for group XY centering."
+}

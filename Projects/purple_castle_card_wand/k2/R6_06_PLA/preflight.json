@@ -1,0 +1,3885 @@
+{
+  "r6_art_sha256": "ff1b7d81a01e941be9c393d3b716d585c54cd923cb2af1f61c3441d363779094",
+  "embedded_profile_overrides_and_source_records": {
+    "K2_06_PLA_Castle_R6_Slot_and_Thread_Coupon.3mf": {
+      "source_plate": "K2_04_ASA_Castle_R6_Slot_and_Thread_Coupon.3mf",
+      "source_3mf_sha256": "18154dc649dcfa1188548abec41772268525a5cef68259faa0e0fd7da8e92e28",
+      "geometry_xml_sha256": "d2357095f35c2582c09985b07fe52dd62570dc98311c1f011dcf23a03900f7c7",
+      "profile_overrides": {
+        "bridge_speed": "24",
+        "brim_separation": "0.10",
+        "brim_width": "4",
+        "external_perimeter_speed": "35",
+        "extruder_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "extrusion_multiplier": "1,1,1,1",
+        "filament_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "filament_density": "1.24,1.24,1.24,1.24",
+        "filament_settings_id": "\"Hyper PLA Blue (R6 trial)\";\"Hyper PLA Red (R6 trial)\";\"Hyper PLA White (R6 trial)\";\"PolyLite PLA Pro Metallic Gold (R6 trial)\"",
+        "first_layer_acceleration": "1200",
+        "first_layer_height": "0.20",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "first_layer_temperature": "215,215,215,215",
+        "full_fan_speed_layer": "4,4,4,4",
+        "gap_fill_speed": "25",
+        "infill_speed": "60",
+        "layer_height": "0.12",
+        "max_print_speed": "60",
+        "max_volumetric_speed": "6",
+        "min_fan_speed": "65,65,65,65",
+        "perimeter_speed": "45",
+        "physical_printer_settings_id": "",
+        "seam_position": "rear",
+        "small_perimeter_speed": "25",
+        "solid_infill_speed": "50",
+        "support_material": "1",
+        "support_material_buildplate_only": "1",
+        "support_material_extruder": "0",
+        "support_material_interface_extruder": "0",
+        "support_material_interface_layers": "2",
+        "support_material_interface_spacing": "0.25",
+        "support_material_spacing": "1.8",
+        "support_material_style": "snug",
+        "support_material_threshold": "12",
+        "support_material_xy_spacing": "70%",
+        "temperature": "210,210,210,210",
+        "top_solid_infill_speed": "35"
+      }
+    },
+    "K2_06_PLA_Castle_R6_Star_Face.3mf": {
+      "source_plate": "K2_04_ASA_Castle_R6_Star_Face.3mf",
+      "source_3mf_sha256": "84f308d0b73ea2e164da01d59661bb0e0111bd549e44bb98ab319e6a14e47eff",
+      "geometry_xml_sha256": "683ddb5dc0ed4d0b3c3f6324346d993ef45095652227ee53ed3970b1e1c6179e",
+      "profile_overrides": {
+        "bridge_angle": "180",
+        "bridge_speed": "24",
+        "brim_separation": "0.10",
+        "brim_width": "4",
+        "external_perimeter_speed": "35",
+        "extruder_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "extrusion_multiplier": "1,1,1,1",
+        "filament_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "filament_density": "1.24,1.24,1.24,1.24",
+        "filament_settings_id": "\"Hyper PLA Blue (R6 trial)\";\"Hyper PLA Red (R6 trial)\";\"Hyper PLA White (R6 trial)\";\"PolyLite PLA Pro Metallic Gold (R6 trial)\"",
+        "fill_density": "100%",
+        "fill_pattern": "rectilinear",
+        "first_layer_acceleration": "1200",
+        "first_layer_height": "0.20",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "first_layer_temperature": "215,215,215,215",
+        "full_fan_speed_layer": "4,4,4,4",
+        "gap_fill_speed": "25",
+        "infill_speed": "60",
+        "layer_height": "0.12",
+        "max_print_speed": "60",
+        "max_volumetric_speed": "6",
+        "min_fan_speed": "65,65,65,65",
+        "perimeter_speed": "45",
+        "physical_printer_settings_id": "",
+        "seam_position": "rear",
+        "small_perimeter_speed": "25",
+        "solid_infill_speed": "50",
+        "support_material": "1",
+        "support_material_buildplate_only": "1",
+        "support_material_extruder": "0",
+        "support_material_interface_extruder": "0",
+        "support_material_interface_layers": "2",
+        "support_material_interface_spacing": "0.25",
+        "support_material_spacing": "1.8",
+        "support_material_style": "snug",
+        "support_material_threshold": "12",
+        "support_material_xy_spacing": "70%",
+        "temperature": "210,210,210,210",
+        "top_solid_infill_speed": "35"
+      }
+    },
+    "K2_06_PLA_Castle_R6_Rear_Shell.3mf": {
+      "source_plate": "K2_04_ASA_Castle_R6_Rear_Shell.3mf",
+      "source_3mf_sha256": "140c64a91c81f1468794646355aa335354d7c3c4e7ef3fe66fbeecbca95c085d",
+      "geometry_xml_sha256": "7453eab11111940e97fff14081dd931e09d0b59ab9d75ab82b0023deb22fe313",
+      "profile_overrides": {
+        "bridge_angle": "180",
+        "bridge_speed": "24",
+        "brim_separation": "0.10",
+        "brim_width": "4",
+        "external_perimeter_speed": "35",
+        "extruder_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "extrusion_multiplier": "1,1,1,1",
+        "filament_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "filament_density": "1.24,1.24,1.24,1.24",
+        "filament_settings_id": "\"Hyper PLA Blue (R6 trial)\";\"Hyper PLA Red (R6 trial)\";\"Hyper PLA White (R6 trial)\";\"PolyLite PLA Pro Metallic Gold (R6 trial)\"",
+        "fill_density": "100%",
+        "fill_pattern": "rectilinear",
+        "first_layer_acceleration": "1200",
+        "first_layer_height": "0.20",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "first_layer_temperature": "215,215,215,215",
+        "full_fan_speed_layer": "4,4,4,4",
+        "gap_fill_speed": "25",
+        "infill_speed": "60",
+        "layer_height": "0.12",
+        "max_print_speed": "60",
+        "max_volumetric_speed": "6",
+        "min_fan_speed": "65,65,65,65",
+        "perimeter_speed": "45",
+        "physical_printer_settings_id": "",
+        "seam_position": "rear",
+        "small_perimeter_speed": "25",
+        "solid_infill_speed": "50",
+        "support_material": "1",
+        "support_material_buildplate_only": "1",
+        "support_material_extruder": "0",
+        "support_material_interface_extruder": "0",
+        "support_material_interface_layers": "2",
+        "support_material_interface_spacing": "0.25",
+        "support_material_spacing": "1.8",
+        "support_material_style": "snug",
+        "support_material_threshold": "12",
+        "support_material_xy_spacing": "70%",
+        "temperature": "210,210,210,210",
+        "top_solid_infill_speed": "35"
+      }
+    },
+    "K2_06_PLA_Castle_R6_Rear_Shell_Solid_Blue.3mf": {
+      "source_plate": "K2_04_ASA_Castle_R6_Rear_Shell.3mf",
+      "source_3mf_sha256": "140c64a91c81f1468794646355aa335354d7c3c4e7ef3fe66fbeecbca95c085d",
+      "geometry_xml_sha256": "7453eab11111940e97fff14081dd931e09d0b59ab9d75ab82b0023deb22fe313",
+      "profile_overrides": {
+        "bridge_angle": "180",
+        "bridge_speed": "24",
+        "brim_separation": "0.10",
+        "brim_width": "4",
+        "external_perimeter_speed": "35",
+        "extruder_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "extrusion_multiplier": "1,1,1,1",
+        "filament_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "filament_density": "1.24,1.24,1.24,1.24",
+        "filament_settings_id": "\"Hyper PLA Blue (R6 trial)\";\"Hyper PLA Red (R6 trial)\";\"Hyper PLA White (R6 trial)\";\"PolyLite PLA Pro Metallic Gold (R6 trial)\"",
+        "fill_density": "100%",
+        "fill_pattern": "rectilinear",
+        "first_layer_acceleration": "1200",
+        "first_layer_height": "0.20",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "first_layer_temperature": "215,215,215,215",
+        "full_fan_speed_layer": "4,4,4,4",
+        "gap_fill_speed": "25",
+        "infill_speed": "60",
+        "layer_height": "0.12",
+        "max_print_speed": "60",
+        "max_volumetric_speed": "6",
+        "min_fan_speed": "65,65,65,65",
+        "perimeter_speed": "45",
+        "physical_printer_settings_id": "",
+        "seam_position": "rear",
+        "small_perimeter_speed": "25",
+        "solid_infill_speed": "50",
+        "support_material": "1",
+        "support_material_buildplate_only": "1",
+        "support_material_extruder": "0",
+        "support_material_interface_extruder": "0",
+        "support_material_interface_layers": "2",
+        "support_material_interface_spacing": "0.25",
+        "support_material_spacing": "1.8",
+        "support_material_style": "snug",
+        "support_material_threshold": "12",
+        "support_material_xy_spacing": "70%",
+        "temperature": "210,210,210,210",
+        "top_solid_infill_speed": "35"
+      }
+    },
+    "K2_06_PLA_Castle_R6_Pocket_Frame.3mf": {
+      "source_plate": "K2_04_ASA_Castle_R6_Pocket_Frame.3mf",
+      "source_3mf_sha256": "d4e35baef0bec08c28681ae1ad5006d200a8cdbed1a32a227b0f5f6bbb4cf313",
+      "geometry_xml_sha256": "ec7fa5dd018e49e40002ae8d59cadd2304b29d0ba5d17c549c53edda450149e5",
+      "profile_overrides": {
+        "bridge_speed": "24",
+        "brim_separation": "0.10",
+        "brim_width": "4",
+        "external_perimeter_speed": "35",
+        "extruder_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "extrusion_multiplier": "1,1,1,1",
+        "filament_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "filament_density": "1.24,1.24,1.24,1.24",
+        "filament_settings_id": "\"Hyper PLA Blue (R6 trial)\";\"Hyper PLA Red (R6 trial)\";\"Hyper PLA White (R6 trial)\";\"PolyLite PLA Pro Metallic Gold (R6 trial)\"",
+        "fill_density": "100%",
+        "fill_pattern": "rectilinear",
+        "first_layer_acceleration": "1200",
+        "first_layer_height": "0.20",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "first_layer_temperature": "215,215,215,215",
+        "full_fan_speed_layer": "4,4,4,4",
+        "gap_fill_speed": "25",
+        "infill_speed": "60",
+        "layer_height": "0.12",
+        "max_print_speed": "60",
+        "max_volumetric_speed": "6",
+        "min_fan_speed": "65,65,65,65",
+        "perimeter_speed": "45",
+        "physical_printer_settings_id": "",
+        "seam_position": "rear",
+        "small_perimeter_speed": "25",
+        "solid_infill_speed": "50",
+        "support_material_extruder": "0",
+        "support_material_interface_extruder": "0",
+        "temperature": "210,210,210,210",
+        "top_solid_infill_speed": "35"
+      }
+    },
+    "K2_06_PLA_Castle_R6_Pocket_Frame_Solid_Blue.3mf": {
+      "source_plate": "K2_04_ASA_Castle_R6_Pocket_Frame.3mf",
+      "source_3mf_sha256": "d4e35baef0bec08c28681ae1ad5006d200a8cdbed1a32a227b0f5f6bbb4cf313",
+      "geometry_xml_sha256": "ec7fa5dd018e49e40002ae8d59cadd2304b29d0ba5d17c549c53edda450149e5",
+      "profile_overrides": {
+        "bridge_speed": "24",
+        "brim_separation": "0.10",
+        "brim_width": "4",
+        "external_perimeter_speed": "35",
+        "extruder_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "extrusion_multiplier": "1,1,1,1",
+        "filament_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "filament_density": "1.24,1.24,1.24,1.24",
+        "filament_settings_id": "\"Hyper PLA Blue (R6 trial)\";\"Hyper PLA Red (R6 trial)\";\"Hyper PLA White (R6 trial)\";\"PolyLite PLA Pro Metallic Gold (R6 trial)\"",
+        "fill_density": "100%",
+        "fill_pattern": "rectilinear",
+        "first_layer_acceleration": "1200",
+        "first_layer_height": "0.20",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "first_layer_temperature": "215,215,215,215",
+        "full_fan_speed_layer": "4,4,4,4",
+        "gap_fill_speed": "25",
+        "infill_speed": "60",
+        "layer_height": "0.12",
+        "max_print_speed": "60",
+        "max_volumetric_speed": "6",
+        "min_fan_speed": "65,65,65,65",
+        "perimeter_speed": "45",
+        "physical_printer_settings_id": "",
+        "seam_position": "rear",
+        "small_perimeter_speed": "25",
+        "solid_infill_speed": "50",
+        "support_material_extruder": "0",
+        "support_material_interface_extruder": "0",
+        "temperature": "210,210,210,210",
+        "top_solid_infill_speed": "35"
+      }
+    },
+    "K2_06_PLA_Castle_R6_Threaded_Grip.3mf": {
+      "source_plate": "K2_04_ASA_Castle_R6_Threaded_Grip.3mf",
+      "source_3mf_sha256": "466b342e5dae0ddefd6c275f0e18a07cbe7b738c416ccbd8867f7784afd7ddd9",
+      "geometry_xml_sha256": "c97dce1c3cfb18a12b943e062e7027570adcd1307e647b2e90f41d795ba6eca8",
+      "profile_overrides": {
+        "bridge_speed": "24",
+        "brim_separation": "0.10",
+        "brim_width": "6",
+        "external_perimeter_speed": "35",
+        "extruder_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "extrusion_multiplier": "1,1,1,1",
+        "filament_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "filament_density": "1.24,1.24,1.24,1.24",
+        "filament_settings_id": "\"Hyper PLA Blue (R6 trial)\";\"Hyper PLA Red (R6 trial)\";\"Hyper PLA White (R6 trial)\";\"PolyLite PLA Pro Metallic Gold (R6 trial)\"",
+        "first_layer_acceleration": "1200",
+        "first_layer_height": "0.20",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "first_layer_temperature": "215,215,215,215",
+        "full_fan_speed_layer": "4,4,4,4",
+        "gap_fill_speed": "25",
+        "infill_speed": "60",
+        "layer_height": "0.12",
+        "max_print_speed": "60",
+        "max_volumetric_speed": "6",
+        "min_fan_speed": "65,65,65,65",
+        "perimeter_speed": "45",
+        "physical_printer_settings_id": "",
+        "seam_position": "rear",
+        "small_perimeter_speed": "25",
+        "solid_infill_speed": "50",
+        "support_material_extruder": "0",
+        "support_material_interface_extruder": "0",
+        "temperature": "210,210,210,210",
+        "top_solid_infill_speed": "35"
+      }
+    },
+    "K2_06_PLA_Castle_R6_Threaded_Grip_Solid_Blue.3mf": {
+      "source_plate": "K2_04_ASA_Castle_R6_Threaded_Grip.3mf",
+      "source_3mf_sha256": "466b342e5dae0ddefd6c275f0e18a07cbe7b738c416ccbd8867f7784afd7ddd9",
+      "geometry_xml_sha256": "c97dce1c3cfb18a12b943e062e7027570adcd1307e647b2e90f41d795ba6eca8",
+      "profile_overrides": {
+        "bridge_speed": "24",
+        "brim_separation": "0.10",
+        "brim_width": "6",
+        "external_perimeter_speed": "35",
+        "extruder_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "extrusion_multiplier": "1,1,1,1",
+        "filament_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "filament_density": "1.24,1.24,1.24,1.24",
+        "filament_settings_id": "\"Hyper PLA Blue (R6 trial)\";\"Hyper PLA Red (R6 trial)\";\"Hyper PLA White (R6 trial)\";\"PolyLite PLA Pro Metallic Gold (R6 trial)\"",
+        "first_layer_acceleration": "1200",
+        "first_layer_height": "0.20",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "first_layer_temperature": "215,215,215,215",
+        "full_fan_speed_layer": "4,4,4,4",
+        "gap_fill_speed": "25",
+        "infill_speed": "60",
+        "layer_height": "0.12",
+        "max_print_speed": "60",
+        "max_volumetric_speed": "6",
+        "min_fan_speed": "65,65,65,65",
+        "perimeter_speed": "45",
+        "physical_printer_settings_id": "",
+        "seam_position": "rear",
+        "small_perimeter_speed": "25",
+        "solid_infill_speed": "50",
+        "support_material_extruder": "0",
+        "support_material_interface_extruder": "0",
+        "temperature": "210,210,210,210",
+        "top_solid_infill_speed": "35"
+      }
+    },
+    "K2_06_PLA_Castle_R6_Pink_Bow.3mf": {
+      "source_plate": "K2_04_ASA_Castle_R6_Pink_Bow.3mf",
+      "source_3mf_sha256": "2f0610f0962ba4790fe2ed35b45290ff9214e6402bd5a7769b1a7fc444f88c03",
+      "geometry_xml_sha256": "a3788e490378e9ded822a56cfd144ad717b10c29b0ec4c68f8533a37cbe82c36",
+      "profile_overrides": {
+        "bridge_speed": "24",
+        "brim_separation": "0.10",
+        "brim_width": "4",
+        "external_perimeter_speed": "35",
+        "extruder_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "extrusion_multiplier": "1,1,1,1",
+        "filament_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "filament_density": "1.24,1.24,1.24,1.24",
+        "filament_settings_id": "\"Hyper PLA Blue (R6 trial)\";\"Hyper PLA Red (R6 trial)\";\"Hyper PLA White (R6 trial)\";\"PolyLite PLA Pro Metallic Gold (R6 trial)\"",
+        "first_layer_acceleration": "1200",
+        "first_layer_height": "0.20",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "first_layer_temperature": "215,215,215,215",
+        "full_fan_speed_layer": "4,4,4,4",
+        "gap_fill_speed": "25",
+        "infill_speed": "60",
+        "layer_height": "0.12",
+        "max_print_speed": "60",
+        "max_volumetric_speed": "6",
+        "min_fan_speed": "65,65,65,65",
+        "perimeter_speed": "45",
+        "physical_printer_settings_id": "",
+        "seam_position": "rear",
+        "small_perimeter_speed": "25",
+        "solid_infill_speed": "50",
+        "support_material_extruder": "0",
+        "support_material_interface_extruder": "0",
+        "temperature": "210,210,210,210",
+        "top_solid_infill_speed": "35"
+      }
+    },
+    "K2_06_PLA_Castle_R6_ColorMix_Swatches.3mf": {
+      "profile_overrides": {
+        "bridge_speed": "24",
+        "brim_separation": "0.10",
+        "brim_width": "3",
+        "external_perimeter_speed": "35",
+        "extruder_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "extrusion_multiplier": "1,1,1,1",
+        "filament_colour": "#174FBA;#CF201B;#F3F3F1;#C59B4F",
+        "filament_density": "1.24,1.24,1.24,1.24",
+        "filament_settings_id": "\"Hyper PLA Blue (R6 trial)\";\"Hyper PLA Red (R6 trial)\";\"Hyper PLA White (R6 trial)\";\"PolyLite PLA Pro Metallic Gold (R6 trial)\"",
+        "fill_density": "100%",
+        "fill_pattern": "rectilinear",
+        "first_layer_acceleration": "1200",
+        "first_layer_height": "0.20",
+        "first_layer_infill_speed": "25",
+        "first_layer_speed": "25",
+        "first_layer_temperature": "215,215,215,215",
+        "full_fan_speed_layer": "4,4,4,4",
+        "gap_fill_speed": "25",
+        "infill_speed": "60",
+        "layer_height": "0.12",
+        "max_print_speed": "60",
+        "max_volumetric_speed": "6",
+        "min_fan_speed": "65,65,65,65",
+        "perimeter_speed": "45",
+        "physical_printer_settings_id": "",
+        "seam_position": "rear",
+        "small_perimeter_speed": "25",
+        "solid_infill_speed": "50",
+        "support_material_extruder": "0",
+        "support_material_interface_extruder": "0",
+        "temperature": "210,210,210,210",
+        "top_solid_infill_speed": "35"
+      }
+    }
+  },
+  "plates": {
+    "K2_06_PLA_Castle_R6_ColorMix_Swatches.3mf": {
+      "project_sha256": "b870c5bfad4d9ec7a2cc37d259ac408a2d0f2766bb0f2d2fce83b761787d9fc0",
+      "geometry_xml_sha256": "7ebbaf3ccbe59b8db67121ed74a7232ca53375faa4effe681f44d2485e53ce3f",
+      "scratch_gcode_sha256": "78e117fa1070e8c76770d18feda2e59a3e7a539d4aa8606878ed51a1e949eae1",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-27 at 02:58:56 UTC",
+      "effective_settings": {
+        "printer_settings_id": "Creality K2 (0.6 mm)",
+        "print_settings_id": "Creality K2 (0.6 mm)",
+        "nozzle_diameter": "0.6,0.6,0.6,0.6",
+        "layer_height": "0.12",
+        "first_layer_height": "0.2",
+        "filament_type": "PLA;PLA;PLA;PLA",
+        "temperature": "210,210,210,210",
+        "first_layer_temperature": "215,215,215,215",
+        "bed_temperature": "55,55,55,55",
+        "first_layer_bed_temperature": "60,60,60,60",
+        "max_volumetric_speed": "6",
+        "filament_max_volumetric_speed": "6,6,6,6",
+        "single_extruder_multi_material_priming": "0",
+        "wipe_tower": "0",
+        "post_process": ""
+      },
+      "material_and_time": {
+        "estimated printing time (normal mode)": "24m 28s",
+        "total toolchanges": "67",
+        "total filament used [g]": "4.62",
+        "filament used [g]": "1.67, 1.08, 1.40, 0.47"
+      },
+      "physical_tool_commands_in_order": [
+        "T0",
+        "T2",
+        "T3",
+        "T0",
+        "T1",
+        "T0",
+        "T2",
+        "T3",
+        "T1",
+        "T2",
+        "T0",
+        "T3",
+        "T0",
+        "T1",
+        "T0",
+        "T2",
+        "T3",
+        "T1",
+        "T2",
+        "T0",
+        "T3",
+        "T0",
+        "T1",
+        "T0",
+        "T2",
+        "T3",
+        "T1",
+        "T2",
+        "T0",
+        "T1",
+        "T0",
+        "T2",
+        "T1",
+        "T0",
+        "T2",
+        "T0",
+        "T1",
+        "T0",
+        "T2",
+        "T1",
+        "T0",
+        "T2",
+        "T0",
+        "T1",
+        "T0",
+        "T2",
+        "T1",
+        "T0",
+        "T2",
+        "T0",
+        "T1",
+        "T0",
+        "T2",
+        "T1",
+        "T0",
+        "T2",
+        "T0",
+        "T1",
+        "T0",
+        "T2",
+        "T1",
+        "T0",
+        "T2",
+        "T0",
+        "T1",
+        "T0",
+        "T2",
+        "T1"
+      ],
+      "startup_and_shutdown_lines": {
+        "object_polygons": [
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167
+        ],
+        "start": 173,
+        "initial_tool": 177,
+        "hotend_wait": 180,
+        "purge": 184,
+        "extrusion_reset": 185,
+        "end": 12416
+      },
+      "color_mix": {
+        "version": 1,
+        "physical_extruders": [
+          {
+            "id": 1,
+            "color": "#174FBA"
+          },
+          {
+            "id": 2,
+            "color": "#CF201B"
+          },
+          {
+            "id": 3,
+            "color": "#F3F3F1"
+          },
+          {
+            "id": 4,
+            "color": "#C59B4F"
+          }
+        ],
+        "virtual_extruders": [
+          {
+            "id": 5,
+            "kind": "fullspectrum",
+            "color": "#8053A3",
+            "components": [
+              {
+                "extruder": 1,
+                "ratio": 0.5
+              },
+              {
+                "extruder": 2,
+                "ratio": 0.5
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "kind": "fullspectrum",
+            "color": "#E6AAB6",
+            "components": [
+              {
+                "extruder": 2,
+                "ratio": 0.25
+              },
+              {
+                "extruder": 3,
+                "ratio": 0.75
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "kind": "fullspectrum",
+            "color": "#9EBDEB",
+            "components": [
+              {
+                "extruder": 1,
+                "ratio": 0.25
+              },
+              {
+                "extruder": 3,
+                "ratio": 0.75
+              }
+            ]
+          }
+        ]
+      },
+      "items": {
+        "Purple flat": {
+          "part_extruders": {
+            "Purple flat": 5
+          },
+          "bounds_mm": [
+            [
+              72.0,
+              107.5,
+              0.0
+            ],
+            [
+              96.0,
+              118.5,
+              1.4
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 287.97,
+          "geometry_layers": 11,
+          "model_tools": [
+            "T0",
+            "T1"
+          ],
+          "majority_tool_layer_counts": {
+            "T0": 6,
+            "T1": 5
+          },
+          "first_12_layers_majority_tool": [
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0"
+          ]
+        },
+        "Purple upright": {
+          "part_extruders": {
+            "Purple upright": 5
+          },
+          "bounds_mm": [
+            [
+              72.0,
+              143.2,
+              0.0
+            ],
+            [
+              96.0,
+              146.8,
+              4.4
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 89.5,
+          "geometry_layers": 36,
+          "model_tools": [
+            "T0",
+            "T1"
+          ],
+          "majority_tool_layer_counts": {
+            "T0": 18,
+            "T1": 18
+          },
+          "first_12_layers_majority_tool": [
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1"
+          ]
+        },
+        "Pink flat": {
+          "part_extruders": {
+            "Pink flat": 6
+          },
+          "bounds_mm": [
+            [
+              112.0,
+              107.5,
+              0.0
+            ],
+            [
+              136.0,
+              118.5,
+              1.4
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 287.97,
+          "geometry_layers": 11,
+          "model_tools": [
+            "T1",
+            "T2"
+          ],
+          "majority_tool_layer_counts": {
+            "T2": 8,
+            "T1": 3
+          },
+          "first_12_layers_majority_tool": [
+            "T2",
+            "T1",
+            "T2",
+            "T2",
+            "T2",
+            "T1",
+            "T2",
+            "T2",
+            "T2",
+            "T1",
+            "T2"
+          ]
+        },
+        "Pink upright": {
+          "part_extruders": {
+            "Pink upright": 6
+          },
+          "bounds_mm": [
+            [
+              112.0,
+              143.2,
+              0.0
+            ],
+            [
+              136.0,
+              146.8,
+              4.4
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 89.5,
+          "geometry_layers": 36,
+          "model_tools": [
+            "T1",
+            "T2"
+          ],
+          "majority_tool_layer_counts": {
+            "T2": 27,
+            "T1": 9
+          },
+          "first_12_layers_majority_tool": [
+            "T2",
+            "T1",
+            "T2",
+            "T2",
+            "T2",
+            "T1",
+            "T2",
+            "T2",
+            "T2",
+            "T1",
+            "T2",
+            "T2"
+          ]
+        },
+        "Light blue flat": {
+          "part_extruders": {
+            "Light blue flat": 7
+          },
+          "bounds_mm": [
+            [
+              152.0,
+              107.5,
+              0.0
+            ],
+            [
+              176.0,
+              118.5,
+              1.4
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 287.97,
+          "geometry_layers": 11,
+          "model_tools": [
+            "T0",
+            "T2"
+          ],
+          "majority_tool_layer_counts": {
+            "T2": 8,
+            "T0": 3
+          },
+          "first_12_layers_majority_tool": [
+            "T2",
+            "T0",
+            "T2",
+            "T2",
+            "T2",
+            "T0",
+            "T2",
+            "T2",
+            "T2",
+            "T0",
+            "T2"
+          ]
+        },
+        "Light blue upright": {
+          "part_extruders": {
+            "Light blue upright": 7
+          },
+          "bounds_mm": [
+            [
+              152.0,
+              143.2,
+              0.0
+            ],
+            [
+              176.0,
+              146.8,
+              4.4
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 89.5,
+          "geometry_layers": 36,
+          "model_tools": [
+            "T0",
+            "T2"
+          ],
+          "majority_tool_layer_counts": {
+            "T2": 27,
+            "T0": 9
+          },
+          "first_12_layers_majority_tool": [
+            "T2",
+            "T0",
+            "T2",
+            "T2",
+            "T2",
+            "T0",
+            "T2",
+            "T2",
+            "T2",
+            "T0",
+            "T2",
+            "T2"
+          ]
+        },
+        "Metallic Gold": {
+          "part_extruders": {
+            "Metallic Gold": 4
+          },
+          "bounds_mm": [
+            [
+              112.0,
+              78.5,
+              0.0
+            ],
+            [
+              136.0,
+              89.5,
+              1.4
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 287.97,
+          "geometry_layers": 11,
+          "model_tools": [
+            "T3"
+          ],
+          "majority_tool_layer_counts": {
+            "T3": 11
+          }
+        },
+        "Purple slope 18 deg": {
+          "part_extruders": {
+            "Purple slope": 5
+          },
+          "bounds_mm": [
+            [
+              192.0,
+              107.5,
+              0.0
+            ],
+            [
+              216.0,
+              118.5,
+              4.41412
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 287.97,
+          "geometry_layers": 36,
+          "model_tools": [
+            "T0",
+            "T1"
+          ],
+          "majority_tool_layer_counts": {
+            "T0": 18,
+            "T1": 18
+          },
+          "first_12_layers_majority_tool": [
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1"
+          ]
+        }
+      },
+      "model_build_transforms": {
+        "Purple flat": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          84.0,
+          113.0,
+          0.7
+        ],
+        "Purple upright": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          84.0,
+          145.0,
+          2.2
+        ],
+        "Pink flat": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          124.0,
+          113.0,
+          0.7
+        ],
+        "Pink upright": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          124.0,
+          145.0,
+          2.2
+        ],
+        "Light blue flat": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          164.0,
+          113.0,
+          0.7
+        ],
+        "Light blue upright": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          164.0,
+          145.0,
+          2.2
+        ],
+        "Metallic Gold": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          124.0,
+          84.0,
+          0.7
+        ],
+        "Purple slope 18 deg": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          204.0,
+          113.0,
+          0.0
+        ]
+      },
+      "bridges_and_supports": {},
+      "warnings": [],
+      "swatches": {
+        "Purple flat": {
+          "deposited_layers_by_physical_tool": {
+            "T0": 6,
+            "T1": 5
+          },
+          "exposed_flat_top_z_mm": 1.4,
+          "exposed_flat_top_physical_tools": [
+            "T0"
+          ]
+        },
+        "Purple upright": {
+          "deposited_layers_by_physical_tool": {
+            "T0": 18,
+            "T1": 18
+          },
+          "exposed_flat_top_z_mm": 4.4,
+          "exposed_flat_top_physical_tools": [
+            "T1"
+          ]
+        },
+        "Pink flat": {
+          "deposited_layers_by_physical_tool": {
+            "T1": 3,
+            "T2": 8
+          },
+          "exposed_flat_top_z_mm": 1.4,
+          "exposed_flat_top_physical_tools": [
+            "T2"
+          ]
+        },
+        "Pink upright": {
+          "deposited_layers_by_physical_tool": {
+            "T1": 9,
+            "T2": 27
+          },
+          "exposed_flat_top_z_mm": 4.4,
+          "exposed_flat_top_physical_tools": [
+            "T2"
+          ]
+        },
+        "Light blue flat": {
+          "deposited_layers_by_physical_tool": {
+            "T0": 3,
+            "T2": 8
+          },
+          "exposed_flat_top_z_mm": 1.4,
+          "exposed_flat_top_physical_tools": [
+            "T2"
+          ]
+        },
+        "Light blue upright": {
+          "deposited_layers_by_physical_tool": {
+            "T0": 9,
+            "T2": 27
+          },
+          "exposed_flat_top_z_mm": 4.4,
+          "exposed_flat_top_physical_tools": [
+            "T2"
+          ]
+        },
+        "Metallic Gold": {
+          "deposited_layers_by_physical_tool": {
+            "T3": 11
+          },
+          "exposed_flat_top_z_mm": 1.4,
+          "exposed_flat_top_physical_tools": [
+            "T3"
+          ]
+        },
+        "Purple slope 18 deg": {
+          "deposited_layers_by_physical_tool": {
+            "T0": 18,
+            "T1": 18
+          },
+          "exposed_flat_top_z_mm": 4.4,
+          "exposed_flat_top_physical_tools": [
+            "T1"
+          ]
+        }
+      },
+      "purple_18_degree_swatch_slope": {
+        "alternating_tool_bands_along_central_y_scan": 26,
+        "median_band_spacing_projected_mm": 0.367,
+        "projected_scan_physical_tools": [
+          "T0",
+          "T1"
+        ]
+      }
+    },
+    "K2_06_PLA_Castle_R6_Pink_Bow.3mf": {
+      "project_sha256": "3fd24b97c10e4bf5d59a57e288ab43d4dae9703e50eea1ad3f3f3149403b9643",
+      "geometry_xml_sha256": "a3788e490378e9ded822a56cfd144ad717b10c29b0ec4c68f8533a37cbe82c36",
+      "scratch_gcode_sha256": "df0d1742476486a456e427b289cdde652eb8877b4af880ef99e4ad9271de3daa",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-27 at 02:55:33 UTC",
+      "effective_settings": {
+        "printer_settings_id": "Creality K2 (0.6 mm)",
+        "print_settings_id": "Creality K2 (0.6 mm)",
+        "nozzle_diameter": "0.6,0.6,0.6,0.6",
+        "layer_height": "0.12",
+        "first_layer_height": "0.2",
+        "filament_type": "PLA;PLA;PLA;PLA",
+        "temperature": "210,210,210,210",
+        "first_layer_temperature": "215,215,215,215",
+        "bed_temperature": "55,55,55,55",
+        "first_layer_bed_temperature": "60,60,60,60",
+        "max_volumetric_speed": "6",
+        "filament_max_volumetric_speed": "6,6,6,6",
+        "single_extruder_multi_material_priming": "0",
+        "wipe_tower": "0",
+        "post_process": ""
+      },
+      "material_and_time": {
+        "estimated printing time (normal mode)": "29m 22s",
+        "total toolchanges": "29",
+        "total filament used [g]": "5.92",
+        "filament used [g]": "0.00, 1.48, 4.43, 0.00"
+      },
+      "physical_tool_commands_in_order": [
+        "T2",
+        "T1",
+        "T2",
+        "T1",
+        "T2",
+        "T1",
+        "T2",
+        "T1",
+        "T2",
+        "T1",
+        "T2",
+        "T1",
+        "T2",
+        "T1",
+        "T2",
+        "T1",
+        "T2",
+        "T1",
+        "T2",
+        "T1",
+        "T2",
+        "T1",
+        "T2",
+        "T1",
+        "T2",
+        "T1",
+        "T2",
+        "T1",
+        "T2",
+        "T1"
+      ],
+      "startup_and_shutdown_lines": {
+        "object_polygons": [
+          27
+        ],
+        "start": 33,
+        "initial_tool": 37,
+        "hotend_wait": 40,
+        "purge": 44,
+        "extrusion_reset": 45,
+        "end": 52244
+      },
+      "color_mix": {
+        "version": 1,
+        "physical_extruders": [
+          {
+            "id": 1,
+            "color": "#174FBA"
+          },
+          {
+            "id": 2,
+            "color": "#CF201B"
+          },
+          {
+            "id": 3,
+            "color": "#F3F3F1"
+          },
+          {
+            "id": 4,
+            "color": "#C59B4F"
+          }
+        ],
+        "virtual_extruders": [
+          {
+            "id": 6,
+            "kind": "fullspectrum",
+            "color": "#E6AAB6",
+            "components": [
+              {
+                "extruder": 2,
+                "ratio": 0.25
+              },
+              {
+                "extruder": 3,
+                "ratio": 0.75
+              }
+            ]
+          }
+        ]
+      },
+      "items": {
+        "Pink bow": {
+          "part_extruders": {
+            "bow_pink": 6
+          },
+          "bounds_mm": [
+            [
+              102.022,
+              110.122,
+              0.0
+            ],
+            [
+              157.978,
+              149.878,
+              7.09987
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 1600.5,
+          "geometry_layers": 58,
+          "model_tools": [
+            "T1",
+            "T2"
+          ],
+          "majority_tool_layer_counts": {
+            "T2": 43,
+            "T1": 15
+          },
+          "first_12_layers_majority_tool": [
+            "T2",
+            "T1",
+            "T2",
+            "T2",
+            "T2",
+            "T1",
+            "T2",
+            "T2",
+            "T2",
+            "T1",
+            "T2",
+            "T2"
+          ]
+        }
+      },
+      "model_build_transforms": {
+        "Pink bow": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          130.0,
+          181.710998535,
+          -6.90000009537
+        ]
+      },
+      "bridges_and_supports": {
+        "Pink_bow": {
+          "Bridge infill": {
+            "segments": 414,
+            "tool_set": [
+              "T1",
+              "T2"
+            ],
+            "longest_centerline_move_mm": 18.378,
+            "bed_bounds_mm": [
+              [
+                107.322,
+                116.073,
+                1.04
+              ],
+              [
+                155.734,
+                147.429,
+                5.24
+              ]
+            ]
+          }
+        }
+      },
+      "warnings": [],
+      "same_geometry_and_transforms_as": "K2_04_ASA_Castle_R6_Pink_Bow.3mf",
+      "top_projected_tool_area_fraction": {
+        "knot": {
+          "T1": 0.4018,
+          "T2": 0.5982
+        },
+        "right-loop": {
+          "T1": 0.3051,
+          "T2": 0.6949
+        },
+        "left-loop": {
+          "T1": 0.307,
+          "T2": 0.693
+        },
+        "right-fold-floor": {
+          "T2": 1.0
+        },
+        "left-fold-floor": {
+          "T2": 1.0
+        },
+        "right-tail": {
+          "T1": 0.2852,
+          "T2": 0.7148
+        },
+        "left-tail": {
+          "T1": 0.2856,
+          "T2": 0.7144
+        }
+      }
+    },
+    "K2_06_PLA_Castle_R6_Pocket_Frame.3mf": {
+      "project_sha256": "803878dabaf90df23db743612e697779d5340cf57633378f5876c9626cba8742",
+      "geometry_xml_sha256": "ec7fa5dd018e49e40002ae8d59cadd2304b29d0ba5d17c549c53edda450149e5",
+      "scratch_gcode_sha256": "9e1cbd89ca1201d54ad7b91bc3c8790d7f9e05d1e973355b668f62e8f4c921ab",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-27 at 02:55:31 UTC",
+      "effective_settings": {
+        "printer_settings_id": "Creality K2 (0.6 mm)",
+        "print_settings_id": "Creality K2 (0.6 mm)",
+        "nozzle_diameter": "0.6,0.6,0.6,0.6",
+        "layer_height": "0.12",
+        "first_layer_height": "0.2",
+        "filament_type": "PLA;PLA;PLA;PLA",
+        "temperature": "210,210,210,210",
+        "first_layer_temperature": "215,215,215,215",
+        "bed_temperature": "55,55,55,55",
+        "first_layer_bed_temperature": "60,60,60,60",
+        "max_volumetric_speed": "6",
+        "filament_max_volumetric_speed": "6,6,6,6",
+        "single_extruder_multi_material_priming": "0",
+        "wipe_tower": "0",
+        "post_process": ""
+      },
+      "material_and_time": {
+        "estimated printing time (normal mode)": "49m 19s",
+        "total toolchanges": "13",
+        "total filament used [g]": "11.96",
+        "filament used [g]": "6.53, 5.42, 0.00, 0.00"
+      },
+      "physical_tool_commands_in_order": [
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1"
+      ],
+      "startup_and_shutdown_lines": {
+        "object_polygons": [
+          27
+        ],
+        "start": 33,
+        "initial_tool": 37,
+        "hotend_wait": 40,
+        "purge": 44,
+        "extrusion_reset": 45,
+        "end": 21357
+      },
+      "color_mix": {
+        "version": 1,
+        "physical_extruders": [
+          {
+            "id": 1,
+            "color": "#174FBA"
+          },
+          {
+            "id": 2,
+            "color": "#CF201B"
+          },
+          {
+            "id": 3,
+            "color": "#F3F3F1"
+          },
+          {
+            "id": 4,
+            "color": "#C59B4F"
+          }
+        ],
+        "virtual_extruders": [
+          {
+            "id": 5,
+            "kind": "fullspectrum",
+            "color": "#8053A3",
+            "components": [
+              {
+                "extruder": 1,
+                "ratio": 0.5
+              },
+              {
+                "extruder": 2,
+                "ratio": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "items": {
+        "Pocket frame": {
+          "part_extruders": {
+            "frame_purple": 5
+          },
+          "bounds_mm": [
+            [
+              65.0,
+              68.7015,
+              -0.0
+            ],
+            [
+              195.0,
+              191.2985,
+              1.8
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 5549.29,
+          "geometry_layers": 14,
+          "model_tools": [
+            "T0",
+            "T1"
+          ],
+          "majority_tool_layer_counts": {
+            "T0": 7,
+            "T1": 7
+          },
+          "first_12_layers_majority_tool": [
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1"
+          ]
+        }
+      },
+      "model_build_transforms": {
+        "Pocket frame": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          130.0,
+          129.360500336,
+          0.899999976158
+        ]
+      },
+      "bridges_and_supports": {},
+      "warnings": [],
+      "same_geometry_and_transforms_as": "K2_04_ASA_Castle_R6_Pocket_Frame.3mf"
+    },
+    "K2_06_PLA_Castle_R6_Pocket_Frame_Solid_Blue.3mf": {
+      "project_sha256": "085af0347185fc3f3c373a809b7d8f0e236ef3d034d155152d56909e8629fdcd",
+      "geometry_xml_sha256": "ec7fa5dd018e49e40002ae8d59cadd2304b29d0ba5d17c549c53edda450149e5",
+      "scratch_gcode_sha256": "28d81d2123271c3f94b8e2b3c4cda114c34e602becd74627fe3c90749ccb231a",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-27 at 02:55:31 UTC",
+      "effective_settings": {
+        "printer_settings_id": "Creality K2 (0.6 mm)",
+        "print_settings_id": "Creality K2 (0.6 mm)",
+        "nozzle_diameter": "0.6,0.6,0.6,0.6",
+        "layer_height": "0.12",
+        "first_layer_height": "0.2",
+        "filament_type": "PLA;PLA;PLA;PLA",
+        "temperature": "210,210,210,210",
+        "first_layer_temperature": "215,215,215,215",
+        "bed_temperature": "55,55,55,55",
+        "first_layer_bed_temperature": "60,60,60,60",
+        "max_volumetric_speed": "6",
+        "filament_max_volumetric_speed": "6,6,6,6",
+        "single_extruder_multi_material_priming": "0",
+        "wipe_tower": "0",
+        "post_process": ""
+      },
+      "material_and_time": {
+        "estimated printing time (normal mode)": "49m 19s",
+        "total toolchanges": "0",
+        "total filament used [g]": "11.96",
+        "filament used [g]": "11.96, 0.00, 0.00, 0.00"
+      },
+      "physical_tool_commands_in_order": [
+        "T0"
+      ],
+      "startup_and_shutdown_lines": {
+        "object_polygons": [
+          13
+        ],
+        "start": 19,
+        "initial_tool": 21,
+        "hotend_wait": 22,
+        "purge": 27,
+        "extrusion_reset": 28,
+        "end": 21194
+      },
+      "color_mix": null,
+      "items": {
+        "Pocket frame": {
+          "part_extruders": {
+            "frame_purple": 1
+          },
+          "bounds_mm": [
+            [
+              65.0,
+              68.7015,
+              -0.0
+            ],
+            [
+              195.0,
+              191.2985,
+              1.8
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 5549.29,
+          "geometry_layers": 14,
+          "model_tools": [
+            "T0"
+          ],
+          "majority_tool_layer_counts": {
+            "T0": 14
+          }
+        }
+      },
+      "model_build_transforms": {
+        "Pocket frame": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          130.0,
+          129.360500336,
+          0.899999976158
+        ]
+      },
+      "bridges_and_supports": {},
+      "warnings": [],
+      "same_geometry_and_transforms_as": "K2_04_ASA_Castle_R6_Pocket_Frame.3mf"
+    },
+    "K2_06_PLA_Castle_R6_Rear_Shell.3mf": {
+      "project_sha256": "40b0db8a66504f69fa770ae5e84c110e0b441f5b87c10b044a992d82898b5b3c",
+      "geometry_xml_sha256": "7453eab11111940e97fff14081dd931e09d0b59ab9d75ab82b0023deb22fe313",
+      "scratch_gcode_sha256": "8e61861eb4e27ed6790d6fe70b11aed671a9128177fc8c8581b9948cc218006d",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-27 at 02:55:30 UTC",
+      "effective_settings": {
+        "printer_settings_id": "Creality K2 (0.6 mm)",
+        "print_settings_id": "Creality K2 (0.6 mm)",
+        "nozzle_diameter": "0.6,0.6,0.6,0.6",
+        "layer_height": "0.12",
+        "first_layer_height": "0.2",
+        "filament_type": "PLA;PLA;PLA;PLA",
+        "temperature": "210,210,210,210",
+        "first_layer_temperature": "215,215,215,215",
+        "bed_temperature": "55,55,55,55",
+        "first_layer_bed_temperature": "60,60,60,60",
+        "max_volumetric_speed": "6",
+        "filament_max_volumetric_speed": "6,6,6,6",
+        "single_extruder_multi_material_priming": "0",
+        "wipe_tower": "0",
+        "post_process": ""
+      },
+      "material_and_time": {
+        "estimated printing time (normal mode)": "1h 48m 8s",
+        "total toolchanges": "49",
+        "total filament used [g]": "27.25",
+        "filament used [g]": "14.42, 12.83, 0.00, 0.00"
+      },
+      "physical_tool_commands_in_order": [
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1"
+      ],
+      "startup_and_shutdown_lines": {
+        "object_polygons": [
+          30
+        ],
+        "start": 36,
+        "initial_tool": 40,
+        "hotend_wait": 43,
+        "purge": 47,
+        "extrusion_reset": 48,
+        "end": 44151
+      },
+      "color_mix": {
+        "version": 1,
+        "physical_extruders": [
+          {
+            "id": 1,
+            "color": "#174FBA"
+          },
+          {
+            "id": 2,
+            "color": "#CF201B"
+          },
+          {
+            "id": 3,
+            "color": "#F3F3F1"
+          },
+          {
+            "id": 4,
+            "color": "#C59B4F"
+          }
+        ],
+        "virtual_extruders": [
+          {
+            "id": 5,
+            "kind": "fullspectrum",
+            "color": "#8053A3",
+            "components": [
+              {
+                "extruder": 1,
+                "ratio": 0.5
+              },
+              {
+                "extruder": 2,
+                "ratio": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "items": {
+        "Rear shell": {
+          "part_extruders": {
+            "rear_purple": 5
+          },
+          "bounds_mm": [
+            [
+              65.0,
+              59.856,
+              0.0
+            ],
+            [
+              195.0,
+              200.144,
+              6.1
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 10734.79,
+          "geometry_layers": 50,
+          "model_tools": [
+            "T0",
+            "T1"
+          ],
+          "majority_tool_layer_counts": {
+            "T0": 25,
+            "T1": 25
+          },
+          "first_12_layers_majority_tool": [
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1"
+          ]
+        }
+      },
+      "model_build_transforms": {
+        "Rear shell": [
+          -1.0,
+          0.0,
+          -1.22464679915e-16,
+          0.0,
+          1.0,
+          0.0,
+          1.22464679915e-16,
+          0.0,
+          -1.0,
+          130.0,
+          138.205999374,
+          -0.899999976158
+        ]
+      },
+      "bridges_and_supports": {
+        "Rear_shell": {
+          "Support material": {
+            "segments": 86,
+            "tool_set": [
+              "T0",
+              "T1"
+            ],
+            "longest_centerline_move_mm": 7.349,
+            "bed_bounds_mm": [
+              [
+                128.807,
+                59.028,
+                0.2
+              ],
+              [
+                131.19,
+                69.774,
+                2.66
+              ]
+            ],
+            "max_mm_from_thread_axis_x": 1.553,
+            "max_assembly_y_mm": -68.072
+          },
+          "Support material interface": {
+            "segments": 52,
+            "tool_set": [
+              "T1"
+            ],
+            "longest_centerline_move_mm": 2.525,
+            "bed_bounds_mm": [
+              [
+                128.796,
+                62.628,
+                3.07
+              ],
+              [
+                131.203,
+                69.8,
+                3.48
+              ]
+            ],
+            "max_mm_from_thread_axis_x": 1.514,
+            "max_assembly_y_mm": -68.096
+          },
+          "Bridge infill": {
+            "segments": 76,
+            "tool_set": [
+              "T0"
+            ],
+            "longest_centerline_move_mm": 7.586,
+            "bed_bounds_mm": [
+              [
+                126.081,
+                61.833,
+                4.28
+              ],
+              [
+                133.793,
+                82.284,
+                4.28
+              ]
+            ]
+          }
+        }
+      },
+      "warnings": [],
+      "same_geometry_and_transforms_as": "K2_04_ASA_Castle_R6_Rear_Shell.3mf"
+    },
+    "K2_06_PLA_Castle_R6_Rear_Shell_Solid_Blue.3mf": {
+      "project_sha256": "c62b1b2b554147935a112343094cbfcfb7361b7365b3757a1546a7e11c220c2f",
+      "geometry_xml_sha256": "7453eab11111940e97fff14081dd931e09d0b59ab9d75ab82b0023deb22fe313",
+      "scratch_gcode_sha256": "61368dcc2579805e943e31fc30b149bf7bb4766a76fa8cfe7ca00eec78a48e49",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-27 at 02:55:31 UTC",
+      "effective_settings": {
+        "printer_settings_id": "Creality K2 (0.6 mm)",
+        "print_settings_id": "Creality K2 (0.6 mm)",
+        "nozzle_diameter": "0.6,0.6,0.6,0.6",
+        "layer_height": "0.12",
+        "first_layer_height": "0.2",
+        "filament_type": "PLA;PLA;PLA;PLA",
+        "temperature": "210,210,210,210",
+        "first_layer_temperature": "215,215,215,215",
+        "bed_temperature": "55,55,55,55",
+        "first_layer_bed_temperature": "60,60,60,60",
+        "max_volumetric_speed": "6",
+        "filament_max_volumetric_speed": "6,6,6,6",
+        "single_extruder_multi_material_priming": "0",
+        "wipe_tower": "0",
+        "post_process": ""
+      },
+      "material_and_time": {
+        "estimated printing time (normal mode)": "1h 48m 8s",
+        "total toolchanges": "0",
+        "total filament used [g]": "27.25",
+        "filament used [g]": "27.25, 0.00, 0.00, 0.00"
+      },
+      "physical_tool_commands_in_order": [
+        "T0"
+      ],
+      "startup_and_shutdown_lines": {
+        "object_polygons": [
+          14
+        ],
+        "start": 20,
+        "initial_tool": 22,
+        "hotend_wait": 23,
+        "purge": 28,
+        "extrusion_reset": 29,
+        "end": 43575
+      },
+      "color_mix": null,
+      "items": {
+        "Rear shell": {
+          "part_extruders": {
+            "rear_purple": 1
+          },
+          "bounds_mm": [
+            [
+              65.0,
+              59.856,
+              0.0
+            ],
+            [
+              195.0,
+              200.144,
+              6.1
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 10734.79,
+          "geometry_layers": 50,
+          "model_tools": [
+            "T0"
+          ],
+          "majority_tool_layer_counts": {
+            "T0": 50
+          }
+        }
+      },
+      "model_build_transforms": {
+        "Rear shell": [
+          -1.0,
+          0.0,
+          -1.22464679915e-16,
+          0.0,
+          1.0,
+          0.0,
+          1.22464679915e-16,
+          0.0,
+          -1.0,
+          130.0,
+          138.205999374,
+          -0.899999976158
+        ]
+      },
+      "bridges_and_supports": {
+        "Rear_shell": {
+          "Support material": {
+            "segments": 86,
+            "tool_set": [
+              "T0"
+            ],
+            "longest_centerline_move_mm": 7.349,
+            "bed_bounds_mm": [
+              [
+                128.807,
+                59.028,
+                0.2
+              ],
+              [
+                131.19,
+                69.774,
+                2.66
+              ]
+            ],
+            "max_mm_from_thread_axis_x": 1.553,
+            "max_assembly_y_mm": -68.072
+          },
+          "Support material interface": {
+            "segments": 52,
+            "tool_set": [
+              "T0"
+            ],
+            "longest_centerline_move_mm": 2.525,
+            "bed_bounds_mm": [
+              [
+                128.796,
+                62.628,
+                3.07
+              ],
+              [
+                131.203,
+                69.801,
+                3.48
+              ]
+            ],
+            "max_mm_from_thread_axis_x": 1.514,
+            "max_assembly_y_mm": -68.095
+          },
+          "Bridge infill": {
+            "segments": 76,
+            "tool_set": [
+              "T0"
+            ],
+            "longest_centerline_move_mm": 7.586,
+            "bed_bounds_mm": [
+              [
+                126.081,
+                61.833,
+                4.28
+              ],
+              [
+                133.793,
+                82.284,
+                4.28
+              ]
+            ]
+          }
+        }
+      },
+      "warnings": [],
+      "same_geometry_and_transforms_as": "K2_04_ASA_Castle_R6_Rear_Shell.3mf"
+    },
+    "K2_06_PLA_Castle_R6_Slot_and_Thread_Coupon.3mf": {
+      "project_sha256": "8499a437ce84e65ef8828c89a2b787dde0d957fe5aabbdef819cc37aca554064",
+      "geometry_xml_sha256": "d2357095f35c2582c09985b07fe52dd62570dc98311c1f011dcf23a03900f7c7",
+      "scratch_gcode_sha256": "316d81518b42cfb4bba777eba69a5237831309dd86fc8260c07e7c0958af4e41",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-27 at 02:55:30 UTC",
+      "effective_settings": {
+        "printer_settings_id": "Creality K2 (0.6 mm)",
+        "print_settings_id": "Creality K2 (0.6 mm)",
+        "nozzle_diameter": "0.6,0.6,0.6,0.6",
+        "layer_height": "0.12",
+        "first_layer_height": "0.2",
+        "filament_type": "PLA;PLA;PLA;PLA",
+        "temperature": "210,210,210,210",
+        "first_layer_temperature": "215,215,215,215",
+        "bed_temperature": "55,55,55,55",
+        "first_layer_bed_temperature": "60,60,60,60",
+        "max_volumetric_speed": "6",
+        "filament_max_volumetric_speed": "6,6,6,6",
+        "single_extruder_multi_material_priming": "0",
+        "wipe_tower": "0",
+        "post_process": ""
+      },
+      "material_and_time": {
+        "estimated printing time (normal mode)": "2h 15m 18s",
+        "total toolchanges": "141",
+        "total filament used [g]": "25.90",
+        "filament used [g]": "14.03, 11.87, 0.00, 0.00"
+      },
+      "physical_tool_commands_in_order": [
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1"
+      ],
+      "startup_and_shutdown_lines": {
+        "object_polygons": [
+          102,
+          103,
+          104,
+          105
+        ],
+        "start": 111,
+        "initial_tool": 115,
+        "hotend_wait": 118,
+        "purge": 122,
+        "extrusion_reset": 123,
+        "end": 126658
+      },
+      "color_mix": {
+        "version": 1,
+        "physical_extruders": [
+          {
+            "id": 1,
+            "color": "#174FBA"
+          },
+          {
+            "id": 2,
+            "color": "#CF201B"
+          },
+          {
+            "id": 3,
+            "color": "#F3F3F1"
+          },
+          {
+            "id": 4,
+            "color": "#C59B4F"
+          }
+        ],
+        "virtual_extruders": [
+          {
+            "id": 5,
+            "kind": "fullspectrum",
+            "color": "#8053A3",
+            "components": [
+              {
+                "extruder": 1,
+                "ratio": 0.5
+              },
+              {
+                "extruder": 2,
+                "ratio": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "items": {
+        "Front shell coupon": {
+          "part_extruders": {
+            "front_coupon_purple": 5
+          },
+          "bounds_mm": [
+            [
+              34.2,
+              9.975,
+              0.0
+            ],
+            [
+              95.8,
+              120.025,
+              6.1
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 3143.67,
+          "geometry_layers": 50,
+          "model_tools": [
+            "T0",
+            "T1"
+          ],
+          "majority_tool_layer_counts": {
+            "T0": 25,
+            "T1": 25
+          },
+          "first_12_layers_majority_tool": [
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1"
+          ]
+        },
+        "Rear shell coupon": {
+          "part_extruders": {
+            "rear_coupon_purple": 5
+          },
+          "bounds_mm": [
+            [
+              164.2,
+              9.975,
+              0.0
+            ],
+            [
+              225.8,
+              120.025,
+              6.1
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 3144.36,
+          "geometry_layers": 50,
+          "model_tools": [
+            "T0",
+            "T1"
+          ],
+          "majority_tool_layer_counts": {
+            "T0": 25,
+            "T1": 25
+          },
+          "first_12_layers_majority_tool": [
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1"
+          ]
+        },
+        "Pocket frame coupon": {
+          "part_extruders": {
+            "frame_coupon_purple": 5
+          },
+          "bounds_mm": [
+            [
+              34.2,
+              149.475,
+              -0.0
+            ],
+            [
+              95.8,
+              240.525,
+              1.8
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 820.67,
+          "geometry_layers": 14,
+          "model_tools": [
+            "T0",
+            "T1"
+          ],
+          "majority_tool_layer_counts": {
+            "T0": 7,
+            "T1": 7
+          },
+          "first_12_layers_majority_tool": [
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1"
+          ]
+        },
+        "Grip stub coupon": {
+          "part_extruders": {
+            "grip_stub_purple": 5
+          },
+          "bounds_mm": [
+            [
+              182.57075,
+              177.175,
+              0.0
+            ],
+            [
+              207.42925,
+              212.825,
+              17.08186
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 169.41,
+          "geometry_layers": 142,
+          "model_tools": [
+            "T0",
+            "T1"
+          ],
+          "majority_tool_layer_counts": {
+            "T0": 71,
+            "T1": 71
+          },
+          "first_12_layers_majority_tool": [
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1"
+          ]
+        }
+      },
+      "model_build_transforms": {
+        "Front shell coupon": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          65.0,
+          88.3249988556,
+          -0.899999976158
+        ],
+        "Rear shell coupon": [
+          -1.0,
+          0.0,
+          -1.22464679915e-16,
+          0.0,
+          1.0,
+          0.0,
+          1.22464679915e-16,
+          0.0,
+          -1.0,
+          195.0,
+          88.3249988556,
+          -0.899999976158
+        ],
+        "Pocket frame coupon": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          65.0,
+          208.824998856,
+          0.899999976158
+        ],
+        "Grip stub coupon": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          194.999754906,
+          271.174999237,
+          7.80000019073
+        ]
+      },
+      "bridges_and_supports": {
+        "Front_shell_coupon": {
+          "Support material": {
+            "segments": 116,
+            "tool_set": [
+              "T0",
+              "T1"
+            ],
+            "longest_centerline_move_mm": 9.318,
+            "bed_bounds_mm": [
+              [
+                63.81,
+                7.329,
+                0.2
+              ],
+              [
+                66.482,
+                19.849,
+                2.66
+              ]
+            ],
+            "max_mm_from_thread_axis_x": 1.842,
+            "max_assembly_y_mm": -68.116
+          },
+          "Support material interface": {
+            "segments": 66,
+            "tool_set": [
+              "T1"
+            ],
+            "longest_centerline_move_mm": 2.792,
+            "bed_bounds_mm": [
+              [
+                63.797,
+                10.477,
+                3.07
+              ],
+              [
+                66.205,
+                19.857,
+                3.48
+              ]
+            ],
+            "max_mm_from_thread_axis_x": 1.515,
+            "max_assembly_y_mm": -68.158
+          },
+          "Bridge infill": {
+            "segments": 73,
+            "tool_set": [
+              "T0"
+            ],
+            "longest_centerline_move_mm": 7.582,
+            "bed_bounds_mm": [
+              [
+                61.081,
+                12.7,
+                4.28
+              ],
+              [
+                68.791,
+                32.405,
+                4.28
+              ]
+            ]
+          }
+        },
+        "Rear_shell_coupon": {
+          "Support material": {
+            "segments": 85,
+            "tool_set": [
+              "T0",
+              "T1"
+            ],
+            "longest_centerline_move_mm": 7.349,
+            "bed_bounds_mm": [
+              [
+                193.807,
+                9.147,
+                0.2
+              ],
+              [
+                196.19,
+                19.893,
+                2.66
+              ]
+            ],
+            "max_mm_from_thread_axis_x": 1.553,
+            "max_assembly_y_mm": -68.072
+          },
+          "Support material interface": {
+            "segments": 60,
+            "tool_set": [
+              "T1"
+            ],
+            "longest_centerline_move_mm": 2.824,
+            "bed_bounds_mm": [
+              [
+                193.795,
+                12.747,
+                3.07
+              ],
+              [
+                196.203,
+                19.924,
+                3.48
+              ]
+            ],
+            "max_mm_from_thread_axis_x": 1.515,
+            "max_assembly_y_mm": -68.091
+          },
+          "Bridge infill": {
+            "segments": 76,
+            "tool_set": [
+              "T0"
+            ],
+            "longest_centerline_move_mm": 7.586,
+            "bed_bounds_mm": [
+              [
+                191.081,
+                11.952,
+                4.28
+              ],
+              [
+                198.793,
+                32.403,
+                4.28
+              ]
+            ]
+          }
+        },
+        "Grip_stub_coupon": {
+          "Bridge infill": {
+            "segments": 65,
+            "tool_set": [
+              "T0"
+            ],
+            "longest_centerline_move_mm": 8.791,
+            "bed_bounds_mm": [
+              [
+                190.411,
+                178.855,
+                4.28
+              ],
+              [
+                199.744,
+                200.282,
+                15.56
+              ]
+            ]
+          }
+        }
+      },
+      "warnings": [],
+      "same_geometry_and_transforms_as": "K2_04_ASA_Castle_R6_Slot_and_Thread_Coupon.3mf"
+    },
+    "K2_06_PLA_Castle_R6_Star_Face.3mf": {
+      "project_sha256": "1d2a130078c88b4de4b35797afa2b28b0230f6558fcd9cde2147b61c29ff22f3",
+      "geometry_xml_sha256": "683ddb5dc0ed4d0b3c3f6324346d993ef45095652227ee53ed3970b1e1c6179e",
+      "scratch_gcode_sha256": "17043af356c3e10f4d89e4a961a8099d37a6174c4efaa7752339cbfdec4a777a",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-27 at 02:55:31 UTC",
+      "effective_settings": {
+        "printer_settings_id": "Creality K2 (0.6 mm)",
+        "print_settings_id": "Creality K2 (0.6 mm)",
+        "nozzle_diameter": "0.6,0.6,0.6,0.6",
+        "layer_height": "0.12",
+        "first_layer_height": "0.2",
+        "filament_type": "PLA;PLA;PLA;PLA",
+        "temperature": "210,210,210,210",
+        "first_layer_temperature": "215,215,215,215",
+        "bed_temperature": "55,55,55,55",
+        "first_layer_bed_temperature": "60,60,60,60",
+        "max_volumetric_speed": "6",
+        "filament_max_volumetric_speed": "6,6,6,6",
+        "single_extruder_multi_material_priming": "0",
+        "wipe_tower": "0",
+        "post_process": ""
+      },
+      "material_and_time": {
+        "estimated printing time (normal mode)": "3h 22m 50s",
+        "total toolchanges": "95",
+        "total filament used [g]": "43.26",
+        "filament used [g]": "16.62, 14.56, 4.49, 7.59"
+      },
+      "physical_tool_commands_in_order": [
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T2",
+        "T3",
+        "T0",
+        "T2",
+        "T1",
+        "T3",
+        "T0",
+        "T2",
+        "T1",
+        "T3",
+        "T0",
+        "T2",
+        "T1",
+        "T3",
+        "T0",
+        "T2",
+        "T0",
+        "T1",
+        "T3",
+        "T0",
+        "T2",
+        "T1",
+        "T3",
+        "T0",
+        "T2",
+        "T0",
+        "T1",
+        "T3",
+        "T0",
+        "T2",
+        "T1",
+        "T3",
+        "T0",
+        "T2",
+        "T0",
+        "T1",
+        "T3",
+        "T0",
+        "T2",
+        "T1",
+        "T3",
+        "T0",
+        "T2",
+        "T0",
+        "T1",
+        "T3",
+        "T0",
+        "T2",
+        "T1",
+        "T3",
+        "T0",
+        "T2",
+        "T0",
+        "T1",
+        "T3",
+        "T0",
+        "T2",
+        "T1",
+        "T3",
+        "T0",
+        "T2",
+        "T0",
+        "T1",
+        "T3",
+        "T0",
+        "T2",
+        "T1",
+        "T3",
+        "T0",
+        "T2",
+        "T1",
+        "T3",
+        "T0",
+        "T1",
+        "T3",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0",
+        "T1",
+        "T0"
+      ],
+      "startup_and_shutdown_lines": {
+        "object_polygons": [
+          54
+        ],
+        "start": 60,
+        "initial_tool": 64,
+        "hotend_wait": 67,
+        "purge": 71,
+        "extrusion_reset": 72,
+        "end": 229273
+      },
+      "color_mix": {
+        "version": 1,
+        "physical_extruders": [
+          {
+            "id": 1,
+            "color": "#174FBA"
+          },
+          {
+            "id": 2,
+            "color": "#CF201B"
+          },
+          {
+            "id": 3,
+            "color": "#F3F3F1"
+          },
+          {
+            "id": 4,
+            "color": "#C59B4F"
+          }
+        ],
+        "virtual_extruders": [
+          {
+            "id": 5,
+            "kind": "fullspectrum",
+            "color": "#8053A3",
+            "components": [
+              {
+                "extruder": 1,
+                "ratio": 0.5
+              },
+              {
+                "extruder": 2,
+                "ratio": 0.5
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "kind": "fullspectrum",
+            "color": "#9EBDEB",
+            "components": [
+              {
+                "extruder": 1,
+                "ratio": 0.25
+              },
+              {
+                "extruder": 3,
+                "ratio": 0.75
+              }
+            ]
+          }
+        ]
+      },
+      "items": {
+        "Castle star face": {
+          "part_extruders": {
+            "head_purple": 5,
+            "head_gold": 4,
+            "head_cream": 3,
+            "head_blue": 7
+          },
+          "bounds_mm": [
+            [
+              65.0,
+              59.856,
+              0.0
+            ],
+            [
+              195.0,
+              200.144,
+              6.7
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 10733.34,
+          "geometry_layers": 55,
+          "model_tools": [
+            "T0",
+            "T1",
+            "T2",
+            "T3"
+          ],
+          "majority_tool_layer_counts": {
+            "T0": 19,
+            "T1": 19,
+            "T3": 15,
+            "T2": 2
+          },
+          "first_12_layers_majority_tool": [
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1"
+          ]
+        }
+      },
+      "model_build_transforms": {
+        "Castle star face": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          130.0,
+          138.205999374,
+          -0.899999976158
+        ]
+      },
+      "bridges_and_supports": {
+        "Castle_star_face": {
+          "Support material": {
+            "segments": 114,
+            "tool_set": [
+              "T0",
+              "T1",
+              "T2",
+              "T3"
+            ],
+            "longest_centerline_move_mm": 9.319,
+            "bed_bounds_mm": [
+              [
+                128.81,
+                57.21,
+                0.2
+              ],
+              [
+                131.482,
+                69.73,
+                2.66
+              ]
+            ],
+            "max_mm_from_thread_axis_x": 1.842,
+            "max_assembly_y_mm": -68.116
+          },
+          "Support material interface": {
+            "segments": 71,
+            "tool_set": [
+              "T3"
+            ],
+            "longest_centerline_move_mm": 2.789,
+            "bed_bounds_mm": [
+              [
+                128.797,
+                60.326,
+                3.07
+              ],
+              [
+                131.203,
+                69.71,
+                3.48
+              ]
+            ],
+            "max_mm_from_thread_axis_x": 1.513,
+            "max_assembly_y_mm": -68.186
+          },
+          "Bridge infill": {
+            "segments": 73,
+            "tool_set": [
+              "T0"
+            ],
+            "longest_centerline_move_mm": 7.582,
+            "bed_bounds_mm": [
+              [
+                126.081,
+                62.581,
+                4.28
+              ],
+              [
+                133.791,
+                82.286,
+                4.28
+              ]
+            ]
+          }
+        }
+      },
+      "warnings": [],
+      "same_geometry_and_transforms_as": "K2_04_ASA_Castle_R6_Star_Face.3mf",
+      "top_projected_tool_area_fraction": {
+        "right-scroll": {
+          "T3": 1.0
+        },
+        "left-scroll": {
+          "T3": 1.0
+        },
+        "right-cornice": {
+          "T2": 1.0
+        },
+        "left-cornice": {
+          "T2": 1.0
+        },
+        "right-roof": {
+          "T0": 0.3092,
+          "T2": 0.6908
+        },
+        "left-roof": {
+          "T0": 0.3048,
+          "T2": 0.6952
+        },
+        "right-tower": {
+          "T1": 0.0001,
+          "T2": 0.9999
+        },
+        "left-tower": {
+          "T1": 0.0001,
+          "T2": 0.9999
+        },
+        "high-cornice": {
+          "T2": 1.0
+        },
+        "rim-outer": {
+          "T0": 0.0841,
+          "T1": 0.013,
+          "T3": 0.9029
+        },
+        "mickey": {
+          "T1": 0.0003,
+          "T2": 0.9997
+        },
+        "gatehouse": {
+          "T1": 0.0004,
+          "T2": 0.9996
+        },
+        "high-roof": {
+          "T0": 0.279,
+          "T2": 0.721
+        },
+        "right-star": {
+          "T0": 0.0001,
+          "T1": 0.0003,
+          "T2": 0.9996
+        },
+        "left-star": {
+          "T1": 0.0005,
+          "T2": 0.9995
+        },
+        "keep": {
+          "T2": 1.0
+        },
+        "right-flag": {
+          "T3": 1.0
+        },
+        "left-flag": {
+          "T3": 1.0
+        },
+        "high-flag": {
+          "T3": 1.0
+        },
+        "inner-lip": {
+          "T0": 0.9904,
+          "T1": 0.0096
+        },
+        "star-field": {
+          "T0": 0.0859,
+          "T1": 0.9141
+        }
+      },
+      "flags": {
+        "right-flag": {
+          "first_z_mm": 1.28,
+          "last_z_mm": 3.2,
+          "layers_with_gold": 17,
+          "max_nominal_profile_coverage": 0.9761,
+          "first_gold_bead_coverage_supported_by_prior_deposit": 0.9838
+        },
+        "left-flag": {
+          "first_z_mm": 1.28,
+          "last_z_mm": 3.2,
+          "layers_with_gold": 17,
+          "max_nominal_profile_coverage": 0.9759,
+          "first_gold_bead_coverage_supported_by_prior_deposit": 0.9867
+        },
+        "high-flag": {
+          "first_z_mm": 1.28,
+          "last_z_mm": 3.2,
+          "layers_with_gold": 17,
+          "max_nominal_profile_coverage": 0.9718,
+          "first_gold_bead_coverage_supported_by_prior_deposit": 0.9875
+        }
+      }
+    },
+    "K2_06_PLA_Castle_R6_Threaded_Grip.3mf": {
+      "project_sha256": "f8fd792d06ad0ceb83b5b72e8cad152933e21a81a07ed665ad6c149f18723b58",
+      "geometry_xml_sha256": "c97dce1c3cfb18a12b943e062e7027570adcd1307e647b2e90f41d795ba6eca8",
+      "scratch_gcode_sha256": "5ebeea6e18381b898e4ecf67d48473abca1dd0b58501b1bcdc315361a10ce0e2",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-27 at 02:55:32 UTC",
+      "effective_settings": {
+        "printer_settings_id": "Creality K2 (0.6 mm)",
+        "print_settings_id": "Creality K2 (0.6 mm)",
+        "nozzle_diameter": "0.6,0.6,0.6,0.6",
+        "layer_height": "0.12",
+        "first_layer_height": "0.2",
+        "filament_type": "PLA;PLA;PLA;PLA",
+        "temperature": "210,210,210,210",
+        "first_layer_temperature": "215,215,215,215",
+        "bed_temperature": "55,55,55,55",
+        "first_layer_bed_temperature": "60,60,60,60",
+        "max_volumetric_speed": "6",
+        "filament_max_volumetric_speed": "6,6,6,6",
+        "single_extruder_multi_material_priming": "0",
+        "wipe_tower": "0",
+        "post_process": ""
+      },
+      "material_and_time": {
+        "estimated printing time (normal mode)": "4h 3m 26s",
+        "total toolchanges": "219",
+        "total filament used [g]": "47.61",
+        "filament used [g]": "20.29, 18.86, 0.00, 8.46"
+      },
+      "physical_tool_commands_in_order": [
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T0",
+        "T3",
+        "T1",
+        "T3"
+      ],
+      "startup_and_shutdown_lines": {
+        "object_polygons": [
+          34
+        ],
+        "start": 40,
+        "initial_tool": 44,
+        "hotend_wait": 47,
+        "purge": 51,
+        "extrusion_reset": 52,
+        "end": 153853
+      },
+      "color_mix": {
+        "version": 1,
+        "physical_extruders": [
+          {
+            "id": 1,
+            "color": "#174FBA"
+          },
+          {
+            "id": 2,
+            "color": "#CF201B"
+          },
+          {
+            "id": 3,
+            "color": "#F3F3F1"
+          },
+          {
+            "id": 4,
+            "color": "#C59B4F"
+          }
+        ],
+        "virtual_extruders": [
+          {
+            "id": 5,
+            "kind": "fullspectrum",
+            "color": "#8053A3",
+            "components": [
+              {
+                "extruder": 1,
+                "ratio": 0.5
+              },
+              {
+                "extruder": 2,
+                "ratio": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "items": {
+        "Threaded grip": {
+          "part_extruders": {
+            "handle_purple": 5,
+            "handle_gold": 4
+          },
+          "bounds_mm": [
+            [
+              37.20997,
+              37.41499,
+              0.0
+            ],
+            [
+              222.79003,
+              222.58501,
+              17.91996
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 3404.19,
+          "geometry_layers": 149,
+          "model_tools": [
+            "T0",
+            "T1",
+            "T3"
+          ],
+          "majority_tool_layer_counts": {
+            "T0": 72,
+            "T1": 71,
+            "T3": 6
+          },
+          "first_12_layers_majority_tool": [
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1",
+            "T0",
+            "T1"
+          ]
+        }
+      },
+      "model_build_transforms": {
+        "Threaded grip": [
+          0.707106781187,
+          0.707106781187,
+          0.0,
+          -0.707106781187,
+          0.707106781187,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          -0.761770704724,
+          260.966428215,
+          7.80000019073
+        ]
+      },
+      "bridges_and_supports": {
+        "Threaded_grip": {
+          "Bridge infill": {
+            "segments": 152,
+            "tool_set": [
+              "T0",
+              "T1",
+              "T3"
+            ],
+            "longest_centerline_move_mm": 9.409,
+            "bed_bounds_mm": [
+              [
+                47.472,
+                45.004,
+                4.28
+              ],
+              [
+                214.941,
+                212.936,
+                17.0
+              ]
+            ]
+          }
+        }
+      },
+      "warnings": [],
+      "same_geometry_and_transforms_as": "K2_04_ASA_Castle_R6_Threaded_Grip.3mf",
+      "gold_band_top_projected_tool_area_fraction": {
+        "pommel ring": {
+          "T3": 1.0
+        },
+        "second collar": {
+          "T3": 1.0
+        },
+        "top collar": {
+          "T3": 1.0
+        }
+      }
+    },
+    "K2_06_PLA_Castle_R6_Threaded_Grip_Solid_Blue.3mf": {
+      "project_sha256": "acb7db07bccefdfbaf15508632c78ace5df36037b0ea694fc476d508da047e13",
+      "geometry_xml_sha256": "c97dce1c3cfb18a12b943e062e7027570adcd1307e647b2e90f41d795ba6eca8",
+      "scratch_gcode_sha256": "aff459554ed46acf9eb217f54b5d8174628bb10bf3f92fc3cc51150d1c53fd9d",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-27 at 02:55:32 UTC",
+      "effective_settings": {
+        "printer_settings_id": "Creality K2 (0.6 mm)",
+        "print_settings_id": "Creality K2 (0.6 mm)",
+        "nozzle_diameter": "0.6,0.6,0.6,0.6",
+        "layer_height": "0.12",
+        "first_layer_height": "0.2",
+        "filament_type": "PLA;PLA;PLA;PLA",
+        "temperature": "210,210,210,210",
+        "first_layer_temperature": "215,215,215,215",
+        "bed_temperature": "55,55,55,55",
+        "first_layer_bed_temperature": "60,60,60,60",
+        "max_volumetric_speed": "6",
+        "filament_max_volumetric_speed": "6,6,6,6",
+        "single_extruder_multi_material_priming": "0",
+        "wipe_tower": "0",
+        "post_process": ""
+      },
+      "material_and_time": {
+        "estimated printing time (normal mode)": "4h 3m 25s",
+        "total toolchanges": "147",
+        "total filament used [g]": "47.61",
+        "filament used [g]": "39.15, 0.00, 0.00, 8.46"
+      },
+      "physical_tool_commands_in_order": [
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3",
+        "T0",
+        "T3"
+      ],
+      "startup_and_shutdown_lines": {
+        "object_polygons": [
+          20
+        ],
+        "start": 26,
+        "initial_tool": 30,
+        "hotend_wait": 33,
+        "purge": 37,
+        "extrusion_reset": 38,
+        "end": 152965
+      },
+      "color_mix": null,
+      "items": {
+        "Threaded grip": {
+          "part_extruders": {
+            "handle_purple": 1,
+            "handle_gold": 4
+          },
+          "bounds_mm": [
+            [
+              37.20997,
+              37.41499,
+              0.0
+            ],
+            [
+              222.79003,
+              222.58501,
+              17.91996
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 3404.19,
+          "geometry_layers": 149,
+          "model_tools": [
+            "T0",
+            "T3"
+          ],
+          "majority_tool_layer_counts": {
+            "T0": 143,
+            "T3": 6
+          }
+        }
+      },
+      "model_build_transforms": {
+        "Threaded grip": [
+          0.707106781187,
+          0.707106781187,
+          0.0,
+          -0.707106781187,
+          0.707106781187,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          -0.761770704724,
+          260.966428215,
+          7.80000019073
+        ]
+      },
+      "bridges_and_supports": {
+        "Threaded_grip": {
+          "Bridge infill": {
+            "segments": 152,
+            "tool_set": [
+              "T0",
+              "T3"
+            ],
+            "longest_centerline_move_mm": 9.409,
+            "bed_bounds_mm": [
+              [
+                47.472,
+                45.004,
+                4.28
+              ],
+              [
+                214.941,
+                212.936,
+                17.0
+              ]
+            ]
+          }
+        }
+      },
+      "warnings": [],
+      "same_geometry_and_transforms_as": "K2_04_ASA_Castle_R6_Threaded_Grip.3mf",
+      "gold_band_top_projected_tool_area_fraction": {
+        "pommel ring": {
+          "T3": 1.0
+        },
+        "second collar": {
+          "T3": 1.0
+        },
+        "top collar": {
+          "T3": 1.0
+        }
+      }
+    },
+    "Control_A_Blue.3mf": {
+      "project_sha256": "401aedee4ed21a99863ae64f2a0159c7988a2b4219fd96d9f087c11359346ca7",
+      "geometry_xml_sha256": "2be49a3928ae30f0f87a3cdc95e1eebf75da2811e724c187960d52d528d76c47",
+      "scratch_gcode_sha256": "e197b0d3b5ee46e55ff010d08c95282c7aa3d6961633000905b44370ad0941ba",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-27 at 02:55:33 UTC",
+      "effective_settings": {
+        "printer_settings_id": "Creality K2 (0.6 mm)",
+        "print_settings_id": "Creality K2 (0.6 mm)",
+        "nozzle_diameter": "0.6,0.6,0.6,0.6",
+        "layer_height": "0.12",
+        "first_layer_height": "0.2",
+        "filament_type": "PLA;PLA;PLA;PLA",
+        "temperature": "210,210,210,210",
+        "first_layer_temperature": "215,215,215,215",
+        "bed_temperature": "55,55,55,55",
+        "first_layer_bed_temperature": "60,60,60,60",
+        "max_volumetric_speed": "6",
+        "filament_max_volumetric_speed": "6,6,6,6",
+        "single_extruder_multi_material_priming": "0",
+        "wipe_tower": "0",
+        "post_process": ""
+      },
+      "material_and_time": {
+        "estimated printing time (normal mode)": "3m 16s",
+        "total toolchanges": "0",
+        "total filament used [g]": "0.54",
+        "filament used [g]": "0.54, 0.00, 0.00, 0.00"
+      },
+      "physical_tool_commands_in_order": [
+        "T0"
+      ],
+      "startup_and_shutdown_lines": {
+        "object_polygons": [
+          13
+        ],
+        "start": 19,
+        "initial_tool": 21,
+        "hotend_wait": 22,
+        "purge": 27,
+        "extrusion_reset": 28,
+        "end": 1474
+      },
+      "color_mix": null,
+      "items": {
+        "Hyper PLA Blue": {
+          "part_extruders": {
+            "Hyper PLA Blue": 1
+          },
+          "bounds_mm": [
+            [
+              112.0,
+              78.5,
+              0.0
+            ],
+            [
+              136.0,
+              89.5,
+              1.4
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 287.97,
+          "geometry_layers": 11,
+          "model_tools": [
+            "T0"
+          ],
+          "majority_tool_layer_counts": {
+            "T0": 11
+          }
+        }
+      },
+      "model_build_transforms": {
+        "Hyper PLA Blue": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          124.0,
+          84.0,
+          0.7
+        ]
+      },
+      "bridges_and_supports": {},
+      "warnings": []
+    },
+    "Control_D_Gold.3mf": {
+      "project_sha256": "d15019bd512c23f345052f38988a391248f44e543458e0c9ebc3e679942b66e8",
+      "geometry_xml_sha256": "4e67fd6033c5bd4c5e57ca2a484cff8f99289d5053b2c30ee50e8f8dcde9e480",
+      "scratch_gcode_sha256": "1f70962dc81066c01f793c7e0862094d29c1b69bf85f66133c94c77aa99caf87",
+      "slicer": "PrusaSlicer 2.9.7 on 2026-11-27 at 02:55:33 UTC",
+      "effective_settings": {
+        "printer_settings_id": "Creality K2 (0.6 mm)",
+        "print_settings_id": "Creality K2 (0.6 mm)",
+        "nozzle_diameter": "0.6,0.6,0.6,0.6",
+        "layer_height": "0.12",
+        "first_layer_height": "0.2",
+        "filament_type": "PLA;PLA;PLA;PLA",
+        "temperature": "210,210,210,210",
+        "first_layer_temperature": "215,215,215,215",
+        "bed_temperature": "55,55,55,55",
+        "first_layer_bed_temperature": "60,60,60,60",
+        "max_volumetric_speed": "6",
+        "filament_max_volumetric_speed": "6,6,6,6",
+        "single_extruder_multi_material_priming": "0",
+        "wipe_tower": "0",
+        "post_process": ""
+      },
+      "material_and_time": {
+        "estimated printing time (normal mode)": "3m 16s",
+        "total toolchanges": "0",
+        "total filament used [g]": "0.54",
+        "filament used [g]": "0.00, 0.00, 0.00, 0.54"
+      },
+      "physical_tool_commands_in_order": [
+        "T3"
+      ],
+      "startup_and_shutdown_lines": {
+        "object_polygons": [
+          13
+        ],
+        "start": 19,
+        "initial_tool": 23,
+        "hotend_wait": 26,
+        "purge": 30,
+        "extrusion_reset": 31,
+        "end": 1478
+      },
+      "color_mix": null,
+      "items": {
+        "Metallic Gold": {
+          "part_extruders": {
+            "Metallic Gold": 4
+          },
+          "bounds_mm": [
+            [
+              112.0,
+              78.5,
+              0.0
+            ],
+            [
+              136.0,
+              89.5,
+              1.4
+            ]
+          ],
+          "first_layer_bead_area_estimate_mm2": 287.97,
+          "geometry_layers": 11,
+          "model_tools": [
+            "T3"
+          ],
+          "majority_tool_layer_counts": {
+            "T3": 11
+          }
+        }
+      },
+      "model_build_transforms": {
+        "Metallic Gold": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          124.0,
+          84.0,
+          0.7
+        ]
+      },
+      "bridges_and_supports": {},
+      "warnings": []
+    }
+  }
+}

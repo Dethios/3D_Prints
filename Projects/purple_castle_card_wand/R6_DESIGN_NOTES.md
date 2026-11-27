@@ -8,6 +8,8 @@ The split neck and cuff follow the local Minnie wand derivative of JC’s *Credi
 
 R6 passed digital geometry and six local PrusaSlicer 2.9.7 K2 0.4 mm trial slices, including a slot-and-thread coupon. CAD establishes geometry and card blockage with the grip seated. Physical card fit, grip loosening, bonding, drop resistance and tap performance are pending. An adult should load and operate the grip. Keep the prototype away from the child until the physical checks are complete. The grip can still be unscrewed, so the design does not establish child resistance. [CPSC small-parts guidance](https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Small-Parts-for-Toys-and-Childrens-Products)
 
-R6 artwork, model, render and 3MF files are retained locally while redistribution rights for the supplied artwork are unverified.
+[R6 artwork and provenance](art/R6/art_review.md) · [R6 CAD, meshes and fit coupons](cad/R6/README.md) · [R6 0.4 mm ASA plates](k2/R6/README.md)
 
-[0.6 mm PLA and ColorMix setup](R6_PLA_COLORMIX_NOTES.md)
+The R6 artwork derives from the existing R5 vector. Source attribution and the scope limits of the [repository license](../../LICENSE) apply. Redistribution rights for the supplied reference illustrations remain unverified.
+
+[PLA ColorMix and split-nozzle setup](R6_PLA_COLORMIX_NOTES.md)

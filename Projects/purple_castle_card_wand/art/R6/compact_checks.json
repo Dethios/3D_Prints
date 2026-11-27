@@ -1,0 +1,83 @@
+{
+  "mm_per_master_unit": 0.23550724637681159,
+  "xy_scale_from_R5": 0.9285714285714286,
+  "head_xy_bounds_mm": [
+    -65.0,
+    -60.659,
+    65.0,
+    61.938
+  ],
+  "bow_xy_bounds_mm": [
+    -27.978,
+    -71.589,
+    27.978,
+    -31.833
+  ],
+  "handle_appearance_xy_bounds_mm": [
+    -14.42,
+    -280.96,
+    14.366,
+    -39.802
+  ],
+  "profiles": 34,
+  "resculpted_beyond_uniform_scale": [
+    "high-flag",
+    "high-roof",
+    "left-flag",
+    "left-roof",
+    "right-flag",
+    "right-roof"
+  ],
+  "largest_profile_deviation_of_other_28_mm": 0.000116,
+  "relief_targets_byte_identical_to_R5": true,
+  "flags": {
+    "left": {
+      "flag_bounds_mm": [
+        -19.783,
+        10.598,
+        -10.65,
+        19.312
+      ],
+      "purple_lip_gap_mm": 4.072,
+      "gold_rim_gap_mm": 6.647,
+      "staff_width_mm": 2.12,
+      "staff_section_at_master_y": 248,
+      "intended_gold_to_blue_overlap_mm2": 3.151,
+      "overlap_height_mm": 1.649
+    },
+    "high": {
+      "flag_bounds_mm": [
+        -0.235,
+        31.087,
+        7.824,
+        40.743
+      ],
+      "purple_lip_gap_mm": 3.035,
+      "gold_rim_gap_mm": 5.606,
+      "staff_width_mm": 2.12,
+      "staff_section_at_master_y": 161,
+      "intended_gold_to_blue_overlap_mm2": 2.934,
+      "overlap_height_mm": 1.649
+    },
+    "right": {
+      "flag_bounds_mm": [
+        19.312,
+        10.598,
+        28.444,
+        19.312
+      ],
+      "purple_lip_gap_mm": 2.955,
+      "gold_rim_gap_mm": 5.493,
+      "staff_width_mm": 2.12,
+      "staff_section_at_master_y": 248,
+      "intended_gold_to_blue_overlap_mm2": 3.151,
+      "overlap_height_mm": 1.649
+    }
+  },
+  "projected_bow_overlap_with_star_mm2": 882.2,
+  "projected_loop_overlap_with_star_mm2": {
+    "left": 374.55,
+    "right": 374.55
+  },
+  "decor_to_bow_min_xy_gap_mm": 1.175
+}

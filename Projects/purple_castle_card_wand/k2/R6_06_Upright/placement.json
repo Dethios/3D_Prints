@@ -1,0 +1,143 @@
+{
+  "R6 upright star with removable cradle": {
+    "bounds_mm": [
+      [
+        58.199997,
+        111.5,
+        0.0
+      ],
+      [
+        201.800003,
+        148.5,
+        140.288
+      ]
+    ],
+    "rotation": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "translation_mm": [
+      130.0,
+      130.5,
+      0.0
+    ],
+    "print_overrides": {},
+    "parts": {
+      "head_purple.stl": {
+        "extruder": 5,
+        "source": "head_purple.stl",
+        "source_sha256": "2317bcb422b6cb961e4fc14e56cb04c92d7b7a4f3f6dacdb8bacd2af64d1358f",
+        "bounds_mm": [
+          [
+            65.0,
+            122.9,
+            2e-06
+          ],
+          [
+            195.0,
+            129.6,
+            140.288
+          ]
+        ]
+      },
+      "head_gold.stl": {
+        "extruder": 4,
+        "source": "head_gold.stl",
+        "source_sha256": "1a98fb2f6a8a98dfcb06f4e0371aa20219bbc628a02025b5ab09fe67b2d72cd7",
+        "bounds_mm": [
+          [
+            65.0,
+            124.201902,
+            17.691
+          ],
+          [
+            195.0,
+            128.4,
+            140.288
+          ]
+        ]
+      },
+      "head_cream.stl": {
+        "extruder": 3,
+        "source": "head_cream.stl",
+        "source_sha256": "6960bee9618c6b6a407be5dc9534f4d75177a6039d1d9b0f734d4b147d025481",
+        "bounds_mm": [
+          [
+            83.291,
+            124.601321,
+            48.205
+          ],
+          [
+            176.709,
+            128.4,
+            97.544
+          ]
+        ]
+      },
+      "head_blue.stl": {
+        "extruder": 7,
+        "source": "head_blue.stl",
+        "source_sha256": "9628d03f59cc2b775a68118fc5b1524e0bc18d6f1006fd1e9d87afed1f946d28",
+        "bounds_mm": [
+          [
+            104.045,
+            124.800467,
+            80.332
+          ],
+          [
+            157.298,
+            127.6,
+            111.086
+          ]
+        ]
+      },
+      "upright_cradle_blue_A": {
+        "extruder": 1,
+        "source": "upright_cradle_blue_A.stl",
+        "source_sha256": "2756321e8c85cc001c3f5a01c3b486ed41ec27591c4ed0d61c8ba0a9e0f324d1",
+        "bounds_mm": [
+          [
+            58.199997,
+            111.5,
+            0.0
+          ],
+          [
+            201.800003,
+            148.5,
+            88.0
+          ]
+        ]
+      },
+      "No support in thread": {
+        "extruder": 1,
+        "source": "",
+        "source_sha256": "",
+        "bounds_mm": [
+          [
+            120.5,
+            122.5,
+            0.0
+          ],
+          [
+            139.5,
+            136.5,
+            31.0
+          ]
+        ]
+      }
+    }
+  }
+}

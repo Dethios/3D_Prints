@@ -1,0 +1,50 @@
+{
+  "release_coupon_carrier_purple": {
+    "sha256": "1a42888d1d790f06011964674c2dcafe2a37de543fa5d681f21582f68dcc21d5",
+    "bounds_mm": [
+      [
+        25.5,
+        -6.0,
+        0.0
+      ],
+      [
+        48.385,
+        1.2,
+        34.5
+      ]
+    ],
+    "solid_count": 1
+  },
+  "release_coupon_rim_gold": {
+    "sha256": "0acd2fd5bf3127b7265c8c254a8a643a8fc833b89f7782ca2f6e32443f3baa43",
+    "bounds_mm": [
+      [
+        34.0,
+        -4.7,
+        17.691
+      ],
+      [
+        48.385,
+        -2.9,
+        34.5
+      ]
+    ],
+    "solid_count": 1
+  },
+  "release_coupon_cradle_blue_A": {
+    "sha256": "c4f6991b30c28a35c4cbfac6be665d9c1abef2f5740729df68c507d1f092a993",
+    "bounds_mm": [
+      [
+        34.0,
+        -19.0,
+        0.0
+      ],
+      [
+        55.0,
+        15.0,
+        34.5
+      ]
+    ],
+    "solid_count": 1
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "project_sha256": "cd5801ef6a712448da0dfcd0f5e9a6b7b58b95c1c06a0bcf1874da1693503cc5",
+  "gcode_sha256": "fe52ac4e8178cf5df3bcad5f40eece400d28a37fe0be4c6fa9f1969fb364682c",
+  "CFS_command_counts": {
+    "T0": 909,
+    "T1": 584,
+    "T2": 262,
+    "T3": 512
+  },
+  "macros": {
+    "object_polygons": [
+      54
+    ],
+    "start": 60,
+    "initial_tool": 64,
+    "hotend_wait": 67,
+    "purge": 71,
+    "extrusion_reset": 72,
+    "end": 689633
+  },
+  "recipes": {
+    "version": 1,
+    "physical_extruders": [
+      {
+        "id": 1,
+        "color": "#174FBA"
+      },
+      {
+        "id": 2,
+        "color": "#CF201B"
+      },
+      {
+        "id": 3,
+        "color": "#F3F3F1"
+      },
+      {
+        "id": 4,
+        "color": "#C59B4F"
+      }
+    ],
+    "virtual_extruders": [
+      {
+        "id": 5,
+        "kind": "fullspectrum",
+        "color": "#8053A3",
+        "components": [
+          {
+            "extruder": 1,
+            "ratio": 0.5
+          },
+          {
+            "extruder": 2,
+            "ratio": 0.5
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "kind": "fullspectrum",
+        "color": "#9EBDEB",
+        "components": [
+          {
+            "extruder": 1,
+            "ratio": 0.25
+          },
+          {
+            "extruder": 3,
+            "ratio": 0.75
+          }
+        ]
+      }
+    ]
+  },
+  "warnings": [],
+  "stats": {
+    "total filament used [g]": "57.58",
+    "total toolchanges": "2266",
+    "estimated printing time (normal mode)": "10h 17m 39s"
+  },
+  "longest_bridge_or_support_moves_mm": {
+    "Support material interface": 4.876208363062422,
+    "Support material": 2.6880000000000166,
+    "Bridge infill": 1.706000000000003
+  },
+  "deposition_layers": 1175,
+  "height_mm": 140.24
+}

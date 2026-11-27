@@ -28,4 +28,4 @@ The upright star trial rotates the original front 90 degrees and uses a disposab
 
 The 0.4 mm coupon checks the slot and thread geometry in PLA. Dry-fit the actual 0.6 mm front and grip with the 0.4 mm rear and frame before bonding. The assembled wand still needs adult fit, retention, grip-loosening, drop, bond and reader checks before child use.
 
-The native projects that embed R6 geometry remain local while redistribution rights for the supplied artwork are unverified.
+[Gold-free 0.4 mm PLA plates](k2/R6_04_PLA/README.md) · [0.6 mm PLA plates](k2/R6_06_PLA/README.md) · [Upright star and cradle-removal coupon](k2/R6_06_Upright/README.md)

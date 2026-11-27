@@ -1,0 +1,69 @@
+{
+  "project_sha256": "471082aad35e72f82aaa8f996da816ae5a696b8075aad061dc500fee69fff7dd",
+  "gcode_sha256": "95af862962f179dddf7576e203295aad249615d2fc86f355e2471d17f9e6e69d",
+  "CFS_command_counts": {
+    "T0": 144,
+    "T1": 143,
+    "T3": 70
+  },
+  "macros": {
+    "object_polygons": [
+      38
+    ],
+    "start": 44,
+    "initial_tool": 48,
+    "hotend_wait": 51,
+    "purge": 55,
+    "extrusion_reset": 56,
+    "end": 62374
+  },
+  "recipes": {
+    "version": 1,
+    "physical_extruders": [
+      {
+        "id": 1,
+        "color": "#174FBA"
+      },
+      {
+        "id": 2,
+        "color": "#CF201B"
+      },
+      {
+        "id": 3,
+        "color": "#F3F3F1"
+      },
+      {
+        "id": 4,
+        "color": "#C59B4F"
+      }
+    ],
+    "virtual_extruders": [
+      {
+        "id": 5,
+        "kind": "fullspectrum",
+        "color": "#8053A3",
+        "components": [
+          {
+            "extruder": 1,
+            "ratio": 0.5
+          },
+          {
+            "extruder": 2,
+            "ratio": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  "warnings": [],
+  "stats": {
+    "total filament used [g]": "4.00",
+    "total toolchanges": "356",
+    "estimated printing time (normal mode)": "1h 9m 48s"
+  },
+  "longest_bridge_or_support_moves_mm": {
+    "Support material interface": 1.6504605417882632
+  },
+  "deposition_layers": 288,
+  "height_mm": 34.52
+}

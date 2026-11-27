@@ -1,5 +1,7 @@
 # Purple castle card wand
 
+The R6 prototype reduces the star to 130 mm, insets the flags, and replaces the exposed rear keeper with a covered bottom-load channel closed by the full-size grip. [R6 design and verification notes](R6_DESIGN_NOTES.md)
+
 The R5 revision clears the doorway beneath Mickey and follows the latest reference for the rounded pink bow and close-set gold curls. [R5 CAD and preview](cad/R5/README.md) · [R5 K2 plates](k2/R5/README.md)
 
 The R3 revision has simpler gold curls and rounded castle and bow surfaces. [R3 CAD and preview](cad/R3/README.md) · [R3 K2 plates](k2/R3/README.md)

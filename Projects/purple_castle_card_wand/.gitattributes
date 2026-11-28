@@ -5,6 +5,7 @@ k2/R6/** -text
 k2/R6_04_PLA/** -text
 k2/R6_06_PLA/** -text
 k2/R6_06_Upright/** -text
+k2/R6_06_Flat_Cap/** -text
 
 # STEP exports retain their generator formatting.
 cad/R6/**/*.step -diff

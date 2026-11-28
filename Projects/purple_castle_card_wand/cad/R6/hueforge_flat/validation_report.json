@@ -1,0 +1,98 @@
+{
+  "units": "mm",
+  "axes": "front XY; +X right, +Y toward tip, +Z toward observer",
+  "art_revision": "R6 provisional \u00b7 130 mm head and inset pennants",
+  "source_sha256": {
+    "castle_profiles.json": "ff1b7d81a01e941be9c393d3b716d585c54cd923cb2af1f61c3441d363779094",
+    "purple_castle_card_wand_R6.step": "a82407cd00a1db9faeb40fd8c2b01c9a81352e0b157cbc0662e062f34d2f612b"
+  },
+  "source_step_valid_solid_count": 28,
+  "cadquery_version": "2.7.0",
+  "original_carrier_bounds_mm": [
+    [
+      -65.0000001,
+      -78.35000009999999,
+      0.8999998999981944
+    ],
+    [
+      65.0000001,
+      61.938000100000004,
+      7.6
+    ]
+  ],
+  "original_carrier_volume_mm3": 24382.409097770113,
+  "assembly_print_datum_z_mm": 0.9,
+  "cap_assembly_z_mm": [
+    2.78,
+    2.9
+  ],
+  "cap_print_z_mm": [
+    1.88,
+    2.0
+  ],
+  "cap_section_area_mm2": 2842.457393385925,
+  "cap_region_sha256": "f0e44b0d35fe1df97b1ef0ef81c9eabd3f3a16b5eb59d5b78859751169f95443",
+  "cap_component_areas_mm2": [
+    2033.6140420542454,
+    393.9082018980822,
+    207.51615526399812,
+    207.41899416959978
+  ],
+  "projected_exposed_art_field_area_mm2": 3298.2411424529732,
+  "cap_fraction_of_projected_exposed_art_field": 0.8618100589430912,
+  "xy_cap_clearance_from_projected_ornaments_mm": 0.28972923853780436,
+  "xy_cap_clearance_from_original_field_boundary_mm": 0.29030063331422423,
+  "exact_base_cap_overlap_mm3": 0,
+  "exact_recombined_geometry_missing_mm3": 0,
+  "exact_recombined_geometry_added_mm3": 0,
+  "integrated_partition_volume_residual_mm3": 0.006542671828356106,
+  "exact_cap_ornament_overlap_mm3": {
+    "head_gold": 0,
+    "head_cream": 0,
+    "head_blue": 0,
+    "bow_pink": 0
+  },
+  "mesh_outputs": {
+    "head_base.stl": {
+      "sha256": "32a27d9763cb669376df3852eb74b6f2e2813ff3fb57c757fee9f302d7ade9b4",
+      "solid_count": 1,
+      "watertight": true,
+      "consistent_winding": true,
+      "bounds_mm": [
+        [
+          -65.0,
+          -78.3499984741211,
+          0.8999999761581421
+        ],
+        [
+          65.0,
+          61.9379997253418,
+          7.599999904632568
+        ]
+      ],
+      "stl_volume_mm3": 24041.034881672895,
+      "exact_volume_mm3": 24041.32075323563
+    },
+    "head_field_cap.stl": {
+      "sha256": "adc9d398ff90a7cd4943b9202740542ff12232a7009997c05a8f75597648ed36",
+      "solid_count": 4,
+      "watertight": true,
+      "consistent_winding": true,
+      "bounds_mm": [
+        [
+          -55.226905822753906,
+          -50.8120002746582,
+          2.7799999713897705
+        ],
+        [
+          55.22440719604492,
+          52.61268615722656,
+          2.9000000953674316
+        ]
+      ],
+      "stl_volume_mm3": 341.095239075447,
+      "exact_volume_mm3": 341.09488720631117
+    }
+  },
+  "step_output_sha256": "f7e92c06dec7a568e46cc547939233f1e13d577f6662e8afba98ace5ceac12dc"
+}

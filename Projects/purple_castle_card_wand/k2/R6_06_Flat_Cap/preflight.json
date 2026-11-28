@@ -1,0 +1,500 @@
+{
+  "Red_over_Blue": {
+    "sha256": "c1c0098543f2974ef833637d30fdb578fa16287b0d3b669580b5f2c47ea981c6",
+    "gcode_sha256": "877ab8bce63de7b0767d907d42915c87703212c0ddc454aca62a04edadcef1bc",
+    "placement": {
+      "R6 flat color-cap castle face": {
+        "bounds_mm": [
+          [
+            65.0,
+            59.856001,
+            0.0
+          ],
+          [
+            195.0,
+            200.143999,
+            6.7
+          ]
+        ],
+        "rotation": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          130.0,
+          138.2059993744,
+          -0.8999999762
+        ],
+        "print_overrides": {},
+        "parts": {
+          "head_base": {
+            "extruder": 1,
+            "source": "head_base.stl",
+            "source_sha256": "32a27d9763cb669376df3852eb74b6f2e2813ff3fb57c757fee9f302d7ade9b4",
+            "bounds_mm": [
+              [
+                65.0,
+                59.856001,
+                0.0
+              ],
+              [
+                195.0,
+                200.143999,
+                6.7
+              ]
+            ]
+          },
+          "head_field_cap": {
+            "extruder": 2,
+            "source": "head_field_cap.stl",
+            "source_sha256": "adc9d398ff90a7cd4943b9202740542ff12232a7009997c05a8f75597648ed36",
+            "bounds_mm": [
+              [
+                74.773094,
+                87.393999,
+                1.88
+              ],
+              [
+                185.224407,
+                190.818686,
+                2.0
+              ]
+            ]
+          },
+          "head_gold": {
+            "extruder": 4,
+            "source": "head_gold.stl",
+            "source_sha256": "1a98fb2f6a8a98dfcb06f4e0371aa20219bbc628a02025b5ab09fe67b2d72cd7",
+            "bounds_mm": [
+              [
+                65.0,
+                77.546999,
+                1.2
+              ],
+              [
+                195.0,
+                200.143999,
+                5.398098
+              ]
+            ]
+          },
+          "head_white": {
+            "extruder": 3,
+            "source": "head_cream.stl",
+            "source_sha256": "6960bee9618c6b6a407be5dc9534f4d75177a6039d1d9b0f734d4b147d025481",
+            "bounds_mm": [
+              [
+                83.291,
+                108.060999,
+                1.2
+              ],
+              [
+                176.709,
+                157.4,
+                4.998679
+              ]
+            ]
+          },
+          "head_roofs": {
+            "extruder": 7,
+            "source": "head_blue.stl",
+            "source_sha256": "9628d03f59cc2b775a68118fc5b1524e0bc18d6f1006fd1e9d87afed1f946d28",
+            "bounds_mm": [
+              [
+                104.045,
+                140.187999,
+                2.0
+              ],
+              [
+                157.298,
+                170.941999,
+                4.799533
+              ]
+            ]
+          }
+        }
+      }
+    },
+    "physical_tool_commands": {
+      "0": 34,
+      "2": 20,
+      "3": 19,
+      "1": 1
+    },
+    "macros": {
+      "object_polygons": [
+        46
+      ],
+      "start": 52,
+      "initial_tool": 56,
+      "hotend_wait": 59,
+      "purge": 63,
+      "extrusion_reset": 64,
+      "end": 233025
+    },
+    "warning_lines": [],
+    "visible_regions": {
+      "right-scroll": {
+        "T3": 1.0
+      },
+      "left-scroll": {
+        "T3": 1.0
+      },
+      "right-cornice": {
+        "T2": 1.0
+      },
+      "left-cornice": {
+        "T2": 1.0
+      },
+      "right-roof": {
+        "T0": 0.3092,
+        "T2": 0.6908
+      },
+      "left-roof": {
+        "T0": 0.3048,
+        "T2": 0.6952
+      },
+      "right-tower": {
+        "T0": 0.0001,
+        "T2": 0.9999
+      },
+      "left-tower": {
+        "T0": 0.0001,
+        "T2": 0.9999
+      },
+      "high-cornice": {
+        "T2": 1.0
+      },
+      "rim-outer": {
+        "T0": 0.0971,
+        "T3": 0.9029
+      },
+      "mickey": {
+        "T0": 0.0003,
+        "T2": 0.9997
+      },
+      "gatehouse": {
+        "T0": 0.0004,
+        "T2": 0.9996
+      },
+      "high-roof": {
+        "T0": 0.279,
+        "T2": 0.721
+      },
+      "right-star": {
+        "T0": 0.0002,
+        "T2": 0.9998
+      },
+      "left-star": {
+        "T0": 0.0003,
+        "T2": 0.9997
+      },
+      "keep": {
+        "T2": 1.0
+      },
+      "right-flag": {
+        "T0": 0.004,
+        "T3": 0.996
+      },
+      "left-flag": {
+        "T0": 0.0028,
+        "T3": 0.9972
+      },
+      "high-flag": {
+        "T0": 0.0044,
+        "T3": 0.9956
+      },
+      "inner-lip": {
+        "T0": 1.0
+      },
+      "star-field": {
+        "T0": 0.1999,
+        "T1": 0.8001
+      }
+    },
+    "cap_covered_region_tools": {
+      "T0": 0.0215,
+      "T1": 0.9785
+    },
+    "interior_field_layers_mm_by_tool": {
+      "1.88": {
+        "T0": 5524.173
+      },
+      "2.0": {
+        "T1": 3902.272
+      }
+    },
+    "estimate": [
+      [
+        "total toolchanges",
+        "73"
+      ],
+      [
+        "estimated printing time (normal mode)",
+        "3h 22m 52s"
+      ]
+    ]
+  },
+  "Blue_over_Red": {
+    "sha256": "84e03f1a7f85a4dac60f63f9c6f4de7f5015e186846b1a06debd6ef66b76a4d9",
+    "gcode_sha256": "80e750a1e3bd8c430e1b596f5696c6d0c7e8a2ae26a72b659666880d2c49b5e7",
+    "placement": {
+      "R6 flat color-cap castle face": {
+        "bounds_mm": [
+          [
+            65.0,
+            59.856001,
+            0.0
+          ],
+          [
+            195.0,
+            200.143999,
+            6.7
+          ]
+        ],
+        "rotation": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "translation_mm": [
+          130.0,
+          138.2059993744,
+          -0.8999999762
+        ],
+        "print_overrides": {},
+        "parts": {
+          "head_base": {
+            "extruder": 2,
+            "source": "head_base.stl",
+            "source_sha256": "32a27d9763cb669376df3852eb74b6f2e2813ff3fb57c757fee9f302d7ade9b4",
+            "bounds_mm": [
+              [
+                65.0,
+                59.856001,
+                0.0
+              ],
+              [
+                195.0,
+                200.143999,
+                6.7
+              ]
+            ]
+          },
+          "head_field_cap": {
+            "extruder": 1,
+            "source": "head_field_cap.stl",
+            "source_sha256": "adc9d398ff90a7cd4943b9202740542ff12232a7009997c05a8f75597648ed36",
+            "bounds_mm": [
+              [
+                74.773094,
+                87.393999,
+                1.88
+              ],
+              [
+                185.224407,
+                190.818686,
+                2.0
+              ]
+            ]
+          },
+          "head_gold": {
+            "extruder": 4,
+            "source": "head_gold.stl",
+            "source_sha256": "1a98fb2f6a8a98dfcb06f4e0371aa20219bbc628a02025b5ab09fe67b2d72cd7",
+            "bounds_mm": [
+              [
+                65.0,
+                77.546999,
+                1.2
+              ],
+              [
+                195.0,
+                200.143999,
+                5.398098
+              ]
+            ]
+          },
+          "head_white": {
+            "extruder": 3,
+            "source": "head_cream.stl",
+            "source_sha256": "6960bee9618c6b6a407be5dc9534f4d75177a6039d1d9b0f734d4b147d025481",
+            "bounds_mm": [
+              [
+                83.291,
+                108.060999,
+                1.2
+              ],
+              [
+                176.709,
+                157.4,
+                4.998679
+              ]
+            ]
+          },
+          "head_roofs": {
+            "extruder": 7,
+            "source": "head_blue.stl",
+            "source_sha256": "9628d03f59cc2b775a68118fc5b1524e0bc18d6f1006fd1e9d87afed1f946d28",
+            "bounds_mm": [
+              [
+                104.045,
+                140.187999,
+                2.0
+              ],
+              [
+                157.298,
+                170.941999,
+                4.799533
+              ]
+            ]
+          }
+        }
+      }
+    },
+    "physical_tool_commands": {
+      "0": 14,
+      "1": 36,
+      "2": 20,
+      "3": 19
+    },
+    "macros": {
+      "object_polygons": [
+        46
+      ],
+      "start": 52,
+      "initial_tool": 56,
+      "hotend_wait": 59,
+      "purge": 63,
+      "extrusion_reset": 64,
+      "end": 233204
+    },
+    "warning_lines": [],
+    "visible_regions": {
+      "right-scroll": {
+        "T3": 1.0
+      },
+      "left-scroll": {
+        "T3": 1.0
+      },
+      "right-cornice": {
+        "T2": 1.0
+      },
+      "left-cornice": {
+        "T2": 1.0
+      },
+      "right-roof": {
+        "T0": 0.3092,
+        "T2": 0.6908
+      },
+      "left-roof": {
+        "T0": 0.3048,
+        "T2": 0.6952
+      },
+      "right-tower": {
+        "T1": 0.0001,
+        "T2": 0.9999
+      },
+      "left-tower": {
+        "T1": 0.0001,
+        "T2": 0.9999
+      },
+      "high-cornice": {
+        "T2": 1.0
+      },
+      "rim-outer": {
+        "T1": 0.0971,
+        "T3": 0.9029
+      },
+      "mickey": {
+        "T1": 0.0003,
+        "T2": 0.9997
+      },
+      "gatehouse": {
+        "T1": 0.0004,
+        "T2": 0.9996
+      },
+      "high-roof": {
+        "T0": 0.279,
+        "T2": 0.721
+      },
+      "right-star": {
+        "T1": 0.0002,
+        "T2": 0.9998
+      },
+      "left-star": {
+        "T1": 0.0003,
+        "T2": 0.9997
+      },
+      "keep": {
+        "T2": 1.0
+      },
+      "right-flag": {
+        "T1": 0.004,
+        "T3": 0.996
+      },
+      "left-flag": {
+        "T1": 0.0028,
+        "T3": 0.9972
+      },
+      "high-flag": {
+        "T1": 0.0044,
+        "T3": 0.9956
+      },
+      "inner-lip": {
+        "T1": 1.0
+      },
+      "star-field": {
+        "T0": 0.7967,
+        "T1": 0.2033
+      }
+    },
+    "cap_covered_region_tools": {
+      "T0": 0.9785,
+      "T1": 0.0215
+    },
+    "interior_field_layers_mm_by_tool": {
+      "1.88": {
+        "T1": 5524.174
+      },
+      "2.0": {
+        "T0": 3902.275
+      }
+    },
+    "estimate": [
+      [
+        "total toolchanges",
+        "88"
+      ],
+      [
+        "estimated printing time (normal mode)",
+        "3h 22m 52s"
+      ]
+    ]
+  }
+}
